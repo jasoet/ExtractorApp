@@ -1,8 +1,3 @@
-jar {
-    baseName = "extractor"
-    version = project.version
-}
-
 dependencies {
     compile project(':core')
 }
