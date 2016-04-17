@@ -1,0 +1,3 @@
+include 'core', 'extractor', 'dsl-editor'
+
+rootProject.name = "Extractor-App"

@@ -1,0 +1,64 @@
+buildscript {
+    repositories {
+        mavenCentral()
+    }
+    dependencies {
+        classpath("org.springframework.boot:spring-boot-gradle-plugin:${springBootVersion}")
+        classpath "org.flywaydb:flyway-gradle-plugin:${flywayGradleVersion}"
+        classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:${kotlinVersion}"
+    }
+}
+
+
+apply plugin: 'idea'
+
+allprojects {
+    tasks.withType(JavaCompile) {
+        options.compilerArgs << "-Xlint:unchecked"
+    }
+}
+
+subprojects {
+
+    apply plugin: 'application'
+    apply plugin: 'spring-boot'
+    apply plugin: 'kotlin'
+
+    
+    repositories {
+        mavenCentral()
+        maven { url "https://oss.sonatype.org/content/repositories/snapshots" }
+        maven { url "http://dl.bintray.com/jasoet-gdp/org.kotlinslang" }
+    }
+
+    dependencies {
+        compile "org.jetbrains.kotlin:kotlin-stdlib:${kotlinVersion}"
+        compile "org.jetbrains.kotlin:kotlin-reflect:${kotlinVersion}"
+        compile "org.kotlinslang:kotlinslang:${kotlinslangVersion}"
+        compile "com.fasterxml.jackson.module:jackson-module-kotlin:${jacksonModuleKotlinVersion}"
+        compile "net.logstash.logback:logstash-logback-encoder:${logstashLogbackEncoderVersion}"
+
+        compile "com.fasterxml.jackson.datatype:jackson-datatype-jsr310"
+        compile "com.fasterxml.jackson.datatype:jackson-datatype-jdk8"
+
+        testCompile "org.springframework.boot:spring-boot-starter-test"
+        testCompile "org.assertj:assertj-core:${assertJVersion}"
+    }
+
+    springBoot {
+        executable = true
+    }
+
+    /* Allow user to pass -Dspring.profiles.active when running bootRun
+    *  `./gradlew bootRun -Dspring.profiles.active=dev`
+    * */
+
+    project.gradle.projectsEvaluated {
+        applicationDefaultJvmArgs = ["-Dspring.profiles.active=${project.gradle.startParameter.systemPropertiesArgs['spring.profiles.active']}"]
+    }
+
+}
+
+task wrapper(type: Wrapper) {
+    gradleVersion = '2.12'
+}

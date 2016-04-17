@@ -1,0 +1,8 @@
+jar {
+    baseName = "extractor"
+    version = project.version
+}
+
+dependencies {
+
+}
