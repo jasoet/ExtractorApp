@@ -1,11 +1,10 @@
 dependencies {
-
-    compile "org.apache.tika:tika:${apacheTikaVersion}"
+    compile "org.apache.tika:tika-core:${apacheTikaVersion}"
+    compile "org.apache.tika:tika-parsers:${apacheTikaVersion}"
     compile "commons-io:commons-io:${commonsIOVersion}"
     compile "org.apache.commons:commons-lang3:${commonsLangVersion}"
     compile "commons-codec:commons-codec:${commonsCodecVersion}"
     compile "commons-beanutils:commons-beanutils:${commonsBeansUtilVersion}"
-    compile "com.github.slugify:slugify:${slugifyVersion}"
     compile "com.google.guava:guava:${guavaVersion}"
 
     compile "com.google.code.gson:gson"
