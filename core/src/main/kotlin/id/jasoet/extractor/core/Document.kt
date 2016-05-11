@@ -16,6 +16,8 @@ interface Document {
 
     val contentType: String
 
+    val tikaContentType: String
+
     val metadata: Metadata
 
     val contentHandler: BodyContentHandler

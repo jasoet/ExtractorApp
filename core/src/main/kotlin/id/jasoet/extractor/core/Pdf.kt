@@ -13,6 +13,7 @@ import java.io.InputStream
 
 class Pdf(override val inputStream: InputStream,
           override val metadata: Metadata,
+          override val tikaContentType: String,
           override val contentHandler: BodyContentHandler) : Document {
 
     override val contentType: String = "application/pdf"
