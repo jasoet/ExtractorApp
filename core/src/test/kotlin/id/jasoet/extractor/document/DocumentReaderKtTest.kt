@@ -1,4 +1,4 @@
-package id.jasoet.extractor.core
+package id.jasoet.extractor.document
 
 import org.apache.commons.io.FileUtils
 import org.assertj.core.api.Assertions.assertThat

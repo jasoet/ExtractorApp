@@ -1,4 +1,4 @@
-package id.jasoet.extractor.core
+package id.jasoet.extractor.document
 
 import kotlinslang.control.Try
 import kotlinslang.control.tryOf

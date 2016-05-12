@@ -1,4 +1,4 @@
-package id.jasoet.extractor.core
+package id.jasoet.extractor.document
 
 import org.apache.tika.metadata.Metadata
 import org.apache.tika.sax.BodyContentHandler
