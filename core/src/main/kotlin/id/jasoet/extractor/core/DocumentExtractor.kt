@@ -7,21 +7,23 @@ import org.apache.tika.metadata.Metadata
 import org.apache.tika.parser.AutoDetectParser
 import org.apache.tika.parser.ParseContext
 import org.apache.tika.sax.BodyContentHandler
+import java.io.File
+import java.io.FileInputStream
 import java.io.InputStream
 
 /**
- * Documentation Here
+ * *Functions* to extract [Document] from [File] or [InputStream]
  *
  * @author Deny Prasetyo
  */
 
 
 /**
- * Extract `Document` from InputStream
+ * Extract [Document] from InputStream
  * Note: InputStream not closed nor reseted after this method returns
  *
  * @param parseContext Optional ParseContext to modify Parser Behaviour
- * @return `Document` file enclosed by `Try`
+ * @return [Document] file enclosed by `Try`
  */
 fun InputStream.extractDocument(parseContext: ParseContext = ParseContext()): Try<Document> {
     val result: Try<Document> = tryOf {
@@ -65,10 +67,35 @@ fun InputStream.extractDocument(parseContext: ParseContext = ParseContext()): Tr
  * Extract Tika Content Type. Can be different from Real ContentType.
  * Only small portion of InputStream will be used, so InputStream not touched
  * Note: InputStream not closed after this method returns
+ * @return [String] `Content-Type` enclosed by Try
  */
 fun InputStream.extractTikaContentType(): Try<String> {
     return tryOf {
         val tika = Tika()
         tika.detect(this)
+    }
+}
+
+/**
+ * Extract [Document] from File
+ * Note: Will use FileInputStream and will be closed after method returns
+ *
+ * @param parseContext Optional ParseContext to modify Parser Behaviour
+ * @return [Document] file enclosed by `Try`
+ */
+fun File.extractDocument(parseContext: ParseContext = ParseContext()): Try<Document> {
+    return tryOf(FileInputStream(this)).flatMap {
+        it.use { i -> i.extractDocument(parseContext) }
+    }
+}
+
+/**
+ * Extract Tika Content Type. Can be different from Real ContentType.
+ * Only small portion of file's bytes used
+ * @return [String] `Content-Type` enclosed by Try
+ */
+fun File.extractTikaContentType(): Try<String> {
+    return tryOf(FileInputStream(this)).flatMap {
+        it.use { i -> i.extractTikaContentType() }
     }
 }
