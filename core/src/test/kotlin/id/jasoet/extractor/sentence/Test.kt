@@ -36,4 +36,14 @@ class Test {
         }
     }
 
+    @Test
+    fun tokenManual() {
+        val exampleDoc = javaClass.getResourceAsStream("/LaporanKepolisian1.docx")
+
+        val document = exampleDoc.use {
+            it.extractDocument()
+        }
+
+        println(document.get().contentHandler.toString())
+    }
 }
