@@ -22,4 +22,8 @@ interface Document {
 
     val contentHandler: BodyContentHandler
 
+    fun content(): String {
+        return this.contentHandler.toString()
+    }
+
 }
