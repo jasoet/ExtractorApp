@@ -26,7 +26,7 @@ class Test {
         val document = exampleDoc.use {
             it.extractDocument()
         }
-g
+
         val sentences = document.map {
             sentenceDetector.sentDetect(it.contentHandler.toString())
         }.get()
