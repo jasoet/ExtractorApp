@@ -5,6 +5,7 @@ import kotlinslang.control.orElseGet
 import kotlinslang.control.toOption
 import kotlinslang.orElse
 import org.junit.Test
+import org.slf4j.LoggerFactory
 
 /**
  * Documentation Here
@@ -13,12 +14,13 @@ import org.junit.Test
  */
 
 class ExtractTextTest {
+    private val log = LoggerFactory.getLogger(javaClass)
 
     @Test
     fun extractAll() {
         val baseName = "/LaporanKepolisian:id:.docx"
 
-        val contentPair = (0..4).map {
+        val contentPairs = (0..3).map {
             val name = baseName.replace(":id:", it.toString())
 
             val resourceOption = javaClass.getResourceAsStream(name).toOption()
@@ -27,17 +29,18 @@ class ExtractTextTest {
                     .map {
                         it.use {
                             name to it.extractDocument()
-                                    .map { it.content() }
-                                    .orElseGet { it.message!! }
+                                    .map { it.contentLines() }
+                                    .orElseGet { emptyList() }
                         }
                     }
-                    .orElse(name to "")
+                    .orElse(name to emptyList())
         }
 
-        contentPair.forEach {
-            val (name, content) = it
-            println("======= $name =====")
-            println(content)
+        contentPairs.forEach {
+            log.info("Data for ${it.first}")
+            it.second.forEach {
+                log.info(it)
+            }
         }
 
     }

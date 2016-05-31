@@ -26,4 +26,9 @@ interface Document {
         return this.contentHandler.toString()
     }
 
+    fun contentLines(): List<String> {
+        val separator = System.getProperty("line.separator")
+        return this.content().split(separator)
+    }
+
 }
