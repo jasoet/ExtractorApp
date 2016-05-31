@@ -1,6 +1,7 @@
 package id.jasoet.extractor.sentence
 
 import id.jasoet.extractor.dictionary.KeyDict
+import id.jasoet.extractor.dictionary.ValueDict
 import id.jasoet.extractor.document.extractDocument
 import kotlinslang.control.orElseGet
 import kotlinslang.control.toOption
@@ -37,14 +38,22 @@ class ExtractTextTest {
                     .orElse(name to emptyList())
         }
 
-        val keyDict = KeyDict("Nama")
+        val keyDict = KeyDict("Terlapor")
 
         contentPairs.forEach {
-            log.info("Data for ${it.first}")
+            println(it.first)
+
             it.second
                     .filter { keyDict.regex.containsMatchIn(it) }
                     .forEach {
-                        println(it)
+                        val location = keyDict.regex.find(it)
+                        if (location != null) {
+                            println("Key Text >> ${location.value}")
+                            val valueDict = ValueDict()
+                            val valueLocation = valueDict.regex.find(it, location.range.endInclusive)
+                            println("Value Text >> ${valueLocation?.value}")
+                        }
+
                     }
         }
 

@@ -8,5 +8,5 @@ package id.jasoet.extractor.dictionary
 
 class KeyDict(override val text: String) : Dictionary {
     override val type: DictionaryType = DictionaryType.KEY
-    override val regex: Regex = Regex("($text)\\s*:")
+    override val regex: Regex = Regex("($text)\\s*:", RegexOption.IGNORE_CASE)
 }
