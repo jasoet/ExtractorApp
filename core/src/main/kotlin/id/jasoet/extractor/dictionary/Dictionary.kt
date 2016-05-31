@@ -8,6 +8,5 @@ package id.jasoet.extractor.dictionary
 
 interface Dictionary {
     val type: DictionaryType
-    val text: String
     val regex: Regex
 }
