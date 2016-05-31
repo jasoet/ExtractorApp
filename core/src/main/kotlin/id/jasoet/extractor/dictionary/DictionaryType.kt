@@ -12,6 +12,7 @@ enum class DictionaryType {
     DATE,
     TIME,
     CRIME,
+    DOC_TITLE,
     ADDRESS,
     CLAUSE,
     LOCATION,
