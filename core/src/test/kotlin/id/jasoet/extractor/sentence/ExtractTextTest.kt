@@ -1,5 +1,6 @@
 package id.jasoet.extractor.sentence
 
+import id.jasoet.extractor.dictionary.KeyDict
 import id.jasoet.extractor.document.extractDocument
 import kotlinslang.control.orElseGet
 import kotlinslang.control.toOption
@@ -36,11 +37,15 @@ class ExtractTextTest {
                     .orElse(name to emptyList())
         }
 
+        val keyDict = KeyDict("Nama")
+
         contentPairs.forEach {
             log.info("Data for ${it.first}")
-            it.second.forEach {
-                log.info(it)
-            }
+            it.second
+                    .filter { keyDict.regex.containsMatchIn(it) }
+                    .forEach {
+                        println(it)
+                    }
         }
 
     }
