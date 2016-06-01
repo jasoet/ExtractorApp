@@ -1,6 +1,7 @@
 package id.jasoet.extractor.dictionary.collection
 
 import id.jasoet.extractor.dictionary.ClauseDict
+import id.jasoet.extractor.dictionary.CrimeDict
 import id.jasoet.extractor.dictionary.DateDict
 import id.jasoet.extractor.dictionary.DayDict
 import id.jasoet.extractor.dictionary.KeyDict
@@ -14,6 +15,31 @@ import id.jasoet.extractor.dictionary.TimeDict
 
 fun keyDictionaries(): List<KeyDict> {
     TODO()
+}
+
+val crimeDictionaries: List<CrimeDict> by lazy {
+    val crimeTypeRegex = listOf(
+            "Makar",
+            "Perkelahian",
+            "Pemalsuan",
+            "Pemerkosaan",
+            "Pelecehan Seksual",
+            "Pencabulan",
+            "Penghinaan",
+            "Pembunuhan",
+            "Penganiayaan",
+            "Pencurian",
+            "Penggelapan",
+            "Penipuan",
+            "Perusakan Barang",
+            "Penghancuran Barang",
+            "Pemerasan",
+            "Pengancaman"
+    ).reduce { f, s -> "$f|$s" }
+
+    listOf(
+            CrimeDict("($crimeTypeRegex)")
+    )
 }
 
 val clauseDictionaries: List<ClauseDict> by lazy {
@@ -34,21 +60,13 @@ val clauseDictionaries: List<ClauseDict> by lazy {
 
 val dayDictionaries: List<DayDict> by lazy {
     val dayNamesRegex = listOf(
-            "Sen",
             "Senin",
-            "Sel",
             "Selasa",
-            "Rab",
             "Rabu",
-            "Kam",
             "Kamis",
-            "Jum",
             "Jumat",
             "Jum'at",
-            "Sab",
             "Sabtu",
-            "Min",
-            "Ming",
             "Minggu"
     ).reduce { f, s -> "$f|$s" }
 

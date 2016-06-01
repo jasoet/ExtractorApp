@@ -2,6 +2,8 @@ package id.jasoet.extractor.sentence
 
 
 import id.jasoet.extractor.dictionary.collection.clauseDictionaries
+import id.jasoet.extractor.dictionary.collection.crimeDictionaries
+import id.jasoet.extractor.dictionary.collection.dayDictionaries
 import id.jasoet.extractor.document.extractDocument
 import kotlinslang.control.orElseGet
 import kotlinslang.control.toOption
@@ -39,7 +41,7 @@ class ExtractTextTest {
                     .orElse(name to emptyList())
         }
 
-        val dictionaries = clauseDictionaries
+        val dictionaries = dayDictionaries
 
         contentPairs.forEach {
             println(it.first)
