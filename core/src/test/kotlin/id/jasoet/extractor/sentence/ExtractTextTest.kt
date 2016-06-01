@@ -1,9 +1,9 @@
 package id.jasoet.extractor.sentence
 
 
-import id.jasoet.extractor.dictionary.collection.clauseDictionaries
-import id.jasoet.extractor.dictionary.collection.crimeDictionaries
 import id.jasoet.extractor.dictionary.collection.dayDictionaries
+import id.jasoet.extractor.dictionary.collection.genderDictionaries
+import id.jasoet.extractor.dictionary.collection.religionDictionaries
 import id.jasoet.extractor.document.extractDocument
 import kotlinslang.control.orElseGet
 import kotlinslang.control.toOption
@@ -41,7 +41,9 @@ class ExtractTextTest {
                     .orElse(name to emptyList())
         }
 
-        val dictionaries = dayDictionaries
+        val dictionaries = religionDictionaries
+        dictionaries.map { it.regexPattern() }
+                .forEach { println(it) }
 
         contentPairs.forEach {
             println(it.first)

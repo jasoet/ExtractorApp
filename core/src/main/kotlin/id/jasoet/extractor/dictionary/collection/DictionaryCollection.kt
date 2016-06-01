@@ -4,7 +4,9 @@ import id.jasoet.extractor.dictionary.ClauseDict
 import id.jasoet.extractor.dictionary.CrimeDict
 import id.jasoet.extractor.dictionary.DateDict
 import id.jasoet.extractor.dictionary.DayDict
+import id.jasoet.extractor.dictionary.GenderDict
 import id.jasoet.extractor.dictionary.KeyDict
+import id.jasoet.extractor.dictionary.ReligionDict
 import id.jasoet.extractor.dictionary.TimeDict
 
 /**
@@ -15,6 +17,37 @@ import id.jasoet.extractor.dictionary.TimeDict
 
 fun keyDictionaries(): List<KeyDict> {
     TODO()
+}
+
+val religionDictionaries: List<ReligionDict> by lazy {
+    val religionRegex = listOf(
+            "Muslim",
+            "Islam",
+            "Protestan",
+            "Kristen",
+            "Nasrani",
+            "Budha",
+            "Katolik",
+            "Hindu"
+    ).reduce { f, s -> "$f|$s" }
+
+    listOf(
+            ReligionDict("($religionRegex)")
+    )
+}
+
+val genderDictionaries: List<GenderDict> by lazy {
+    val genderTypeRegex = listOf(
+            "Pria",
+            "Wanita",
+            "Laki-laki",
+            "Laki2",
+            "Perempuan"
+    ).reduce { f, s -> "$f|$s" }
+
+    listOf(
+            GenderDict("($genderTypeRegex)")
+    )
 }
 
 val crimeDictionaries: List<CrimeDict> by lazy {
