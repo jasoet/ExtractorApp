@@ -1,13 +1,14 @@
 package id.jasoet.extractor.sentence
 
-import id.jasoet.extractor.dictionary.KeyDict
-import id.jasoet.extractor.dictionary.collection.timeDictionaries
+
+import id.jasoet.extractor.dictionary.collection.clauseDictionaries
 import id.jasoet.extractor.document.extractDocument
 import kotlinslang.control.orElseGet
 import kotlinslang.control.toOption
 import kotlinslang.orElse
 import org.junit.Test
 import org.slf4j.LoggerFactory
+
 
 /**
  * Documentation Here
@@ -38,14 +39,13 @@ class ExtractTextTest {
                     .orElse(name to emptyList())
         }
 
-        val keyDict = KeyDict("Terlapor")
-        val timeDictCol = timeDictionaries
+        val dictionaries = clauseDictionaries
 
         contentPairs.forEach {
             println(it.first)
 
             it.second
-                    .filter { l -> timeDictCol.any { it.regex.containsMatchIn(l) } }
+                    .filter { l -> dictionaries.any { it.regex.containsMatchIn(l) } }
                     .forEach {
                         println(it)
 
