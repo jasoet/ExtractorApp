@@ -9,4 +9,8 @@ package id.jasoet.extractor.dictionary
 interface Dictionary {
     val type: DictionaryType
     val regex: Regex
+
+    fun regexPattern(): String {
+        return this.regex.pattern
+    }
 }
