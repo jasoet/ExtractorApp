@@ -1,8 +1,11 @@
 package id.jasoet.extractor.sentence
 
 
+import id.jasoet.extractor.dictionary.KeyDict
+import id.jasoet.extractor.dictionary.collection.ageDictionaries
 import id.jasoet.extractor.dictionary.collection.dayDictionaries
 import id.jasoet.extractor.dictionary.collection.genderDictionaries
+import id.jasoet.extractor.dictionary.collection.moneyDictionaries
 import id.jasoet.extractor.dictionary.collection.religionDictionaries
 import id.jasoet.extractor.document.extractDocument
 import kotlinslang.control.orElseGet
@@ -41,7 +44,7 @@ class ExtractTextTest {
                     .orElse(name to emptyList())
         }
 
-        val dictionaries = religionDictionaries
+        val dictionaries = moneyDictionaries
         dictionaries.map { it.regexPattern() }
                 .forEach { println(it) }
 

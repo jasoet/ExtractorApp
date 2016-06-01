@@ -1,11 +1,13 @@
 package id.jasoet.extractor.dictionary.collection
 
+import id.jasoet.extractor.dictionary.AgeDict
 import id.jasoet.extractor.dictionary.ClauseDict
 import id.jasoet.extractor.dictionary.CrimeDict
 import id.jasoet.extractor.dictionary.DateDict
 import id.jasoet.extractor.dictionary.DayDict
 import id.jasoet.extractor.dictionary.GenderDict
 import id.jasoet.extractor.dictionary.KeyDict
+import id.jasoet.extractor.dictionary.MoneyDict
 import id.jasoet.extractor.dictionary.ReligionDict
 import id.jasoet.extractor.dictionary.TimeDict
 
@@ -17,6 +19,24 @@ import id.jasoet.extractor.dictionary.TimeDict
 
 fun keyDictionaries(): List<KeyDict> {
     TODO()
+}
+
+val moneyDictionaries: List<MoneyDict> by lazy {
+
+    listOf(
+            MoneyDict("(Rp\\.\\s+)\\d?\\d?\\d(\\.\\d\\d\\d)*(,-)?")
+    )
+}
+
+val ageDictionaries: List<AgeDict> by lazy {
+    val ageRegex = listOf(
+            "Th",
+            "Tahun"
+    ).reduce { f, s -> "$f|$s" }
+
+    listOf(
+            AgeDict("\\d\\d?\\s+($ageRegex)")
+    )
 }
 
 val religionDictionaries: List<ReligionDict> by lazy {

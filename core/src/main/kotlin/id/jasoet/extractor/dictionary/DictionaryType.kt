@@ -16,6 +16,8 @@ enum class DictionaryType {
     CLAUSE,
     GENDER,
     RELIGION,
+    AGE,
+    MONEY,
     DOC_TITLE,
     LOCATION,
     PERSON,
