@@ -102,7 +102,7 @@ val clauseDictionaries: List<ClauseDict> by lazy {
             "KUHAPer"
     ).reduce { f, s -> "$f|$s" }
 
-    val juntoRegex = listOf("Yo", "Jo").reduce { f, s -> "$f|$s" }
+    val juntoRegex = listOf("Yo", "Jo", "Junto", "Yunto").reduce { f, s -> "$f|$s" }
 
     listOf(
             ClauseDict("\\d\\d?\\d?\\s+($clauseTypeRegex)"),
