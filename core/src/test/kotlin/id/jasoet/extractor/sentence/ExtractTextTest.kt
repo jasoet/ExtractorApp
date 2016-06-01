@@ -1,6 +1,7 @@
 package id.jasoet.extractor.sentence
 
 import id.jasoet.extractor.dictionary.KeyDict
+import id.jasoet.extractor.dictionary.collection.timeDictionaries
 import id.jasoet.extractor.document.extractDocument
 import kotlinslang.control.orElseGet
 import kotlinslang.control.toOption
@@ -38,25 +39,17 @@ class ExtractTextTest {
         }
 
         val keyDict = KeyDict("Terlapor")
+        val timeDictCol = timeDictionaries
 
         contentPairs.forEach {
             println(it.first)
 
-            it.second.filter { it.contains("Berdasarkan", true) }
-                    .forEach { println(it) }
+            it.second
+                    .filter { l -> timeDictCol.any { it.regex.containsMatchIn(l) } }
+                    .forEach {
+                        println(it)
 
-            /* it.second
-                     .filter { keyDict.regex.containsMatchIn(it) }
-                     .forEach {
-                         val location = keyDict.regex.find(it)
-                         if (location != null) {
-                             println("Key Text >> ${location.value}")
-                             val valueDict = ValueDict()
-                             val valueLocation = valueDict.regex.find(it, location.range.endInclusive)
-                             println("Value Text >> ${valueLocation?.value}")
-                         }
-
-                     }*/
+                    }
         }
 
     }
