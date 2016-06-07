@@ -8,6 +8,7 @@ package id.jasoet.extractor.document.line
 
 
 enum class LineType {
+    EMPTY,
     KEY_VALUE,
     TITLE,
     NORMAL,
