@@ -99,6 +99,7 @@ val clauseDictionaries: List<ClauseDict> by lazy {
     val clauseTypeRegex = listOf(
             "KUHP",
             "KUHAP",
+            "KUHAPidana",
             "KUHAPer"
     ).reduce { f, s -> "$f|$s" }
 
