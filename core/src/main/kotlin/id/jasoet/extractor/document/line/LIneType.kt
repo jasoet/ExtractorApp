@@ -11,6 +11,5 @@ enum class LineType {
     EMPTY,
     KEY_VALUE,
     TITLE,
-    NORMAL,
-    OTHER
+    NORMAL
 }
