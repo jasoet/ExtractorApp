@@ -20,7 +20,7 @@ class ExtractLineTest {
 
         DictionaryContext.initialize()
 
-        val baseName = "/LaporanKepolisian:id:.docx"
+        val baseName = "/LaporanKepolisian:id:.pdf"
 
         val contentPairs = (0..3).map {
             val name = baseName.replace(":id:", it.toString())
@@ -31,7 +31,7 @@ class ExtractLineTest {
                 .map {
                     it.use {
                         name to it.extractDocument()
-                            .map { it.contentLines() }
+                            .map { it.contentLines().map { it.identifyLine() to it } }
                             .orElseGet { emptyList() }
                     }
                 }
@@ -43,7 +43,7 @@ class ExtractLineTest {
             println(it.first)
 
             it.second.forEachIndexed { i, s ->
-                println(s.identifyLine(i))
+                println("${s.first} => ${s.second}")
             }
         }
     }

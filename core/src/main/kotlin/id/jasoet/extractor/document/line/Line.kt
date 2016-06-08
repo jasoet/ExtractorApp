@@ -20,11 +20,11 @@ fun String.matchEmpty(): Boolean {
 }
 
 fun String.matchKeyValue(): Boolean {
-    val keyValueRegex = Regex(".+:{1}[^:]+", RegexOption.IGNORE_CASE)
+    val keyValueRegex = Regex(".+:{1}\\s+[^:]+", RegexOption.IGNORE_CASE)
     return keyValueRegex.matches(this)
 }
 
-fun String.identifyLine(number: Int = -1): LineDetail {
+fun String.identifyLine(): LineType {
     val titleKeyword = DictionaryContext.titles
 
     val type: LineType =
@@ -38,5 +38,5 @@ fun String.identifyLine(number: Int = -1): LineDetail {
             LineType.NORMAL
         }
 
-    return LineDetail(number, type, this, emptyMap())
+    return type
 }

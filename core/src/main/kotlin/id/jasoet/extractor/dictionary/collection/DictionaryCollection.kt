@@ -31,6 +31,7 @@ val moneyDictionaries: List<MoneyDict> by lazy {
 val ageDictionaries: List<AgeDict> by lazy {
     val ageRegex = listOf(
             "Th",
+            "Thn",
             "Tahun"
     ).reduce { f, s -> "$f|$s" }
 
