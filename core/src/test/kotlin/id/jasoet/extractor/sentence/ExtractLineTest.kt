@@ -21,7 +21,7 @@ class ExtractLineTest {
 
         DictionaryContext.initialize()
 
-        val baseName = "/LaporanKepolisian:id:.pdf"
+        val baseName = "/LaporanKepolisian:id:.docx"
 
         val contentPairs = (0..3).map {
             val name = baseName.replace(":id:", it.toString())
@@ -54,7 +54,7 @@ class ExtractLineTest {
 
             val ignoredLineNumbers = arrayListOf<Int>()
 
-            (0..lines.size).forEach { i ->
+            (0..(lines.size-1)).forEach { i ->
                 if (!ignoredLineNumbers.contains(i)) {
                     val max = lines.size
                     val type = lines[i].first
@@ -120,7 +120,7 @@ class ExtractLineTest {
 
             }
 
-            it.second.forEachIndexed { i, s ->
+            combinedLines.forEachIndexed { i, s ->
                 println("${s.first} => ${s.second}")
             }
 
