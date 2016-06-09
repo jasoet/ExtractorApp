@@ -6,20 +6,19 @@ package id.jasoet.extractor.util
  * @author Deny Prasetyo
  */
 
-object MimeTypes {
+object MimeTypeResource {
 
-    val microsoftOffice: List<Pair<String, String>> =
+    val microsoftOffice: List<MimeType> =
             "/mimetypes/msoffice.csv".loadLocalResource()
                     .map {
                         val fields = it.split(",")
-                        fields[0] to fields[1]
+                        MimeType(fields[0], fields[1])
                     }
 
-    val pdf: List<Pair<String, String>> =
+    val pdf: List<MimeType> =
             "/mimetypes/pdf.csv".loadLocalResource()
                     .map {
                         val fields = it.split(",")
-                        fields[0] to fields[1]
+                        MimeType(fields[0], fields[1])
                     }
-
 }

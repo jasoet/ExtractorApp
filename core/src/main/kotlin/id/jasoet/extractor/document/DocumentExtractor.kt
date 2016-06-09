@@ -1,5 +1,6 @@
 package id.jasoet.extractor.document
 
+import id.jasoet.extractor.util.MimeTypeResource
 import kotlinslang.control.Try
 import kotlinslang.control.tryOf
 import org.apache.tika.Tika
@@ -35,15 +36,18 @@ fun InputStream.extractDocument(parseContext: ParseContext = ParseContext()): Tr
         val tikaContentType = tika.detect(this)
         parser.parse(this, handler, metadata, parseContext)
         val contentType = metadata.get("Content-Type")
-        when (tikaContentType) {
-            "application/pdf" ->
+
+        val pdfMimeType = MimeTypeResource.pdf.map { it.mimeType }
+        val msOfficeMimeType = MimeTypeResource.microsoftOffice.map { it.mimeType }
+
+        when {
+            pdfMimeType.contains(contentType) ->
                 Pdf(inputStream = this,
                         metadata = metadata,
                         contentHandler = handler,
                         tikaContentType = tikaContentType)
 
-            "application/x-tika-ooxml",
-            "application/x-tika-msoffice" ->
+            msOfficeMimeType.contains(contentType) ->
                 MicrosoftOffice(inputStream = this,
                         tikaContentType = tikaContentType,
                         metadata = metadata,

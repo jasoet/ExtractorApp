@@ -80,7 +80,7 @@ class DocumentReaderKtTest {
     fun extractDocumentFromFileShouldProduceCorrectType() {
         names.forEach { name ->
             val file = javaClass.getResourceAsStream(name).use {
-                val fileTarget = File("/tmp/$name")
+                val fileTarget = File("/tmp$name")
                 FileUtils.copyInputStreamToFile(it, fileTarget)
                 fileTarget
             }
