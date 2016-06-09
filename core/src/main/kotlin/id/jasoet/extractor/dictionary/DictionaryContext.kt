@@ -1,6 +1,6 @@
 package id.jasoet.extractor.dictionary
 
-import org.apache.commons.io.IOUtils
+import id.jasoet.extractor.util.loadLocalResource
 
 /**
  * Context that store dictionary taken from Local Resources
@@ -24,23 +24,17 @@ object DictionaryContext {
     lateinit var religions: List<String>
     lateinit var timeZones: List<String>
 
-    private fun loadLocalResource(address: String): List<String> {
-        val titleStream = javaClass.getResourceAsStream(address)
-        return titleStream.use {
-            IOUtils.toString(it, "UTF-8").split(separator).filter { it.isNotEmpty() }
-        }
-    }
 
     fun initialize() {
-        this.titles = loadLocalResource("/dictionaries/titles.dict")
-        this.ages = loadLocalResource("/dictionaries/ages.dict")
-        this.clauses = loadLocalResource("/dictionaries/clauses.dict")
-        this.crimes = loadLocalResource("/dictionaries/crimes.dict")
-        this.days = loadLocalResource("/dictionaries/days.dict")
-        this.genders = loadLocalResource("/dictionaries/genders.dict")
-        this.juntos = loadLocalResource("/dictionaries/juntos.dict")
-        this.months = loadLocalResource("/dictionaries/months.dict")
-        this.religions = loadLocalResource("/dictionaries/religions.dict")
-        this.timeZones = loadLocalResource("/dictionaries/timeZones.dict")
+        this.titles = "/dictionaries/titles.dict".loadLocalResource()
+        this.ages = "/dictionaries/ages.dict".loadLocalResource()
+        this.clauses = "/dictionaries/clauses.dict".loadLocalResource()
+        this.crimes = "/dictionaries/crimes.dict".loadLocalResource()
+        this.days = "/dictionaries/days.dict".loadLocalResource()
+        this.genders = "/dictionaries/genders.dict".loadLocalResource()
+        this.juntos = "/dictionaries/juntos.dict".loadLocalResource()
+        this.months = "/dictionaries/months.dict".loadLocalResource()
+        this.religions = "/dictionaries/religions.dict".loadLocalResource()
+        this.timeZones = "/dictionaries/timeZones.dict".loadLocalResource()
     }
 }
