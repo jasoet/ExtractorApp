@@ -79,17 +79,7 @@ interface Document {
                     }
                     LineType.KEY_VALUE -> {
                         var currentContent = content
-
                         var nextIndex = i + 1
-
-                        if (nextIndex < max) {
-                            val nextType = lines[nextIndex].first
-
-                            if (nextType == LineType.EMPTY) {
-                                ignoredLineNumbers.add(nextIndex)
-                                nextIndex += 1
-                            }
-                        }
 
                         while (nextIndex < max) {
                             val nextType = lines[nextIndex].first
