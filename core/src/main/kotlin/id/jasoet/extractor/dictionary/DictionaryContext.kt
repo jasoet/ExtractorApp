@@ -1,6 +1,6 @@
 package id.jasoet.extractor.dictionary
 
-import id.jasoet.extractor.util.loadLocalResource
+import id.jasoet.extractor.util.loadLocalResourceContent
 
 /**
  * Context that store dictionary taken from Local Resources
@@ -26,15 +26,15 @@ object DictionaryContext {
 
 
     fun initialize() {
-        this.titles = "/dictionaries/titles.dict".loadLocalResource()
-        this.ages = "/dictionaries/ages.dict".loadLocalResource()
-        this.clauses = "/dictionaries/clauses.dict".loadLocalResource()
-        this.crimes = "/dictionaries/crimes.dict".loadLocalResource()
-        this.days = "/dictionaries/days.dict".loadLocalResource()
-        this.genders = "/dictionaries/genders.dict".loadLocalResource()
-        this.juntos = "/dictionaries/juntos.dict".loadLocalResource()
-        this.months = "/dictionaries/months.dict".loadLocalResource()
-        this.religions = "/dictionaries/religions.dict".loadLocalResource()
-        this.timeZones = "/dictionaries/timeZones.dict".loadLocalResource()
+        this.titles = "/dictionaries/titles.dict".loadLocalResourceContent()
+        this.ages = "/dictionaries/ages.dict".loadLocalResourceContent()
+        this.clauses = "/dictionaries/clauses.dict".loadLocalResourceContent()
+        this.crimes = "/dictionaries/crimes.dict".loadLocalResourceContent()
+        this.days = "/dictionaries/days.dict".loadLocalResourceContent()
+        this.genders = "/dictionaries/genders.dict".loadLocalResourceContent()
+        this.juntos = "/dictionaries/juntos.dict".loadLocalResourceContent()
+        this.months = "/dictionaries/months.dict".loadLocalResourceContent()
+        this.religions = "/dictionaries/religions.dict".loadLocalResourceContent()
+        this.timeZones = "/dictionaries/timeZones.dict".loadLocalResourceContent()
     }
 }
