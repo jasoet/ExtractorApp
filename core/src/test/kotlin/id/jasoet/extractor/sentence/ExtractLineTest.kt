@@ -39,10 +39,10 @@ class ExtractLineTest {
             val document = it.second
 
             println("============ Typed ==========")
-            document.contentLinesTyped().forEach { println("${it.first} => ${it.second}") }
+            document.contentLinesTyped().forEach { println("${it.type} => ${it.content}") }
 
             println("============ Cleaned ==========")
-            document.contentLinesCleaned().forEach { println("${it.first} => ${it.second}") }
+            document.contentLinesCleaned().forEach { println("${it.type} => ${it.content}") }
 
         }
 

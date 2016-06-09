@@ -1,5 +1,6 @@
 package id.jasoet.extractor.document
 
+import id.jasoet.extractor.document.line.Line
 import id.jasoet.extractor.document.line.LineType
 import id.jasoet.extractor.document.line.identifyLine
 import kotlinslang.control.none
@@ -35,11 +36,11 @@ interface Document {
         return this.content().split(separator)
     }
 
-    fun contentLinesTyped(): List<Pair<LineType, String>> {
-        return contentLinesOriginal().map { it.identifyLine() to it }
+    fun contentLinesTyped(): List<Line> {
+        return contentLinesOriginal().map { Line(it.identifyLine(), it) }
     }
 
-    fun contentLinesCleaned(): List<Pair<LineType, String>> {
+    fun contentLinesCleaned(): List<Line> {
         val lines = contentLinesTyped()
 
         val ignoredLineNumbers = arrayListOf<Int>()
@@ -47,19 +48,19 @@ interface Document {
 
         val combinedList = lines.mapIndexed { i, pair ->
             if (!ignoredLineNumbers.contains(i)) {
-                val type = pair.first
-                val content = pair.second
+                val type = pair.type
+                val content = pair.content
 
                 when (type) {
-                    LineType.TITLE -> some(type to content)
+                    LineType.TITLE -> some(Line(type,content))
                     LineType.EMPTY, LineType.NORMAL -> {
                         var currentContent = content
                         var currentType = type
 
                         var nextIndex = i + 1
                         while (nextIndex < max) {
-                            val nextType = lines[nextIndex].first
-                            val nextContent = lines[nextIndex].second
+                            val nextType = lines[nextIndex].type
+                            val nextContent = lines[nextIndex].content
 
                             if (nextType == LineType.NORMAL) {
                                 currentType = LineType.NORMAL
@@ -72,7 +73,7 @@ interface Document {
                         }
 
                         if (currentType == LineType.NORMAL) {
-                            some(currentType to currentContent)
+                            some(Line(currentType,currentContent))
                         } else {
                             none()
                         }
@@ -82,8 +83,8 @@ interface Document {
                         var nextIndex = i + 1
 
                         while (nextIndex < max) {
-                            val nextType = lines[nextIndex].first
-                            val nextContent = lines[nextIndex].second
+                            val nextType = lines[nextIndex].type
+                            val nextContent = lines[nextIndex].content
 
                             if (nextType == LineType.NORMAL) {
                                 currentContent += nextContent
@@ -93,7 +94,7 @@ interface Document {
                                 break
                             }
                         }
-                        some(type to currentContent)
+                        some(Line(type,currentContent))
                     }
                 }
             } else {
