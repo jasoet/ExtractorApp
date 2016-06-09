@@ -1,14 +1,13 @@
 package id.jasoet.extractor.dictionary.collection
 
-import id.jasoet.extractor.dictionary.AgeDict
 import id.jasoet.extractor.dictionary.ClauseDict
 import id.jasoet.extractor.dictionary.CrimeDict
 import id.jasoet.extractor.dictionary.DateDict
 import id.jasoet.extractor.dictionary.DayDict
-import id.jasoet.extractor.dictionary.GenderDict
+import id.jasoet.extractor.dictionary.Dictionary
+import id.jasoet.extractor.dictionary.DictionaryContext
+import id.jasoet.extractor.dictionary.DictionaryType
 import id.jasoet.extractor.dictionary.KeyDict
-import id.jasoet.extractor.dictionary.MoneyDict
-import id.jasoet.extractor.dictionary.ReligionDict
 import id.jasoet.extractor.dictionary.TimeDict
 
 /**
@@ -21,54 +20,38 @@ fun keyDictionaries(): List<KeyDict> {
     TODO()
 }
 
-val moneyDictionaries: List<MoneyDict> by lazy {
-
-    listOf(
-            MoneyDict("(Rp\\.\\s+)\\d?\\d?\\d(\\.\\d\\d\\d)*(,-)?")
-    )
+val moneyDictionary: Dictionary by lazy {
+    object : Dictionary {
+        override val type: DictionaryType = DictionaryType.MONEY
+        override val regexes: List<Regex> = listOf(Regex("(Rp\\.\\s+)\\d?\\d?\\d(\\.\\d\\d\\d)*(,-)?", RegexOption.IGNORE_CASE))
+    }
 }
 
-val ageDictionaries: List<AgeDict> by lazy {
-    val ageRegex = listOf(
-            "Th",
-            "Thn",
-            "Tahun"
-    ).reduce { f, s -> "$f|$s" }
+val ageDictionary: Dictionary by lazy {
+    val ageRegex = DictionaryContext.ages.reduce { f, s -> "$f|$s" }
 
-    listOf(
-            AgeDict("\\d\\d?\\s+($ageRegex)")
-    )
+    object : Dictionary {
+        override val type: DictionaryType = DictionaryType.AGE
+        override val regexes: List<Regex> = listOf(Regex("\\d\\d?\\s+($ageRegex)", RegexOption.IGNORE_CASE))
+    }
 }
 
-val religionDictionaries: List<ReligionDict> by lazy {
-    val religionRegex = listOf(
-            "Muslim",
-            "Islam",
-            "Protestan",
-            "Kristen",
-            "Nasrani",
-            "Budha",
-            "Katolik",
-            "Hindu"
-    ).reduce { f, s -> "$f|$s" }
+val religionDictionary: Dictionary by lazy {
+    val religionRegex = DictionaryContext.religions.reduce { f, s -> "$f|$s" }
 
-    listOf(
-            ReligionDict("($religionRegex)")
-    )
+    object : Dictionary {
+        override val type: DictionaryType = DictionaryType.RELIGION
+        override val regexes: List<Regex> = listOf(Regex("($religionRegex)", RegexOption.IGNORE_CASE))
+    }
 }
 
-val genderDictionaries: List<GenderDict> by lazy {
-    val genderTypeRegex = listOf(
-            "Pria",
-            "Wanita",
-            "Laki-laki",
-            "Laki2",
-            "Perempuan"
-    ).reduce { f, s -> "$f|$s" }
+val genderDictionary: Dictionary by lazy {
+    val genderTypeRegex = DictionaryContext.genders.reduce { f, s -> "$f|$s" }
 
-    listOf(
-            GenderDict("($genderTypeRegex)")
-    )
+    object : Dictionary {
+        override val type: DictionaryType = DictionaryType.RELIGION
+        override val regexes: List<Regex> = listOf(Regex("($genderTypeRegex)", RegexOption.IGNORE_CASE))
+    }
 }
 
 val crimeDictionaries: List<CrimeDict> by lazy {

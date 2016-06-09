@@ -8,9 +8,9 @@ package id.jasoet.extractor.dictionary
 
 interface Dictionary {
     val type: DictionaryType
-    val regex: Regex
+    val regexes: List<Regex>
 
-    fun regexPattern(): String {
-        return this.regex.pattern
+    fun regexPatterns(): String {
+        return this.regexes.map { it.pattern }.reduce { i, s -> "$i - $s" }
     }
 }

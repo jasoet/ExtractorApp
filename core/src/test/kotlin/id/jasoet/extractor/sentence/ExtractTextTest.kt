@@ -1,7 +1,7 @@
 package id.jasoet.extractor.sentence
 
 
-import id.jasoet.extractor.dictionary.collection.moneyDictionaries
+import id.jasoet.extractor.dictionary.collection.moneyDictionary
 import id.jasoet.extractor.document.extractDocument
 import kotlinslang.control.orElseGet
 import kotlinslang.control.toOption
@@ -39,15 +39,14 @@ class ExtractTextTest {
                     .orElse(name to emptyList())
         }
 
-        val dictionaries = moneyDictionaries
-        dictionaries.map { it.regexPattern() }
-                .forEach { println(it) }
+        val dictionaries = moneyDictionary
+
 
         contentPairs.forEach {
             println(it.first)
 
             it.second
-                    .filter { l -> dictionaries.any { it.regex.containsMatchIn(l) } }
+                    .filter { l -> moneyDictionary.regex.containsMatchIn(l) }
                     .forEach {
                         println(it)
 
