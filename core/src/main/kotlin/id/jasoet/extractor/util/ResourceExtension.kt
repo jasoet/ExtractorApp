@@ -38,6 +38,17 @@ fun InputStream.md5HexDigest(): String {
 }
 
 /**
+ * Calculate SHA1 Digest as Hexadecimal
+ * Do not close [InputStream] after use nor reset
+ * please handle it yourself
+ *
+ * @return Hexadecimal Digest from [InputStream] as String
+ */
+fun InputStream.sha1HexDigest(): String {
+    return DigestUtils.sha1Hex(this)
+}
+
+/**
  * Load Resource as [InputStream]
  * Just wrap `javaClass.getResourceAsStream(input)`
  *

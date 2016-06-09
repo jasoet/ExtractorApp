@@ -24,9 +24,19 @@ class UtilTest {
                 it.md5HexDigest()
             }
 
-            println(hexDigest)
+            println("md5 => $hexDigest")
 
             Assertions.assertThat(hexDigest).isNotEmpty()
+
+            val sha1Resource = name.loadResourceAsStream()
+
+            val sha1Digest = sha1Resource.use {
+                it.sha1HexDigest()
+            }
+
+            println("sha1 => $sha1Digest")
+
+            Assertions.assertThat(sha1Digest).isNotEmpty()
         }
     }
 }
