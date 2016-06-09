@@ -13,4 +13,13 @@ interface Dictionary {
     fun regexPatterns(): String {
         return this.regexes.map { it.pattern }.reduce { i, s -> "$i - $s" }
     }
+
+    fun matches(input: String): Boolean {
+        return regexes.any { it.matches(input) }
+    }
+
+    fun containMatchIn(input: String): Boolean {
+        return regexes.any { it.containsMatchIn(input) }
+    }
+
 }

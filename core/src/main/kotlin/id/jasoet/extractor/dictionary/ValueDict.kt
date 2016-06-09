@@ -8,6 +8,6 @@ package id.jasoet.extractor.dictionary
 
 class ValueDict() : Dictionary {
     override val type: DictionaryType = DictionaryType.VALUE
-    override val regex: Regex = Regex("[\\w].+")
+    override val regexes: List<Regex> = listOf(Regex("[\\w].+"))
     val description: String = "Match Value from Right Side of colon-separated key-value"
 }
