@@ -4,7 +4,9 @@ import id.jasoet.extractor.dictionary.DictionaryContext
 import id.jasoet.extractor.document.extractDocument
 import id.jasoet.extractor.document.line.LineType
 import id.jasoet.extractor.document.line.identifyLine
+import kotlinslang.control.none
 import kotlinslang.control.orElseGet
+import kotlinslang.control.some
 import kotlinslang.control.toOption
 import kotlinslang.orElse
 import org.junit.Test
@@ -29,39 +31,34 @@ class ExtractLineTest {
             val resourceOption = javaClass.getResourceAsStream(name).toOption()
 
             resourceOption
-                .map {
-                    it.use {
-                        name to it.extractDocument()
-                            .map {
-                                it.contentLines().map {
-                                    it.identifyLine() to it
-                                }
-                            }
-                            .onFailure { it.printStackTrace() }
-                            .orElseGet { emptyList() }
+                    .map {
+                        it.use {
+                            name to it.extractDocument()
+                                    .map {
+                                        it.contentLinesOriginal().map {
+                                            it.identifyLine() to it
+                                        }
+                                    }
+                                    .onFailure { it.printStackTrace() }
+                                    .orElseGet { emptyList() }
+                        }
                     }
-                }
-                .orElse(name to emptyList())
+                    .orElse(name to emptyList())
         }
 
-        contentPairs.map {
-            println("================")
-            println(it.first)
-
-            val combinedLines = arrayListOf<Pair<LineType, String>>()
-
+        val combinedContent = contentPairs.map {
             val lines = it.second
 
             val ignoredLineNumbers = arrayListOf<Int>()
+            val max = lines.size
 
-            (0..(lines.size-1)).forEach { i ->
+            val combinedList = lines.mapIndexed { i, pair ->
                 if (!ignoredLineNumbers.contains(i)) {
-                    val max = lines.size
-                    val type = lines[i].first
-                    val content = lines[i].second
+                    val type = pair.first
+                    val content = pair.second
 
                     when (type) {
-                        LineType.TITLE -> combinedLines.add(type to content)
+                        LineType.TITLE -> some(type to content)
                         LineType.EMPTY, LineType.NORMAL -> {
                             var currentContent = content
                             var currentType = type
@@ -82,7 +79,9 @@ class ExtractLineTest {
                             }
 
                             if (currentType == LineType.NORMAL) {
-                                combinedLines.add(currentType to currentContent)
+                                some(currentType to currentContent)
+                            } else {
+                                none()
                             }
                         }
                         LineType.KEY_VALUE -> {
@@ -111,21 +110,22 @@ class ExtractLineTest {
                                     break
                                 }
                             }
-                            combinedLines.add(type to currentContent)
+                            some(type to currentContent)
                         }
-
                     }
+                } else {
+                    none()
                 }
-
-
             }
 
-            combinedLines.forEachIndexed { i, s ->
-                println("${s.first} => ${s.second}")
+            it.first to combinedList.filter { it.isDefined() }.map { it.get() }
+        }
+
+        combinedContent.forEach {
+            println("====== ${it.first} ======")
+            it.second.forEach {
+                println("${it.first} => ${it.second}")
             }
-
-
-            it.first to combinedLines
         }
     }
 }

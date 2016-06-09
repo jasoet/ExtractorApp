@@ -32,7 +32,7 @@ class ExtractTextTest {
                     .map {
                         it.use {
                             name to it.extractDocument()
-                                    .map { it.contentLines() }
+                                    .map { it.contentLinesOriginal() }
                                     .orElseGet { emptyList() }
                         }
                     }
