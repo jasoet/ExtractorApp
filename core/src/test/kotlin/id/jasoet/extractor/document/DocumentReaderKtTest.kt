@@ -13,14 +13,14 @@ import java.io.File
 
 class DocumentReaderKtTest {
     private val names = listOf(
-            "/Example.doc",
-            "/Example.docx",
-            "/Example.pdf",
-            "/ExcelDocument.xlsx",
-            "/OldExcelDocument.xls",
-            "/OldWordDocument.doc",
-            "/PowerPointDocument.pptx",
-            "/WordDocument.docx"
+            "/other/Example.doc",
+            "/other/Example.docx",
+            "/other/Example.pdf",
+            "/other/ExcelDocument.xlsx",
+            "/other/OldExcelDocument.xls",
+            "/other/OldWordDocument.doc",
+            "/other/PowerPointDocument.pptx",
+            "/other/WordDocument.docx"
     )
 
     @Test
