@@ -8,8 +8,7 @@ import org.apache.tika.metadata.Metadata
 import org.apache.tika.parser.AutoDetectParser
 import org.apache.tika.parser.ParseContext
 import org.apache.tika.sax.BodyContentHandler
-import java.io.File
-import java.io.FileInputStream
+import java.io.ByteArrayInputStream
 import java.io.InputStream
 
 /**
@@ -17,6 +16,47 @@ import java.io.InputStream
  *
  * @author Deny Prasetyo
  */
+
+/**
+ * Extract [Document] Content from InputStream
+ * Note: InputStream not closed nor reseted after this method returns
+ *
+ * @param parseContext Optional ParseContext to modify Parser Behaviour
+ * @return [String] Content file enclosed by `Try`
+ */
+fun InputStream.extractDocumentContent(parseContext: ParseContext = ParseContext()): Try<String> {
+    val result: Try<String> = tryOf {
+        val handler = BodyContentHandler()
+        val parser = AutoDetectParser()
+        val metadata = Metadata()
+
+        parser.parse(this, handler, metadata, parseContext)
+
+        handler.toString()
+    }
+
+    return result;
+}
+
+/**
+ * Extract [Document] Content from ByteArray
+ *
+ * @param parseContext Optional ParseContext to modify Parser Behaviour
+ * @return [String] Content file enclosed by `Try`
+ */
+fun ByteArray.extractDocumentContent(parseContext: ParseContext = ParseContext()): Try<String> {
+    val result: Try<String> = tryOf {
+        val handler = BodyContentHandler()
+        val parser = AutoDetectParser()
+        val metadata = Metadata()
+        ByteArrayInputStream(this).use {
+            parser.parse(it, handler, metadata, parseContext)
+            handler.toString()
+        }
+    }
+
+    return result;
+}
 
 
 /**
@@ -43,23 +83,23 @@ fun InputStream.extractDocument(parseContext: ParseContext = ParseContext()): Tr
         when {
             pdfMimeType.contains(contentType) ->
                 Pdf(inputStream = this,
-                        metadata = metadata,
-                        contentHandler = handler,
-                        tikaContentType = tikaContentType)
+                    metadata = metadata,
+                    contentHandler = handler,
+                    tikaContentType = tikaContentType)
 
             msOfficeMimeType.contains(contentType) ->
                 MicrosoftOffice(inputStream = this,
-                        tikaContentType = tikaContentType,
-                        metadata = metadata,
-                        contentType = contentType,
-                        contentHandler = handler)
+                    tikaContentType = tikaContentType,
+                    metadata = metadata,
+                    contentType = contentType,
+                    contentHandler = handler)
 
             else ->
                 Other(inputStream = this,
-                        metadata = metadata,
-                        contentType = contentType,
-                        contentHandler = handler,
-                        tikaContentType = tikaContentType)
+                    metadata = metadata,
+                    contentType = contentType,
+                    contentHandler = handler,
+                    tikaContentType = tikaContentType)
         }
 
     }
@@ -77,29 +117,5 @@ fun InputStream.extractTikaContentType(): Try<String> {
     return tryOf {
         val tika = Tika()
         tika.detect(this)
-    }
-}
-
-/**
- * Extract [Document] from File
- * Note: Will use FileInputStream and will be closed after method returns
- *
- * @param parseContext Optional ParseContext to modify Parser Behaviour
- * @return [Document] file enclosed by `Try`
- */
-fun File.extractDocument(parseContext: ParseContext = ParseContext()): Try<Document> {
-    return tryOf(FileInputStream(this)).flatMap {
-        it.use { i -> i.extractDocument(parseContext) }
-    }
-}
-
-/**
- * Extract Tika Content Type. Can be different from Real ContentType.
- * Only small portion of file's bytes used
- * @return [String] `Content-Type` enclosed by Try
- */
-fun File.extractTikaContentType(): Try<String> {
-    return tryOf(FileInputStream(this)).flatMap {
-        it.use { i -> i.extractTikaContentType() }
     }
 }

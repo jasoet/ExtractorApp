@@ -1,0 +1,9 @@
+spring:
+  data:
+    mongodb:
+      database: admin
+      username: root
+      password: localhost
+      morphia:
+        basePackage: id.jasoet.extractor.app.model
+        dataStoreId: extractor

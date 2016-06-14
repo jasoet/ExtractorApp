@@ -36,6 +36,14 @@ fun String.loadLocalResourceContent(): List<String> {
 fun InputStream.md5HexDigest(): String {
     return DigestUtils.md5Hex(this)
 }
+/**
+ * Calculate MD5 Digest as Hexadecimal
+ *
+ * @return Hexadecimal Digest from [ByteArray] as String
+ */
+fun ByteArray.md5HexDigest(): String {
+    return DigestUtils.md5Hex(this)
+}
 
 /**
  * Calculate SHA1 Digest as Hexadecimal
@@ -45,6 +53,14 @@ fun InputStream.md5HexDigest(): String {
  * @return Hexadecimal Digest from [InputStream] as String
  */
 fun InputStream.sha1HexDigest(): String {
+    return DigestUtils.sha1Hex(this)
+}
+/**
+ * Calculate SHA1 Digest as Hexadecimal
+ *
+ * @return Hexadecimal Digest from [ByteArray] as String
+ */
+fun ByteArray.sha1HexDigest(): String {
     return DigestUtils.sha1Hex(this)
 }
 

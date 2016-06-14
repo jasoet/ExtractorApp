@@ -1,6 +1,7 @@
 package id.jasoet.extractor.app.config
 
 import org.springframework.boot.context.properties.ConfigurationProperties
+import org.springframework.stereotype.Component
 
 /**
  * Documentation Here
@@ -8,8 +9,9 @@ import org.springframework.boot.context.properties.ConfigurationProperties
  * @author Deny Prasetyo
  */
 
+@Component
 @ConfigurationProperties(prefix = "spring.data.mongodb.morphia")
 data class MorphiaProperties(
-    val basePackage: String = "",
-    val dataStoreId: String = "morphiaDataStoreId"
+    var basePackage: String = "",
+    var dataStoreId: String = "morphiaDataStoreId"
 )

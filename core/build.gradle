@@ -5,6 +5,7 @@ dependencies {
     compile "commons-io:commons-io:${commonsIOVersion}"
     compile "org.apache.commons:commons-lang3:${commonsLangVersion}"
     compile "commons-codec:commons-codec:${commonsCodecVersion}"
+    compile "commons-cli:commons-cli:${commonsCliVersion}"
     compile "commons-beanutils:commons-beanutils:${commonsBeansUtilVersion}"
     compile "com.google.guava:guava:${guavaVersion}"
     compile "org.mongodb.morphia:morphia:${morphiaVersion}"

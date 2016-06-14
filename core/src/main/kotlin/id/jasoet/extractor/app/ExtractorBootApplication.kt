@@ -1,8 +1,11 @@
 package id.jasoet.extractor.app
 
+import id.jasoet.extractor.app.loader.loadDocumentModel
+import org.mongodb.morphia.Datastore
 import org.slf4j.LoggerFactory
 import org.springframework.boot.SpringApplication
 import org.springframework.boot.autoconfigure.SpringBootApplication
+import java.io.FileInputStream
 
 /**
  * Documentation Here
@@ -18,6 +21,14 @@ open class ExtractorBootApplication {
         @JvmStatic
         fun main(args: Array<String>) {
             val ctx = SpringApplication.run(ExtractorBootApplication::class.java, *args)
+            val dataStore = ctx.getBean(Datastore::class.java)
+
+            val fileStream = FileInputStream("/home/jasoet/LaporanKepolisian0.docx")
+            val documentModel = fileStream.use {
+                it.loadDocumentModel("LaporanKepolisian0.docx")
+            }
+            val savedDoc = dataStore.save(documentModel)
+
             log.info("Application Running ${ctx.isActive}")
         }
     }

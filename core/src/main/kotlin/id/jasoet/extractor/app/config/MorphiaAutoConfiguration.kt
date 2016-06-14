@@ -5,6 +5,8 @@ import com.mongodb.MongoClientOptions
 import org.mongodb.morphia.Datastore
 import org.mongodb.morphia.Morphia
 import org.mongodb.morphia.annotations.Entity
+import org.springframework.boot.autoconfigure.EnableAutoConfiguration
+import org.springframework.boot.autoconfigure.jdbc.DataSourceAutoConfiguration
 import org.springframework.boot.autoconfigure.mongo.MongoProperties
 import org.springframework.boot.context.properties.EnableConfigurationProperties
 import org.springframework.context.annotation.Bean
@@ -21,6 +23,7 @@ import org.springframework.core.type.filter.AnnotationTypeFilter
 
 @Configuration
 @EnableConfigurationProperties(MongoProperties::class)
+@EnableAutoConfiguration(exclude = arrayOf(DataSourceAutoConfiguration::class))
 open class MorphiaAutoConfiguration {
 
     @Bean
@@ -33,15 +36,7 @@ open class MorphiaAutoConfiguration {
     open fun dataStore(mongoClient: MongoClient, morphiaProperties: MorphiaProperties): Datastore {
         val morphia = Morphia()
 
-        val scanner = ClassPathScanningCandidateComponentProvider(true)
-        scanner.addIncludeFilter(AnnotationTypeFilter(Entity::class.java))
-
-        val components = scanner.findCandidateComponents(morphiaProperties.basePackage)
-        val componentClassNames = components.map {
-            Class.forName(it.beanClassName)
-        }
-
-        morphia.map(*componentClassNames.toTypedArray())
+        morphia.mapPackage(morphiaProperties.basePackage,true)
 
         return morphia.createDatastore(mongoClient, morphiaProperties.dataStoreId).apply {
             ensureIndexes()
