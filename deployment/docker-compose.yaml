@@ -1,0 +1,10 @@
+version: "2"
+services:
+    mongo:
+        build: mongodb/
+        ports:
+            - "27017:27017"
+        environment:
+            - MONGODB_USER=root
+            - MONGODB_PASS=localhost
+            - MONGODB_DATABASE=extractor
