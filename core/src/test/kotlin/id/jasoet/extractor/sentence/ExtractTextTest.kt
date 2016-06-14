@@ -1,8 +1,8 @@
 package id.jasoet.extractor.sentence
 
 
-import id.jasoet.extractor.dictionary.moneyDictionary
-import id.jasoet.extractor.document.extractDocument
+import id.jasoet.extractor.core.dictionary.moneyDictionary
+import id.jasoet.extractor.core.document.extractDocument
 import kotlinslang.control.orElseGet
 import kotlinslang.control.toOption
 import kotlinslang.orElse

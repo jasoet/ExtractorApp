@@ -1,7 +1,7 @@
 package id.jasoet.extractor.sentence
 
-import id.jasoet.extractor.dictionary.DictionaryContext
-import id.jasoet.extractor.document.extractDocument
+import id.jasoet.extractor.core.dictionary.DictionaryContext
+import id.jasoet.extractor.core.document.extractDocument
 import kotlinslang.control.toOption
 import org.junit.Test
 

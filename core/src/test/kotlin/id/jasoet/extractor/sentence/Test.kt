@@ -1,6 +1,6 @@
 package id.jasoet.extractor.sentence
 
-import id.jasoet.extractor.document.extractDocument
+import id.jasoet.extractor.core.document.extractDocument
 import opennlp.tools.sentdetect.SentenceDetectorME
 import opennlp.tools.sentdetect.SentenceModel
 import org.junit.Test
