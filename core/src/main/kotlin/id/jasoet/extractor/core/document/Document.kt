@@ -52,7 +52,7 @@ interface Document {
                 val content = pair.content
 
                 when (type) {
-                    LineType.TITLE -> some(Line(type,content))
+                    LineType.TITLE -> some(Line(type, content))
                     LineType.EMPTY, LineType.NORMAL -> {
                         var currentContent = content
                         var currentType = type
@@ -73,7 +73,7 @@ interface Document {
                         }
 
                         if (currentType == LineType.NORMAL) {
-                            some(Line(currentType,currentContent))
+                            some(Line(currentType, currentContent))
                         } else {
                             none()
                         }
@@ -94,7 +94,7 @@ interface Document {
                                 break
                             }
                         }
-                        some(Line(type,currentContent))
+                        some(Line(type, currentContent))
                     }
                 }
             } else {

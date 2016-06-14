@@ -21,8 +21,8 @@ fun String.loadLocalResourceContent(): List<String> {
     val titleStream = javaClass.getResourceAsStream(this)
     return titleStream.use {
         IOUtils.toString(it, "UTF-8")
-                .split(DictionaryContext.separator)
-                .filter { it.isNotEmpty() }
+            .split(DictionaryContext.separator)
+            .filter { it.isNotEmpty() }
     }
 }
 
@@ -36,6 +36,7 @@ fun String.loadLocalResourceContent(): List<String> {
 fun InputStream.md5HexDigest(): String {
     return DigestUtils.md5Hex(this)
 }
+
 /**
  * Calculate MD5 Digest as Hexadecimal
  *
@@ -55,6 +56,7 @@ fun ByteArray.md5HexDigest(): String {
 fun InputStream.sha1HexDigest(): String {
     return DigestUtils.sha1Hex(this)
 }
+
 /**
  * Calculate SHA1 Digest as Hexadecimal
  *

@@ -57,8 +57,8 @@ val clauseDictionary: Dictionary by lazy {
     object : Dictionary {
         override val type: DictionaryType = DictionaryType.RELIGION
         override val regexes: List<Regex> = listOf(
-                Regex("\\d\\d?\\d?\\s+($clauseTypeRegex)", RegexOption.IGNORE_CASE),
-                Regex("\\d\\d?\\d?(\\s+|$clauseTypeRegex)?\\s+($juntoRegex)\\s+\\d\\d?\\d?\\s+($clauseTypeRegex)", RegexOption.IGNORE_CASE)
+            Regex("\\d\\d?\\d?\\s+($clauseTypeRegex)", RegexOption.IGNORE_CASE),
+            Regex("\\d\\d?\\d?(\\s+|$clauseTypeRegex)?\\s+($juntoRegex)\\s+\\d\\d?\\d?\\s+($clauseTypeRegex)", RegexOption.IGNORE_CASE)
         )
     }
 }
@@ -78,7 +78,7 @@ val dateDictionary: Dictionary by lazy {
     object : Dictionary {
         override val type: DictionaryType = DictionaryType.RELIGION
         override val regexes: List<Regex> = listOf(Regex("\\d\\d?-\\d\\d?-\\d\\d\\d?\\d?", RegexOption.IGNORE_CASE),
-                Regex("\\d\\d?\\s+$monthNamesRegex\\s+\\d\\d\\d?\\d?", RegexOption.IGNORE_CASE))
+            Regex("\\d\\d?\\s+$monthNamesRegex\\s+\\d\\d\\d?\\d?", RegexOption.IGNORE_CASE))
     }
 }
 
