@@ -7,9 +7,9 @@ dependencies {
     compile "commons-codec:commons-codec:${commonsCodecVersion}"
     compile "commons-beanutils:commons-beanutils:${commonsBeansUtilVersion}"
     compile "com.google.guava:guava:${guavaVersion}"
+    compile "org.mongodb.morphia:morphia:${morphiaVersion}"
 
     compile "com.google.code.gson:gson"
-    compile "org.springframework.boot:spring-boot-starter-data-mongodb"
     compile "org.springframework.boot:spring-boot-starter-cache"
     compile "org.apache.httpcomponents:httpclient"
 }
