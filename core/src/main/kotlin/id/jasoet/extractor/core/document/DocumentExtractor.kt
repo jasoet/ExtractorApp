@@ -39,27 +39,6 @@ fun InputStream.extractDocumentContent(parseContext: ParseContext = ParseContext
 }
 
 /**
- * Extract [Document] Content from ByteArray
- *
- * @param parseContext Optional ParseContext to modify Parser Behaviour
- * @return [String] Content file enclosed by `Try`
- */
-fun ByteArray.extractDocumentContent(parseContext: ParseContext = ParseContext()): Try<String> {
-    val result: Try<String> = tryOf {
-        val handler = BodyContentHandler()
-        val parser = AutoDetectParser()
-        val metadata = Metadata()
-        ByteArrayInputStream(this).use {
-            parser.parse(it, handler, metadata, parseContext)
-            handler.toString()
-        }
-    }
-
-    return result;
-}
-
-
-/**
  * Extract [Document] from InputStream
  * Note: InputStream not closed nor reseted after this method returns
  *
@@ -82,24 +61,68 @@ fun InputStream.extractDocument(parseContext: ParseContext = ParseContext()): Tr
 
         when {
             pdfMimeType.contains(contentType) ->
-                Pdf(inputStream = this,
-                    metadata = metadata,
+                Pdf(metadata = metadata,
                     contentHandler = handler,
                     tikaContentType = tikaContentType)
 
             msOfficeMimeType.contains(contentType) ->
-                MicrosoftOffice(inputStream = this,
-                    tikaContentType = tikaContentType,
+                MicrosoftOffice(tikaContentType = tikaContentType,
                     metadata = metadata,
                     contentType = contentType,
                     contentHandler = handler)
 
             else ->
-                Other(inputStream = this,
-                    metadata = metadata,
+                Other(metadata = metadata,
                     contentType = contentType,
                     contentHandler = handler,
                     tikaContentType = tikaContentType)
+        }
+
+    }
+
+    return result;
+}
+
+
+/**
+ * Extract [Document] from ByteArray
+ *
+ * @param parseContext Optional ParseContext to modify Parser Behaviour
+ * @return [Document] file enclosed by `Try`
+ */
+fun ByteArray.extractDocument(parseContext: ParseContext = ParseContext()): Try<Document> {
+    val result: Try<Document> = tryOf {
+        ByteArrayInputStream(this).use {
+            val handler = BodyContentHandler()
+            val parser = AutoDetectParser()
+            val metadata = Metadata()
+            val tika = Tika()
+
+            val tikaContentType = tika.detect(it)
+            parser.parse(it, handler, metadata, parseContext)
+            val contentType = metadata.get("Content-Type")
+
+            val pdfMimeType = MimeTypeResource.pdf.map { it.mimeType }
+            val msOfficeMimeType = MimeTypeResource.microsoftOffice.map { it.mimeType }
+
+            when {
+                pdfMimeType.contains(contentType) ->
+                    Pdf(metadata = metadata,
+                        contentHandler = handler,
+                        tikaContentType = tikaContentType)
+
+                msOfficeMimeType.contains(contentType) ->
+                    MicrosoftOffice(tikaContentType = tikaContentType,
+                        metadata = metadata,
+                        contentType = contentType,
+                        contentHandler = handler)
+
+                else ->
+                    Other(metadata = metadata,
+                        contentType = contentType,
+                        contentHandler = handler,
+                        tikaContentType = tikaContentType)
+            }
         }
 
     }

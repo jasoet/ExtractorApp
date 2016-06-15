@@ -76,57 +76,7 @@ class DocumentReaderKtTest {
 
     }
 
-    @Test
-    fun extractDocumentFromFileShouldProduceCorrectType() {
-        names.forEach { name ->
-            val file = javaClass.getResourceAsStream(name).use {
-                val fileTarget = File("/tmp$name")
-                FileUtils.copyInputStreamToFile(it, fileTarget)
-                fileTarget
-            }
 
-            val documentTry = file.extractDocument()
-
-            assertThat(documentTry.isSuccess()).isTrue()
-            val document = documentTry.get()
-
-            when {
-                name.endsWith("doc") ||
-                        name.endsWith("docx") ||
-                        name.endsWith("xls") ||
-                        name.endsWith("xlsx") ||
-                        name.endsWith("pptx") -> assertThat(document).isInstanceOf(MicrosoftOffice::class.java)
-                name.endsWith("pdf") -> assertThat(document).isInstanceOf(Pdf::class.java)
-                else -> assertThat(document).isInstanceOf(Other::class.java)
-            }
-
-            val tikaContentType = file.extractTikaContentType()
-            tikaContentType.onFailure {
-                it.printStackTrace()
-            }
-            assertThat(tikaContentType.isSuccess()).isTrue()
-
-            val contentType = tikaContentType.get()
-
-            assertThat(document.tikaContentType).isEqualToIgnoringCase(contentType)
-        }
-    }
-
-    @Test
-    fun extractFileContentTypeShouldSuccess() {
-        names.forEach { name ->
-            val file = javaClass.getResourceAsStream(name).use {
-                val fileTarget = File("/tmp/$name")
-                FileUtils.copyInputStreamToFile(it, fileTarget)
-                fileTarget
-            }
-
-
-            val contentType = file.extractTikaContentType()
-            assertThat(contentType.isSuccess()).isTrue()
-        }
-
-    }
 
 
 }

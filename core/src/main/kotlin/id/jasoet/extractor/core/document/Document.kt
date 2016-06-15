@@ -17,8 +17,6 @@ import java.io.InputStream
 
 
 interface Document {
-    val inputStream: InputStream
-
     val contentType: String
 
     val tikaContentType: String
@@ -26,6 +24,12 @@ interface Document {
     val metadata: Metadata
 
     val contentHandler: BodyContentHandler
+
+    fun metadataMap(): Map<String, String> {
+        return metadata.names().map {
+            it to metadata.get(it)
+        }.toMap()
+    }
 
     fun content(): String {
         return this.contentHandler.toString()

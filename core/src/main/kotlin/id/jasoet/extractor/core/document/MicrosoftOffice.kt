@@ -11,8 +11,7 @@ import java.io.InputStream
  */
 
 
-class MicrosoftOffice(override val inputStream: InputStream,
-                      override val metadata: Metadata,
+class MicrosoftOffice(override val metadata: Metadata,
                       override val contentType: String,
                       override val tikaContentType: String,
                       override val contentHandler: BodyContentHandler) : Document {

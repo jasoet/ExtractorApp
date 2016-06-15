@@ -1,6 +1,7 @@
 package id.jasoet.extractor.app
 
 import id.jasoet.extractor.app.loader.loadDocumentModel
+import id.jasoet.extractor.app.model.DocumentModel
 import org.mongodb.morphia.Datastore
 import org.slf4j.LoggerFactory
 import org.springframework.boot.SpringApplication
@@ -28,8 +29,12 @@ open class ExtractorBootApplication {
                 it.loadDocumentModel("LaporanKepolisian0.docx")
             }
             val savedDoc = dataStore.save(documentModel)
-
-            log.info("Application Running ${ctx.isActive}")
+            log.info("Saved doc with id ${savedDoc.id}")
+            val listDocs = dataStore.createQuery(DocumentModel::class.java).asList()
+            listDocs.forEach {
+                log.info("${it.id} -> ${it.fileName}")
+            }
+            log.info("Application Running in ${currentDirectory()}")
         }
     }
 }

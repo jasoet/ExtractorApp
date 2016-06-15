@@ -10,8 +10,7 @@ import java.io.InputStream
  * @author Deny Prasetyo
  */
 
-class Other(override val inputStream: InputStream,
-            override val metadata: Metadata,
+class Other(override val metadata: Metadata,
             override val contentType: String,
             override val tikaContentType: String,
             override val contentHandler: BodyContentHandler) : Document {
