@@ -1,9 +1,5 @@
 package id.jasoet.extractor.core.document
 
-import org.apache.tika.metadata.Metadata
-import org.apache.tika.sax.BodyContentHandler
-import java.io.InputStream
-
 /**
  * TODO: Documentation
  *
@@ -11,9 +7,8 @@ import java.io.InputStream
  */
 
 
-class Pdf(override val metadata: Metadata,
-          override val tikaContentType: String,
-          override val contentHandler: BodyContentHandler) : Document {
+class Pdf(override val metadata: Map<String, String>,
+          override val content: String) : Document {
 
     override val contentType: String = "application/pdf"
 

@@ -5,9 +5,6 @@ import id.jasoet.extractor.core.document.line.LineType
 import id.jasoet.extractor.core.document.line.identifyLine
 import kotlinslang.control.none
 import kotlinslang.control.some
-import org.apache.tika.metadata.Metadata
-import org.apache.tika.sax.BodyContentHandler
-import java.io.InputStream
 
 /**
  * TODO: Documentation
@@ -19,25 +16,13 @@ import java.io.InputStream
 interface Document {
     val contentType: String
 
-    val tikaContentType: String
+    val metadata: Map<String, String>
 
-    val metadata: Metadata
-
-    val contentHandler: BodyContentHandler
-
-    fun metadataMap(): Map<String, String> {
-        return metadata.names().map {
-            it to metadata.get(it)
-        }.toMap()
-    }
-
-    fun content(): String {
-        return this.contentHandler.toString()
-    }
+    val content: String
 
     fun contentLinesOriginal(): List<String> {
         val separator = System.getProperty("line.separator")
-        return this.content().split(separator)
+        return this.content.split(separator)
     }
 
     fun contentLinesTyped(): List<Line> {

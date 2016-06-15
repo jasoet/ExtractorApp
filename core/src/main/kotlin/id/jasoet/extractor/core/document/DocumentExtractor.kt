@@ -12,31 +12,10 @@ import java.io.ByteArrayInputStream
 import java.io.InputStream
 
 /**
- * *Functions* to extract [Document] from [File] or [InputStream]
+ * *Functions* to extract [Document] from [ByteArray] or [InputStream]
  *
  * @author Deny Prasetyo
  */
-
-/**
- * Extract [Document] Content from InputStream
- * Note: InputStream not closed nor reseted after this method returns
- *
- * @param parseContext Optional ParseContext to modify Parser Behaviour
- * @return [String] Content file enclosed by `Try`
- */
-fun InputStream.extractDocumentContent(parseContext: ParseContext = ParseContext()): Try<String> {
-    val result: Try<String> = tryOf {
-        val handler = BodyContentHandler()
-        val parser = AutoDetectParser()
-        val metadata = Metadata()
-
-        parser.parse(this, handler, metadata, parseContext)
-
-        handler.toString()
-    }
-
-    return result;
-}
 
 /**
  * Extract [Document] from InputStream
@@ -49,33 +28,32 @@ fun InputStream.extractDocument(parseContext: ParseContext = ParseContext()): Tr
     val result: Try<Document> = tryOf {
         val handler = BodyContentHandler()
         val parser = AutoDetectParser()
-        val metadata = Metadata()
-        val tika = Tika()
+        val tikaMetadata = Metadata()
 
-        val tikaContentType = tika.detect(this)
-        parser.parse(this, handler, metadata, parseContext)
-        val contentType = metadata.get("Content-Type")
+        parser.parse(this, handler, tikaMetadata, parseContext)
+        val contentType = tikaMetadata.get("Content-Type")
 
         val pdfMimeType = MimeTypeResource.pdf.map { it.mimeType }
         val msOfficeMimeType = MimeTypeResource.microsoftOffice.map { it.mimeType }
 
+        val metadata = tikaMetadata.names().map {
+            it to tikaMetadata.get(it)
+        }.toMap()
+
         when {
             pdfMimeType.contains(contentType) ->
                 Pdf(metadata = metadata,
-                    contentHandler = handler,
-                    tikaContentType = tikaContentType)
+                    content = handler.toString())
 
             msOfficeMimeType.contains(contentType) ->
-                MicrosoftOffice(tikaContentType = tikaContentType,
-                    metadata = metadata,
+                MicrosoftOffice(metadata = metadata,
                     contentType = contentType,
-                    contentHandler = handler)
+                    content = handler.toString())
 
             else ->
                 Other(metadata = metadata,
                     contentType = contentType,
-                    contentHandler = handler,
-                    tikaContentType = tikaContentType)
+                    content = handler.toString())
         }
 
     }
@@ -91,41 +69,10 @@ fun InputStream.extractDocument(parseContext: ParseContext = ParseContext()): Tr
  * @return [Document] file enclosed by `Try`
  */
 fun ByteArray.extractDocument(parseContext: ParseContext = ParseContext()): Try<Document> {
-    val result: Try<Document> = tryOf {
+    val result: Try<Document> =
         ByteArrayInputStream(this).use {
-            val handler = BodyContentHandler()
-            val parser = AutoDetectParser()
-            val metadata = Metadata()
-            val tika = Tika()
-
-            val tikaContentType = tika.detect(it)
-            parser.parse(it, handler, metadata, parseContext)
-            val contentType = metadata.get("Content-Type")
-
-            val pdfMimeType = MimeTypeResource.pdf.map { it.mimeType }
-            val msOfficeMimeType = MimeTypeResource.microsoftOffice.map { it.mimeType }
-
-            when {
-                pdfMimeType.contains(contentType) ->
-                    Pdf(metadata = metadata,
-                        contentHandler = handler,
-                        tikaContentType = tikaContentType)
-
-                msOfficeMimeType.contains(contentType) ->
-                    MicrosoftOffice(tikaContentType = tikaContentType,
-                        metadata = metadata,
-                        contentType = contentType,
-                        contentHandler = handler)
-
-                else ->
-                    Other(metadata = metadata,
-                        contentType = contentType,
-                        contentHandler = handler,
-                        tikaContentType = tikaContentType)
-            }
+            it.extractDocument(parseContext)
         }
-
-    }
 
     return result;
 }

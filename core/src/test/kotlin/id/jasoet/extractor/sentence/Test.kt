@@ -28,7 +28,7 @@ class Test {
         }
 
         val sentences = document.map {
-            sentenceDetector.sentDetect(it.contentHandler.toString())
+            sentenceDetector.sentDetect(it.content.toString())
         }.get()
 
         sentences.forEachIndexed { i, s ->
@@ -44,6 +44,6 @@ class Test {
             it.extractDocument()
         }
 
-        println(document.get().contentHandler.toString())
+        println(document.get().content.toString())
     }
 }

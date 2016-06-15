@@ -1,9 +1,5 @@
 package id.jasoet.extractor.core.document
 
-import org.apache.tika.metadata.Metadata
-import org.apache.tika.sax.BodyContentHandler
-import java.io.InputStream
-
 /**
  * TODO: Documentation
  *
@@ -11,8 +7,7 @@ import java.io.InputStream
  */
 
 
-class MicrosoftOffice(override val metadata: Metadata,
+class MicrosoftOffice(override val metadata: Map<String, String>,
                       override val contentType: String,
-                      override val tikaContentType: String,
-                      override val contentHandler: BodyContentHandler) : Document {
+                      override val content: String) : Document {
 }

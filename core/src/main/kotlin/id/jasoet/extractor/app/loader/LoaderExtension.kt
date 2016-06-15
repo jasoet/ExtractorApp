@@ -19,7 +19,7 @@ fun InputStream.loadDocumentModel(fileName: String): DocumentModel {
         val originalContent = it.base64EncodeToString()
 
         it.extractDocument().map {
-            DocumentModel(id, fileName, originalContent, it.content(), it.contentType, it.metadataMap())
+            DocumentModel(id, fileName, originalContent, it.content, it.contentType, it.metadata)
         }.orElseThrow { ex ->
             IllegalStateException("Extract Document failed!!", ex)
         }
