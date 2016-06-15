@@ -2,6 +2,7 @@ package id.jasoet.extractor.app
 
 import id.jasoet.extractor.app.loader.loadDocumentModel
 import id.jasoet.extractor.app.model.DocumentModel
+import id.jasoet.extractor.app.model.ProcessedDocument
 import org.mongodb.morphia.Datastore
 import org.slf4j.LoggerFactory
 import org.springframework.boot.SpringApplication
@@ -38,6 +39,16 @@ open class ExtractorBootApplication {
                     log.info("${it.toString()}")
                 }
 
+                val processedDocument =
+                    ProcessedDocument(
+                        it.id,
+                        document.contentLinesOriginal(),
+                        document.contentLinesTyped().toLineModel(),
+                        document.contentLinesCleaned().toLineModel())
+
+
+                dataStore.save(processedDocument)
+                log.info("Saved Processed Document")
             }
             log.info("Application Running in ${currentDirectory()}")
         }

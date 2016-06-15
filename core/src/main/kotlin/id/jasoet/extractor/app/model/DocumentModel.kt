@@ -44,6 +44,9 @@ data class DocumentModel(
         if (content.isBlank()) {
             throw IllegalArgumentException("Content can't be Blank")
         }
+        if (metadata.isEmpty()) {
+            throw IllegalArgumentException("Metadata can't be Blank")
+        }
 
     }
 
