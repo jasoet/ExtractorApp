@@ -1,5 +1,10 @@
 package id.jasoet.extractor.app.model
 
+import id.jasoet.extractor.core.document.Document
+import id.jasoet.extractor.core.document.MicrosoftOffice
+import id.jasoet.extractor.core.document.Other
+import id.jasoet.extractor.core.document.Pdf
+import id.jasoet.extractor.core.util.MimeTypeResource
 import org.mongodb.morphia.annotations.Entity
 import org.mongodb.morphia.annotations.Field
 import org.mongodb.morphia.annotations.Id
@@ -40,5 +45,26 @@ data class DocumentModel(
             throw IllegalArgumentException("Content can't be Blank")
         }
 
+    }
+
+    fun toDocument(): Document {
+        val pdfMimeType = MimeTypeResource.pdf.map { it.mimeType }
+        val msOfficeMimeType = MimeTypeResource.microsoftOffice.map { it.mimeType }
+
+        return when {
+            pdfMimeType.contains(contentType) ->
+                Pdf(metadata = metadata,
+                    content = content)
+
+            msOfficeMimeType.contains(contentType) ->
+                MicrosoftOffice(metadata = metadata,
+                    contentType = contentType,
+                    content = content)
+
+            else ->
+                Other(metadata = metadata,
+                    contentType = contentType,
+                    content = content)
+        }
     }
 }

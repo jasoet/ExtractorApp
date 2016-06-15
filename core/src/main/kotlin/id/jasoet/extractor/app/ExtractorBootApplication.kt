@@ -33,6 +33,11 @@ open class ExtractorBootApplication {
             val listDocs = dataStore.createQuery(DocumentModel::class.java).asList()
             listDocs.forEach {
                 log.info("${it.id} -> ${it.fileName}")
+                val document = it.toDocument()
+                document.contentLinesCleaned().forEach {
+                    log.info("${it.toString()}")
+                }
+
             }
             log.info("Application Running in ${currentDirectory()}")
         }
