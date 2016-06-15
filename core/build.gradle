@@ -9,6 +9,8 @@ dependencies {
     compile "commons-beanutils:commons-beanutils:${commonsBeansUtilVersion}"
     compile "com.google.guava:guava:${guavaVersion}"
     compile "org.mongodb.morphia:morphia:${morphiaVersion}"
+    compile "io.github.lukehutch:fast-classpath-scanner:${fastClasspathScannerVersion}"
+
 
     compile "com.google.code.gson:gson"
     compile "org.springframework.boot:spring-boot-starter-cache"
