@@ -15,6 +15,6 @@ fun currentDirectory(): String {
 
 fun List<Line>.toLineModel(): List<LineModel> {
     return this.map {
-        LineModel(it.type.toString(), it.content)
+        LineModel(it.type, it.content)
     }
 }

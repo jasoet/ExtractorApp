@@ -28,7 +28,7 @@ class DocumentReaderKtTest {
 
         names.forEach { name ->
             val inputStream = javaClass.getResourceAsStream(name)
-            val document = inputStream.use {
+            inputStream.use {
                 val documentTry = inputStream.extractDocument()
 
                 assertThat(documentTry.isSuccess()).isTrue()
@@ -54,9 +54,6 @@ class DocumentReaderKtTest {
                 }
                 assertThat(tikaContentType.isSuccess()).isTrue()
 
-                val contentType = tikaContentType.get()
-
-                assertThat(document.tikaContentType).isEqualToIgnoringCase(contentType)
             }
 
         }
