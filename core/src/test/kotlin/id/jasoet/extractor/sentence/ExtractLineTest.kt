@@ -25,12 +25,12 @@ class ExtractLineTest {
             val resourceOption = javaClass.getResourceAsStream(name).toOption()
 
             resourceOption
-                    .map {
-                        it.use {
-                            name to it.extractDocument().get()
-                        }
+                .map {
+                    it.use {
+                        name to it.extractDocument().get()
                     }
-                    .get()
+                }
+                .get()
         }
 
         contentPairs.forEach {

@@ -1,9 +1,7 @@
 package id.jasoet.extractor.core.document
 
-import org.apache.commons.io.FileUtils
 import org.assertj.core.api.Assertions.assertThat
 import org.junit.Test
-import java.io.File
 
 
 /**
@@ -13,14 +11,14 @@ import java.io.File
 
 class DocumentReaderKtTest {
     private val names = listOf(
-            "/other/Example.doc",
-            "/other/Example.docx",
-            "/other/Example.pdf",
-            "/other/ExcelDocument.xlsx",
-            "/other/OldExcelDocument.xls",
-            "/other/OldWordDocument.doc",
-            "/other/PowerPointDocument.pptx",
-            "/other/WordDocument.docx"
+        "/other/Example.doc",
+        "/other/Example.docx",
+        "/other/Example.pdf",
+        "/other/ExcelDocument.xlsx",
+        "/other/OldExcelDocument.xls",
+        "/other/OldWordDocument.doc",
+        "/other/PowerPointDocument.pptx",
+        "/other/WordDocument.docx"
     )
 
     @Test
@@ -36,10 +34,10 @@ class DocumentReaderKtTest {
 
                 when {
                     name.endsWith("doc") ||
-                            name.endsWith("docx") ||
-                            name.endsWith("xls") ||
-                            name.endsWith("xlsx") ||
-                            name.endsWith("pptx") -> assertThat(document).isInstanceOf(MicrosoftOffice::class.java)
+                        name.endsWith("docx") ||
+                        name.endsWith("xls") ||
+                        name.endsWith("xlsx") ||
+                        name.endsWith("pptx") -> assertThat(document).isInstanceOf(MicrosoftOffice::class.java)
                     name.endsWith("pdf") -> assertThat(document).isInstanceOf(Pdf::class.java)
                     else -> assertThat(document).isInstanceOf(Other::class.java)
                 }
@@ -72,8 +70,6 @@ class DocumentReaderKtTest {
         }
 
     }
-
-
 
 
 }

@@ -29,14 +29,14 @@ class ExtractTextTest {
             val resourceOption = javaClass.getResourceAsStream(name).toOption()
 
             resourceOption
-                    .map {
-                        it.use {
-                            name to it.extractDocument()
-                                    .map { it.contentLinesOriginal() }
-                                    .orElseGet { emptyList() }
-                        }
+                .map {
+                    it.use {
+                        name to it.extractDocument()
+                            .map { it.contentLinesOriginal() }
+                            .orElseGet { emptyList() }
                     }
-                    .orElse(name to emptyList())
+                }
+                .orElse(name to emptyList())
         }
 
 
@@ -45,11 +45,11 @@ class ExtractTextTest {
             println(it.first)
 
             it.second
-                    .filter { l -> moneyDictionary.containMatchIn(l) }
-                    .forEach {
-                        println(it)
+                .filter { l -> moneyDictionary.containMatchIn(l) }
+                .forEach {
+                    println(it)
 
-                    }
+                }
         }
 
     }
