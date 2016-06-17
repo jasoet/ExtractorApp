@@ -9,6 +9,7 @@ dependencies {
     compile "commons-beanutils:commons-beanutils:${commonsBeansUtilVersion}"
     compile "com.google.guava:guava:${guavaVersion}"
     compile "org.mongodb.morphia:morphia:${morphiaVersion}"
+    compile "nl.komponents.kovenant:kovenant:${kovenantVersion}"
     compile "io.github.lukehutch:fast-classpath-scanner:${fastClasspathScannerVersion}"
 
 
