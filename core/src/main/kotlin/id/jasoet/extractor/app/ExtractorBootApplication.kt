@@ -2,7 +2,9 @@ package id.jasoet.extractor.app
 
 import id.jasoet.extractor.app.loader.loadDocumentModel
 import id.jasoet.extractor.app.model.DocumentModel
+import id.jasoet.extractor.app.model.LineModel
 import id.jasoet.extractor.app.model.ProcessedDocument
+import id.jasoet.extractor.core.dictionary.DictionaryType
 import io.github.lukehutch.fastclasspathscanner.FastClasspathScanner
 import nl.komponents.kovenant.task
 import nl.komponents.kovenant.then
@@ -45,12 +47,20 @@ open class ExtractorBootApplication {
                         log.info("${it.toString()}")
                     }
 
+                    val cleaned = document.contentLinesCleaned().map {
+                        val annotation = mapOf(
+                            DictionaryType.AGE to "12",
+                            DictionaryType.CLAUSE to "345 KUHP"
+                        )
+                        LineModel(it.type, it.content, annotation)
+                    }
+
                     val processedDocument =
                         ProcessedDocument(
                             it.id,
                             document.contentLinesOriginal(),
                             document.contentLinesTyped().toLineModel(),
-                            document.contentLinesCleaned().toLineModel())
+                            cleaned)
 
 
                     dataStore.save(processedDocument)
