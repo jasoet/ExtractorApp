@@ -11,6 +11,7 @@ dependencies {
     compile "org.mongodb.morphia:morphia:${morphiaVersion}"
     compile "nl.komponents.kovenant:kovenant:${kovenantVersion}"
     compile "io.github.lukehutch:fast-classpath-scanner:${fastClasspathScannerVersion}"
+    compile "com.github.salomonbrys.kotson:kotson:${kotsonVersion}"
 
 
     compile "com.google.code.gson:gson"
