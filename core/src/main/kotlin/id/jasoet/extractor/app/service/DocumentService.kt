@@ -5,6 +5,7 @@ import id.jasoet.extractor.app.model.DocumentModel
 import id.jasoet.extractor.app.model.ProcessedDocument
 import nl.komponents.kovenant.Promise
 import nl.komponents.kovenant.task
+import nl.komponents.kovenant.then
 import org.mongodb.morphia.Datastore
 import org.mongodb.morphia.Key
 import org.slf4j.LoggerFactory
@@ -67,7 +68,11 @@ class DocumentService {
         }
     }
 
-    fun convertAndProcessDocument(fileName: String,inputStream: InputStream){
-
+    fun convertAndProcessDocument(fileName: String, inputStream: InputStream): Promise<ProcessedDocument, Exception> {
+        return convertDocument(fileName, inputStream) then {
+            it.processDocument()
+        } fail {
+            log.error("${it.message} when Convert and Process Document ", it)
+        }
     }
 }

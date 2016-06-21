@@ -16,7 +16,8 @@ data class ProcessedDocument(
     var id: String = "",
     var contentLinesOriginal: List<String> = emptyList(),
     var contentLinesTyped: List<LineModel> = emptyList(),
-    var contentLinesCleaned: List<LineModel> = emptyList()) {
+    var contentLinesCleaned: List<LineModel> = emptyList(),
+    var contentLinesAnalyzed: List<LineModel> = emptyList()) {
 
     @PrePersist
     fun validate(): Unit {
@@ -33,6 +34,9 @@ data class ProcessedDocument(
         }
 
         if (contentLinesCleaned.isEmpty()) {
+            throw IllegalArgumentException("ContentLinesCleaned can't be Blank")
+        }
+        if (contentLinesAnalyzed.isEmpty()) {
             throw IllegalArgumentException("ContentLinesCleaned can't be Blank")
         }
 

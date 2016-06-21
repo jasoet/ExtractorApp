@@ -1,6 +1,7 @@
 package id.jasoet.extractor.app
 
 import id.jasoet.extractor.app.model.LineModel
+import id.jasoet.extractor.core.document.Document
 import id.jasoet.extractor.core.document.line.Line
 
 /**
