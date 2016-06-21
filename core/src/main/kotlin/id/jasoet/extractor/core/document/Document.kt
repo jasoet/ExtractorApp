@@ -7,7 +7,7 @@ import kotlinslang.control.none
 import kotlinslang.control.some
 
 /**
- * TODO: Documentation
+ * Interface Document
  *
  * @author Deny Prasetyo.
  */
@@ -94,4 +94,15 @@ interface Document {
         return combinedList.filter { it.isDefined() }.map { it.get() }
     }
 
+    fun contentLineAnalyzed(): List<Line> {
+        val cleanedLine = contentLinesCleaned()
+
+        return cleanedLine.map {
+            val (type, content, annotation) = it
+
+            /*TODO: Analyze each Line */
+
+            it.copy(annotations = emptyMap())
+        }
+    }
 }

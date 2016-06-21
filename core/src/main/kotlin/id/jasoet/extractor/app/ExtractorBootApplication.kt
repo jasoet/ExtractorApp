@@ -31,9 +31,19 @@ open class ExtractorBootApplication {
             task {
                 SpringApplication.run(ExtractorBootApplication::class.java, *args)
             } then { ctx ->
-                val dataStore = ctx.getBean(Datastore::class.java)
-
-                val fileStream = FileInputStream("/home/jasoet/LaporanKepolisian0.docx")
+                ctx.getBean(Datastore::class.java)
+            } then { dataStore ->
+                val allProcessed = dataStore.createQuery(ProcessedDocument::class.java)
+                dataStore.delete(allProcessed)
+                val allDocument = dataStore.createQuery(DocumentModel::class.java)
+                dataStore.delete(allDocument)
+                dataStore
+            } fail {
+                log.error("${it.message} when Delete ", it)
+            } then { dataStore ->
+                val currentDirectory = currentDirectory()
+                println("Current Dir $currentDirectory")
+                val fileStream = FileInputStream("$currentDirectory/docs/LaporanKepolisian0.docx")
                 val documentModel = fileStream.use {
                     it.loadDocumentModel("LaporanKepolisian0.docx")
                 }
@@ -66,6 +76,8 @@ open class ExtractorBootApplication {
                     dataStore.save(processedDocument)
                     log.info("Saved Processed Document")
                 }
+            } fail {
+                log.error("${it.message} when Delete ", it)
             } always {
                 val classWithAnnotation = FastClasspathScanner("id.jasoet.extractor.app.config")
                     .scan()
