@@ -20,7 +20,7 @@ fun String.matchEmpty(): Boolean {
 }
 
 fun String.matchKeyValue(): Boolean {
-    val keyValueRegex = Regex(".+:{1}\\s+[^:]+", RegexOption.IGNORE_CASE)
+    val keyValueRegex = Regex("[\\.a-zA-Z0-9]+\\s*:{1}\\s+[^:]+", RegexOption.IGNORE_CASE)
     return keyValueRegex.matches(this)
 }
 
@@ -29,7 +29,7 @@ fun String.identifyLine(): LineType {
 
     val type: LineType =
         if (this.matchTitle(titleKeyword)) {
-            LineType.TITLE
+            LineType.PREDEFINED
         } else if (this.matchEmpty()) {
             LineType.EMPTY
         } else if (this.matchKeyValue()) {

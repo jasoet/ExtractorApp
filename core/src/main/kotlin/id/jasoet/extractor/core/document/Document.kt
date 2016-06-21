@@ -41,7 +41,7 @@ interface Document {
                 val content = pair.content
 
                 when (type) {
-                    LineType.TITLE -> some(Line(type, content))
+                    LineType.PREDEFINED -> some(Line(type, content))
                     LineType.EMPTY, LineType.NORMAL -> {
                         var currentContent = content
                         var currentType = type

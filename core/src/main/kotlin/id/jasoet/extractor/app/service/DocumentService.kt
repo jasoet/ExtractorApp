@@ -1,16 +1,18 @@
 package id.jasoet.extractor.app.service
 
+import com.mongodb.WriteResult
 import id.jasoet.extractor.app.loader.loadDocumentModel
 import id.jasoet.extractor.app.model.DocumentModel
 import id.jasoet.extractor.app.model.ProcessedDocument
 import nl.komponents.kovenant.Promise
+import nl.komponents.kovenant.all
 import nl.komponents.kovenant.task
 import nl.komponents.kovenant.then
 import org.mongodb.morphia.Datastore
 import org.mongodb.morphia.Key
 import org.slf4j.LoggerFactory
 import org.springframework.beans.factory.annotation.Autowired
-import org.springframework.stereotype.Repository
+import org.springframework.stereotype.Service
 import java.io.InputStream
 
 /**
@@ -19,7 +21,7 @@ import java.io.InputStream
  * @author Deny Prasetyo
  */
 
-@Repository
+@Service
 class DocumentService {
     private val log = LoggerFactory.getLogger(javaClass)
 
@@ -34,6 +36,42 @@ class DocumentService {
         } fail {
             log.error("${it.message} when load document $fileName", it)
         }
+    }
+
+    fun removeDocument(id: String): Promise<List<WriteResult>, Exception> {
+
+        val removeAllDocument = task {
+             dataStore.delete(DocumentModel::class.java, id)
+        } fail {
+            log.error("${it.message} when remove document [$id]", it)
+        }
+
+        val removeAllProcessedDocument = task {
+            dataStore.delete(ProcessedDocument::class.java, id)
+        } fail {
+            log.error("${it.message} when remove processed document [$id]", it)
+        }
+
+        return all(removeAllDocument, removeAllProcessedDocument)
+    }
+
+    fun removeAllDocument(): Promise<List<WriteResult>, Exception> {
+
+        val removeAllDocument = task {
+            val allDocument = dataStore.createQuery(DocumentModel::class.java)
+            dataStore.delete(allDocument)
+        } fail {
+            log.error("${it.message} when remove  all document", it)
+        }
+
+        val removeAllProcessedDocument = task {
+            val allProcessed = dataStore.createQuery(ProcessedDocument::class.java)
+            dataStore.delete(allProcessed)
+        } fail {
+            log.error("${it.message} when remove all processed document ", it)
+        }
+
+        return all(removeAllDocument, removeAllProcessedDocument)
     }
 
     fun storeDocument(documentModel: DocumentModel): Promise<Key<DocumentModel>, Exception> {
@@ -52,6 +90,14 @@ class DocumentService {
         }
     }
 
+    fun loadAllDocument(): Promise<List<DocumentModel>, Exception> {
+        return task {
+            dataStore.createQuery(DocumentModel::class.java).asList()
+        } fail {
+            log.error("${it.message} when load all document", it)
+        }
+    }
+
     fun storeProcessedDocument(processedDocument: ProcessedDocument): Promise<Key<ProcessedDocument>, Exception> {
         return task {
             dataStore.save(processedDocument)
@@ -65,6 +111,14 @@ class DocumentService {
             dataStore.get(ProcessedDocument::class.java, id)
         } fail {
             log.error("${it.message} when load processed document [$id]", it)
+        }
+    }
+
+    fun loadAllProcessedDocument(): Promise<List<ProcessedDocument>, Exception> {
+        return task {
+            dataStore.createQuery(ProcessedDocument::class.java).asList()
+        } fail {
+            log.error("${it.message} when load all processed document", it)
         }
     }
 

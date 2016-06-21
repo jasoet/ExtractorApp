@@ -1,14 +1,13 @@
 package id.jasoet.extractor.app
 
 import id.jasoet.extractor.app.loader.loadDocumentModel
-import id.jasoet.extractor.app.model.DocumentModel
 import id.jasoet.extractor.app.model.LineModel
 import id.jasoet.extractor.app.model.ProcessedDocument
+import id.jasoet.extractor.app.service.DocumentService
 import id.jasoet.extractor.core.dictionary.DictionaryType
 import io.github.lukehutch.fastclasspathscanner.FastClasspathScanner
 import nl.komponents.kovenant.task
 import nl.komponents.kovenant.then
-import org.mongodb.morphia.Datastore
 import org.slf4j.LoggerFactory
 import org.springframework.boot.SpringApplication
 import org.springframework.boot.autoconfigure.SpringBootApplication
@@ -31,28 +30,39 @@ open class ExtractorBootApplication {
             task {
                 SpringApplication.run(ExtractorBootApplication::class.java, *args)
             } then { ctx ->
-                ctx.getBean(Datastore::class.java)
-            } then { dataStore ->
-                val allProcessed = dataStore.createQuery(ProcessedDocument::class.java)
-                dataStore.delete(allProcessed)
-                val allDocument = dataStore.createQuery(DocumentModel::class.java)
-                dataStore.delete(allDocument)
-                dataStore
+                ctx.getBean(DocumentService::class.java)
+            } success  { service ->
+                service.removeAllDocument()
             } fail {
                 log.error("${it.message} when Delete ", it)
-            } then { dataStore ->
+            } then { service ->
                 val currentDirectory = currentDirectory()
                 println("Current Dir $currentDirectory")
-                val fileStream = FileInputStream("$currentDirectory/docs/LaporanKepolisian0.docx")
+                val fileStream = FileInputStream("$currentDirectory/docs/Real1.docx")
                 val documentModel = fileStream.use {
-                    it.loadDocumentModel("LaporanKepolisian0.docx")
+                    it.loadDocumentModel("Real1.docx")
                 }
-                val savedDoc = dataStore.save(documentModel)
+                val savedDoc = service.storeDocument(documentModel).get()
                 log.info("Saved doc with id ${savedDoc.id}")
-                val listDocs = dataStore.createQuery(DocumentModel::class.java).asList()
+                val listDocs = service.loadAllDocument().get()
                 listDocs.forEach {
                     log.info("${it.id} -> ${it.fileName}")
                     val document = it.toDocument()
+
+                    document.contentLinesOriginal().forEach {
+                        println("${it.toString()}")
+                    }
+
+                    println("")
+                    println("")
+                    println("")
+
+                    document.contentLinesTyped().forEach {
+                        log.info("${it.toString()}")
+                    }
+
+                    log.info("==================== ")
+
                     document.contentLinesCleaned().forEach {
                         log.info("${it.toString()}")
                     }
@@ -69,11 +79,12 @@ open class ExtractorBootApplication {
                         ProcessedDocument(
                             it.id,
                             document.contentLinesOriginal(),
+                            document.contentLinesCleaned().toLineModel(),
                             document.contentLinesTyped().toLineModel(),
                             cleaned)
 
 
-                    dataStore.save(processedDocument)
+                    service.storeProcessedDocument(processedDocument).get()
                     log.info("Saved Processed Document")
                 }
             } fail {
