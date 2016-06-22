@@ -20,7 +20,7 @@ fun String.matchEmpty(): Boolean {
 }
 
 fun String.matchKeyValue(): Boolean {
-    val keyValueRegex = Regex("[\\.a-zA-Z0-9]+\\s*:{1}\\s+[^:]+", RegexOption.IGNORE_CASE)
+    val keyValueRegex = Regex("[\\s\\.a-zA-Z0-9\\-]+\\s*:{1}\\s+.+", RegexOption.IGNORE_CASE)
     return keyValueRegex.matches(this)
 }
 

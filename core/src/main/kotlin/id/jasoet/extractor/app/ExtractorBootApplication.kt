@@ -38,9 +38,9 @@ open class ExtractorBootApplication {
             } then { service ->
                 val currentDirectory = currentDirectory()
                 println("Current Dir $currentDirectory")
-                val fileStream = FileInputStream("$currentDirectory/docs/Real1.docx")
+                val fileStream = FileInputStream("$currentDirectory/docs/Real2.docx")
                 val documentModel = fileStream.use {
-                    it.loadDocumentModel("Real1.docx")
+                    it.loadDocumentModel("Real0.docx")
                 }
                 val savedDoc = service.storeDocument(documentModel).get()
                 log.info("Saved doc with id ${savedDoc.id}")

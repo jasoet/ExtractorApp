@@ -91,7 +91,12 @@ interface Document {
             }
         }
 
-        return combinedList.filter { it.isDefined() }.map { it.get() }
+        return combinedList
+            .filter { it.isDefined() }
+            .map {
+                val combinedLine = it.get()
+                combinedLine.copy(type = combinedLine.content.identifyLine())
+            }
     }
 
     fun contentLineAnalyzed(): List<Line> {
