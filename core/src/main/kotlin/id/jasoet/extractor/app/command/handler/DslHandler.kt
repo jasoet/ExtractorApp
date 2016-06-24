@@ -13,6 +13,6 @@ import org.springframework.stereotype.Component
 class DslHandler {
 
     fun handle(command: DslCommand) {
-
+        println("Process Dsl Command $command")
     }
 }

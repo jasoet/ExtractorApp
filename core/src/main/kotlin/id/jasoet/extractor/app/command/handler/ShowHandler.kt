@@ -13,6 +13,6 @@ import org.springframework.stereotype.Component
 class ShowHandler {
 
     fun handle(command: ShowCommand) {
-
+        println("Process Show Command $command")
     }
 }
