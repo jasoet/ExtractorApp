@@ -41,8 +41,9 @@ open class CommandHandler : CommandLineRunner {
 
     override fun run(vararg args: String?) {
         commander.parse(*args)
+        val command = commander.parsedCommand?.toLowerCase()
 
-        when (commander.parsedCommand.toLowerCase()) {
+        when (command) {
             "add" -> addHandler.handle(addCommand)
             "dsl" -> dslHandler.handle(dslCommand)
             "show" -> showHandler.handle(showCommand)
