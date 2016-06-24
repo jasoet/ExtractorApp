@@ -36,6 +36,13 @@ fun File.readProperties(): Properties {
     }
 }
 
+fun printc(fgColor: Ansi.Color,
+           bgColor: Ansi.Color = Ansi.Color.DEFAULT,
+           text: () -> String) {
+    val output = Ansi.ansi().fg(fgColor).bg(bgColor).a(text.invoke()).reset()
+    AnsiConsole.out.println(output)
+}
+
 fun printc(text: Ansi.() -> Ansi) {
     val output = text.invoke(Ansi.ansi()).reset()
     AnsiConsole.out.println(output)
