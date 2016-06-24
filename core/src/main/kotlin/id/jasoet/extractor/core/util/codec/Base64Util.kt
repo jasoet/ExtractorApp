@@ -11,7 +11,7 @@ import java.io.Serializable
 
 
 /**
- * [TODO: Documentation]
+ * Documentation
  *
  * @author Deny Prasetyo.
  */

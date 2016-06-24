@@ -3,7 +3,7 @@ package id.jasoet.extractor.kommander
 import com.beust.jcommander.Parameter
 
 /**
- * TODO: Documentation
+ * Documentation
  *
  * @author Deny Prasetyo.
  */

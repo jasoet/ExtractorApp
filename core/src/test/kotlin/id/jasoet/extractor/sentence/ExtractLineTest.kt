@@ -6,7 +6,7 @@ import kotlinslang.control.toOption
 import org.junit.Test
 
 /**
- * TODO: Documentation
+ * Documentation
  *
  * @author Deny Prasetyo.
  */

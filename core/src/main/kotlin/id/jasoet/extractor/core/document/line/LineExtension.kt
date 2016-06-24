@@ -3,7 +3,7 @@ package id.jasoet.extractor.core.document.line
 import id.jasoet.extractor.core.dictionary.DictionaryContext
 
 /**
- * TODO: Documentation
+ * Documentation
  *
  * @author Deny Prasetyo.
  */

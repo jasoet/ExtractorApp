@@ -1,7 +1,7 @@
 package id.jasoet.extractor.core.document.line
 
 /**
- * TODO: Documentation
+ * Documentation
  *
  * @author Deny Prasetyo.
  */
