@@ -12,6 +12,7 @@ import org.slf4j.LoggerFactory
 import org.springframework.boot.SpringApplication
 import org.springframework.boot.autoconfigure.SpringBootApplication
 import org.springframework.context.annotation.Configuration
+import java.io.File
 import java.io.FileInputStream
 
 /**
@@ -25,12 +26,44 @@ import java.io.FileInputStream
 open class ExtractorBootApplication {
     companion object {
         private val log = LoggerFactory.getLogger(ExtractorBootApplication::class.java)
+
         @JvmStatic
         fun main(args: Array<String>) {
+            initialize()
             SpringApplication.run(ExtractorBootApplication::class.java, *args)
+        }
+
+        private fun initialize() {
+            val configFile = File("${homeDirectory()}/.extractor.properties")
+
+            if (configFile.exists()) {
+                val properties = configFile.readProperties()
+
+                properties.getProperty("mongo.host").let {
+                    if (!it.isNullOrBlank())
+                        System.setProperty("spring.data.mongodb.host", it)
+                }
+
+                properties.getProperty("mongo.database").let {
+                    if (!it.isNullOrBlank())
+                        System.setProperty("spring.data.mongodb.database", it)
+                }
+
+                properties.getProperty("mongo.username").let {
+                    if (!it.isNullOrBlank())
+                        System.setProperty("spring.data.mongodb.username", it)
+                }
+
+                properties.getProperty("mongo.password").let {
+                    if (!it.isNullOrBlank())
+                        System.setProperty("spring.data.mongodb.password", it)
+                }
+            }
+
         }
     }
 }
+
 
 fun mainBackup(args: Array<String>) {
     val log = LoggerFactory.getLogger(ExtractorBootApplication::class.java)
@@ -43,7 +76,7 @@ fun mainBackup(args: Array<String>) {
     } fail {
         log.error("${it.message} when Delete ", it)
     } then { service ->
-        val currentDirectory = currentDirectory()
+        val currentDirectory = workingDirectory()
         println("Current Dir $currentDirectory")
         val fileStream = FileInputStream("$currentDirectory/docs/Real2.docx")
         val documentModel = fileStream.use {
@@ -102,7 +135,7 @@ fun mainBackup(args: Array<String>) {
             .getNamesOfClassesWithAnnotation(Configuration::class.java)
 
         log.info("Class with Annotation ${classWithAnnotation.reduce { s, i -> "$s | $i" }}")
-        log.info("Application Running in ${currentDirectory()}")
+        log.info("Application Running in ${workingDirectory()}")
     }
 
 }
