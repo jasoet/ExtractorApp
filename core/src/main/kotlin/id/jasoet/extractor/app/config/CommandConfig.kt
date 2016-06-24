@@ -19,10 +19,25 @@ open class CommandConfig {
     @Bean(name = arrayOf("commander"))
     open fun commander(): JCommander {
         val commander = JCommander()
-        commander.addCommand("add",AddCommand())
-        commander.addCommand("dsl",DslCommand())
-        commander.addCommand("show",ShowCommand())
+        commander.addCommand("add", addCommand())
+        commander.addCommand("dsl", dslCommand())
+        commander.addCommand("show", showCommand())
 
         return commander
+    }
+
+    @Bean
+    open fun addCommand(): AddCommand {
+        return AddCommand()
+    }
+
+    @Bean
+    open fun dslCommand(): DslCommand {
+        return DslCommand()
+    }
+
+    @Bean
+    open fun showCommand(): ShowCommand {
+        return ShowCommand()
     }
 }
