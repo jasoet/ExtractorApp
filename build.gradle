@@ -24,7 +24,7 @@ subprojects {
     apply plugin: 'spring-boot'
     apply plugin: 'kotlin'
 
-    
+
     repositories {
         mavenCentral()
         maven { url "https://oss.sonatype.org/content/repositories/snapshots" }
@@ -47,6 +47,12 @@ subprojects {
 
     springBoot {
         executable = true
+    }
+
+    bootRun {
+        if (project.hasProperty('args')) {
+            args project.args.split('\\s+')
+        }
     }
 
     /* Allow user to pass -Dspring.profiles.active when running bootRun

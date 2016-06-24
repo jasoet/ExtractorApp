@@ -1,15 +1,17 @@
 <configuration>
-  <!--  <appender name="FILE" class="ch.qos.logback.core.rolling.RollingFileAppender">
+    <appender name="FILE" class="ch.qos.logback.core.rolling.RollingFileAppender">
         <filter class="ch.qos.logback.classic.filter.ThresholdFilter">
             <level>info</level>
         </filter>
-        <encoder class="net.logstash.logback.encoder.LogstashEncoder"/>
-        <file>~/.vas/log/ers.log</file>
+        <file>~/.extractor/system.log</file>
+        <encoder>
+            <pattern>%d{HH:mm:ss.SSS} [%thread] %-5level %logger{36} - %msg%n</pattern>
+        </encoder>
         <rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
-            <fileNamePattern>~/.vas/log/ers.log.%d{yyyy-MM-dd}</fileNamePattern>
+            <fileNamePattern>~/.extractor/system.log.%d{yyyy-MM-dd}</fileNamePattern>
             <maxHistory>30</maxHistory>
         </rollingPolicy>
-    </appender>-->
+    </appender>
 
     <appender name="STDOUT" class="ch.qos.logback.core.ConsoleAppender">
         <!-- encoders are assigned the type
@@ -20,6 +22,6 @@
     </appender>
 
     <root level="INFO">
-        <appender-ref ref="STDOUT"/>
+        <appender-ref ref="FILE"/>
     </root>
 </configuration>
