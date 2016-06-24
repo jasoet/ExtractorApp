@@ -1,19 +1,9 @@
 package id.jasoet.extractor.app
 
-import id.jasoet.extractor.app.loader.loadDocumentModel
-import id.jasoet.extractor.app.model.LineModel
-import id.jasoet.extractor.app.model.ProcessedDocument
-import id.jasoet.extractor.app.service.DocumentService
-import id.jasoet.extractor.core.dictionary.DictionaryType
-import io.github.lukehutch.fastclasspathscanner.FastClasspathScanner
-import nl.komponents.kovenant.task
-import nl.komponents.kovenant.then
 import org.slf4j.LoggerFactory
 import org.springframework.boot.SpringApplication
 import org.springframework.boot.autoconfigure.SpringBootApplication
-import org.springframework.context.annotation.Configuration
 import java.io.File
-import java.io.FileInputStream
 
 /**
  * Documentation Here
