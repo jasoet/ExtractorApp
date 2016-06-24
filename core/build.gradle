@@ -13,7 +13,7 @@ dependencies {
     compile "io.github.lukehutch:fast-classpath-scanner:${fastClasspathScannerVersion}"
     compile "com.github.salomonbrys.kotson:kotson:${kotsonVersion}"
     compile "org.apache.maven.shared:maven-shared-utils:${mavenSharedUtilsVersion}"
-
+    compile "org.fusesource.jansi:jansi:${jansiVersion}"
 
 
     compile "com.google.code.gson:gson"
