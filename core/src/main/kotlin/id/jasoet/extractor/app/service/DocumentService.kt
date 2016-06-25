@@ -38,10 +38,18 @@ class DocumentService {
         }
     }
 
+    fun processDocument(document: DocumentModel): Promise<ProcessedDocument, Exception> {
+        return task {
+            document.processDocument()
+        } fail {
+            log.error("${it.message} when process document ${document.id}", it)
+        }
+    }
+
     fun removeDocument(id: String): Promise<List<WriteResult>, Exception> {
 
         val removeAllDocument = task {
-             dataStore.delete(DocumentModel::class.java, id)
+            dataStore.delete(DocumentModel::class.java, id)
         } fail {
             log.error("${it.message} when remove document [$id]", it)
         }
@@ -122,9 +130,9 @@ class DocumentService {
         }
     }
 
-    fun convertAndProcessDocument(fileName: String, inputStream: InputStream): Promise<ProcessedDocument, Exception> {
+    fun convertAndProcessDocument(fileName: String, inputStream: InputStream): Promise<Pair<DocumentModel, ProcessedDocument>, Exception> {
         return convertDocument(fileName, inputStream) then {
-            it.processDocument()
+            it  to it.processDocument()
         } fail {
             log.error("${it.message} when Convert and Process Document ", it)
         }
