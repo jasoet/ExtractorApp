@@ -64,9 +64,11 @@ class AddHandler {
             }
         } bind { listPair ->
             all(listPair.map { doc ->
+                log.info("Store Document ${doc.fileName} with id ${doc.id}")
                 printc(Ansi.Color.GREEN) {
                     "Store Document ${doc.fileName} with id ${doc.id}"
                 }
+
                 documentService.storeDocument(doc)
             })
         } fail {
@@ -76,6 +78,7 @@ class AddHandler {
             }
         } success { listKey ->
             listKey.forEach { key ->
+                log.info("Finish Processing Document with id ${key.id}")
                 printc(Ansi.Color.GREEN) {
                     "Finish Processing Document with id ${key.id}"
                 }
@@ -95,9 +98,11 @@ class AddHandler {
                 }
                 .bind {
                     all(it.map { doc ->
+                        log.info("Analyze Document with id ${doc.id}")
                         printc(Ansi.Color.GREEN) {
                             "Analyze Document with id ${doc.id}"
                         }
+
                         documentService.processDocument(doc)
                     })
                 }
@@ -109,9 +114,11 @@ class AddHandler {
                 }
                 .bind {
                     all(it.map { doc ->
+                        log.info("Store Processed Document id ${doc.id} with ${doc.contentLinesAnalyzed.size} analyzed Lines")
                         printc(Ansi.Color.GREEN) {
                             "Store Processed Document id ${doc.id} with ${doc.contentLinesAnalyzed.size} analyzed Lines"
                         }
+                        
                         documentService.storeProcessedDocument(doc)
                     })
                 }
