@@ -90,11 +90,27 @@ class DocumentService {
         }
     }
 
+    fun storeDocument(documentModels: List<DocumentModel>): Promise<List<Key<DocumentModel>>, Exception> {
+        return task {
+            dataStore.save(documentModels).toList()
+        } fail {
+            log.error("${it.message} when save document [${documentModels.map { it.id }}]", it)
+        }
+    }
+
     fun loadDocument(id: String): Promise<DocumentModel, Exception> {
         return task {
             dataStore.get(DocumentModel::class.java, id)
         } fail {
             log.error("${it.message} when load document [$id]", it)
+        }
+    }
+
+    fun loadDocument(ids: List<String>): Promise<List<DocumentModel>, Exception> {
+        return task {
+            dataStore.get(DocumentModel::class.java, ids).toList()
+        } fail {
+            log.error("${it.message} when load document [$ids]", it)
         }
     }
 
@@ -111,6 +127,14 @@ class DocumentService {
             dataStore.save(processedDocument)
         } fail {
             log.error("${it.message} when store processed document [${processedDocument.id}]", it)
+        }
+    }
+
+    fun storeProcessedDocument(processedDocuments: List<ProcessedDocument>): Promise<List<Key<ProcessedDocument>>, Exception> {
+        return task {
+            dataStore.save(processedDocuments).toList()
+        } fail {
+            log.error("${it.message} when store processed document [${processedDocuments.map { it.id }}]", it)
         }
     }
 

@@ -6,6 +6,7 @@ import id.jasoet.extractor.app.service.DocumentService
 import id.jasoet.extractor.app.workingDirectory
 import nl.komponents.kovenant.all
 import nl.komponents.kovenant.functional.bind
+import nl.komponents.kovenant.then
 import org.apache.maven.shared.utils.io.DirectoryScanner
 import org.fusesource.jansi.Ansi
 import org.slf4j.LoggerFactory
@@ -50,7 +51,7 @@ class AddHandler {
             "Found ${foundFiles.size} files"
         }
 
-        all(foundFiles.map {
+        val listStoredId = all(foundFiles.map {
             log.info("Processing ${it.absolutePath}")
             printc(Ansi.Color.GREEN) {
                 "Processing ${it.absolutePath}"
@@ -79,6 +80,47 @@ class AddHandler {
                     "Finish Processing Document with id ${key.id}"
                 }
             }
+        } then {
+            it.map { it.id.toString() }
+        }
+
+        listStoredId.success {
+            documentService
+                .loadDocument(it)
+                .fail {
+                    log.error("${it.message} when Load Documents", it)
+                    printc(Ansi.Color.RED) {
+                        "Error When Load Document: ${it.message}"
+                    }
+                }
+                .bind {
+                    all(it.map { doc ->
+                        printc(Ansi.Color.GREEN) {
+                            "Analyze Document with id ${doc.id}"
+                        }
+                        documentService.processDocument(doc)
+                    })
+                }
+                .fail {
+                    log.error("${it.message} when Process Documents", it)
+                    printc(Ansi.Color.RED) {
+                        "Error When Process Document: ${it.message}"
+                    }
+                }
+                .bind {
+                    all(it.map { doc ->
+                        printc(Ansi.Color.GREEN) {
+                            "Store Processed Document id ${doc.id} with ${doc.contentLinesAnalyzed.size} analyzed Lines"
+                        }
+                        documentService.storeProcessedDocument(doc)
+                    })
+                }
+                .fail {
+                    log.error("${it.message} when Store Processed Documents", it)
+                    printc(Ansi.Color.RED) {
+                        "Error When Store Processed Documents: ${it.message}"
+                    }
+                }
         }
 
     }
