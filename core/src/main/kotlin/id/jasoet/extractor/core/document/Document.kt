@@ -53,7 +53,7 @@ interface Document {
 
                             if (nextType == LineType.NORMAL) {
                                 currentType = LineType.NORMAL
-                                currentContent += nextContent
+                                currentContent += " $nextContent"
                                 ignoredLineNumbers.add(nextIndex)
                                 nextIndex += 1
                             } else {
@@ -76,7 +76,7 @@ interface Document {
                             val nextContent = lines[nextIndex].content
 
                             if (nextType == LineType.NORMAL) {
-                                currentContent += nextContent
+                                currentContent += " $nextContent"
                                 ignoredLineNumbers.add(nextIndex)
                                 nextIndex += 1
                             } else {

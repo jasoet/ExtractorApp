@@ -23,6 +23,7 @@ object DictionaryContext {
     lateinit var months: List<String>
     lateinit var religions: List<String>
     lateinit var timeZones: List<String>
+    lateinit var keys: List<String>
 
 
     fun initialize() {
@@ -36,5 +37,6 @@ object DictionaryContext {
         this.months = "/dictionaries/months.dict".loadLocalResourceContent()
         this.religions = "/dictionaries/religions.dict".loadLocalResourceContent()
         this.timeZones = "/dictionaries/timeZones.dict".loadLocalResourceContent()
+        this.keys = "/dictionaries/keys.dict".loadLocalResourceContent()
     }
 }
