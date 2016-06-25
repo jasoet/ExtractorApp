@@ -50,34 +50,33 @@ class AddHandler {
             "Found ${foundFiles.size} files"
         }
 
-
         all(foundFiles.map {
             log.info("Processing ${it.absolutePath}")
             printc(Ansi.Color.GREEN) {
                 "Processing ${it.absolutePath}"
             }
-            documentService.convertAndProcessDocument(it.absolutePath, FileInputStream(it))
+            documentService.convertDocument(it.absolutePath, FileInputStream(it))
         }) fail {
-            log.error("${it.message} when process Documents", it)
+            log.error("${it.message} when convert Documents", it)
             printc(Ansi.Color.RED) {
-                "Error When Processing Document: ${it.message}"
+                "Error When Convert Document: ${it.message}"
             }
         } bind { listPair ->
-            all(listPair.map { pair ->
-                all(
-                    documentService.storeDocument(pair.first),
-                    documentService.storeProcessedDocument(pair.second)
-                )
+            all(listPair.map { doc ->
+                printc(Ansi.Color.GREEN) {
+                    "Store Document ${doc.fileName} with id ${doc.id}"
+                }
+                documentService.storeDocument(doc)
             })
         } fail {
             log.error("${it.message} when Store Documents", it)
             printc(Ansi.Color.RED) {
                 "Error When Store Document: ${it.message}"
             }
-        } success {
-            it.flatten().forEach {
+        } success { listKey ->
+            listKey.forEach { key ->
                 printc(Ansi.Color.GREEN) {
-                    "Stored Document ${it.id}"
+                    "Finish Processing Document with id ${key.id}"
                 }
             }
         }

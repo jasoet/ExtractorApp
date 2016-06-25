@@ -38,6 +38,14 @@ class DocumentService {
         }
     }
 
+    fun processDocument(document: DocumentModel): Promise<ProcessedDocument, Exception> {
+        return task {
+            document.processDocument()
+        } fail {
+            log.error("${it.message} when process document ${document.id}", it)
+        }
+    }
+
     fun removeDocument(id: String): Promise<List<WriteResult>, Exception> {
 
         val removeAllDocument = task {
