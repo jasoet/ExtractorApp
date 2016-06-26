@@ -28,6 +28,12 @@ fun List<Line>.toLineModel(): List<LineModel> {
     }
 }
 
+fun List<LineModel>.toLine(): List<Line> {
+    return this.map {
+        Line(it.type, it.content, it.annotations)
+    }
+}
+
 fun File.readProperties(): Properties {
     return FileInputStream(this).use {
         val properties = Properties()
