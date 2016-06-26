@@ -1,5 +1,6 @@
 package id.jasoet.extractor.core.util
 
+import id.jasoet.extractor.core.dictionary.keyDictionary
 import org.assertj.core.api.Assertions
 import org.junit.Test
 
@@ -10,6 +11,18 @@ import org.junit.Test
  */
 
 class UtilTest {
+
+    @Test
+    fun keyDictTest() {
+        val text = "\t \t                    B. KORBAN \t: \tPT. ADIRA FINANCE, Alamat Jl. Ipda tut harsono 55A Yogyakarta."
+        val match = keyDictionary.find(text)
+        match.map {
+            println(text.removePrefix(it.value))
+            println(it.range.last)
+            println(it.value)
+            it.value
+        }.firstOrNull()
+    }
 
     @Test
     fun digestTest() {

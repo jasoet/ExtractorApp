@@ -7,6 +7,13 @@ package id.jasoet.extractor.core.dictionary
  */
 
 
+val keyDictionary: Dictionary by lazy {
+    object : Dictionary {
+        override val type: DictionaryType = DictionaryType.KEY
+        override val regexes: List<Regex> = listOf(Regex("[\\/\\s\\w\\d\\.]+s*:", RegexOption.IGNORE_CASE))
+    }
+}
+
 val moneyDictionary: Dictionary by lazy {
     object : Dictionary {
         override val type: DictionaryType = DictionaryType.MONEY
