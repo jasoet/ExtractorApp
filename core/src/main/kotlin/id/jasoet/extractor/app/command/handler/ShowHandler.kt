@@ -4,6 +4,7 @@ import id.jasoet.extractor.app.command.ShowCommand
 import id.jasoet.extractor.app.service.DocumentService
 import id.jasoet.extractor.core.document.findAnchor
 import id.jasoet.extractor.core.document.findAnchorIndex
+import id.jasoet.extractor.core.document.subList
 import id.jasoet.extractor.core.dsl.Anchor.Key
 import org.springframework.beans.factory.annotation.Autowired
 import org.springframework.stereotype.Component
@@ -32,6 +33,8 @@ class ShowHandler {
 
                 println("Index $anchorIndex")
                 println("Anchor $anchor")
+                val subList = analyzedLines.subList(from = Key("WAKTU KEJADIAN"))
+                println(subList)
             }
 
 
