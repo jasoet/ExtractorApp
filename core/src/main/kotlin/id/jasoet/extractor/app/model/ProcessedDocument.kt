@@ -1,5 +1,6 @@
 package id.jasoet.extractor.app.model
 
+import id.jasoet.extractor.core.document.line.Line
 import org.mongodb.morphia.annotations.Entity
 import org.mongodb.morphia.annotations.Id
 import org.mongodb.morphia.annotations.PrePersist
@@ -15,9 +16,9 @@ data class ProcessedDocument(
     @Id
     var id: String = "",
     var contentLinesOriginal: List<String> = emptyList(),
-    var contentLinesTyped: List<LineModel> = emptyList(),
-    var contentLinesCleaned: List<LineModel> = emptyList(),
-    var contentLinesAnalyzed: List<LineModel> = emptyList()) {
+    var contentLinesTyped: List<Line> = emptyList(),
+    var contentLinesCleaned: List<Line> = emptyList(),
+    var contentLinesAnalyzed: List<Line> = emptyList()) {
 
     @PrePersist
     fun validate(): Unit {

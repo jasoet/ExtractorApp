@@ -22,18 +22,6 @@ fun homeDirectory(): String {
     return System.getProperty("user.home")
 }
 
-fun List<Line>.toLineModel(): List<LineModel> {
-    return this.map {
-        LineModel(it.type, it.content, it.annotations)
-    }
-}
-
-fun List<LineModel>.toLine(): List<Line> {
-    return this.map {
-        Line(it.type, it.content, it.annotations)
-    }
-}
-
 fun File.readProperties(): Properties {
     return FileInputStream(this).use {
         val properties = Properties()

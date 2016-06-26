@@ -1,6 +1,5 @@
 package id.jasoet.extractor.app.model
 
-import id.jasoet.extractor.app.toLineModel
 import id.jasoet.extractor.core.document.Document
 import id.jasoet.extractor.core.document.MicrosoftOffice
 import id.jasoet.extractor.core.document.Other
@@ -76,8 +75,8 @@ data class DocumentModel(
         val document = this.toDocument()
         return ProcessedDocument(this.id,
             document.contentLinesOriginal(),
-            document.contentLinesTyped().toLineModel(),
-            document.contentLinesCleaned().toLineModel(),
-            document.contentLineAnalyzed().toLineModel())
+            document.contentLinesTyped(),
+            document.contentLinesCleaned(),
+            document.contentLineAnalyzed())
     }
 }
