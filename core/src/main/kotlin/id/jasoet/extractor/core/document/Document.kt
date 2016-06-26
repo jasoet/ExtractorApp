@@ -1,5 +1,7 @@
 package id.jasoet.extractor.core.document
 
+import id.jasoet.extractor.core.dictionary.DictionaryType
+import id.jasoet.extractor.core.dictionary.keyDictionary
 import id.jasoet.extractor.core.document.line.Line
 import id.jasoet.extractor.core.document.line.LineType
 import id.jasoet.extractor.core.document.line.identifyLine
@@ -53,7 +55,7 @@ interface Document {
 
                             if (nextType == LineType.NORMAL) {
                                 currentType = LineType.NORMAL
-                                currentContent += nextContent
+                                currentContent += " $nextContent"
                                 ignoredLineNumbers.add(nextIndex)
                                 nextIndex += 1
                             } else {
@@ -76,7 +78,7 @@ interface Document {
                             val nextContent = lines[nextIndex].content
 
                             if (nextType == LineType.NORMAL) {
-                                currentContent += nextContent
+                                currentContent += " $nextContent"
                                 ignoredLineNumbers.add(nextIndex)
                                 nextIndex += 1
                             } else {
@@ -102,12 +104,35 @@ interface Document {
     fun contentLineAnalyzed(): List<Line> {
         val cleanedLine = contentLinesCleaned()
 
-        return cleanedLine.map {
-            val (type, content, annotation) = it
+        return cleanedLine.map { line ->
+            val (type, content) = line
 
-            /*TODO: Analyze each Line */
+            when (type) {
+                LineType.KEY_VALUE -> {
+                    val key = keyDictionary
+                        .find(content)
+                        .map { it.value }
+                        .firstOrNull()
 
-            it.copy(annotations = emptyMap())
+                    if (key != null) {
+                        val value = content.removePrefix(key)
+                        val annotations = mapOf(
+                            DictionaryType.KEY to key.trim(),
+                            DictionaryType.VALUE to value.trim()
+                        )
+                        line.copy(annotations = annotations)
+                    } else {
+                        line
+                    }
+                }
+                LineType.NORMAL -> {
+                    line.copy(annotations = mapOf(
+                        DictionaryType.VALUE to content.trim()
+                    ))
+                }
+                else -> line
+            }
+
         }
     }
 }

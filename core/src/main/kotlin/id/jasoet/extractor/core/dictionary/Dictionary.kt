@@ -22,4 +22,12 @@ interface Dictionary {
         return regexes.any { it.containsMatchIn(input) }
     }
 
+    fun find(input: String, startIndex: Int = 0): List<MatchResult> {
+        return regexes.map { it.find(input, startIndex) }.filter { it != null }.map { it!! }
+    }
+
+    fun findAll(input: String, startIndex: Int = 0): List<MatchResult> {
+        return regexes.map { it.findAll(input, startIndex).toList() }.flatten()
+    }
+
 }
