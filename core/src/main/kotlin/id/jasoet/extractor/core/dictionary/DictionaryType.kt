@@ -18,7 +18,6 @@ enum class DictionaryType {
     RELIGION,
     AGE,
     MONEY,
-    DOC_TITLE,
     LOCATION,
     PERSON,
     PROVINCE,

@@ -1,5 +1,11 @@
 package id.jasoet.extractor.core.dictionary
 
+import id.jasoet.extractor.core.util.containMatchIn
+import id.jasoet.extractor.core.util.find
+import id.jasoet.extractor.core.util.findAll
+import id.jasoet.extractor.core.util.matches
+import id.jasoet.extractor.core.util.regexPatterns
+
 /**
  * Documentation Here
  *
@@ -11,23 +17,23 @@ interface Dictionary {
     val regexes: List<Regex>
 
     fun regexPatterns(): String {
-        return this.regexes.map { it.pattern }.reduce { i, s -> "$i - $s" }
+        return this.regexes.regexPatterns()
     }
 
     fun matches(input: String): Boolean {
-        return regexes.any { it.matches(input) }
+        return regexes.matches(input)
     }
 
     fun containMatchIn(input: String): Boolean {
-        return regexes.any { it.containsMatchIn(input) }
+        return regexes.containMatchIn(input)
     }
 
     fun find(input: String, startIndex: Int = 0): List<MatchResult> {
-        return regexes.map { it.find(input, startIndex) }.filter { it != null }.map { it!! }
+        return regexes.find(input, startIndex)
     }
 
     fun findAll(input: String, startIndex: Int = 0): List<MatchResult> {
-        return regexes.map { it.findAll(input, startIndex).toList() }.flatten()
+        return regexes.findAll(input, startIndex)
     }
 
 }

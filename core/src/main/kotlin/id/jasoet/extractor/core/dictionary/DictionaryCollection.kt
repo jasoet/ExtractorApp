@@ -6,6 +6,19 @@ package id.jasoet.extractor.core.dictionary
  * @author Deny Prasetyo
  */
 
+val dictionaryMap: Map<DictionaryType, Dictionary> by lazy {
+    mapOf(
+        DictionaryType.KEY to keyDictionary,
+        DictionaryType.MONEY to moneyDictionary,
+        DictionaryType.AGE to ageDictionary,
+        DictionaryType.RELIGION to religionDictionary,
+        DictionaryType.GENDER to genderDictionary,
+        DictionaryType.CRIME to crimeDictionary,
+        DictionaryType.CLAUSE to clauseDictionary,
+        DictionaryType.DATE to dateDictionary,
+        DictionaryType.TIME to timeDictionary
+    )
+}
 
 val keyDictionary: Dictionary by lazy {
     object : Dictionary {
