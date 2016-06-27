@@ -96,7 +96,11 @@ fun List<Line>.subList(from: Anchor? = null, to: Anchor? = null): List<Line> {
     val toIndex = if (to != null) this.findAnchorIndex(to) else this.size
 
     if (fromIndex == -1 || toIndex == -1) {
-        throw IllegalStateException("Illegal: Anchor from produces $fromIndex, Anchor to produces $toIndex")
+        throw IllegalStateException("Illegal: Anchor FROM [$fromIndex], Anchor TO [$toIndex]")
+    }
+
+    if(fromIndex < 0 || toIndex > this.size || fromIndex > toIndex){
+        throw IllegalStateException("Illegal: Anchor FROM [$fromIndex], Anchor TO [$toIndex]")
     }
 
     return this.subList(fromIndex, toIndex)
