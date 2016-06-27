@@ -6,12 +6,44 @@ import id.jasoet.extractor.core.document.line.Line
 import id.jasoet.extractor.core.document.line.LineType
 import id.jasoet.extractor.core.dsl.Anchor
 import id.jasoet.extractor.core.util.containMatchIn
+import id.jasoet.extractor.core.util.findAll
 
 /**
  * Documentation
  *
  * @author Deny Prasetyo.
  */
+
+fun Line.extract(dictionary: DictionaryType? = null,
+                 pattern: String = "",
+                 index: Int = 0): String? {
+
+    if (dictionary == null && pattern.isBlank()) {
+        throw IllegalArgumentException("Dictionary or Pattern must Present!")
+    }
+
+    if (dictionary != null && dictionaryMap[dictionary] == null) {
+        throw IllegalArgumentException("This Dictionary Type is not Mapped Yet")
+    }
+
+
+    val regexFromPattern = if (pattern.isNotBlank()) listOf(Regex(pattern, RegexOption.IGNORE_CASE)) else emptyList()
+    val regexFromDict = dictionaryMap[dictionary].let { if (it != null) it.regexes else emptyList() }
+
+    val regexes = regexFromPattern + regexFromDict
+
+    return when (this.type) {
+        LineType.NORMAL, LineType.KEY_VALUE -> {
+            val value = this.annotations[DictionaryType.VALUE]
+            if (value != null) {
+                val matchResult = regexes.findAll(value).firstOrNull()
+                return matchResult?.groupValues?.get(index)
+            }
+            null
+        }
+        else -> null
+    }
+}
 
 fun List<Line>.find(lineType: LineType = LineType.EMPTY,
                     dictionary: DictionaryType? = null,

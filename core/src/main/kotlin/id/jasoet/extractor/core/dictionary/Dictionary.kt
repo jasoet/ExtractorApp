@@ -29,11 +29,11 @@ interface Dictionary {
     }
 
     fun find(input: String, startIndex: Int = 0): List<MatchResult> {
-        return regexes.find(input, startIndex)
+        return regexes.find(input,startIndex)
     }
 
     fun findAll(input: String, startIndex: Int = 0): List<MatchResult> {
-        return regexes.findAll(input, startIndex)
+        return regexes.findAll(input,startIndex)
     }
 
 }

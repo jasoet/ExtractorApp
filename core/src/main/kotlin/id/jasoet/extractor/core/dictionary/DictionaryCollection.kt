@@ -11,6 +11,7 @@ val dictionaryMap: Map<DictionaryType, Dictionary> by lazy {
         DictionaryType.KEY to keyDictionary,
         DictionaryType.MONEY to moneyDictionary,
         DictionaryType.AGE to ageDictionary,
+        DictionaryType.DAY to dayDictionary,
         DictionaryType.RELIGION to religionDictionary,
         DictionaryType.GENDER to genderDictionary,
         DictionaryType.CRIME to crimeDictionary,
@@ -98,7 +99,7 @@ val dateDictionary: Dictionary by lazy {
     object : Dictionary {
         override val type: DictionaryType = DictionaryType.RELIGION
         override val regexes: List<Regex> = listOf(Regex("\\d\\d?-\\d\\d?-\\d\\d\\d?\\d?", RegexOption.IGNORE_CASE),
-            Regex("\\d\\d?\\s+$monthNamesRegex\\s+\\d\\d\\d?\\d?", RegexOption.IGNORE_CASE))
+            Regex("\\d\\d?\\s+($monthNamesRegex)\\s+\\d\\d\\d?\\d?", RegexOption.IGNORE_CASE))
     }
 }
 
