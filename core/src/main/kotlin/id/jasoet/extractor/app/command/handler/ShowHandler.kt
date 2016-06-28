@@ -3,7 +3,6 @@ package id.jasoet.extractor.app.command.handler
 import id.jasoet.extractor.app.command.ShowCommand
 import id.jasoet.extractor.app.service.DocumentService
 import id.jasoet.extractor.core.dictionary.DictionaryType
-import id.jasoet.extractor.core.dictionary.dateDictionary
 import id.jasoet.extractor.core.document.extract
 import id.jasoet.extractor.core.document.find
 import id.jasoet.extractor.core.document.findAnchor
