@@ -1,6 +1,7 @@
 package id.jasoet.extractor.core.dsl
 
 import id.jasoet.extractor.core.dictionary.DictionaryType
+import id.jasoet.extractor.core.document.line.Line
 import id.jasoet.extractor.core.document.line.LineType
 
 /**
@@ -19,6 +20,11 @@ class RuleDetail {
                pattern: String = "") {
 
     }
+
+    fun search(predicate: (Line) -> Boolean) {
+
+    }
+
 
     fun extract(dictionary: DictionaryType? = null,
                 pattern: String = "", index: Int = 0) {

@@ -12,7 +12,7 @@ import id.jasoet.extractor.core.dsl.Anchor.Key
  */
 
 
-class WokeDsl() : Dsl({
+class ExampleDsl() : Dsl({
     field("Something") {
         rule {
             startAnchor = Default
