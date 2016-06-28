@@ -34,7 +34,7 @@ fun Line.extract(dictionary: DictionaryType? = null,
 
     return when (this.type) {
         LineType.NORMAL, LineType.KEY_VALUE -> {
-            val value = this.annotations[DictionaryType.VALUE]
+            val value = this.details[DictionaryType.VALUE]
             if (value != null) {
                 val matchResult = regexes.findAll(value).firstOrNull()
                 return matchResult?.groupValues?.get(index)
@@ -124,7 +124,7 @@ fun List<Line>.findAnchorIndex(anchor: Anchor): Int {
     return when (anchor) {
         is Anchor.Normal -> {
             this.indexOfFirst { line ->
-                val value = line.annotations[DictionaryType.VALUE]
+                val value = line.details[DictionaryType.VALUE]
                 val regex = Regex("\\s*(${anchor.text})\\s*")
                 value != null && line.type == LineType.NORMAL && regex.matches(value)
             }
@@ -137,7 +137,7 @@ fun List<Line>.findAnchorIndex(anchor: Anchor): Int {
         }
         is Anchor.Key -> {
             this.indexOfFirst { line ->
-                val key = line.annotations[DictionaryType.KEY]
+                val key = line.details[DictionaryType.KEY]
                 val regex = Regex(".*(${anchor.text})\\s*:?")
                 key != null && line.type == LineType.KEY_VALUE && regex.matches(key)
             }

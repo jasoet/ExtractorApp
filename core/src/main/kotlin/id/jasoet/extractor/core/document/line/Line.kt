@@ -10,4 +10,4 @@ import id.jasoet.extractor.core.dictionary.DictionaryType
 
 data class Line(var type: LineType = LineType.EMPTY,
                 var content: String = "",
-                var annotations: Map<DictionaryType, String> = emptyMap())
+                var details: Map<DictionaryType, String> = emptyMap())

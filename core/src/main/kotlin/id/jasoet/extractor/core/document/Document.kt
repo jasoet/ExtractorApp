@@ -120,13 +120,13 @@ interface Document {
                             DictionaryType.KEY to key.trim(),
                             DictionaryType.VALUE to value.trim()
                         )
-                        line.copy(annotations = annotations)
+                        line.copy(details = annotations)
                     } else {
                         line
                     }
                 }
                 LineType.NORMAL -> {
-                    line.copy(annotations = mapOf(
+                    line.copy(details = mapOf(
                         DictionaryType.VALUE to content.trim()
                     ))
                 }
