@@ -26,5 +26,6 @@ enum class DictionaryType {
     VILLAGE,
     POLICE_DOC_NUMBER,
     PHONE,
-    EMAIL
+    EMAIL,
+    VEHICLE_NUMBER
 }

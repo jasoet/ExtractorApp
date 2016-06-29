@@ -25,6 +25,9 @@ class RuleDetail {
 
     }
 
+    fun extract(ops: (String) -> String) {
+
+    }
 
     fun extract(dictionary: DictionaryType? = null,
                 pattern: String = "", index: Int = 0) {
