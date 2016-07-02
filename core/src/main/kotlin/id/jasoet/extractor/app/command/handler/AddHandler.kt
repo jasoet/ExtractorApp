@@ -4,6 +4,7 @@ import id.jasoet.extractor.app.command.AddCommand
 import id.jasoet.extractor.app.printc
 import id.jasoet.extractor.app.service.DocumentService
 import id.jasoet.extractor.app.workingDirectory
+import id.jasoet.extractor.core.util.measureExecutionNano
 import nl.komponents.kovenant.all
 import nl.komponents.kovenant.functional.bind
 import nl.komponents.kovenant.then
@@ -53,10 +54,15 @@ class AddHandler {
 
         val listStoredId = all(foundFiles.map {
             log.info("Processing ${it.absolutePath}")
-            printc(Ansi.Color.GREEN) {
-                "Processing ${it.absolutePath}"
+
+            val result = measureExecutionNano {
+                documentService.convertDocument(it.absolutePath, FileInputStream(it))
             }
-            documentService.convertDocument(it.absolutePath, FileInputStream(it))
+
+            printc(Ansi.Color.GREEN) {
+                "Processing ${it.absolutePath} for ${result.first} nsec"
+            }
+            result.second
         }) fail {
             log.error("${it.message} when convert Documents", it)
             printc(Ansi.Color.RED) {
@@ -65,11 +71,16 @@ class AddHandler {
         } bind { listPair ->
             all(listPair.map { doc ->
                 log.info("Store Document ${doc.fileName} with id ${doc.id}")
-                printc(Ansi.Color.GREEN) {
-                    "Store Document ${doc.fileName} with id ${doc.id}"
+
+                val result = measureExecutionNano {
+                    documentService.storeDocument(doc)
                 }
 
-                documentService.storeDocument(doc)
+                printc(Ansi.Color.GREEN) {
+                    "Store Document ${doc.fileName} with id ${doc.id} for ${result.first} nsec"
+                }
+
+                result.second
             })
         } fail {
             log.error("${it.message} when Store Documents", it)
@@ -99,11 +110,16 @@ class AddHandler {
                 .bind {
                     all(it.map { doc ->
                         log.info("Analyze Document with id ${doc.id}")
-                        printc(Ansi.Color.GREEN) {
-                            "Analyze Document with id ${doc.id}"
+
+                        val result = measureExecutionNano {
+                            documentService.processDocument(doc)
                         }
 
-                        documentService.processDocument(doc)
+                        printc(Ansi.Color.GREEN) {
+                            "Analyze Document with id ${doc.id} for ${result.first} nsec"
+                        }
+                        result.second
+
                     })
                 }
                 .fail {
@@ -115,11 +131,15 @@ class AddHandler {
                 .bind {
                     all(it.map { doc ->
                         log.info("Store Processed Document id ${doc.id} with ${doc.contentLinesAnalyzed.size} analyzed Lines")
-                        printc(Ansi.Color.GREEN) {
-                            "Store Processed Document id ${doc.id} with ${doc.contentLinesAnalyzed.size} analyzed Lines"
+
+                        val result = measureExecutionNano {
+                            documentService.storeProcessedDocument(doc)
                         }
-                        
-                        documentService.storeProcessedDocument(doc)
+
+                        printc(Ansi.Color.GREEN) {
+                            "Store Processed Document id ${doc.id} with ${doc.contentLinesAnalyzed.size} analyzed Lines for ${result.first} nsec"
+                        }
+                        result.second
                     })
                 }
                 .fail {
