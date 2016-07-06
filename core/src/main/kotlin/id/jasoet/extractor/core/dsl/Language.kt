@@ -1,7 +1,7 @@
 package id.jasoet.extractor.core.dsl
 
 /**
- * Main DSL Language Class
+ * DSL Language Class
  *
  * @author Deny Prasetyo.
  */

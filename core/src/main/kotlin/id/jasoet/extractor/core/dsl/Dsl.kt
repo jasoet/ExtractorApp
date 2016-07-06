@@ -1,10 +1,16 @@
 package id.jasoet.extractor.core.dsl
 
 /**
- * TODO: Documentation
+ * Main DSL Class
  *
  * @author Deny Prasetyo.
  */
 
 
-open class Dsl(language: Language.() -> Unit)
+open class Dsl(val language: Language.() -> Unit) {
+    fun extractRule(): List<FieldRules> {
+        val languageConstruct = Language()
+        language.invoke(languageConstruct)
+        return languageConstruct.fieldRules
+    }
+}

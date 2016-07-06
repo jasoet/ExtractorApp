@@ -1,8 +1,9 @@
-package id.jasoet.extractor.core.dsl
+package id.jasoet.extractor.app.rule
 
 import id.jasoet.extractor.core.document.line.LineType
 import id.jasoet.extractor.core.dsl.Anchor.Default
 import id.jasoet.extractor.core.dsl.Anchor.Key
+import id.jasoet.extractor.core.dsl.Dsl
 
 /**
  * TODO: Documentation
