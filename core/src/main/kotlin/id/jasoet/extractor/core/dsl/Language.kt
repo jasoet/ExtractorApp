@@ -1,14 +1,17 @@
 package id.jasoet.extractor.core.dsl
 
 /**
- * TODO: Documentation
+ * Main DSL Language Class
  *
  * @author Deny Prasetyo.
  */
 
 
 class Language {
-    fun field(name: String, rules: Rules.() -> Unit) {
-
+    val fieldRules: MutableList<FieldRules> = arrayListOf()
+    fun field(name: String, rulesOps: Rules.() -> Unit) {
+        val rules = Rules()
+        rulesOps.invoke(rules)
+        fieldRules.add(FieldRules(name, rules.rules))
     }
 }
