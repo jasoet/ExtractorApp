@@ -1,7 +1,7 @@
 package id.jasoet.extractor.app
 
-import id.jasoet.extractor.app.model.LineModel
-import id.jasoet.extractor.core.document.line.Line
+import id.jasoet.extractor.core.dsl.Dsl
+import io.github.lukehutch.fastclasspathscanner.FastClasspathScanner
 import org.fusesource.jansi.Ansi
 import org.fusesource.jansi.AnsiConsole
 import java.io.File
@@ -40,4 +40,17 @@ fun printc(fgColor: Ansi.Color,
 fun printc(text: Ansi.() -> Ansi) {
     val output = text.invoke(Ansi.ansi()).reset()
     AnsiConsole.out.println(output)
+}
+
+fun scanDsl(): List<String> {
+    val scanner = FastClasspathScanner("id.jasoet.extractor.app.rule")
+        .scan()
+
+    return scanner.getNamesOfSubclassesOf(Dsl::class.java)
+}
+
+fun dslObjects(): List<Pair<String, Dsl>> {
+    return scanDsl().map {
+        it to Class.forName(it).newInstance() as Dsl
+    }
 }
