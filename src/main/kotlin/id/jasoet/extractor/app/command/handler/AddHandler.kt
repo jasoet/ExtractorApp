@@ -37,14 +37,14 @@ class AddHandler {
             "Scanning: ${command.files.reduce { s, x -> "$s, $x" }}"
         }
 
-        val directoryScanner =
+        val directoryScanner: DirectoryScanner =
             DirectoryScanner().apply {
                 this.basedir = File(workingDirectory())
                 this.setIncludes(*command.files.toTypedArray())
                 this.scan()
             }
 
-        val foundFiles = directoryScanner.includedFiles.map { file ->
+        val foundFiles: List<File> = directoryScanner.includedFiles.map { file ->
             File(directoryScanner.basedir, file)
         }
 

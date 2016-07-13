@@ -9,60 +9,72 @@ buildscript {
     }
 }
 
-
 apply plugin: 'idea'
+apply plugin: 'application'
+apply plugin: 'spring-boot'
+apply plugin: 'kotlin'
 
-allprojects {
-    tasks.withType(JavaCompile) {
-        options.compilerArgs << "-Xlint:unchecked"
+
+repositories {
+    mavenCentral()
+    maven { url "https://oss.sonatype.org/content/repositories/snapshots" }
+    maven { url "http://dl.bintray.com/jasoet-gdp/org.kotlinslang" }
+}
+
+dependencies {
+    compile "org.apache.tika:tika-core:${apacheTikaVersion}"
+    compile "org.apache.tika:tika-parsers:${apacheTikaVersion}"
+    compile "org.apache.opennlp:opennlp-tools:${openNlpVersion}"
+    compile "commons-io:commons-io:${commonsIOVersion}"
+    compile "org.apache.commons:commons-lang3:${commonsLangVersion}"
+    compile "commons-codec:commons-codec:${commonsCodecVersion}"
+    compile "commons-beanutils:commons-beanutils:${commonsBeansUtilVersion}"
+    compile "com.beust:jcommander:${jcommanderVersion}"
+    compile "com.google.guava:guava:${guavaVersion}"
+    compile "org.mongodb.morphia:morphia:${morphiaVersion}"
+    compile "nl.komponents.kovenant:kovenant:${kovenantVersion}"
+    compile "io.github.lukehutch:fast-classpath-scanner:${fastClasspathScannerVersion}"
+    compile "com.github.salomonbrys.kotson:kotson:${kotsonVersion}"
+    compile "org.apache.maven.shared:maven-shared-utils:${mavenSharedUtilsVersion}"
+    compile "org.fusesource.jansi:jansi:${jansiVersion}"
+
+    compile "com.google.code.gson:gson"
+    compile "org.springframework.boot:spring-boot-starter-cache"
+    compile "org.apache.httpcomponents:httpclient"
+
+    compile "org.jetbrains.kotlin:kotlin-stdlib:${kotlinVersion}"
+    compile "org.jetbrains.kotlin:kotlin-reflect:${kotlinVersion}"
+    compile "org.kotlinslang:kotlinslang:${kotlinslangVersion}"
+    compile "com.fasterxml.jackson.module:jackson-module-kotlin:${jacksonModuleKotlinVersion}"
+    compile "net.logstash.logback:logstash-logback-encoder:${logstashLogbackEncoderVersion}"
+
+    compile "com.fasterxml.jackson.datatype:jackson-datatype-jsr310"
+    compile "com.fasterxml.jackson.datatype:jackson-datatype-jdk8"
+
+    testCompile "org.springframework.boot:spring-boot-starter-test"
+    testCompile "org.assertj:assertj-core:${assertJVersion}"
+}
+
+springBoot {
+    executable = true
+}
+
+bootRun {
+    if (project.hasProperty('args')) {
+        args project.args.split('\\s+')
     }
 }
 
-subprojects {
+tasks.withType(JavaCompile) {
+    options.compilerArgs << "-Xlint:unchecked"
+}
 
-    apply plugin: 'application'
-    apply plugin: 'spring-boot'
-    apply plugin: 'kotlin'
+/* Allow user to pass -Dspring.profiles.active when running bootRun
+*  `./gradlew bootRun -Dspring.profiles.active=dev`
+* */
 
-
-    repositories {
-        mavenCentral()
-        maven { url "https://oss.sonatype.org/content/repositories/snapshots" }
-        maven { url "http://dl.bintray.com/jasoet-gdp/org.kotlinslang" }
-    }
-
-    dependencies {
-        compile "org.jetbrains.kotlin:kotlin-stdlib:${kotlinVersion}"
-        compile "org.jetbrains.kotlin:kotlin-reflect:${kotlinVersion}"
-        compile "org.kotlinslang:kotlinslang:${kotlinslangVersion}"
-        compile "com.fasterxml.jackson.module:jackson-module-kotlin:${jacksonModuleKotlinVersion}"
-        compile "net.logstash.logback:logstash-logback-encoder:${logstashLogbackEncoderVersion}"
-
-        compile "com.fasterxml.jackson.datatype:jackson-datatype-jsr310"
-        compile "com.fasterxml.jackson.datatype:jackson-datatype-jdk8"
-
-        testCompile "org.springframework.boot:spring-boot-starter-test"
-        testCompile "org.assertj:assertj-core:${assertJVersion}"
-    }
-
-    springBoot {
-        executable = true
-    }
-
-    bootRun {
-        if (project.hasProperty('args')) {
-            args project.args.split('\\s+')
-        }
-    }
-
-    /* Allow user to pass -Dspring.profiles.active when running bootRun
-    *  `./gradlew bootRun -Dspring.profiles.active=dev`
-    * */
-
-    project.gradle.projectsEvaluated {
-        applicationDefaultJvmArgs = ["-Dspring.profiles.active=${project.gradle.startParameter.systemPropertiesArgs['spring.profiles.active']}"]
-    }
-
+project.gradle.projectsEvaluated {
+    applicationDefaultJvmArgs = ["-Dspring.profiles.active=${project.gradle.startParameter.systemPropertiesArgs['spring.profiles.active']}"]
 }
 
 task wrapper(type: Wrapper) {
