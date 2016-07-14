@@ -30,7 +30,7 @@ class RuleDetail {
     private var extractPattern: String = ""
     private var extractAnchor: Anchor? = null
     private var extractIndex: Int = 0
-    private var extractOperation: ((String) -> String)? = null
+    private var extractOperation: ((Line) -> String)? = null
 
     fun search(lineType: LineType = LineType.EMPTY,
                dictionary: DictionaryType? = null,
@@ -73,14 +73,14 @@ class RuleDetail {
         extractIndex = index
     }
 
-    fun extract(ops: (String) -> String) {
+    fun extract(ops: (Line) -> String) {
         require(extractAnchor == null) {
             "Duplicate Extract Clause"
         }
         extractOperation = ops
     }
 
-    fun extract(anchor: Anchor, ops: (String) -> String) {
+    fun extract(anchor: Anchor, ops: (Line) -> String) {
         require(extractOperation == null) {
             "Duplicate Extract Clause"
         }
@@ -115,7 +115,7 @@ class RuleDetail {
                 return try {
                     if (extractOperation != null) {
                         extractOperation?.let {
-                            it.invoke(line.content)
+                            it.invoke(line)
                         }
                     } else {
                         line.extract(extractDictionary, extractPattern, extractIndex)
@@ -145,7 +145,7 @@ class RuleDetail {
                 return try {
                     if (extractOperation != null) {
                         extractOperation?.let {
-                            it.invoke(line.content)
+                            it.invoke(line)
                         }
                     } else {
                         line.extract(extractDictionary, extractPattern, extractIndex)
