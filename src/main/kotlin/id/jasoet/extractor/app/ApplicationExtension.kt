@@ -42,15 +42,11 @@ fun printc(text: Ansi.() -> Ansi) {
     AnsiConsole.out.println(output)
 }
 
-fun scanDsl(): List<String> {
+fun loadDSL(): List<Pair<String, Dsl>> {
     val scanner = FastClasspathScanner("id.jasoet.extractor.app.rule")
         .scan()
 
-    return scanner.getNamesOfSubclassesOf(Dsl::class.java)
-}
-
-fun dslObjects(): List<Pair<String, Dsl>> {
-    return scanDsl().map {
+    return scanner.getNamesOfSubclassesOf(Dsl::class.java).map {
         it to Class.forName(it).newInstance() as Dsl
     }
 }

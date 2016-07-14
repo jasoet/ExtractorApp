@@ -12,11 +12,8 @@ import org.junit.Test
 class ScannerTest {
     @Test
     fun test() {
-        scanDsl().forEach {
-            println(it)
-        }
 
-        dslObjects().forEach {
+        loadDSL().forEach {
             val (name, dsl) = it
             println(name)
             dsl.extractRule().forEach {

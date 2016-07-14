@@ -17,8 +17,16 @@ val dictionaryMap: Map<DictionaryType, Dictionary> by lazy {
         DictionaryType.CRIME to crimeDictionary,
         DictionaryType.CLAUSE to clauseDictionary,
         DictionaryType.DATE to dateDictionary,
-        DictionaryType.TIME to timeDictionary
+        DictionaryType.TIME to timeDictionary,
+        DictionaryType.VEHICLE_NUMBER to vehicleNumberDictionary
     )
+}
+
+val vehicleNumberDictionary: Dictionary by lazy {
+    object : Dictionary {
+        override val type: DictionaryType = DictionaryType.VEHICLE_NUMBER
+        override val regexes: List<Regex> = listOf(Regex("\\w\\w\\s\\d\\d\\d\\d\\s\\w\\w", RegexOption.IGNORE_CASE))
+    }
 }
 
 val keyDictionary: Dictionary by lazy {
