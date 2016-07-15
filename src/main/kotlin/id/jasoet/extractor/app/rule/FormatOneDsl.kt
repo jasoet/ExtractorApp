@@ -23,7 +23,7 @@ class FormatOneDsl() : Dsl({
             endAnchor = Normal("PELAPOR")
 
             search { line ->
-                val containsKey = line.details[DictionaryType.KEY]?.endsWith("Nomor", ignoreCase = true)
+                val containsKey = line.details[DictionaryType.KEY]?.contains("Nomor", ignoreCase = true)
                 line.type == LineType.KEY_VALUE && (containsKey ?: false)
             }
 

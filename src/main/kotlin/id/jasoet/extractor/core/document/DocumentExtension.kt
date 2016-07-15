@@ -92,21 +92,27 @@ fun List<Line>.subList(from: Anchor? = null, to: Anchor? = null): List<Line> {
         return this
     }
 
-    val fromIndex = if (from != null) this.findAnchorIndex(from) else 0
-    val toIndex = if (to != null) this.findAnchorIndex(to) else this.size
+    val fromIndexAnchor = this.findAnchorIndex(from)
+    val toIndexAnchor = this.findAnchorIndex(to)
+    val fromIndex = if (fromIndexAnchor != -1) fromIndexAnchor else 0
+    val toIndex = if (toIndexAnchor != -1) toIndexAnchor else this.size
 
     if (fromIndex == -1 || toIndex == -1) {
-        throw IllegalStateException("Illegal: Anchor FROM [$fromIndex], Anchor TO [$toIndex]")
+        throw IllegalStateException("Illegal: Anchor FROM [$fromIndex], Anchor To [$toIndex]")
     }
 
-    if(fromIndex < 0 || toIndex > this.size || fromIndex > toIndex){
-        throw IllegalStateException("Illegal: Anchor FROM [$fromIndex], Anchor TO [$toIndex]")
+    if (fromIndex < 0 || toIndex > this.size || fromIndex > toIndex) {
+        throw IllegalStateException("Illegal: Anchor FROM [$fromIndex], Anchor To [$toIndex]")
     }
 
     return this.subList(fromIndex, toIndex)
 }
 
-fun List<Line>.findAnchor(anchor: Anchor): Line? {
+fun List<Line>.findAnchor(anchor: Anchor?): Line? {
+
+    if (anchor == null) {
+        return null
+    }
 
     if (this.isEmpty()) {
         return null
@@ -115,7 +121,11 @@ fun List<Line>.findAnchor(anchor: Anchor): Line? {
     return this.getOrNull(findAnchorIndex(anchor))
 }
 
-fun List<Line>.findAnchorIndex(anchor: Anchor): Int {
+fun List<Line>.findAnchorIndex(anchor: Anchor?): Int {
+
+    if (anchor == null) {
+        return -1
+    }
 
     if (this.isEmpty()) {
         return -1
@@ -125,21 +135,22 @@ fun List<Line>.findAnchorIndex(anchor: Anchor): Int {
         is Anchor.Normal -> {
             this.indexOfFirst { line ->
                 val value = line.details[DictionaryType.VALUE]
-                val regex = Regex("\\s*(${anchor.text})\\s*")
+                val regex = Regex("\\s*(${anchor.text})\\s*", RegexOption.IGNORE_CASE)
                 value != null && line.type == LineType.NORMAL && regex.matches(value)
             }
         }
         is Anchor.Predefined -> {
             this.indexOfFirst { line ->
-                val regex = Regex("\\s*(${anchor.text})\\s*")
+                val regex = Regex("\\s*(${anchor.text})\\s*", RegexOption.IGNORE_CASE)
                 line.type == LineType.PREDEFINED && regex.matches(line.content)
             }
         }
         is Anchor.Key -> {
             this.indexOfFirst { line ->
                 val key = line.details[DictionaryType.KEY]
-                val regex = Regex(".*(${anchor.text})\\s*:?")
-                key != null && line.type == LineType.KEY_VALUE && regex.matches(key)
+                val regex = Regex(".*(${anchor.text})\\s*:?", RegexOption.IGNORE_CASE)
+                val regexMatch = regex.matches(key ?: "")
+                key != null && line.type == LineType.KEY_VALUE && regexMatch
             }
         }
         Anchor.Default -> 0

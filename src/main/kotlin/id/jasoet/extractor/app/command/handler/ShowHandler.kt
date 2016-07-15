@@ -1,15 +1,12 @@
 package id.jasoet.extractor.app.command.handler
 
 import id.jasoet.extractor.app.command.ShowCommand
+import id.jasoet.extractor.app.loadDSL
+import id.jasoet.extractor.app.printc
 import id.jasoet.extractor.app.service.DocumentService
-import id.jasoet.extractor.core.dictionary.DictionaryType
-import id.jasoet.extractor.core.document.extract
-import id.jasoet.extractor.core.document.find
-import id.jasoet.extractor.core.document.findAnchor
-import id.jasoet.extractor.core.document.findAnchorIndex
-import id.jasoet.extractor.core.document.line.LineType
-import id.jasoet.extractor.core.document.subList
-import id.jasoet.extractor.core.dsl.Anchor.Key
+import kotlinslang.control.tryOf
+import kotlinslang.orElse
+import org.fusesource.jansi.Ansi
 import org.springframework.beans.factory.annotation.Autowired
 import org.springframework.stereotype.Component
 
@@ -31,19 +28,26 @@ class ShowHandler {
         documentService
             .loadAllProcessedDocument()
             .success {
-                val analyzedLines = it.first().contentLinesAnalyzed
-                val anchor = analyzedLines.findAnchor(Key("WAKTU KEJADIAN"))
-                val anchorIndex = analyzedLines.findAnchorIndex(Key("WAKTU KEJADIAN"))
+                val ruleList = loadDSL().first().second.extractRule()
 
-                println("Index $anchorIndex")
-                println("Anchor $anchor")
-                val subList = analyzedLines.subList(from = Key("WAKTU KEJADIAN"))
+                it.map { it.contentLinesAnalyzed }.forEach {
+                    val analyzedLines = it
 
-                val line = subList.find(LineType.KEY_VALUE, DictionaryType.DATE)
-                val value = line?.extract(DictionaryType.DAY)
+                    ruleList.forEach {
+                        val (name, rules) = it
+                        val operation = rules.first()
+                        val result = tryOf { operation.invoke(analyzedLines) }
+                            .onFailure { ex ->
+                                printc(Ansi.Color.RED) { ex.message ?: "" }
+                            }
+                            .orElse("")
+                        println("$name => $result")
 
-                println(subList)
-                println(value)
+                    }
+
+                    println("==================")
+                }
+
             }
 
 
