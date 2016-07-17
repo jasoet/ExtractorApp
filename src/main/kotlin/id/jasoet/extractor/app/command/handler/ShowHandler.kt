@@ -2,12 +2,10 @@ package id.jasoet.extractor.app.command.handler
 
 import id.jasoet.extractor.app.command.ShowCommand
 import id.jasoet.extractor.app.loadDSL
-import id.jasoet.extractor.app.printc
 import id.jasoet.extractor.app.service.DocumentService
 import kotlinslang.control.tryOf
 import kotlinslang.orElse
 import nl.komponents.kovenant.functional.map
-import org.fusesource.jansi.Ansi
 import org.springframework.beans.factory.annotation.Autowired
 import org.springframework.stereotype.Component
 
@@ -52,9 +50,6 @@ class ShowHandler {
                             val (name, rules) = it
                             val operation = rules.first()
                             val result = tryOf { operation.invoke(analyzedLines) }
-                                .onFailure { ex ->
-                                    printc(Ansi.Color.RED) { ex.message ?: "" }
-                                }
                                 .orElse("")
                             println("$name => $result")
                         }

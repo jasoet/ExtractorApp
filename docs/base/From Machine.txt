@@ -1,0 +1,288 @@
+/home/jasoet/Documents/Thesis/ExtractorApp/docs/Prod0.docx
+ReportNumber => LP/52/II/2015/DIY/RES.BTL/Sek.Sewon
+ReporterName => MUFIDATUN HIDAYATI
+ReporterBirthday => 02 desember 1989
+ReporterAge =>
+ReporterGender => Perempuan
+EventDay => Sabtu
+EventDate => 15 Agustus 2015
+EventTime => 18.00 WIB
+Place => Warnet Happy, Jl. Parangtritis Km 4.5 Panggungharjo, Sewon, Bantul, Daerah Istimewa Yogyakarta.
+PerpetratorName => 3 orang laki-laki
+VictimName => MUFIDATUN HIDAYATI.
+WitnessName => MUHAMMAD FATONAH
+CrimeType => Pencurian
+CrimeClause => 362 KUHP
+==================
+/home/jasoet/Documents/Thesis/ExtractorApp/docs/Prod1.docx
+ReportNumber => LP/40/II/2016/DIY/RES.BTL/Sek.Sewon
+ReporterName => AHMAD HARIS
+ReporterBirthday => 13 Maret 1986
+ReporterAge => 29 tahun
+ReporterGender =>
+EventDay => kamis
+EventDate => 06 Agustus 2015
+EventTime => 23.00 wib
+Place => Jl. Parang Tritis km 5,6 Depan Kampus ISI Yogyakarta, Kec. Sewon, Kab. Bantul.
+PerpetratorName => 2 orang laki-laki
+VictimName => pelapor.
+WitnessName => AGUS MULYADI
+CrimeType => Pencurian
+CrimeClause => 362 KUHP
+==================
+/home/jasoet/Documents/Thesis/ExtractorApp/docs/Prod10.docx
+ReportNumber => LP/49/II/2015/DIY/RES.BTL/Sek.Sewon
+ReporterName => AAN SETIAWAN
+ReporterBirthday => 22 Mei 1989
+ReporterAge =>
+ReporterGender => laki-laki
+EventDay => Kamis
+EventDate => 13 Agustus 2015
+EventTime => 17.00 WIB
+Place => Jl. Andalas no 132 Bangunharjo, Sewon, Bantul, Daerah Istimewa Yogyakarta.
+PerpetratorName => PENDI WIJAYA
+VictimName => AAN SETIAWAN
+WitnessName => AGUNG JATI
+CrimeType => Penadahan
+CrimeClause => 480 KUHP
+==================
+/home/jasoet/Documents/Thesis/ExtractorApp/docs/Prod11.docx
+ReportNumber => LP/50/II/2015/DIY/RES.BTL/Sek.Sewon
+ReporterName => MATHEUS DWI AJI
+ReporterBirthday => 14 Juni 1992
+ReporterAge =>
+ReporterGender => laki-laki
+EventDay => Jumat
+EventDate => 14 Agustus 2015
+EventTime => 09.30 WIB
+Place => Jl. Merbabu no 14 Pendowoharjo Sewon, Bantul, Daerah Istimewa Yogyakarta.
+PerpetratorName => Belum diketahui
+VictimName => MAHEUS DWI AJI.
+WitnessName => RASYA HAMID
+CrimeType => Pencurian
+CrimeClause => 362 KUHP
+==================
+/home/jasoet/Documents/Thesis/ExtractorApp/docs/Prod12.docx
+ReportNumber => LP/51/II/2015/DIY/RES.BTL/Sek.Sewon
+ReporterName => JAYADI EKA
+ReporterBirthday => 15 maret 1979
+ReporterAge =>
+ReporterGender => Laki-laki
+EventDay => Jumat
+EventDate => 14 agustus 2015
+EventTime => 14.20 WIB
+Place => Jl. Anggur No 66 Timbulharjo, Sewon, Bantul, depan SMP 1 Sewon.
+PerpetratorName => INDRA SANJAYA
+VictimName => NIRMANA SARI
+WitnessName => JAYADI EKA
+CrimeType => Pemerasan
+CrimeClause => 368 KUHP
+==================
+/home/jasoet/Documents/Thesis/ExtractorApp/docs/Prod13.docx
+ReportNumber => LP/53/II/2015/DIY/RES.BTL/Sek.Sewon
+ReporterName => RIZKA FARIKA
+ReporterBirthday => 18 maret 1990
+ReporterAge =>
+ReporterGender => Perempuan
+EventDay => Sabtu
+EventDate => 15 agustus 2015
+EventTime => 22.00 WIB
+Place => Jl. Semangka no 66 Bangunharjo, Sewon, Bantul
+PerpetratorName => 4 laki-laki teman korban · Ihsan surya 22 tahun mahasiswa UGM · Roni jaya 21 tahun mahasiswa UGM · Indra bayu 20 tahun mahasiswa UGM · Andy hasan 22 tahun mahasiswa UGM
+VictimName => HESTI KARTIKA
+WitnessName => RIZKA FARIKA
+CrimeType => Kejahatan kesusilaan
+CrimeClause => 285 KUHP
+==================
+/home/jasoet/Documents/Thesis/ExtractorApp/docs/Prod14.docx
+ReportNumber => LP/54/II/2015/DIY/RES.BTL/Sek.Sewon
+ReporterName => RIZMA WATI
+ReporterBirthday => 16 mei 1983
+ReporterAge =>
+ReporterGender => Perempuan
+EventDay => Minggu
+EventDate => 16 Agustus 2015
+EventTime => 03.30 WIB
+Place => Jl.Parangtritis Km. 5,5 Sewon Bantul
+PerpetratorName => 2 orang laki-laki
+VictimName => Toserba RIZQI milik pelapor
+WitnessName => Tidak ada
+CrimeType => Pencurian
+CrimeClause => 362 KUHP
+==================
+/home/jasoet/Documents/Thesis/ExtractorApp/docs/Prod15.docx
+ReportNumber => LP/40/II/2016/DIY/RES.BTL/Sek.Sewon
+ReporterName => WISNU HARTANA
+ReporterBirthday => 03 Februari 1976
+ReporterAge => 39 tahun
+ReporterGender =>
+EventDay => rabu
+EventDate => 05 Agustus 2015
+EventTime => 11.00 wib
+Place => Dsn. Juron Rt. 19, Desa Pendowoharjo, Kec. Sewon, Kab. Bantul
+PerpetratorName => IBNU GROHO SUDADI
+VictimName => PT. ADIRA FINANCE
+WitnessName => FX ANDRI SULISTYA
+CrimeType => Penggelapan
+CrimeClause => 372 KUHP
+==================
+/home/jasoet/Documents/Thesis/ExtractorApp/docs/Prod16.docx
+ReportNumber => LP/139/V/2016/DIY/RES.BTL/Sek.Sewon
+ReporterName => RISGIYANTO
+ReporterBirthday => 11 Desember 1981
+ReporterAge =>
+ReporterGender =>
+EventDay => Jumat
+EventDate => 06 Mei 2016
+EventTime => 19.15 wib
+Place => Tempat Kerja kantor AKA-DISDIKPORA (Akademi Komunitas Seni dan Budaya). Jl, Parangtritits Km, 3,5 Bantul Yogyakarta
+PerpetratorName => SURYO ADI ANGGORO
+VictimName => Pelapor
+WitnessName => PARKISO
+CrimeType => Penganiayaan
+CrimeClause => 352 KUHP
+==================
+/home/jasoet/Documents/Thesis/ExtractorApp/docs/Prod17.docx
+ReportNumber => LP/139/V/2016/DIY/RES.BTL/Sek.Sewon
+ReporterName => AGUS WIDODO
+ReporterBirthday => 15-08-1995
+ReporterAge =>
+ReporterGender =>
+EventDay => Selasa
+EventDate => 15 maret 2016
+EventTime => 18.30 wib
+Place => Di depan  SMP Ma’Arif Tepatnya Kp Bibis, Timbulharjo, Sewon, Bantul.
+PerpetratorName => DALAM LIDIK
+VictimName => Pelapor
+WitnessName => WIDIYA
+CrimeType => Pengeroyokan
+CrimeClause => 170 KUHP
+==================
+/home/jasoet/Documents/Thesis/ExtractorApp/docs/Prod2.docx
+ReportNumber => LP/41/II/2015/DIY/RES.BTL/Sek.Sewon
+ReporterName => MUHAMMAD SOFIAN
+ReporterBirthday => 24 Januari 1988
+ReporterAge =>
+ReporterGender => laki
+EventDay => jum’at
+EventDate => 07 Agustus 2015
+EventTime => 11.00 wib
+Place => Jl.Arteri no 45 Panggung Harjo ,Sewon,Bantul.
+PerpetratorName => Joko Suyono usia 40 tahun.
+VictimName => Kartadi usia 79 tahun.
+WitnessName => MUHAMMAD SOFIAN
+CrimeType => Penganiayaan
+CrimeClause => 351 KUHP
+==================
+/home/jasoet/Documents/Thesis/ExtractorApp/docs/Prod3.docx
+ReportNumber => LP/42/II/2015/DIY/RES.BTL/Sek.Sewon
+ReporterName => SAMSURI
+ReporterBirthday => 24 april 1976
+ReporterAge =>
+ReporterGender => Laki-laki
+EventDay =>
+EventDate =>
+EventTime =>
+Place => Perbatasan Jalan Desa Timbulharjo ,Sewon,Bantul.
+PerpetratorName => Belum diketahui
+VictimName => Sutini  usia 65 tahun.
+WitnessName => SAMSURI
+CrimeType => Penganiayaan
+CrimeClause => 351 KUHP
+==================
+/home/jasoet/Documents/Thesis/ExtractorApp/docs/Prod4.docx
+ReportNumber => LP/43/II/2015/DIY/RES.BTL/Sek.Sewon
+ReporterName => HANA YANI
+ReporterBirthday => 29 oktober 1990
+ReporterAge =>
+ReporterGender => Perempuan
+EventDay => Minggu
+EventDate => 09 Agustus 2015
+EventTime => 10.00 WIB
+Place => Jl. Trikora 88 Panggungharjo, Sewon, Bantul, Daerah Istimewa Yogyakarta.
+PerpetratorName => SUTIKNO
+VictimName => HANA YANI
+WitnessName => FITRIA SARI
+CrimeType => Kejahatan Kesusilaan
+CrimeClause => 285 KUHP
+==================
+/home/jasoet/Documents/Thesis/ExtractorApp/docs/Prod5.docx
+ReportNumber => LP/44/II/2015/DIY/RES.BTL/Sek.Sewon
+ReporterName => IBROHIM NUR
+ReporterBirthday => 20 Agustus 1977
+ReporterAge =>
+ReporterGender => Laki
+EventDay => Senin
+EventDate => 10 Agustus 2015
+EventTime => 15.00 WIB
+Place => Gang Kenanga No 44, Sewon, Bantul, Daerah Istimewa Yogyakarta.
+PerpetratorName => Belum diketahui.
+VictimName => IBROHIM NUR.
+WitnessName => HASAN SADIKIN
+CrimeType => Pencurian
+CrimeClause => 362 KUHP
+==================
+/home/jasoet/Documents/Thesis/ExtractorApp/docs/Prod6.docx
+ReportNumber => LP/45/II/2015/DIY/RES.BTL/Sek.Sewon
+ReporterName => JUMAKIR
+ReporterBirthday => 13 juni 1957
+ReporterAge =>
+ReporterGender => Laki
+EventDay => Selasa
+EventDate => 11 Agustus 2015
+EventTime => 16.00 WIB
+Place => Gang Mawar No 11, Sewon, Bantul, Daerah Istimewa Yogyakarta.
+PerpetratorName => Belum diketahui.
+VictimName => NINA WILLIAM
+WitnessName => JUMAKIR
+CrimeType => Pencurian
+CrimeClause => 362 KUHP
+==================
+/home/jasoet/Documents/Thesis/ExtractorApp/docs/Prod7.docx
+ReportNumber => LP/46/II/2015/DIY/RES.BTL/Sek.Sewon
+ReporterName => HATMINI RUKMI
+ReporterBirthday => 10 Desember 1987
+ReporterAge =>
+ReporterGender => Perempuan
+EventDay => Selasa
+EventDate => 11 Agustus 2015
+EventTime => 19.00 WIB
+Place => Jl. Parangtritis Km 6.5, Sewon, Bantul, Daerah Istimewa Yogyakarta.
+PerpetratorName => MUJIMAN
+VictimName => HATMINI RUKMI
+WitnessName => STELA SITOHANG
+CrimeType => Pemalsuan
+CrimeClause => 224 KUHP
+==================
+/home/jasoet/Documents/Thesis/ExtractorApp/docs/Prod8.docx
+ReportNumber => LP/47/II/2015/DIY/RES.BTL/Sek.Sewon
+ReporterName => SUSANA
+ReporterBirthday => 15 Februari 1988
+ReporterAge =>
+ReporterGender => Perempuan
+EventDay => Rabu
+EventDate => 12 agustus 2015
+EventTime => 09.00 WIB
+Place => Gang melati no 59 Timbulharjo, Sewon, Bantul, Daerah Istimewa Yogyakarta.
+PerpetratorName => PARJIO
+VictimName => CV. Permata Hati. Jl. Tegalgendu no 10
+WitnessName => RINI HARUN
+CrimeType => Penggelapan
+CrimeClause => 372 KUHP
+==================
+/home/jasoet/Documents/Thesis/ExtractorApp/docs/Prod9.docx
+ReportNumber => LP/48/II/2015/DIY/RES.BTL/Sek.Sewon
+ReporterName => HARIAWAN
+ReporterBirthday => 15 maret 1993
+ReporterAge =>
+ReporterGender => laki-laki
+EventDay => Kamis
+EventDate => 13 Agustus 2015
+EventTime => 12.00 WIB
+Place => Jl. Akasia No 440 Pendowoharjo, Sewon, Bantul, Daerah Istimewa Yogyakarta.
+PerpetratorName => ADI JAUHARI
+VictimName => SUKIYEM
+WitnessName => HARIAWAN
+CrimeType => Pencurian
+CrimeClause => 362 KUHP
+==================
