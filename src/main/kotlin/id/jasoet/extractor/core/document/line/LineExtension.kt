@@ -1,6 +1,7 @@
 package id.jasoet.extractor.core.document.line
 
 import id.jasoet.extractor.core.dictionary.DictionaryContext
+import id.jasoet.extractor.core.dictionary.DictionaryType
 
 /**
  * Documentation
@@ -40,3 +41,12 @@ fun String.identifyLine(): LineType {
 
     return type
 }
+
+fun Line.getValue(default: String = ""): String {
+    return this.details.getOrElse(DictionaryType.VALUE) { default }
+}
+
+fun Line.getKey(default: String = ""): String {
+    return this.details.getOrElse(DictionaryType.KEY) { default }
+}
+

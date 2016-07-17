@@ -26,3 +26,7 @@ fun List<Regex>.find(input: String, startIndex: Int = 0): List<MatchResult> {
 fun List<Regex>.findAll(input: String, startIndex: Int = 0): List<MatchResult> {
     return this.map { it.findAll(input, startIndex).toList() }.flatten()
 }
+
+fun String.r(option: RegexOption = RegexOption.IGNORE_CASE): Regex {
+    return Regex(this, option)
+}

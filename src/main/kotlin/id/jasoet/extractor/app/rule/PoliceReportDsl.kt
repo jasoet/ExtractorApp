@@ -2,7 +2,8 @@ package id.jasoet.extractor.app.rule
 
 import id.jasoet.extractor.core.dictionary.DictionaryType
 import id.jasoet.extractor.core.document.line.LineType
-import id.jasoet.extractor.core.dsl.Anchor.Default
+import id.jasoet.extractor.core.document.line.getKey
+import id.jasoet.extractor.core.document.line.getValue
 import id.jasoet.extractor.core.dsl.Anchor.Key
 import id.jasoet.extractor.core.dsl.Anchor.Normal
 import id.jasoet.extractor.core.dsl.Anchor.Predefined
@@ -23,8 +24,8 @@ class PoliceReportDsl() : Dsl({
             endAnchor = Normal("PELAPOR")
 
             search { line ->
-                val containsKey = line.details[DictionaryType.KEY]?.contains("Nomor", ignoreCase = true)
-                line.type == LineType.KEY_VALUE && (containsKey ?: false)
+                val containsKey = line.getKey().contains("Nomor", ignoreCase = true)
+                line.type == LineType.KEY_VALUE && containsKey
             }
 
             extract(pattern = "\\w+\\/\\d+\\/\\w+\\/\\d+\\/\\w+\\/[\\w\\d\\.]+\\/[\\w\\d\\.]+")
@@ -34,10 +35,57 @@ class PoliceReportDsl() : Dsl({
     field("ReporterName") {
         rule {
             extract(Key("Nama")) { line ->
-                val value = line.details.getOrElse(DictionaryType.VALUE) { "" }
-                value.substring(0, value.indexOf(","))
+                val value = line.getValue()
+                val index = value.indexOfAny(listOf(",", "."))
+                value.substring(0, index)
             }
         }
     }
+
+    field("EventDay") {
+        rule {
+            extract(Key("WAKTU KEJADIAN"), DictionaryType.DAY)
+        }
+    }
+
+    field("EventDate") {
+        rule {
+            extract(Key("WAKTU KEJADIAN"), DictionaryType.DATE)
+        }
+    }
+
+    field("EventTime") {
+        rule {
+            extract(Key("WAKTU KEJADIAN"), DictionaryType.TIME)
+        }
+    }
+
+    field("PerpetratorName") {
+        rule {
+            extract(Key("Pelaku")) { line ->
+                val value = line.getValue()
+                if (value.contains(",")) {
+                    value.substring(0, value.indexOf(","))
+                } else {
+                    value
+                }
+            }
+        }
+    }
+
+    field("WitnessName") {
+        rule {
+            extract(Key("NAMA DAN ALAMAT SAKSI-SAKSI")) { line ->
+                val value = line.getValue()
+                val index = value.indexOfAny(listOf(",", "."))
+                if (index != -1) {
+                    value.substring(0, index)
+                } else {
+                    value
+                }
+            }
+        }
+    }
+
 
 })
