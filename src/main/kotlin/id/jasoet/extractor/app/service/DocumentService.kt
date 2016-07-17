@@ -1,8 +1,10 @@
 package id.jasoet.extractor.app.service
 
 import com.mongodb.WriteResult
+import id.jasoet.extractor.app.dslMap
 import id.jasoet.extractor.app.loader.loadDocumentModel
 import id.jasoet.extractor.app.model.DocumentModel
+import id.jasoet.extractor.app.model.ExtractedDocument
 import id.jasoet.extractor.app.model.ProcessedDocument
 import nl.komponents.kovenant.Promise
 import nl.komponents.kovenant.all
@@ -43,6 +45,49 @@ class DocumentService {
             document.processDocument()
         } fail {
             log.error("${it.message} when process document ${document.id}", it)
+        }
+    }
+
+
+    fun convertAndProcessDocument(fileName: String, inputStream: InputStream): Promise<Pair<DocumentModel, ProcessedDocument>, Exception> {
+        return convertDocument(fileName, inputStream) then {
+            it to it.processDocument()
+        } fail {
+            log.error("${it.message} when Convert and Process Document ", it)
+        }
+    }
+
+    fun extractDocument(processedDocument: ProcessedDocument, dslName: String): Promise<ExtractedDocument, Exception> {
+        return task {
+            val dsl = dslMap[dslName] ?: throw IllegalArgumentException("DSL $dslName not Found")
+            val fieldResults = dsl.extract(processedDocument.contentLinesAnalyzed)
+
+            val results = fieldResults.map { it.name to it.result }.toMap()
+
+            val errors = fieldResults
+                .filter { it.exception != null }
+                .map {
+                    val (name, result, ex) = it
+                    if (ex == null) {
+                        name to ""
+                    } else {
+                        val message = "${ex.javaClass.canonicalName}[${ex.message}]"
+                        name to message
+                    }
+                }
+                .toMap()
+
+            ExtractedDocument(processedDocument.id, dslName, results, errors)
+        } fail {
+            log.error("${it.message} when Extract Processed Document  [${processedDocument.id}]", it)
+        }
+    }
+
+    fun storeExtractedDocument(extractedDocument: ExtractedDocument): Promise<Key<ExtractedDocument>, Exception> {
+        return task {
+            dataStore.save(extractedDocument)
+        } fail {
+            log.error("${it.message} when save extracted document [${extractedDocument.id}]", it)
         }
     }
 
@@ -154,13 +199,4 @@ class DocumentService {
         }
     }
 
-    fun convertAndProcessDocument(fileName: String, inputStream: InputStream): Promise<Pair<DocumentModel, ProcessedDocument>, Exception> {
-        return convertDocument(fileName, inputStream) then {
-            it  to it.processDocument()
-        } fail {
-            log.error("${it.message} when Convert and Process Document ", it)
-        }
-    }
-
-//    fun extractDocument(id:String,dslName:String)
 }

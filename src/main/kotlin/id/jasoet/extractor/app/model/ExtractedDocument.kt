@@ -1,7 +1,10 @@
 package id.jasoet.extractor.app.model
 
 import org.mongodb.morphia.annotations.Entity
+import org.mongodb.morphia.annotations.Field
 import org.mongodb.morphia.annotations.Id
+import org.mongodb.morphia.annotations.Index
+import org.mongodb.morphia.annotations.Indexes
 import org.mongodb.morphia.annotations.PrePersist
 
 /**
@@ -11,11 +14,14 @@ import org.mongodb.morphia.annotations.PrePersist
  */
 
 @Entity("extracted_document")
+@Indexes(
+    Index(value = "dslName", fields = arrayOf(Field("dslName")))
+)
 data class ExtractedDocument(
     @Id
     var id: String = "",
     val dslName: String = "",
-    val result: Map<String, String> = emptyMap(),
+    val results: Map<String, String> = emptyMap(),
     val errors: Map<String, String> = emptyMap()) {
 
     @PrePersist

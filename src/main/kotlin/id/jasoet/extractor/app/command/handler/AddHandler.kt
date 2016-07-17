@@ -1,6 +1,7 @@
 package id.jasoet.extractor.app.command.handler
 
 import id.jasoet.extractor.app.command.AddCommand
+import id.jasoet.extractor.app.dslMap
 import id.jasoet.extractor.app.printc
 import id.jasoet.extractor.app.scan
 import id.jasoet.extractor.app.service.DocumentService
@@ -53,7 +54,7 @@ class AddHandler {
             "Found ${foundFiles.size} files"
         }
 
-        val listStoredId = all(foundFiles.map {
+        val listProcessedDocument = all(foundFiles.map {
             log.info("Processing ${it.absolutePath}")
 
             val result = measureExecutionNano {
@@ -64,89 +65,136 @@ class AddHandler {
                 "Processing ${it.absolutePath} for ${result.first} nsec"
             }
             result.second
-        }) fail {
-            log.error("${it.message} when convert Documents", it)
-            printc(Ansi.Color.RED) {
-                "Error When Convert Document: ${it.message}"
-            }
-        } bind { listPair ->
-            all(listPair.map { doc ->
-                log.info("Store Document ${doc.fileName} with id ${doc.id}")
-
-                val result = measureExecutionNano {
-                    documentService.storeDocument(doc)
-                }
-
-                printc(Ansi.Color.GREEN) {
-                    "Store Document ${doc.fileName} with id ${doc.id} for ${result.first} nsec"
-                }
-
-                result.second
-            })
-        } fail {
-            log.error("${it.message} when Store Documents", it)
-            printc(Ansi.Color.RED) {
-                "Error When Store Document: ${it.message}"
-            }
-        } success { listKey ->
-            listKey.forEach { key ->
-                log.info("Finish Processing Document with id ${key.id}")
-                printc(Ansi.Color.GREEN) {
-                    "Finish Processing Document with id ${key.id}"
+        })
+            .fail {
+                log.error("${it.message} when convert Documents", it)
+                printc(Ansi.Color.RED) {
+                    "Error When Convert Document: ${it.message}"
                 }
             }
-        } then {
-            it.map { it.id.toString() }
-        }
+            .bind { listPair ->
+                all(listPair.map { doc ->
+                    log.info("Store Document ${doc.fileName} with id ${doc.id}")
 
-        listStoredId.success {
-            documentService
-                .loadDocument(it)
+                    val result = measureExecutionNano {
+                        documentService.storeDocument(doc)
+                    }
+
+                    printc(Ansi.Color.GREEN) {
+                        "Store Document ${doc.fileName} with id ${doc.id} for ${result.first} nsec"
+                    }
+
+                    result.second
+                })
+            }
+            .fail {
+                log.error("${it.message} when Store Documents", it)
+                printc(Ansi.Color.RED) {
+                    "Error When Store Document: ${it.message}"
+                }
+            }
+            .success { listKey ->
+                listKey.forEach { key ->
+                    log.info("Finish Processing Document with id ${key.id}")
+                    printc(Ansi.Color.GREEN) {
+                        "Finish Processing Document with id ${key.id}"
+                    }
+                }
+            }
+            .then {
+                it.map { it.id.toString() }
+            }
+            .bind {
+                documentService
+                    .loadDocument(it)
+                    .fail {
+                        log.error("${it.message} when Load Documents", it)
+                        printc(Ansi.Color.RED) {
+                            "Error When Load Document: ${it.message}"
+                        }
+                    }
+            }
+            .bind {
+                all(it.map { doc ->
+                    log.info("Analyze Document with id ${doc.id}")
+
+                    val result = measureExecutionNano {
+                        documentService.processDocument(doc)
+                    }
+
+                    printc(Ansi.Color.GREEN) {
+                        "Analyze Document with id ${doc.id} for ${result.first} nsec"
+                    }
+                    result.second
+                })
+            }
+            .fail {
+                log.error("${it.message} when Process Documents", it)
+                printc(Ansi.Color.RED) {
+                    "Error When Process Document: ${it.message}"
+                }
+            }
+
+        listProcessedDocument
+            .bind {
+                all(it.map { doc ->
+                    log.info("Store Processed Document id ${doc.id} with ${doc.contentLinesAnalyzed.size} analyzed Lines")
+
+                    val result = measureExecutionNano {
+                        documentService.storeProcessedDocument(doc)
+                    }
+
+                    printc(Ansi.Color.GREEN) {
+                        "Store Processed Document id ${doc.id} with ${doc.contentLinesAnalyzed.size} analyzed Lines for ${result.first} nsec"
+                    }
+                    result.second
+                })
+            }
+            .fail {
+                log.error("${it.message} when Store Processed Documents", it)
+                printc(Ansi.Color.RED) {
+                    "Error When Store Processed Documents: ${it.message}"
+                }
+            }
+
+        if (dslMap[command.dsl] != null) {
+            listProcessedDocument
+                .bind {
+                    all(it.map { doc ->
+                        log.info("Extract Processed Document id ${doc.id} with ${doc.contentLinesAnalyzed.size} analyzed Lines")
+                        val result = measureExecutionNano {
+                            documentService.extractDocument(doc, command.dsl)
+                        }
+                        printc(Ansi.Color.GREEN) {
+                            "Extract Processed Document id ${doc.id} with ${doc.contentLinesAnalyzed.size} analyzed Lines for ${result.first} nsec"
+                        }
+                        result.second
+                    })
+                }
                 .fail {
-                    log.error("${it.message} when Load Documents", it)
+                    log.error("${it.message} when Extract Processed Documents", it)
                     printc(Ansi.Color.RED) {
-                        "Error When Load Document: ${it.message}"
+                        "Error when Extract Processed Documents: ${it.message}"
                     }
                 }
                 .bind {
                     all(it.map { doc ->
-                        log.info("Analyze Document with id ${doc.id}")
+                        log.info("Store Extracted Document id ${doc.id} with ${doc.results.size} results ")
 
                         val result = measureExecutionNano {
-                            documentService.processDocument(doc)
+                            documentService.storeExtractedDocument(doc)
                         }
 
                         printc(Ansi.Color.GREEN) {
-                            "Analyze Document with id ${doc.id} for ${result.first} nsec"
-                        }
-                        result.second
-
-                    })
-                }
-                .fail {
-                    log.error("${it.message} when Process Documents", it)
-                    printc(Ansi.Color.RED) {
-                        "Error When Process Document: ${it.message}"
-                    }
-                }
-                .bind {
-                    all(it.map { doc ->
-                        log.info("Store Processed Document id ${doc.id} with ${doc.contentLinesAnalyzed.size} analyzed Lines")
-
-                        val result = measureExecutionNano {
-                            documentService.storeProcessedDocument(doc)
-                        }
-
-                        printc(Ansi.Color.GREEN) {
-                            "Store Processed Document id ${doc.id} with ${doc.contentLinesAnalyzed.size} analyzed Lines for ${result.first} nsec"
+                            "Store Extracted Document id ${doc.id} with ${doc.results.size} results for ${result.first} nsec"
                         }
                         result.second
                     })
                 }
                 .fail {
-                    log.error("${it.message} when Store Processed Documents", it)
+                    log.error("${it.message} when Store Extracted Documents", it)
                     printc(Ansi.Color.RED) {
-                        "Error When Store Processed Documents: ${it.message}"
+                        "Error when Store Extracted Documents: ${it.message}"
                     }
                 }
         }

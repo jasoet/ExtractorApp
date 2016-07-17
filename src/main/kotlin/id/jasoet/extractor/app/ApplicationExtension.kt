@@ -53,6 +53,10 @@ fun loadDSL(packageName: String = "id.jasoet.extractor.app.rule"): Map<String, D
     }.toMap()
 }
 
+val dslMap: Map<String, Dsl> by lazy {
+    loadDSL()
+}
+
 fun DirectoryScanner.scan(baseDir: String,
                           includes: List<String> = emptyList(),
                           excludes: List<String> = emptyList(),
