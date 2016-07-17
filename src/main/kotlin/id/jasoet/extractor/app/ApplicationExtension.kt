@@ -2,6 +2,7 @@ package id.jasoet.extractor.app
 
 import id.jasoet.extractor.core.dsl.Dsl
 import io.github.lukehutch.fastclasspathscanner.FastClasspathScanner
+import org.apache.maven.shared.utils.io.DirectoryScanner
 import org.fusesource.jansi.Ansi
 import org.fusesource.jansi.AnsiConsole
 import java.io.File
@@ -48,5 +49,27 @@ fun loadDSL(): List<Pair<String, Dsl>> {
 
     return scanner.getNamesOfSubclassesOf(Dsl::class.java).map {
         it to Class.forName(it).newInstance() as Dsl
+    }
+}
+
+fun DirectoryScanner.scan(baseDir: String,
+                          includes: List<String> = emptyList(),
+                          excludes: List<String> = emptyList(),
+                          followSymLinks: Boolean = true,
+                          caseSensitive: Boolean = true): DirectoryScanner {
+    return this.apply {
+        this.basedir = File(baseDir)
+        if (includes.isNotEmpty()) {
+            this.setIncludes(*includes.toTypedArray())
+        }
+
+        if (excludes.isNotEmpty()) {
+            this.setExcludes(*excludes.toTypedArray())
+        }
+
+        this.setFollowSymlinks(followSymLinks)
+        this.setCaseSensitive(caseSensitive)
+
+        this.scan()
     }
 }

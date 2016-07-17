@@ -2,6 +2,7 @@ package id.jasoet.extractor.app.command.handler
 
 import id.jasoet.extractor.app.command.AddCommand
 import id.jasoet.extractor.app.printc
+import id.jasoet.extractor.app.scan
 import id.jasoet.extractor.app.service.DocumentService
 import id.jasoet.extractor.app.workingDirectory
 import id.jasoet.extractor.core.util.measureExecutionNano
@@ -38,11 +39,11 @@ class AddHandler {
         }
 
         val directoryScanner: DirectoryScanner =
-            DirectoryScanner().apply {
-                this.basedir = File(workingDirectory())
-                this.setIncludes(*command.files.toTypedArray())
-                this.scan()
-            }
+            DirectoryScanner()
+                .scan(
+                    baseDir = workingDirectory(),
+                    includes = command.files
+                )
 
         val foundFiles: List<File> = directoryScanner.includedFiles.map { file ->
             File(directoryScanner.basedir, file)
