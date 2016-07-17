@@ -60,12 +60,32 @@ class PoliceReportDsl() : Dsl({
         }
     }
 
+    field("Place") {
+        rule {
+            extract(Key("Tempat Kejadian"), DictionaryType.VALUE)
+        }
+    }
+
     field("PerpetratorName") {
         rule {
             extract(Key("Pelaku")) { line ->
                 val value = line.getValue()
                 if (value.contains(",")) {
                     value.substring(0, value.indexOf(","))
+                } else {
+                    value
+                }
+            }
+        }
+    }
+
+    field("VictimName") {
+        rule {
+            extract(Key("Korban")) { line ->
+                val value = line.getValue()
+                val index = value.indexOfAny(listOf(","))
+                if (index != -1) {
+                    value.substring(0, index)
                 } else {
                     value
                 }
@@ -84,6 +104,18 @@ class PoliceReportDsl() : Dsl({
                     value
                 }
             }
+        }
+    }
+
+    field("CrimeType") {
+        rule {
+            extract(Key("TINDAK PIDANA APA"), DictionaryType.CRIME)
+        }
+    }
+
+    field("CrimeClause") {
+        rule {
+            extract(Key("TINDAK PIDANA APA"), DictionaryType.CLAUSE)
         }
     }
 

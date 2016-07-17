@@ -9,6 +9,7 @@ package id.jasoet.extractor.core.dictionary
 val dictionaryMap: Map<DictionaryType, Dictionary> by lazy {
     mapOf(
         DictionaryType.KEY to keyDictionary,
+        DictionaryType.VALUE to valueDictionary,
         DictionaryType.MONEY to moneyDictionary,
         DictionaryType.AGE to ageDictionary,
         DictionaryType.DAY to dayDictionary,
@@ -20,6 +21,13 @@ val dictionaryMap: Map<DictionaryType, Dictionary> by lazy {
         DictionaryType.TIME to timeDictionary,
         DictionaryType.VEHICLE_NUMBER to vehicleNumberDictionary
     )
+}
+
+val valueDictionary: Dictionary by lazy {
+    object : Dictionary {
+        override val type: DictionaryType = DictionaryType.VALUE
+        override val regexes: List<Regex> = listOf(Regex(".+", RegexOption.IGNORE_CASE))
+    }
 }
 
 val vehicleNumberDictionary: Dictionary by lazy {
