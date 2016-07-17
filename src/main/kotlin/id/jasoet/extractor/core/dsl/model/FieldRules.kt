@@ -1,4 +1,4 @@
-package id.jasoet.extractor.core.dsl
+package id.jasoet.extractor.core.dsl.model
 
 import id.jasoet.extractor.core.document.line.Line
 

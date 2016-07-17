@@ -43,13 +43,14 @@ fun printc(text: Ansi.() -> Ansi) {
     AnsiConsole.out.println(output)
 }
 
-fun loadDSL(): List<Pair<String, Dsl>> {
-    val scanner = FastClasspathScanner("id.jasoet.extractor.app.rule")
+fun loadDSL(packageName: String = "id.jasoet.extractor.app.rule"): Map<String, Dsl> {
+    val scanner = FastClasspathScanner(packageName)
         .scan()
 
     return scanner.getNamesOfSubclassesOf(Dsl::class.java).map {
-        it to Class.forName(it).newInstance() as Dsl
-    }
+        val dsl = Class.forName(it).newInstance() as Dsl
+        dsl.name to dsl
+    }.toMap()
 }
 
 fun DirectoryScanner.scan(baseDir: String,

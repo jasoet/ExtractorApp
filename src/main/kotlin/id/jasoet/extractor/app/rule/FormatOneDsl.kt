@@ -15,7 +15,7 @@ import id.jasoet.extractor.core.dsl.Dsl
  */
 
 
-class FormatOneDsl() : Dsl({
+class FormatOneDsl() : Dsl("FormatOne", {
 
     field("ReportNumber") {
         rule {

@@ -1,5 +1,7 @@
 package id.jasoet.extractor.core.dsl
 
+import id.jasoet.extractor.core.dsl.model.FieldRules
+
 /**
  * DSL Language Class
  *

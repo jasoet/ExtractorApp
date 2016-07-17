@@ -3,8 +3,6 @@ package id.jasoet.extractor.app.command.handler
 import id.jasoet.extractor.app.command.ShowCommand
 import id.jasoet.extractor.app.loadDSL
 import id.jasoet.extractor.app.service.DocumentService
-import kotlinslang.control.tryOf
-import kotlinslang.orElse
 import nl.komponents.kovenant.functional.map
 import org.springframework.beans.factory.annotation.Autowired
 import org.springframework.stereotype.Component
@@ -36,29 +34,21 @@ class ShowHandler {
 
         documentService
             .loadAllProcessedDocument()
-            .success {
-                val ruleList = loadDSL()[1].second.extractRule()
+            .success { processedDocuments ->
+                val dslName = "PoliceReport"
 
-                it.map { (mapFileName[it.id] ?: "") to it.contentLinesAnalyzed }
-                    .sortedBy { it.first }
-                    .forEach {
-                        val analyzedLines = it.second
-                        val fileName = it.first
-                        println("$fileName")
-
-                        ruleList.forEach {
-                            val (name, rules) = it
-                            val operation = rules.first()
-                            val result = tryOf { operation.invoke(analyzedLines) }
-                                .orElse("")
-                            println("$name => $result")
-                        }
-
-                        println("==================")
+                val dsl = loadDSL()[dslName] ?: throw IllegalArgumentException("DSL $dslName not Found")
+                println("Process With ${dsl.name}[${dsl.className}] ")
+                processedDocuments.forEach { doc ->
+                    val fileName = mapFileName[doc.id]
+                    println(fileName)
+                    val results = dsl.extract(doc.contentLinesAnalyzed)
+                    results.forEach {
+                        val (name, result, ex) = it
+                        val errorMessage = if (ex != null) "[${ex.message}]" else ""
+                        println("$name => $result $errorMessage")
                     }
-
+                }
             }
-
-
     }
 }

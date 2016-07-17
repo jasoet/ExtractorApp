@@ -16,7 +16,7 @@ import id.jasoet.extractor.core.dsl.Dsl
  */
 
 
-class PoliceReportDsl() : Dsl({
+class PoliceReportDsl() : Dsl("PoliceReport", {
 
     field("ReportNumber") {
         rule {

@@ -14,4 +14,4 @@ data class AddCommand(
     @Parameter(description = "File/Directories from working directories")
     val files: MutableList<String> = arrayListOf(),
     @Parameter(names = arrayOf("-d", "--dsl"), description = "DSL to be Used for Processing the Files, if empty files will not be processed")
-    val dsl: String = "")
+    val dsl: String = "PoliceReport")
