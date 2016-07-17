@@ -42,6 +42,24 @@ class PoliceReportDsl() : Dsl({
         }
     }
 
+    field("ReporterBirthday") {
+        rule {
+            extract(Key("Nama"), DictionaryType.DATE)
+        }
+    }
+
+    field("ReporterAge") {
+        rule {
+            extract(Key("Nama"), DictionaryType.AGE)
+        }
+    }
+
+    field("ReporterGender") {
+        rule {
+            extract(Key("Nama"), DictionaryType.GENDER)
+        }
+    }
+
     field("EventDay") {
         rule {
             extract(Key("WAKTU KEJADIAN"), DictionaryType.DAY)
