@@ -1,9 +1,12 @@
 package id.jasoet.extractor.app.command.handler
 
+import id.jasoet.extractor.app.center
 import id.jasoet.extractor.app.command.ShowCommand
-import id.jasoet.extractor.app.dslMap
+import id.jasoet.extractor.app.leftPad
+import id.jasoet.extractor.app.printc
+import id.jasoet.extractor.app.rightPad
 import id.jasoet.extractor.app.service.DocumentService
-import nl.komponents.kovenant.functional.map
+import org.fusesource.jansi.Ansi
 import org.springframework.beans.factory.annotation.Autowired
 import org.springframework.stereotype.Component
 
@@ -20,35 +23,100 @@ class ShowHandler {
     lateinit var documentService: DocumentService
 
     fun handle(command: ShowCommand) {
-        println("Process Show Command $command")
-
-        val mapFileName = documentService
-            .loadAllDocument()
-            .map {
-                it.map {
-                    it.id to it.fileName
-                }.toMap()
+        val documentsPromise =
+            if (command.ids.isEmpty()) {
+                printc(Ansi.Color.GREEN) {
+                    "Show All Documents\n"
+                }
+                documentService.loadAllDocument()
+            } else {
+                printc(Ansi.Color.GREEN) {
+                    "Show Documents with id [${command.ids.joinToString(", ")}]\n"
+                }
+                documentService.loadDocument(command.ids)
             }
-            .get()
 
+        val documents = documentsPromise.get()
+        documents.forEach { doc ->
+            printc(Ansi.Color.YELLOW) {
+                "\n\n".rightPad(100, "*")
+            }
+            printc(Ansi.Color.BLUE) {
+                """
+                |Id:            ${doc.id}
+                |FileName:      ${doc.fileName}
+                |ContentType:   ${doc.contentType}
+                |""".trimMargin()
+            }
 
-        documentService
-            .loadAllProcessedDocument()
-            .success { processedDocuments ->
-                val dslName = "PoliceReport"
+            if (command.showContent) {
+                printc(Ansi.Color.BLUE) {
+                    """
+                    |
+                    |${"Content".center(30, "=")}
+                    |${doc.content}
+                    |
+                    |""".trimMargin()
+                }
+            }
 
-                val dsl = dslMap[dslName] ?: throw IllegalArgumentException("DSL $dslName not Found")
-                println("Process With ${dsl.name}[${dsl.className}] ")
-                processedDocuments.forEach { doc ->
-                    val fileName = mapFileName[doc.id]
-                    println(fileName)
-                    val results = dsl.extract(doc.contentLinesAnalyzed)
-                    results.forEach {
-                        val (name, result, ex) = it
-                        val errorMessage = if (ex != null) "[${ex.message}]" else ""
-                        println("$name => $result $errorMessage")
+            if (command.showProcessed || command.showAll) {
+                val processedDocuments = documentService
+                    .loadProcessedDocument(doc.id).get()
+
+                printc(Ansi.Color.YELLOW) {
+                    "Document Parts".center(30, "=")
+                }
+
+                processedDocuments.contentLinesAnalyzed.forEach { line ->
+                    printc {
+                        val type = line.type.toString().trim().leftPad(10)
+                        fgRed().a(type)
+                            .fgBrightYellow().a("|\t")
+                            .fgBrightBlue().a(line.content.trim())
                     }
                 }
             }
+
+            if (command.showExtracted || command.showAll) {
+                val extractedDocument = documentService
+                    .loadExtractedDocument(doc.id).get()
+
+                printc(Ansi.Color.YELLOW) {
+                        "".rightPad(30, "=")
+                }
+
+                printc(Ansi.Color.RED) {
+                    "DSL to Extract : ${extractedDocument.dslName}"
+                }
+
+                printc(Ansi.Color.YELLOW) {
+                    "Results".center(30, "=")
+                }
+                extractedDocument.results.forEach { result ->
+                    printc {
+                        val type = result.key.toString().trim().leftPad(20)
+                        fgRed().a(type)
+                            .fgBrightYellow().a("|")
+                            .fgBrightBlue().a(result.value.trim())
+                    }
+                }
+                if (extractedDocument.errors.isNotEmpty()) {
+                    printc(Ansi.Color.YELLOW) {
+                        "Errors".center(30, "=")
+                    }
+                }
+                extractedDocument.errors.forEach { result ->
+                    printc {
+                        val type = result.key.toString().trim().leftPad(20)
+                        fgRed().a(type)
+                            .fgBrightYellow().a("|")
+                            .fgBrightBlue().a(result.value.trim())
+                    }
+                }
+            }
+
+
+        }
     }
 }

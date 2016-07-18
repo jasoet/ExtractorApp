@@ -8,7 +8,7 @@ import com.beust.jcommander.Parameters
  *
  * @author Deny Prasetyo
  */
-@Parameters(commandDescription = "Show and Assign DSL to Files")
+@Parameters(commandDescription = "Show DSLs")
 data class DslCommand(
     @Parameter(description = "DSL Ids")
     val ids: MutableList<String> = arrayListOf()

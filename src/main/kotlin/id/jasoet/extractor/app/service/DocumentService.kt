@@ -151,6 +151,14 @@ class DocumentService {
         }
     }
 
+    fun loadExtractedDocument(id: String): Promise<ExtractedDocument, Exception> {
+        return task {
+            dataStore.get(ExtractedDocument::class.java, id)
+        } fail {
+            log.error("${it.message} when load document [$id]", it)
+        }
+    }
+
     fun loadDocument(ids: List<String>): Promise<List<DocumentModel>, Exception> {
         return task {
             dataStore.get(DocumentModel::class.java, ids).toList()

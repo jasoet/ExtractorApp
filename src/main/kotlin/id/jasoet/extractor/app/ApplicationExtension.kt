@@ -2,6 +2,7 @@ package id.jasoet.extractor.app
 
 import id.jasoet.extractor.core.dsl.Dsl
 import io.github.lukehutch.fastclasspathscanner.FastClasspathScanner
+import org.apache.commons.lang3.StringUtils
 import org.apache.maven.shared.utils.io.DirectoryScanner
 import org.fusesource.jansi.Ansi
 import org.fusesource.jansi.AnsiConsole
@@ -78,3 +79,16 @@ fun DirectoryScanner.scan(baseDir: String,
         this.scan()
     }
 }
+
+fun String.leftPad(len: Int, ch: String = " "): String {
+    return StringUtils.leftPad(this, len, ch)
+}
+
+fun String.rightPad(len: Int, ch: String = " "): String {
+    return StringUtils.rightPad(this, len, ch)
+}
+
+fun String.center(len: Int, ch: String = " "): String {
+    return StringUtils.center(this, len, ch)
+}
+
