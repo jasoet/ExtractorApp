@@ -1,0 +1,2845 @@
+Working Dir: /home/jasoet/Documents/Thesis/ExtractorApp
+Scanning: docs/*.docx
+Found 18 files
+
+
+**************************************************************************************************
+Id:            52cc2103eebcc0ce4c339f61ede802dae7811b8c
+FileName:      /home/jasoet/Documents/Thesis/ExtractorApp/docs/Prod11.docx
+ContentType:   application/vnd.openxmlformats-officedocument.wordprocessingml.document
+
+
+===========Content============
+	KEPOLISIAN DAERAH D.I. YOGYAKARTA
+RESOR BANTUL
+	SEKTOR SEWON
+	Jl. Parangtritis Km, 5,6 Yogyakarta
+“PRO JUSTITIA”
+LAPORAN POLISI
+Nomor : LP/50/II/2015/DIY/RES.BTL/Sek.Sewon
+
+
+	PELAPOR
+
+
+
+	NAMA
+	:
+	MATHEUS DWI AJI, laki-laki, Manado 14 Juni 1992, Pelajar / Mahasiswa. Jl. Petamburan raya, kalideres, Jakarta Barat.
+
+	PERISTIWA YANG DILAPORKAN
+
+
+
+	1.
+	WAKTU KEJADIAN
+	:
+	Jumat 14 Agustus 2015 pukul 09.30 WIB
+
+	2.
+	TEMPAT KEJADIAN
+	:
+	Jl. Merbabu no 14 Pendowoharjo Sewon, Bantul, Daerah Istimewa Yogyakarta.
+
+	3.
+	APA YANG TERJADI
+	:
+	Pencurian barang berharga
+
+	4.
+	SIAPA         A. PELAKU
+	:
+	Belum diketahui
+
+
+	                    B. KORBAN
+	:
+	MAHEUS DWI AJI.
+
+	5.
+	BAGAIMANA TERJADI
+	:
+	Sepulang dari kuliah pada hari jumat 14 agustus 2015 pukul 09.30 WIB korban mendapati kamar kos miliknya telah terbuka dengan kunci gembok yang rusak. Dan barang berharga milik korban yaitu 1 buah laptop merk apple dan 2 buah handphone merk apple telah hilang. Lalu korban memanggil saksi untuk melihat kamar kos miliknya. Seletah saksi melihat kondisi kamar yang sudah terbuka lalu korban mengajak saksi untuk melaporkan kejadian tersebut ke kantor polisi.
+
+	6.
+	DILAPORKAN PADA
+	:
+	Jumat 14 Agustus 10.00 WIB
+
+	TINDAK PIDANA APA
+	:
+	Pencurian pasal 362 KUHP
+
+	NAMA DAN ALAMAT SAKSI-SAKSI
+	:
+	RASYA HAMID,  laki – laki. Bantul 19 agustus 1990. Pegawai Swasta. Jl. Merbabu no 14 Pendowoharjo Sewon, Bantul, Daerah Istimewa Yogyakarta.
+
+	BARANG BUKTI
+	:
+	Kunci gembok dan foto kondisi kamar kos korban.
+
+	URAIAN KEJADIAN
+	:
+	Sepulang dari kuliah pada hari jumat 14 agustus 2015 pukul 09.30 WIB korban mendapati kamar kos miliknya telah terbuka dengan kunci gembok yang rusak. Dan barang berharga milik korban yaitu 1 buah laptop merk apple dan 2 buah handphone merk apple telah hilang. Lalu korban memanggil saksi untuk melihat kamar kos miliknya. Seletah saksi melihat kondisi kamar yang sudah terbuka lalu korban mengajak saksi untuk melaporkan kejadian tersebut ke kantor polisi.
+
+	TINDAKAN YANG DIAMBIL
+	:
+	Menerima laporan, membuat laporan polisi, membuat surat tanda laporan penyelidikan lanjutan.
+
+
+
+
+
+	Pelapor			Bantul, 14 Agustus 2015
+				Yang Membuat Laporan
+				KA SPKT II
+
+
+	MATHEUS DWI AJI			SANTOSO
+									       AIPTU NRP 71110224
+
+
+Mengetahui
+KEPALA KEPOLISIAN SEKTOR SEWON
+
+
+
+
+IMAN SANTOSO
+KOMISARIS POLISI NRP 62070193
+
+
+
+
+
+========Document Parts========
+PREDEFINED|	KEPOLISIAN DAERAH D.I. YOGYAKARTA
+PREDEFINED|	RESOR BANTUL
+PREDEFINED|	SEKTOR SEWON
+PREDEFINED|	Jl. Parangtritis Km, 5,6 Yogyakarta
+PREDEFINED|	“PRO JUSTITIA”
+PREDEFINED|	LAPORAN POLISI
+ KEY_VALUE|	Nomor : LP/50/II/2015/DIY/RES.BTL/Sek.Sewon
+    NORMAL|	PELAPOR
+ KEY_VALUE|	NAMA 	: 	MATHEUS DWI AJI, laki-laki, Manado 14 Juni 1992, Pelajar / Mahasiswa. Jl. Petamburan raya, kalideres, Jakarta Barat.
+    NORMAL|	PERISTIWA YANG DILAPORKAN
+ KEY_VALUE|	1. 	WAKTU KEJADIAN 	: 	Jumat 14 Agustus 2015 pukul 09.30 WIB
+ KEY_VALUE|	2. 	TEMPAT KEJADIAN 	: 	Jl. Merbabu no 14 Pendowoharjo Sewon, Bantul, Daerah Istimewa Yogyakarta.
+ KEY_VALUE|	3.  	APA YANG TERJADI 	: 	Pencurian barang berharga
+ KEY_VALUE|	4. 	SIAPA         A. PELAKU 	: 	Belum diketahui
+ KEY_VALUE|	B. KORBAN 	: 	MAHEUS DWI AJI.
+ KEY_VALUE|	5. 	BAGAIMANA TERJADI 	: 	Sepulang dari kuliah pada hari jumat 14 agustus 2015 pukul 09.30 WIB korban mendapati kamar kos miliknya telah terbuka dengan kunci gembok yang rusak. Dan barang berharga milik korban yaitu 1 buah laptop merk apple dan 2 buah handphone merk apple telah hilang. Lalu korban memanggil saksi untuk melihat kamar kos miliknya. Seletah saksi melihat kondisi kamar yang sudah terbuka lalu korban mengajak saksi untuk melaporkan kejadian tersebut ke kantor polisi.
+ KEY_VALUE|	6. 	DILAPORKAN PADA 	: 	Jumat 14 Agustus 10.00 WIB
+ KEY_VALUE|	TINDAK PIDANA APA 	: 	Pencurian pasal 362 KUHP
+ KEY_VALUE|	NAMA DAN ALAMAT SAKSI-SAKSI 	: 	RASYA HAMID,  laki – laki. Bantul 19 agustus 1990. Pegawai Swasta. Jl. Merbabu no 14 Pendowoharjo Sewon, Bantul, Daerah Istimewa Yogyakarta.
+ KEY_VALUE|	BARANG BUKTI 	: 	Kunci gembok dan foto kondisi kamar kos korban.
+ KEY_VALUE|	URAIAN KEJADIAN 	: 	Sepulang dari kuliah pada hari jumat 14 agustus 2015 pukul 09.30 WIB korban mendapati kamar kos miliknya telah terbuka dengan kunci gembok yang rusak. Dan barang berharga milik korban yaitu 1 buah laptop merk apple dan 2 buah handphone merk apple telah hilang. Lalu korban memanggil saksi untuk melihat kamar kos miliknya. Seletah saksi melihat kondisi kamar yang sudah terbuka lalu korban mengajak saksi untuk melaporkan kejadian tersebut ke kantor polisi.
+ KEY_VALUE|	TINDAKAN YANG DIAMBIL 	: 	Menerima laporan, membuat laporan polisi, membuat surat tanda laporan penyelidikan lanjutan.
+    NORMAL|	Pelapor			Bantul, 14 Agustus 2015 				Yang Membuat Laporan 				KA SPKT II
+    NORMAL|	MATHEUS DWI AJI			SANTOSO 									       AIPTU NRP 71110224
+PREDEFINED|	Mengetahui
+PREDEFINED|	KEPALA KEPOLISIAN SEKTOR SEWON
+    NORMAL|	IMAN SANTOSO KOMISARIS POLISI NRP 62070193
+==============================
+DSL to Extract : PoliceReport
+===========Results============
+        ReportNumber|LP/50/II/2015/DIY/RES.BTL/Sek.Sewon
+        ReporterName|MATHEUS DWI AJI
+    ReporterBirthday|14 Juni 1992
+         ReporterAge|
+      ReporterGender|laki-laki
+            EventDay|Jumat
+           EventDate|14 Agustus 2015
+           EventTime|09.30 WIB
+               Place|Jl. Merbabu no 14 Pendowoharjo Sewon, Bantul, Daerah Istimewa Yogyakarta.
+     PerpetratorName|Belum diketahui
+          VictimName|MAHEUS DWI AJI.
+         WitnessName|RASYA HAMID
+           CrimeType|Pencurian
+         CrimeClause|362 KUHP
+
+
+**************************************************************************************************
+Id:            3997615aaa27c18989539cdb5425807b14860a07
+FileName:      /home/jasoet/Documents/Thesis/ExtractorApp/docs/Prod3.docx
+ContentType:   application/vnd.openxmlformats-officedocument.wordprocessingml.document
+
+
+===========Content============
+	KEPOLISIAN DAERAH D.I. YOGYAKARTA
+RESOR BANTUL
+	SEKTOR SEWON
+	Jl. Parangtritis Km, 5,6 Yogyakarta
+“PRO JUSTITIA”
+LAPORAN POLISI
+Nomor : LP/42/II/2015/DIY/RES.BTL/Sek.Sewon
+
+
+	PELAPOR
+
+
+
+	NAMA
+	:
+	SAMSURI, Laki-laki, Medan 24 april 1976. Karyawan Swasta. Jl. Wonosari Km 12.5 Srimulyo Piyungan, Bantul, Daerah Istimewa Yogyakarta.
+
+	PERISTIWA YANG DILAPORKAN
+
+
+
+	1.
+	WAKTU KEJADIAN
+	:
+	Tidak diketahui.
+
+	2.
+	TEMPAT KEJADIAN
+	:
+	Perbatasan Jalan Desa Timbulharjo ,Sewon,Bantul.
+
+	3.
+	APA YANG TERJADI
+	:
+	Tindak Pidana Pembunuhan
+
+	4.
+	SIAPA         A. PELAKU
+	:
+	Belum diketahui
+
+
+	                    B. KORBAN
+	:
+	Sutini  usia 65 tahun.
+
+	5.
+	BAGAIMANA TERJADI
+	:
+	Sabtu pagi, saksi berjalan menuju tempat kerja yang berada di Jl. Parangtrits Km 5,6 saksi melewati jalan perbatasan desa, saksi berhenti diarea perkebunan tebu dan menerima telefon dari rekan kerja. Tidak seberapa lama saksi mencium bau busuk yang berada di sebelah semak-semak perkebunan lalu saksi mendekati kawasan perkebunan dan menemukan mayat korban dalam posisi telungkup. Setelah mengetahui  bahwa ada korban pembunuhan saksi lalu memanggil ketua Rt setempat untuk melapor ke kantor polisi terdekat.
+
+	6.
+	DILAPORKAN PADA
+	:
+	Pada hari Sabtu, tanggal 08 Agustus 2015, pukul 09.15 wib.
+
+	TINDAK PIDANA APA
+	:
+	Penganiayaan pasal 351 KUHP
+
+	NAMA DAN ALAMAT SAKSI-SAKSI
+	:
+	SAMSURI, Laki-laki, Medan 24 april 1976. Karyawan Swasta. Jl. Wonosari Km 12.5 Srimulyo Piyungan, Bantul, Daerah Istimewa Yogyakarta.. (085781258892).
+BAHARUDIN, Laki-laki, Bantul 12 mei 1959. Petani (Ketua Rt) Timbulharjo, Sewon Bantul.
+
+	BARANG BUKTI
+	:
+	Identitas Keterangan korban bernama SUTINI Perempuan,14 januari 1955. Jl. Glagah Sari no 55 Warungboto Umbulharjo Yogyakarta.
+
+	URAIAN KEJADIAN
+	:
+	Saksi hendak pergi bekerja melewati jalan Desa Timbulharjo ditengah perjalanan saksi menerima telefon dari rekan untuk berganti berjaga. Pada saat saksi menerima telefon dari rekan kerja, saksi mencium bau busuk dari semak-semak disamping saksi berdiri, karena penasaran saksi memutuskan untuk menengok semak tersebut dan mendapati sebuah mayat seorang wanita dalam posisi tertelungkup, lalu saksi memanggil ketua Rt guna melaporkan ke kantor polisi terdekat.
+
+	TINDAKAN YANG DIAMBIL
+	:
+	Menerima laporan, membuat laporan polisi, membuat surat tanda laporan penyelidikan lanjutan.
+
+
+
+
+
+	Pelapor			Bantul, 08 Agustus 2015
+				Yang Membuat Laporan
+				KA SPKT II
+
+
+	SAMSURI			RAHMAT HIDAYAT
+									       AIPTU NRP 61110332
+
+
+Mengetahui
+KEPALA KEPOLISIAN SEKTOR SEWON
+
+
+
+
+IMAN SANTOSO
+KOMISARIS POLISI NRP 62070193
+
+
+
+
+========Document Parts========
+PREDEFINED|	KEPOLISIAN DAERAH D.I. YOGYAKARTA
+PREDEFINED|	RESOR BANTUL
+PREDEFINED|	SEKTOR SEWON
+PREDEFINED|	Jl. Parangtritis Km, 5,6 Yogyakarta
+PREDEFINED|	“PRO JUSTITIA”
+PREDEFINED|	LAPORAN POLISI
+ KEY_VALUE|	Nomor : LP/42/II/2015/DIY/RES.BTL/Sek.Sewon
+    NORMAL|	PELAPOR
+ KEY_VALUE|	NAMA 	: 	SAMSURI, Laki-laki, Medan 24 april 1976. Karyawan Swasta. Jl. Wonosari Km 12.5 Srimulyo Piyungan, Bantul, Daerah Istimewa Yogyakarta.
+    NORMAL|	PERISTIWA YANG DILAPORKAN
+ KEY_VALUE|	1. 	WAKTU KEJADIAN 	: 	Tidak diketahui.
+ KEY_VALUE|	2. 	TEMPAT KEJADIAN 	: 	Perbatasan Jalan Desa Timbulharjo ,Sewon,Bantul.
+ KEY_VALUE|	3.  	APA YANG TERJADI 	: 	Tindak Pidana Pembunuhan
+ KEY_VALUE|	4. 	SIAPA         A. PELAKU 	: 	Belum diketahui
+ KEY_VALUE|	B. KORBAN 	: 	Sutini  usia 65 tahun.
+ KEY_VALUE|	5. 	BAGAIMANA TERJADI 	: 	Sabtu pagi, saksi berjalan menuju tempat kerja yang berada di Jl. Parangtrits Km 5,6 saksi melewati jalan perbatasan desa, saksi berhenti diarea perkebunan tebu dan menerima telefon dari rekan kerja. Tidak seberapa lama saksi mencium bau busuk yang berada di sebelah semak-semak perkebunan lalu saksi mendekati kawasan perkebunan dan menemukan mayat korban dalam posisi telungkup. Setelah mengetahui  bahwa ada korban pembunuhan saksi lalu memanggil ketua Rt setempat untuk melapor ke kantor polisi terdekat.
+ KEY_VALUE|	6. 	DILAPORKAN PADA 	: 	Pada hari Sabtu, tanggal 08 Agustus 2015, pukul 09.15 wib.
+ KEY_VALUE|	TINDAK PIDANA APA 	: 	Penganiayaan pasal 351 KUHP
+ KEY_VALUE|	NAMA DAN ALAMAT SAKSI-SAKSI 	: 	SAMSURI, Laki-laki, Medan 24 april 1976. Karyawan Swasta. Jl. Wonosari Km 12.5 Srimulyo Piyungan, Bantul, Daerah Istimewa Yogyakarta.. (085781258892). BAHARUDIN, Laki-laki, Bantul 12 mei 1959. Petani (Ketua Rt) Timbulharjo, Sewon Bantul.
+ KEY_VALUE|	BARANG BUKTI 	: 	Identitas Keterangan korban bernama SUTINI Perempuan,14 januari 1955. Jl. Glagah Sari no 55 Warungboto Umbulharjo Yogyakarta.
+ KEY_VALUE|	URAIAN KEJADIAN 	: 	Saksi hendak pergi bekerja melewati jalan Desa Timbulharjo ditengah perjalanan saksi menerima telefon dari rekan untuk berganti berjaga. Pada saat saksi menerima telefon dari rekan kerja, saksi mencium bau busuk dari semak-semak disamping saksi berdiri, karena penasaran saksi memutuskan untuk menengok semak tersebut dan mendapati sebuah mayat seorang wanita dalam posisi tertelungkup, lalu saksi memanggil ketua Rt guna melaporkan ke kantor polisi terdekat.
+ KEY_VALUE|	TINDAKAN YANG DIAMBIL 	: 	Menerima laporan, membuat laporan polisi, membuat surat tanda laporan penyelidikan lanjutan.
+    NORMAL|	Pelapor			Bantul, 08 Agustus 2015 				Yang Membuat Laporan 				KA SPKT II
+    NORMAL|	SAMSURI			RAHMAT HIDAYAT 									       AIPTU NRP 61110332
+PREDEFINED|	Mengetahui
+PREDEFINED|	KEPALA KEPOLISIAN SEKTOR SEWON
+    NORMAL|	IMAN SANTOSO KOMISARIS POLISI NRP 62070193
+==============================
+DSL to Extract : PoliceReport
+===========Results============
+        ReportNumber|LP/42/II/2015/DIY/RES.BTL/Sek.Sewon
+        ReporterName|SAMSURI
+    ReporterBirthday|24 april 1976
+         ReporterAge|
+      ReporterGender|Laki-laki
+            EventDay|
+           EventDate|
+           EventTime|
+               Place|Perbatasan Jalan Desa Timbulharjo ,Sewon,Bantul.
+     PerpetratorName|Belum diketahui
+          VictimName|Sutini  usia 65 tahun.
+         WitnessName|SAMSURI
+           CrimeType|Penganiayaan
+         CrimeClause|351 KUHP
+
+
+**************************************************************************************************
+Id:            2ab13e9929c24639c1a3492a1b4ffc2aeb97d938
+FileName:      /home/jasoet/Documents/Thesis/ExtractorApp/docs/Prod4.docx
+ContentType:   application/vnd.openxmlformats-officedocument.wordprocessingml.document
+
+
+===========Content============
+	KEPOLISIAN DAERAH D.I. YOGYAKARTA
+RESOR BANTUL
+	SEKTOR SEWON
+	Jl. Parangtritis Km, 5,6 Yogyakarta
+“PRO JUSTITIA”
+LAPORAN POLISI
+Nomor : LP/43/II/2015/DIY/RES.BTL/Sek.Sewon
+
+
+	PELAPOR
+
+
+
+	NAMA
+	:
+	HANA YANI, Perempuan, Balikpapan 29 oktober 1990, Pelajar / Mahasiswa. Belum menikah. Jl.kaliurang km 10.9 Sleman, Daerah Istimewa Yogakarta.
+
+	PERISTIWA YANG DILAPORKAN
+
+
+
+	1.
+	WAKTU KEJADIAN
+	:
+	Minggu 09 Agustus 2015 sekitar pukul 10.00 WIB
+
+	2.
+	TEMPAT KEJADIAN
+	:
+	Jl. Trikora 88 Panggungharjo, Sewon, Bantul, Daerah Istimewa Yogyakarta.
+
+	3.
+	APA YANG TERJADI
+	:
+	Pelecehan Seksual
+
+	4.
+	SIAPA         A. PELAKU
+	:
+	SUTIKNO, Pemilik Rumah Kos.
+
+
+	                    B. KORBAN
+	:
+	HANA YANI, 25 tahun.
+
+	5.
+	BAGAIMANA TERJADI
+	:
+	Hari minggu pagi pukul 10.00 WIB, korban hendak mencuci pakaian di belakang rumah kos tempat korban tinggal. Setelah menyelesaikan mencuci pakaian korban memutuskan untuk mandi,lalu kembali ke kamar kos. Ketika itu pelaku mengajak bicara korban guna menanyakan kerusakan listrik yang ada di kamar kos tersebut. Karena kondisi rumah kos yang sedang sepi pelaku langsung menyekap dan memaksa korban untuk berbuat asusila. Tak selang beberapa lama saksi datang untuk menemui korban guna keperluan tugas kuliah, saksi mendengar suara gaduh dan jeritan korban lalu masuk dan menolong korban, sedangkan pelaku lansung melarikan diri. Dan saksi mengajak korban untuk melapor ke kantor polisi.
+
+	6.
+	DILAPORKAN PADA
+	:
+	Pada hari Minggu 09 Agustus 2015 pukul 11.20 WIB.
+
+	TINDAK PIDANA APA
+	:
+	Kejahatan Kesusilaan pasal 285 KUHP
+
+	NAMA DAN ALAMAT SAKSI-SAKSI
+	:
+	FITRIA SARI, Perempuan, Medan 25 Desember 1992, Pelajar / Mahasiswa. Jl. Semangka besar Blok E No 40 Palalamu, Medan, Sumatra Barat.
+
+	BARANG BUKTI
+	:
+	Baju dan celana korban.
+
+	URAIAN KEJADIAN
+	:
+	Hari minggu pagi pukul 10.00 WIB. Korban sedang mencuci pakaian di belakang rumah kos tempat korban tinggal. Setelah  menyelesaikan cucian tersebut korban lalu memutuskan untuk mandi lalu kembali ke kamar kos, dan bertemu pelaku. Lalu pelaku mengajak bicara korban guna menanyakan kerusakan listrik yang ada di kamar kos milik korban, karena kondisi rumah kos tersebut dalam kondisi sepi. Pelaku langsung dan memaksa korban untuk berbuat asusila dengannya. Tak selang berapa lama saksi datang untuk keperluan tugas kuliah. Mendengar suara gaduh dan jeritan korban saksi langsung masuk dan menolong korban, sedangkan pelaku melarikan diri. Dan saksi melapor ke ketua Rt setempat dan pergi ke kantor polisi untuk melaporkan kejadian pelecehan tersebut.
+
+	TINDAKAN YANG DIAMBIL
+	:
+	Menerima laporan, membuat laporan polisi, membuat surat tanda laporan penyelidikan lanjutan.
+
+
+
+
+
+	Pelapor			Bantul, 09 Agustus 2015
+				Yang Membuat Laporan
+				KA SPKT II
+
+
+	HANA YANI			SUKIRMAN
+									       AIPTU NRP 51210443
+
+
+Mengetahui
+KEPALA KEPOLISIAN SEKTOR SEWON
+
+
+
+
+IMAN SANTOSO
+KOMISARIS POLISI NRP 62070193
+
+
+
+
+========Document Parts========
+PREDEFINED|	KEPOLISIAN DAERAH D.I. YOGYAKARTA
+PREDEFINED|	RESOR BANTUL
+PREDEFINED|	SEKTOR SEWON
+PREDEFINED|	Jl. Parangtritis Km, 5,6 Yogyakarta
+PREDEFINED|	“PRO JUSTITIA”
+PREDEFINED|	LAPORAN POLISI
+ KEY_VALUE|	Nomor : LP/43/II/2015/DIY/RES.BTL/Sek.Sewon
+    NORMAL|	PELAPOR
+ KEY_VALUE|	NAMA 	: 	HANA YANI, Perempuan, Balikpapan 29 oktober 1990, Pelajar / Mahasiswa. Belum menikah. Jl.kaliurang km 10.9 Sleman, Daerah Istimewa Yogakarta.
+    NORMAL|	PERISTIWA YANG DILAPORKAN
+ KEY_VALUE|	1. 	WAKTU KEJADIAN 	: 	Minggu 09 Agustus 2015 sekitar pukul 10.00 WIB
+ KEY_VALUE|	2. 	TEMPAT KEJADIAN 	: 	Jl. Trikora 88 Panggungharjo, Sewon, Bantul, Daerah Istimewa Yogyakarta.
+ KEY_VALUE|	3.  	APA YANG TERJADI 	: 	Pelecehan Seksual
+ KEY_VALUE|	4. 	SIAPA         A. PELAKU 	: 	SUTIKNO, Pemilik Rumah Kos.
+ KEY_VALUE|	B. KORBAN 	: 	HANA YANI, 25 tahun.
+ KEY_VALUE|	5. 	BAGAIMANA TERJADI 	: 	Hari minggu pagi pukul 10.00 WIB, korban hendak mencuci pakaian di belakang rumah kos tempat korban tinggal. Setelah menyelesaikan mencuci pakaian korban memutuskan untuk mandi,lalu kembali ke kamar kos. Ketika itu pelaku mengajak bicara korban guna menanyakan kerusakan listrik yang ada di kamar kos tersebut. Karena kondisi rumah kos yang sedang sepi pelaku langsung menyekap dan memaksa korban untuk berbuat asusila. Tak selang beberapa lama saksi datang untuk menemui korban guna keperluan tugas kuliah, saksi mendengar suara gaduh dan jeritan korban lalu masuk dan menolong korban, sedangkan pelaku lansung melarikan diri. Dan saksi mengajak korban untuk melapor ke kantor polisi.
+ KEY_VALUE|	6. 	DILAPORKAN PADA 	: 	Pada hari Minggu 09 Agustus 2015 pukul 11.20 WIB.
+ KEY_VALUE|	TINDAK PIDANA APA 	: 	Kejahatan Kesusilaan pasal 285 KUHP
+ KEY_VALUE|	NAMA DAN ALAMAT SAKSI-SAKSI 	: 	FITRIA SARI, Perempuan, Medan 25 Desember 1992, Pelajar / Mahasiswa. Jl. Semangka besar Blok E No 40 Palalamu, Medan, Sumatra Barat.
+ KEY_VALUE|	BARANG BUKTI 	: 	Baju dan celana korban.
+ KEY_VALUE|	URAIAN KEJADIAN 	: 	Hari minggu pagi pukul 10.00 WIB. Korban sedang mencuci pakaian di belakang rumah kos tempat korban tinggal. Setelah  menyelesaikan cucian tersebut korban lalu memutuskan untuk mandi lalu kembali ke kamar kos, dan bertemu pelaku. Lalu pelaku mengajak bicara korban guna menanyakan kerusakan listrik yang ada di kamar kos milik korban, karena kondisi rumah kos tersebut dalam kondisi sepi. Pelaku langsung dan memaksa korban untuk berbuat asusila dengannya. Tak selang berapa lama saksi datang untuk keperluan tugas kuliah. Mendengar suara gaduh dan jeritan korban saksi langsung masuk dan menolong korban, sedangkan pelaku melarikan diri. Dan saksi melapor ke ketua Rt setempat dan pergi ke kantor polisi untuk melaporkan kejadian pelecehan tersebut.
+ KEY_VALUE|	TINDAKAN YANG DIAMBIL 	: 	Menerima laporan, membuat laporan polisi, membuat surat tanda laporan penyelidikan lanjutan.
+    NORMAL|	Pelapor			Bantul, 09 Agustus 2015 				Yang Membuat Laporan 				KA SPKT II
+    NORMAL|	HANA YANI			SUKIRMAN 									       AIPTU NRP 51210443
+PREDEFINED|	Mengetahui
+PREDEFINED|	KEPALA KEPOLISIAN SEKTOR SEWON
+    NORMAL|	IMAN SANTOSO KOMISARIS POLISI NRP 62070193
+==============================
+DSL to Extract : PoliceReport
+===========Results============
+        ReportNumber|LP/43/II/2015/DIY/RES.BTL/Sek.Sewon
+        ReporterName|HANA YANI
+    ReporterBirthday|29 oktober 1990
+         ReporterAge|
+      ReporterGender|Perempuan
+            EventDay|Minggu
+           EventDate|09 Agustus 2015
+           EventTime|10.00 WIB
+               Place|Jl. Trikora 88 Panggungharjo, Sewon, Bantul, Daerah Istimewa Yogyakarta.
+     PerpetratorName|SUTIKNO
+          VictimName|HANA YANI
+         WitnessName|FITRIA SARI
+           CrimeType|Kejahatan Kesusilaan
+         CrimeClause|285 KUHP
+
+
+**************************************************************************************************
+Id:            675cb2c6d359add90346624292d24224b45fe40f
+FileName:      /home/jasoet/Documents/Thesis/ExtractorApp/docs/Prod2.docx
+ContentType:   application/vnd.openxmlformats-officedocument.wordprocessingml.document
+
+
+===========Content============
+	KEPOLISIAN DAERAH D.I. YOGYAKARTA
+RESOR BANTUL
+	SEKTOR SEWON
+	Jl. Parangtritis Km, 5,6 Yogyakarta
+“PRO JUSTITIA”
+LAPORAN POLISI
+Nomor : LP/41/II/2015/DIY/RES.BTL/Sek.Sewon
+
+
+	PELAPOR
+
+
+
+	NAMA
+	:
+	MUHAMMAD SOFIAN, laki–laki. Yogyakarta 24 Januari 1988, Mahasiswa / Pelajar. Islam. Jl. Bantul km 4.5 no 77, Pandak, Bantul, Daerah Istimewa Yogyakarta.
+
+	PERISTIWA YANG DILAPORKAN
+
+
+
+	1.
+	WAKTU KEJADIAN
+	:
+	Hari jum’at  tanggal 07 Agustus 2015, sekitar  pukul 11.00 wib
+
+	2.
+	TEMPAT KEJADIAN
+	:
+	Jl.Arteri no 45 Panggung Harjo ,Sewon,Bantul.
+
+	3.
+	APA YANG TERJADI
+	:
+	Tindak Pidana Penganiayaan
+
+	4.
+	SIAPA         A. PELAKU
+	:
+	Joko Suyono usia 40 tahun.
+
+
+	                    B. KORBAN
+	:
+	Kartadi usia 79 tahun.
+
+	5.
+	BAGAIMANA TERJADI
+	:
+	Jumat pagi sekitar pukul 08.00 korban hedak pulang dari ladang, ditengah perjalanan pelaku mendatangi korban guna menyelesaikan pituang sebesar Rp. 1.000.000,- yang dipinjam oleh korban yang telah jatuh tempo. Namun karena korban belum memiliki uang untuk membayar piutang maka pelaku marah dan memukul korban sebanyak 10 kali dimuka. Dan mengakibatkan korban hilang kesadaran serta dilarikan ke Puskesmas sewon di Jl. Paragtritis Km 9.5.
+
+	6.
+	DILAPORKAN PADA
+	:
+	Pada hari Jumat, tanggal 07 Agustus 2015, pukul 11.15 wib.
+
+	TINDAK PIDANA APA
+	:
+	Penganiayaan pasal 351 KUHP
+
+	NAMA DAN ALAMAT SAKSI-SAKSI
+	:
+	MUHAMMAD SOFIAN, laki –laki. Yogyakarta 24 Januari 1988, Mahasiswa / Pelajar. Islam. Jl. Bantul km 4.5 no 77, Pandak, Bantul, Daerah Istimewa Yogyakarta.. (085781528892).
+
+	BARANG BUKTI
+	:
+	Surat Niaga Piutang milik korban dan pelaku senilai Rp 1.000.000,- yang jatuh tempo pada hari kamis tanggal 06 agustus 2015.
+
+	URAIAN KEJADIAN
+	:
+	Ketika korban hendak pulang menuju kediaman yang berada di jl.Arteri no 80 Panggung Harjo, Sewon, Bantul. Korban bertemu pelaku di pos ronda yang berada di sekitar jl.Arteri no 45 Panggung Harjo, Sewon Bantul, pelaku hendak menanyakan masalah piutang yang dimiliki oleh korban sebesar Rp. 1.000.000,- yang telah jatuh tempo. Dikarenakan korban tidak sanggup membayar maka korban berdalih akan membayar minggu depan, namun pelaku tidak mau menerima alasan korban, dan korban mengeluarkan kata-kata kasar yang membuat pelaku marah. Tanpa pikir panjang pelaku langsung memukul korban 3 kali dan korban jatuh tersungkur, lalu pelaku melanjutkan penganiayaan dengan memukul sebanyak 7 kali, lalu saksi melerai dan meminta pelaku untuk pulang. Saksi lalu membawa korban ke puskesmas sewon guna pengobatan lebih lanjut.
+
+	TINDAKAN YANG DIAMBIL
+	:
+	Menerima laporan, membuat laporan polisi, membuat surat tanda laporan penyelidikan lanjutan.
+
+
+
+
+
+	Pelapor			Bantul, 07 Agustus 2015
+				Yang Membuat Laporan
+				KA SPKT II
+
+
+	MUHAMMAD SOFIAN			SANTOSO
+									       AIPTU NRP 71110224
+
+
+Mengetahui
+KEPALA KEPOLISIAN SEKTOR SEWON
+
+
+
+
+IMAN SANTOSO
+KOMISARIS POLISI NRP 62070193
+
+
+
+
+========Document Parts========
+PREDEFINED|	KEPOLISIAN DAERAH D.I. YOGYAKARTA
+PREDEFINED|	RESOR BANTUL
+PREDEFINED|	SEKTOR SEWON
+PREDEFINED|	Jl. Parangtritis Km, 5,6 Yogyakarta
+PREDEFINED|	“PRO JUSTITIA”
+PREDEFINED|	LAPORAN POLISI
+ KEY_VALUE|	Nomor : LP/41/II/2015/DIY/RES.BTL/Sek.Sewon
+    NORMAL|	PELAPOR
+ KEY_VALUE|	NAMA 	: 	MUHAMMAD SOFIAN, laki–laki. Yogyakarta 24 Januari 1988, Mahasiswa / Pelajar. Islam. Jl. Bantul km 4.5 no 77, Pandak, Bantul, Daerah Istimewa Yogyakarta.
+    NORMAL|	PERISTIWA YANG DILAPORKAN
+ KEY_VALUE|	1. 	WAKTU KEJADIAN 	: 	Hari jum’at  tanggal 07 Agustus 2015, sekitar  pukul 11.00 wib
+ KEY_VALUE|	2. 	TEMPAT KEJADIAN 	: 	Jl.Arteri no 45 Panggung Harjo ,Sewon,Bantul.
+ KEY_VALUE|	3.  	APA YANG TERJADI 	: 	Tindak Pidana Penganiayaan
+ KEY_VALUE|	4. 	SIAPA         A. PELAKU 	: 	Joko Suyono usia 40 tahun.
+ KEY_VALUE|	B. KORBAN 	: 	Kartadi usia 79 tahun.
+ KEY_VALUE|	5. 	BAGAIMANA TERJADI 	: 	Jumat pagi sekitar pukul 08.00 korban hedak pulang dari ladang, ditengah perjalanan pelaku mendatangi korban guna menyelesaikan pituang sebesar Rp. 1.000.000,- yang dipinjam oleh korban yang telah jatuh tempo. Namun karena korban belum memiliki uang untuk membayar piutang maka pelaku marah dan memukul korban sebanyak 10 kali dimuka. Dan mengakibatkan korban hilang kesadaran serta dilarikan ke Puskesmas sewon di Jl. Paragtritis Km 9.5.
+ KEY_VALUE|	6. 	DILAPORKAN PADA 	: 	Pada hari Jumat, tanggal 07 Agustus 2015, pukul 11.15 wib.
+ KEY_VALUE|	TINDAK PIDANA APA 	: 	Penganiayaan pasal 351 KUHP
+ KEY_VALUE|	NAMA DAN ALAMAT SAKSI-SAKSI 	: 	MUHAMMAD SOFIAN, laki –laki. Yogyakarta 24 Januari 1988, Mahasiswa / Pelajar. Islam. Jl. Bantul km 4.5 no 77, Pandak, Bantul, Daerah Istimewa Yogyakarta.. (085781528892).
+ KEY_VALUE|	BARANG BUKTI 	: 	Surat Niaga Piutang milik korban dan pelaku senilai Rp 1.000.000,- yang jatuh tempo pada hari kamis tanggal 06 agustus 2015.
+ KEY_VALUE|	URAIAN KEJADIAN 	: 	Ketika korban hendak pulang menuju kediaman yang berada di jl.Arteri no 80 Panggung Harjo, Sewon, Bantul. Korban bertemu pelaku di pos ronda yang berada di sekitar jl.Arteri no 45 Panggung Harjo, Sewon Bantul, pelaku hendak menanyakan masalah piutang yang dimiliki oleh korban sebesar Rp. 1.000.000,- yang telah jatuh tempo. Dikarenakan korban tidak sanggup membayar maka korban berdalih akan membayar minggu depan, namun pelaku tidak mau menerima alasan korban, dan korban mengeluarkan kata-kata kasar yang membuat pelaku marah. Tanpa pikir panjang pelaku langsung memukul korban 3 kali dan korban jatuh tersungkur, lalu pelaku melanjutkan penganiayaan dengan memukul sebanyak 7 kali, lalu saksi melerai dan meminta pelaku untuk pulang. Saksi lalu membawa korban ke puskesmas sewon guna pengobatan lebih lanjut.
+ KEY_VALUE|	TINDAKAN YANG DIAMBIL 	: 	Menerima laporan, membuat laporan polisi, membuat surat tanda laporan penyelidikan lanjutan.
+    NORMAL|	Pelapor			Bantul, 07 Agustus 2015 				Yang Membuat Laporan 				KA SPKT II
+    NORMAL|	MUHAMMAD SOFIAN			SANTOSO 									       AIPTU NRP 71110224
+PREDEFINED|	Mengetahui
+PREDEFINED|	KEPALA KEPOLISIAN SEKTOR SEWON
+    NORMAL|	IMAN SANTOSO KOMISARIS POLISI NRP 62070193
+==============================
+DSL to Extract : PoliceReport
+===========Results============
+        ReportNumber|LP/41/II/2015/DIY/RES.BTL/Sek.Sewon
+        ReporterName|MUHAMMAD SOFIAN
+    ReporterBirthday|24 Januari 1988
+         ReporterAge|
+      ReporterGender|laki
+            EventDay|jum’at
+           EventDate|07 Agustus 2015
+           EventTime|11.00 wib
+               Place|Jl.Arteri no 45 Panggung Harjo ,Sewon,Bantul.
+     PerpetratorName|Joko Suyono usia 40 tahun.
+          VictimName|Kartadi usia 79 tahun.
+         WitnessName|MUHAMMAD SOFIAN
+           CrimeType|Penganiayaan
+         CrimeClause|351 KUHP
+
+
+**************************************************************************************************
+Id:            f0f1a40eae02273b197adef3524767e3f67d2412
+FileName:      /home/jasoet/Documents/Thesis/ExtractorApp/docs/Prod17.docx
+ContentType:   application/vnd.openxmlformats-officedocument.wordprocessingml.document
+
+
+===========Content============
+	KEPOLISIAN DAERAH D.I. YOGYAKARTA
+RESOR BANTUL
+	SEKTOR SEWON
+	Jl. Parangtritis Km, 5,6 Yogyakarta
+“PRO JUSTITIA”
+LAPORAN POLISI
+Nomor : LP/139/V/2016/DIY/RES.BTL/Sek.Sewon
+
+
+	PELAPOR
+
+
+
+	NAMA
+	:
+	AGUS WIDODO, Tempat tanggal lahir Gunungkidul, 15-08-1995, Islam, pelajar, Alamat jamu, Rt 001, hargosari, Tanjungsari, Gunungkidul.
+
+	PERISTIWA YANG DILAPORKAN
+
+
+
+	1.
+	WAKTU KEJADIAN
+	:
+	Hari Selasa, tanggal 15 maret 2016, sekira pukul 18.30 wib
+
+	2.
+	TEMPAT KEJADIAN
+	:
+	Di depan  SMP Ma’Arif Tepatnya Kp Bibis, Timbulharjo, Sewon, Bantul.
+
+	3.
+	APA YANG TERJADI
+	:
+	Tindak Pidana Pengeroyokan dimaksud pasal 170 KUHP.
+
+	4.
+	SIAPA         A. PELAKU
+	:
+	DALAM LIDIK
+
+
+
+	                    B. KORBAN
+	:
+	Pelapor
+
+	5.
+	BAGAIMANA TERJADI
+	:
+	Sekira pukul 16.30 Wib Korban berboncengan dengan Saksi bermaksud akan kerumah temanya,a kan tetapi sesampai didepan SMP Ma’Arif dihadang oleh Pelaku yang berjumlah 2 (dua) menggunakan motor matik. Setelah itu Korban turun dari motor kemudian Para Pelaku langsung memukul kepala Korban.
+
+	6.
+	DILAPORKAN
+	:
+	Hari Selasa tanggal 15 Mei 2016, Pukul 22.45 Wib.
+
+	TINDAK PIDANA APA
+	:
+	Tindak Pidana Pengeroyokan pasal 170 KUHP.
+
+	NAMA DAN ALAMAT SAKSI-SAKSI
+	:
+	WIDIYA, 15 Th, Islam, Pelajar, alamat : Sampangan, Grojogan, Banguntapan, Bantul
+
+	BARANG BUKTI
+	:
+
+
+	URAIAN KEJADIAN
+	:
+	 ..............Bahwa benar pada hari Selasa tanggal 15 Maret 2016, sekira pukul 18.30 Wib, di depan SMP Ma’Arif Tepatnya Kp Bibis, Timbulharjo, Sewon, Bantul.telah terjadi tindak pidana Pengeroyokan sebagaimana dimaksud Pasal 170 KUHP dengan Korban Pelapor.
+.............Awal mula kejadian sekira pukul 18.30 Wib Korban bersma Saksi berboncengan hendak keruamh temannya, sesampainya di depan SMP Ma’Arif Tepatnya Kp Bibis, Timbulharjo, Sewon, Bantul Korban di hadang oleh pelaku. Setelah itu Korban langsung turun dari motor tanpa basa-basi para Pelaku yang berjumlah 2 (dua) orang langsung memukuli korban pada bagian kepala. Setelah seleesai memukuli Pelaku langsung menyuruh Korban untuk pergi meninggalkan tempat kejadian. Dengan dkejadian tersebut Korban mengalami luka-luka pada bagian pelipis, dan memar pada bagian kepala   ....
+..............Atas Kejadian tersebut pelapor kemudian melapor ke Polsek Sewon untuk di tindak lanjuti guna proses penyidikan lebih lanjut
+
+
+	TINDAKAN YANG DIAMBIL
+	:
+	Menerima laporan, Cek TKP, Membuat Laporan Polisi, Membuat Surat Tanda Laporan.
+
+
+
+	Pelapor			Bantul, 09 Februari 2016
+				Yang Membuat Laporan
+				KA SPKT II
+
+
+	AGUS WIDODO			WIDI SUROSO
+				AIPTU NRP 66010295
+
+Mengetahui
+KEPALA KEPOLISIAN SEKTOR SEWON
+
+
+IMAN SANTOSO
+KOMPOL NRP 62070193
+
+
+
+========Document Parts========
+PREDEFINED|	KEPOLISIAN DAERAH D.I. YOGYAKARTA
+PREDEFINED|	RESOR BANTUL
+PREDEFINED|	SEKTOR SEWON
+PREDEFINED|	Jl. Parangtritis Km, 5,6 Yogyakarta
+PREDEFINED|	“PRO JUSTITIA”
+PREDEFINED|	LAPORAN POLISI
+ KEY_VALUE|	Nomor : LP/139/V/2016/DIY/RES.BTL/Sek.Sewon
+    NORMAL|	PELAPOR
+ KEY_VALUE|	NAMA 	: 	AGUS WIDODO, Tempat tanggal lahir Gunungkidul, 15-08-1995, Islam, pelajar, Alamat jamu, Rt 001, hargosari, Tanjungsari, Gunungkidul.
+    NORMAL|	PERISTIWA YANG DILAPORKAN
+ KEY_VALUE|	1. 	WAKTU KEJADIAN 	: 	Hari Selasa, tanggal 15 maret 2016, sekira pukul 18.30 wib
+ KEY_VALUE|	2. 	TEMPAT KEJADIAN 	: 	Di depan  SMP Ma’Arif Tepatnya Kp Bibis, Timbulharjo, Sewon, Bantul.
+ KEY_VALUE|	3.  	APA YANG TERJADI 	: 	Tindak Pidana Pengeroyokan dimaksud pasal 170 KUHP.
+ KEY_VALUE|	4. 	SIAPA         A. PELAKU 	: 	DALAM LIDIK
+ KEY_VALUE|	B. KORBAN 	: 	Pelapor
+ KEY_VALUE|	5. 	BAGAIMANA TERJADI 	: 	Sekira pukul 16.30 Wib Korban berboncengan dengan Saksi bermaksud akan kerumah temanya,a kan tetapi sesampai didepan SMP Ma’Arif dihadang oleh Pelaku yang berjumlah 2 (dua) menggunakan motor matik. Setelah itu Korban turun dari motor kemudian Para Pelaku langsung memukul kepala Korban.
+ KEY_VALUE|	6. 	DILAPORKAN  	: 	Hari Selasa tanggal 15 Mei 2016, Pukul 22.45 Wib.
+ KEY_VALUE|	TINDAK PIDANA APA 	: 	Tindak Pidana Pengeroyokan pasal 170 KUHP.
+ KEY_VALUE|	NAMA DAN ALAMAT SAKSI-SAKSI 	: 	WIDIYA, 15 Th, Islam, Pelajar, alamat : Sampangan, Grojogan, Banguntapan, Bantul
+    NORMAL|	BARANG BUKTI 	:
+ KEY_VALUE|	URAIAN KEJADIAN 	: 	 ..............Bahwa benar pada hari Selasa tanggal 15 Maret 2016, sekira pukul 18.30 Wib, di depan SMP Ma’Arif Tepatnya Kp Bibis, Timbulharjo, Sewon, Bantul.telah terjadi tindak pidana Pengeroyokan sebagaimana dimaksud Pasal 170 KUHP dengan Korban Pelapor.  	 .............Awal mula kejadian sekira pukul 18.30 Wib Korban bersma Saksi berboncengan hendak keruamh temannya, sesampainya di depan SMP Ma’Arif Tepatnya Kp Bibis, Timbulharjo, Sewon, Bantul Korban di hadang oleh pelaku. Setelah itu Korban langsung turun dari motor tanpa basa-basi para Pelaku yang berjumlah 2 (dua) orang langsung memukuli korban pada bagian kepala. Setelah seleesai memukuli Pelaku langsung menyuruh Korban untuk pergi meninggalkan tempat kejadian. Dengan dkejadian tersebut Korban mengalami luka-luka pada bagian pelipis, dan memar pada bagian kepala   ....		 ..............Atas Kejadian tersebut pelapor kemudian melapor ke Polsek Sewon untuk di tindak lanjuti guna proses penyidikan lebih lanjut
+ KEY_VALUE|	TINDAKAN YANG DIAMBIL 	: 	Menerima laporan, Cek TKP, Membuat Laporan Polisi, Membuat Surat Tanda Laporan.
+    NORMAL|	Pelapor			Bantul, 09 Februari 2016 				Yang Membuat Laporan 				KA SPKT II
+    NORMAL|	AGUS WIDODO			WIDI SUROSO 				AIPTU NRP 66010295
+PREDEFINED|	Mengetahui
+PREDEFINED|	KEPALA KEPOLISIAN SEKTOR SEWON
+    NORMAL|	IMAN SANTOSO KOMPOL NRP 62070193
+==============================
+DSL to Extract : PoliceReport
+===========Results============
+        ReportNumber|LP/139/V/2016/DIY/RES.BTL/Sek.Sewon
+        ReporterName|AGUS WIDODO
+    ReporterBirthday|15-08-1995
+         ReporterAge|
+      ReporterGender|
+            EventDay|Selasa
+           EventDate|15 maret 2016
+           EventTime|18.30 wib
+               Place|Di depan  SMP Ma’Arif Tepatnya Kp Bibis, Timbulharjo, Sewon, Bantul.
+     PerpetratorName|DALAM LIDIK
+          VictimName|Pelapor
+         WitnessName|WIDIYA
+           CrimeType|Pengeroyokan
+         CrimeClause|170 KUHP
+
+
+**************************************************************************************************
+Id:            fd1abf8b5b137031d77739f454519c0c5f2eca24
+FileName:      /home/jasoet/Documents/Thesis/ExtractorApp/docs/Prod10.docx
+ContentType:   application/vnd.openxmlformats-officedocument.wordprocessingml.document
+
+
+===========Content============
+	KEPOLISIAN DAERAH D.I. YOGYAKARTA
+RESOR BANTUL
+	SEKTOR SEWON
+	Jl. Parangtritis Km, 5,6 Yogyakarta
+“PRO JUSTITIA”
+LAPORAN POLISI
+Nomor : LP/49/II/2015/DIY/RES.BTL/Sek.Sewon
+
+
+	PELAPOR
+
+
+
+	NAMA
+	:
+	AAN SETIAWAN, laki-laki, Jakarta 22 Mei 1989, Karyawan Swasta. Jl. Timoho No12 Muja-muju , Umbulharjo, Yogyakarta
+
+	PERISTIWA YANG DILAPORKAN
+
+
+
+	1.
+	WAKTU KEJADIAN
+	:
+	Kamis 13 Agustus 2015 pukul 17.00 WIB
+
+	2.
+	TEMPAT KEJADIAN
+	:
+	Jl. Andalas no 132 Bangunharjo, Sewon, Bantul, Daerah Istimewa Yogyakarta.
+
+	3.
+	APA YANG TERJADI
+	:
+	Penadahan barang curian
+
+	4.
+	SIAPA         A. PELAKU
+	:
+	PENDI WIJAYA, 26 tahun Jl. Andalas no 132 Bangunharjo, Sewon, Bantul, Daerah Istimewa Yogyakarta
+
+
+	                    B. KORBAN
+	:
+	AAN SETIAWAN
+
+	5.
+	BAGAIMANA TERJADI
+	:
+	Kamis siang pukul 16.30 WIB korban hendak pergi ke warung makan milik saudara beserta saksi yang berada Jl. Parangtritis Km 5,4. Setelah korban makan di tempat tersebut, korban melihat sepeda motor miliknya yang telah hilang 2 minggu yang lalu melintas. Lalu korban berinisiatif untuk mengikuti sepeda motor yang dibawa oleh pelaku tersebut. Sesampai nya di rumah pelaku, korban bertanya tenatang kepemilikan sepeda motor tersebut, pelaku berkata bahwa sepeda motor dengan nomor polisi AD-5809-FF tersebut miliknya. Setelah ditanya lebih lanjut tentang kepemilikan sepeda motor tersebut pelaku berdalih surat tanda nomor kendaraan tersebut hilang. Karena korban yakin bahwa sepeda motor tersebut adalah miliknya, lalu korban meminta identitas pelaku. Setelah itu korban berinisiatif ke kantor polisi untuk melaporkan kejadian tersebut.
+
+	6.
+	DILAPORKAN PADA
+	:
+	Kamis 13 Agustus 2015 pukul 17.30 WIB
+
+	TINDAK PIDANA APA
+	:
+	Penadahan pasal 480 KUHP
+
+	NAMA DAN ALAMAT SAKSI-SAKSI
+	:
+	AGUNG JATI. Laki-laki, Bekasi 07 maret 1990 Pelajar / Mahasiswa, Jl. Alteri, Peleman, Kota Gede, Yogyakarta.
+
+	BARANG BUKTI
+	:
+	Surat kehilangan sepeda motor tertanggal 30 juli 2015, BPKB dan STNK motor merk Honda jenis metik, type Vario noka WSP090787987 nosin 89744110 nomor polisi AD-5809-FF Atas nama AAN SETIAWAN.
+
+	URAIAN KEJADIAN
+	:
+	Kamis siang pukul 16.30 WIB korban hendak pergi ke warung makan milik saudara beserta saksi yang berada Jl. Parangtritis Km 5,4. Setelah korban makan di tempat tersebut, korban melihat sepeda motor miliknya yang telah hilang 2 minggu yang lalu melintas. Lalu korban berinisiatif untuk mengikuti sepeda motor yang dibawa oleh pelaku tersebut. Sesampai nya di rumah pelaku, korban bertanya tenatang kepemilikan sepeda motor tersebut, pelaku berkata bahwa sepeda motor dengan nomor polisi AD-5809-FF tersebut miliknya. Setelah ditanya lebih lanjut tentang kepemilikan sepeda motor tersebut pelaku berdalih surat tanda nomor kendaraan tersebut hilang. Karena korban yakin bahwa sepeda motor tersebut adalah miliknya, lalu korban meminta identitas pelaku. Setelah itu korban berinisiatif ke kantor polisi untuk melaporkan kejadian tersebut
+
+	TINDAKAN YANG DIAMBIL
+	:
+	Menerima laporan, membuat laporan polisi, membuat surat tanda laporan penyelidikan lanjutan.
+
+
+
+
+
+	Pelapor			Bantul, 13 Agustus 2015
+				Yang Membuat Laporan
+				KA SPKT II
+
+
+	AAN HIDAYATI			SUKIRMAN
+									       AIPTU NRP 51210443
+
+
+Mengetahui
+KEPALA KEPOLISIAN SEKTOR SEWON
+
+
+
+
+IMAN SANTOSO
+KOMISARIS POLISI NRP 62070193
+
+
+
+
+
+========Document Parts========
+PREDEFINED|	KEPOLISIAN DAERAH D.I. YOGYAKARTA
+PREDEFINED|	RESOR BANTUL
+PREDEFINED|	SEKTOR SEWON
+PREDEFINED|	Jl. Parangtritis Km, 5,6 Yogyakarta
+PREDEFINED|	“PRO JUSTITIA”
+PREDEFINED|	LAPORAN POLISI
+ KEY_VALUE|	Nomor : LP/49/II/2015/DIY/RES.BTL/Sek.Sewon
+    NORMAL|	PELAPOR
+ KEY_VALUE|	NAMA 	: 	AAN SETIAWAN, laki-laki, Jakarta 22 Mei 1989, Karyawan Swasta. Jl. Timoho No12 Muja-muju , Umbulharjo, Yogyakarta
+    NORMAL|	PERISTIWA YANG DILAPORKAN
+ KEY_VALUE|	1. 	WAKTU KEJADIAN 	: 	Kamis 13 Agustus 2015 pukul 17.00 WIB
+ KEY_VALUE|	2. 	TEMPAT KEJADIAN 	: 	Jl. Andalas no 132 Bangunharjo, Sewon, Bantul, Daerah Istimewa Yogyakarta.
+ KEY_VALUE|	3.  	APA YANG TERJADI 	: 	Penadahan barang curian
+ KEY_VALUE|	4. 	SIAPA         A. PELAKU 	: 	PENDI WIJAYA, 26 tahun Jl. Andalas no 132 Bangunharjo, Sewon, Bantul, Daerah Istimewa Yogyakarta
+ KEY_VALUE|	B. KORBAN 	: 	AAN SETIAWAN
+ KEY_VALUE|	5. 	BAGAIMANA TERJADI 	: 	Kamis siang pukul 16.30 WIB korban hendak pergi ke warung makan milik saudara beserta saksi yang berada Jl. Parangtritis Km 5,4. Setelah korban makan di tempat tersebut, korban melihat sepeda motor miliknya yang telah hilang 2 minggu yang lalu melintas. Lalu korban berinisiatif untuk mengikuti sepeda motor yang dibawa oleh pelaku tersebut. Sesampai nya di rumah pelaku, korban bertanya tenatang kepemilikan sepeda motor tersebut, pelaku berkata bahwa sepeda motor dengan nomor polisi AD-5809-FF tersebut miliknya. Setelah ditanya lebih lanjut tentang kepemilikan sepeda motor tersebut pelaku berdalih surat tanda nomor kendaraan tersebut hilang. Karena korban yakin bahwa sepeda motor tersebut adalah miliknya, lalu korban meminta identitas pelaku. Setelah itu korban berinisiatif ke kantor polisi untuk melaporkan kejadian tersebut.
+ KEY_VALUE|	6. 	DILAPORKAN PADA 	: 	Kamis 13 Agustus 2015 pukul 17.30 WIB
+ KEY_VALUE|	TINDAK PIDANA APA 	: 	Penadahan pasal 480 KUHP
+ KEY_VALUE|	NAMA DAN ALAMAT SAKSI-SAKSI 	: 	AGUNG JATI. Laki-laki, Bekasi 07 maret 1990 Pelajar / Mahasiswa, Jl. Alteri, Peleman, Kota Gede, Yogyakarta.
+ KEY_VALUE|	BARANG BUKTI 	: 	Surat kehilangan sepeda motor tertanggal 30 juli 2015, BPKB dan STNK motor merk Honda jenis metik, type Vario noka WSP090787987 nosin 89744110 nomor polisi AD-5809-FF Atas nama AAN SETIAWAN.
+ KEY_VALUE|	URAIAN KEJADIAN 	: 	Kamis siang pukul 16.30 WIB korban hendak pergi ke warung makan milik saudara beserta saksi yang berada Jl. Parangtritis Km 5,4. Setelah korban makan di tempat tersebut, korban melihat sepeda motor miliknya yang telah hilang 2 minggu yang lalu melintas. Lalu korban berinisiatif untuk mengikuti sepeda motor yang dibawa oleh pelaku tersebut. Sesampai nya di rumah pelaku, korban bertanya tenatang kepemilikan sepeda motor tersebut, pelaku berkata bahwa sepeda motor dengan nomor polisi AD-5809-FF tersebut miliknya. Setelah ditanya lebih lanjut tentang kepemilikan sepeda motor tersebut pelaku berdalih surat tanda nomor kendaraan tersebut hilang. Karena korban yakin bahwa sepeda motor tersebut adalah miliknya, lalu korban meminta identitas pelaku. Setelah itu korban berinisiatif ke kantor polisi untuk melaporkan kejadian tersebut
+ KEY_VALUE|	TINDAKAN YANG DIAMBIL 	: 	Menerima laporan, membuat laporan polisi, membuat surat tanda laporan penyelidikan lanjutan.
+    NORMAL|	Pelapor			Bantul, 13 Agustus 2015 				Yang Membuat Laporan 				KA SPKT II
+    NORMAL|	AAN HIDAYATI			SUKIRMAN 									       AIPTU NRP 51210443
+PREDEFINED|	Mengetahui
+PREDEFINED|	KEPALA KEPOLISIAN SEKTOR SEWON
+    NORMAL|	IMAN SANTOSO KOMISARIS POLISI NRP 62070193
+==============================
+DSL to Extract : PoliceReport
+===========Results============
+        ReportNumber|LP/49/II/2015/DIY/RES.BTL/Sek.Sewon
+        ReporterName|AAN SETIAWAN
+    ReporterBirthday|22 Mei 1989
+         ReporterAge|
+      ReporterGender|laki-laki
+            EventDay|Kamis
+           EventDate|13 Agustus 2015
+           EventTime|17.00 WIB
+               Place|Jl. Andalas no 132 Bangunharjo, Sewon, Bantul, Daerah Istimewa Yogyakarta.
+     PerpetratorName|PENDI WIJAYA
+          VictimName|AAN SETIAWAN
+         WitnessName|AGUNG JATI
+           CrimeType|Penadahan
+         CrimeClause|480 KUHP
+
+
+**************************************************************************************************
+Id:            83594a64f2fc1c32b2cc1bebe1eb96f034916ca7
+FileName:      /home/jasoet/Documents/Thesis/ExtractorApp/docs/Prod14.docx
+ContentType:   application/vnd.openxmlformats-officedocument.wordprocessingml.document
+
+
+===========Content============
+	KEPOLISIAN DAERAH D.I. YOGYAKARTA
+RESOR BANTUL
+	SEKTOR SEWON
+	Jl. Parangtritis Km, 5,6 Yogyakarta
+“PRO JUSTITIA”
+LAPORAN POLISI
+Nomor : LP/54/II/2015/DIY/RES.BTL/Sek.Sewon
+
+
+	PELAPOR
+
+
+
+	NAMA
+	:
+	RIZMA WATI, Perempuan. Ambarawa, 16 mei 1983. Wirausaha. Jl Durian no 21 Timbulharjo, Sewon, Bantul, Daerah Istimewa Yogyakarta.
+
+	PERISTIWA YANG DILAPORKAN
+
+
+
+	1.
+	WAKTU KEJADIAN
+	:
+	Minggu 16 Agustus 2015, pukul 03.30 WIB
+
+	2.
+	TEMPAT KEJADIAN
+	:
+	Jl.Parangtritis Km. 5,5 Sewon Bantul
+
+	3.
+	APA YANG TERJADI
+	:
+	Pencurian uang
+
+	4.
+	SIAPA         A. PELAKU
+	:
+	2 orang laki-laki, dengan sepeda motor merk Yamaha jenis Metic warna hitam Nopol AB-3211-BG.
+
+
+	                    B. KORBAN
+	:
+	Toserba RIZQI milik pelapor
+
+	5.
+	BAGAIMANA TERJADI
+	:
+	Minggu pagi tanggal 16 Agustus 2015 pada pukul 03.30 WIB toko milik korban didatangi 2 orang pria menggunakan jaket dan topi menggunakan sepeda motor merk Yamaha jenis metic warna hitam nopol AB-3211-BG. Tak lama kemudian kedua orang tersebut membuka kunci pintu toko secara paksa lalu mereka masuk dan mengambil uang yang ada di meja kasir serta mengambil beberapa barang yang ada didalam toko. Lalu pergi.
+
+	6.
+	DILAPORKAN PADA
+	:
+	Minggu 16 Agustus 2015, pukul 09.00 WIB
+
+	TINDAK PIDANA APA
+	:
+	Pencurian pasal 362 KUHP
+
+	NAMA DAN ALAMAT SAKSI-SAKSI
+	:
+	Tidak ada
+
+	BARANG BUKTI
+	:
+	Rekaman camera CCTV yang berada di dalam dan diluar toko milik korban dan foto setelah kejadian.
+
+	URAIAN KEJADIAN
+	:
+	pagi tanggal 16 Agustus 2015 pada pukul 03.30 WIB toko milik korban didatangi 2 orang pria menggunakan jaket dan topi menggunakan sepeda motor merk Yamaha jenis metic warna hitam nopol AB-3211-BG. Tak lama kemudian kedua orang tersebut membuka kunci pintu toko secara paksa lalu mereka masuk dan mengambil uang yang ada di meja kasir serta mengambil beberapa barang yang ada didalam toko…
+…pada pagi hari sekitar pukul 08.20 WIB korban datang ke toko untuk mengambil uang hasil penjualan, namun setelah datang ke toko korban mendapati pintu gerbang dan pintu masuk tidak tercunci dan rusak pada lubang kuncinya. Tanpa berfikir panjang korban lalu melihat hasil rekaman CCTV yang terpasang dan mendapati ada tindak kejahatan lalu melaporkan kejadian tersebut ke pihak kepoisian.
+
+	TINDAKAN YANG DIAMBIL
+	:
+	Menerima laporan, membuat laporan polisi, membuat surat tanda laporan penyelidikan lanjutan.
+
+
+
+
+
+	Pelapor			Bantul, 16 Agustus 2015
+				Yang Membuat Laporan
+				KA SPKT II
+
+
+	RIZMA WATI			SUKIRMAN
+									       AIPTU NRP 51210443
+
+
+Mengetahui
+KEPALA KEPOLISIAN SEKTOR SEWON
+
+
+
+
+IMAN SANTOSO
+KOMISARIS POLISI NRP 62070193
+
+
+
+
+
+========Document Parts========
+PREDEFINED|	KEPOLISIAN DAERAH D.I. YOGYAKARTA
+PREDEFINED|	RESOR BANTUL
+PREDEFINED|	SEKTOR SEWON
+PREDEFINED|	Jl. Parangtritis Km, 5,6 Yogyakarta
+PREDEFINED|	“PRO JUSTITIA”
+PREDEFINED|	LAPORAN POLISI
+ KEY_VALUE|	Nomor : LP/54/II/2015/DIY/RES.BTL/Sek.Sewon
+    NORMAL|	PELAPOR
+ KEY_VALUE|	NAMA 	: 	RIZMA WATI, Perempuan. Ambarawa, 16 mei 1983. Wirausaha. Jl Durian no 21 Timbulharjo, Sewon, Bantul, Daerah Istimewa Yogyakarta.
+    NORMAL|	PERISTIWA YANG DILAPORKAN
+ KEY_VALUE|	1. 	WAKTU KEJADIAN 	: 	Minggu 16 Agustus 2015, pukul 03.30 WIB
+ KEY_VALUE|	2. 	TEMPAT KEJADIAN 	: 	Jl.Parangtritis Km. 5,5 Sewon Bantul
+ KEY_VALUE|	3.  	APA YANG TERJADI 	: 	Pencurian uang
+ KEY_VALUE|	4. 	SIAPA         A. PELAKU 	: 	2 orang laki-laki, dengan sepeda motor merk Yamaha jenis Metic warna hitam Nopol AB-3211-BG.
+ KEY_VALUE|	B. KORBAN 	: 	Toserba RIZQI milik pelapor
+ KEY_VALUE|	5. 	BAGAIMANA TERJADI 	: 	Minggu pagi tanggal 16 Agustus 2015 pada pukul 03.30 WIB toko milik korban didatangi 2 orang pria menggunakan jaket dan topi menggunakan sepeda motor merk Yamaha jenis metic warna hitam nopol AB-3211-BG. Tak lama kemudian kedua orang tersebut membuka kunci pintu toko secara paksa lalu mereka masuk dan mengambil uang yang ada di meja kasir serta mengambil beberapa barang yang ada didalam toko. Lalu pergi.
+ KEY_VALUE|	6. 	DILAPORKAN PADA 	: 	Minggu 16 Agustus 2015, pukul 09.00 WIB
+ KEY_VALUE|	TINDAK PIDANA APA 	: 	Pencurian pasal 362 KUHP
+ KEY_VALUE|	NAMA DAN ALAMAT SAKSI-SAKSI 	: 	Tidak ada
+ KEY_VALUE|	BARANG BUKTI 	: 	Rekaman camera CCTV yang berada di dalam dan diluar toko milik korban dan foto setelah kejadian.
+ KEY_VALUE|	URAIAN KEJADIAN 	: 	pagi tanggal 16 Agustus 2015 pada pukul 03.30 WIB toko milik korban didatangi 2 orang pria menggunakan jaket dan topi menggunakan sepeda motor merk Yamaha jenis metic warna hitam nopol AB-3211-BG. Tak lama kemudian kedua orang tersebut membuka kunci pintu toko secara paksa lalu mereka masuk dan mengambil uang yang ada di meja kasir serta mengambil beberapa barang yang ada didalam toko… …pada pagi hari sekitar pukul 08.20 WIB korban datang ke toko untuk mengambil uang hasil penjualan, namun setelah datang ke toko korban mendapati pintu gerbang dan pintu masuk tidak tercunci dan rusak pada lubang kuncinya. Tanpa berfikir panjang korban lalu melihat hasil rekaman CCTV yang terpasang dan mendapati ada tindak kejahatan lalu melaporkan kejadian tersebut ke pihak kepoisian.
+ KEY_VALUE|	TINDAKAN YANG DIAMBIL 	: 	Menerima laporan, membuat laporan polisi, membuat surat tanda laporan penyelidikan lanjutan.
+    NORMAL|	Pelapor			Bantul, 16 Agustus 2015 				Yang Membuat Laporan 				KA SPKT II
+    NORMAL|	RIZMA WATI			SUKIRMAN 									       AIPTU NRP 51210443
+PREDEFINED|	Mengetahui
+PREDEFINED|	KEPALA KEPOLISIAN SEKTOR SEWON
+    NORMAL|	IMAN SANTOSO KOMISARIS POLISI NRP 62070193
+==============================
+DSL to Extract : PoliceReport
+===========Results============
+        ReportNumber|LP/54/II/2015/DIY/RES.BTL/Sek.Sewon
+        ReporterName|RIZMA WATI
+    ReporterBirthday|16 mei 1983
+         ReporterAge|
+      ReporterGender|Perempuan
+            EventDay|Minggu
+           EventDate|16 Agustus 2015
+           EventTime|03.30 WIB
+               Place|Jl.Parangtritis Km. 5,5 Sewon Bantul
+     PerpetratorName|2 orang laki-laki
+          VictimName|Toserba RIZQI milik pelapor
+         WitnessName|Tidak ada
+           CrimeType|Pencurian
+         CrimeClause|362 KUHP
+
+
+**************************************************************************************************
+Id:            6017eec3c2b8c1e0c5bbfc7693e1f07b7945003b
+FileName:      /home/jasoet/Documents/Thesis/ExtractorApp/docs/Prod15.docx
+ContentType:   application/vnd.openxmlformats-officedocument.wordprocessingml.document
+
+
+===========Content============
+	KEPOLISIAN DAERAH D.I. YOGYAKARTA
+RESOR BANTUL
+	SEKTOR SEWON
+	Jl. Parangtritis Km, 5,6 Yogyakarta
+“PRO JUSTITIA”
+LAPORAN POLISI
+Nomor : LP/40/II/2016/DIY/RES.BTL/Sek.Sewon
+
+
+	PELAPOR
+
+
+
+	NAMA
+	:
+	WISNU HARTANA,  Sleman, 03 Februari 1976, Umur : 39 tahun, Agama Islam, Pekerjaan karyawan swasta, Kewarganegaraan Indonesia, Suku Jawa, Pendidikan terakhir D3 (tamat) Tempat tinggal di Dsn. Ngentak, Rt.001 / Rw. 023, Ds. Bangunkerto, Kec. Turi Kab. Sleman.
+
+	PERISTIWA YANG DILAPORKAN
+
+
+
+	1.
+	WAKTU KEJADIAN
+	:
+	Hari rabu tanggal 05 Agustus 2015, sekira pukul 11.00 wib
+
+	2.
+	TEMPAT KEJADIAN
+	:
+	Dsn. Juron Rt. 19, Desa Pendowoharjo, Kec. Sewon, Kab. Bantul
+
+	3.
+	APA YANG TERJADI
+	:
+	Tindak Pidana Penggelapan Jaminan Fidusia sebagaimana dimaksud dalam Pasal 36 UU RI No. 42 Tahun 1999 dan atau Pasal 372 KUHP.
+
+	4.
+	SIAPA         A. PELAKU
+	:
+	IBNU GROHO SUDADI, Bantul, 22 Nopember 1968, Wiraswasta, Islam, alamat Dsn. Juron RT. 19, Desa Pendowoharjo, Kec, Sewon, Kab, bantul.
+
+
+
+	                    B. KORBAN
+	:
+	PT. ADIRA FINANCE, Alamat Jl. Ipda tut harsono 55A Yogyakarta.
+
+	5.
+	BAGAIMANA TERJADI
+	:
+	Pada hari Jum’at tanggal 05 Bulan Juni 2014, sekira pukul 10.00 wib saudari IBNU GROHO SUDADI mengajukan kredit 1 (satu) unit sepeda motor merk Honda Beat, warna hitam, AB-4626-QJ, Noka : MH1JFM215EK025014, Nosin : JFM2E1019425 dengan pembiayaan dari PT Adira Finance dengan jangka waktu 35x (tiga lima kali) dan dari Bulan Agustus 2015 sampai sekarang sudah tidak membayar angsuran tersebut kepada Pihak PT. Adira Finance.
+
+	6.
+	DILAPORKAN PADA
+	:
+	Pada hari Jum’at tanggal 05 Februari 2015, pukul 09.00 wib.
+
+	TINDAK PIDANA APA
+	:
+	Penggelapan Jaminan Fidusa sebagaimana dimaksud dalam Pasal 36 UU RI No. 42 Tahun 1999 dan Pasal 372 KUHP
+
+	NAMA DAN ALAMAT SAKSI-SAKSI
+	:
+	FX ANDRI SULISTYA, Jenis kelamin laki-laki, umur 38 tahun, Katholik, Karyawan Swasta, Alamat Dsn. Gadingharjo RT 023, Kel. Donotirto, Kec. Kretek, Kab. Bantul. (081903711213).
+
+	BARANG BUKTI
+	:
+
+
+	URAIAN KEJADIAN
+	:
+	 .............Bahwa benar hari Kamis tanggal 06 Agustus 2015, sekira pukul 13.00 wib telah terjadi tindak pidana penggelapan jaminan fidusia sebagaimana dimaksud dalam Pasal 36 UU RI No. 42 Tahun 1999 dan Pasal 372 KUHP di Dsn. Juron RT. 19, Desa Pendowoharjo, Kec, Sewon, Kab, bantul.
+.............Awal mula kejadian pelapor dan saksi datang ketempat saudari IBNU GROHO SUDADI pada Bulan Agustus 2015, hendak menagih angsuran sepeda motor tersebut namun tidak bertemu dengan saudari IBNU GROHO SUDADI, dan korban tidak melihat sepeda motor yang telah dibeli lwat pembiayaan PT Adira Finance Yogyakarta tersebut, serta sepeda motor tersebut sudah tidak ada dirumahnya.
+..............Atas Kejadian tersebut pihak PT Adira Finance Yka mengalami kerugian sebesar Rp.16.974.999,- (enam belas juta sembilan ratus tujuh puluh empat ribu sembilan ratus sembilan puluh sembilan).
+
+
+	TINDAKAN YANG DIAMBIL
+	:
+	Menerima laporan, membuat laporan polisi, membuat surat tanda laporan.
+
+
+
+
+
+	Pelapor			Bantul, 09 Februari 2016
+				Yang Membuat Laporan
+				KA SPKT II
+
+
+	WISNU HARTANA			BUDI NUGROHO
+				AIPTU NRP 71110231
+
+Mengetahui
+KEPALA KEPOLISIAN SEKTOR SEWON
+
+
+
+
+IMAN SANTOSO
+KOMISARIS POLISI NRP 62070193
+
+
+
+========Document Parts========
+PREDEFINED|	KEPOLISIAN DAERAH D.I. YOGYAKARTA
+PREDEFINED|	RESOR BANTUL
+PREDEFINED|	SEKTOR SEWON
+PREDEFINED|	Jl. Parangtritis Km, 5,6 Yogyakarta
+PREDEFINED|	“PRO JUSTITIA”
+PREDEFINED|	LAPORAN POLISI
+ KEY_VALUE|	Nomor : LP/40/II/2016/DIY/RES.BTL/Sek.Sewon
+    NORMAL|	PELAPOR
+ KEY_VALUE|	NAMA 	: 	WISNU HARTANA,  Sleman, 03 Februari 1976, Umur : 39 tahun, Agama Islam, Pekerjaan karyawan swasta, Kewarganegaraan Indonesia, Suku Jawa, Pendidikan terakhir D3 (tamat) Tempat tinggal di Dsn. Ngentak, Rt.001 / Rw. 023, Ds. Bangunkerto, Kec. Turi Kab. Sleman.
+    NORMAL|	PERISTIWA YANG DILAPORKAN
+ KEY_VALUE|	1. 	WAKTU KEJADIAN 	: 	Hari rabu tanggal 05 Agustus 2015, sekira pukul 11.00 wib
+ KEY_VALUE|	2. 	TEMPAT KEJADIAN 	: 	Dsn. Juron Rt. 19, Desa Pendowoharjo, Kec. Sewon, Kab. Bantul
+ KEY_VALUE|	3.  	APA YANG TERJADI 	: 	Tindak Pidana Penggelapan Jaminan Fidusia sebagaimana dimaksud dalam Pasal 36 UU RI No. 42 Tahun 1999 dan atau Pasal 372 KUHP.
+ KEY_VALUE|	4. 	SIAPA         A. PELAKU 	: 	IBNU GROHO SUDADI, Bantul, 22 Nopember 1968, Wiraswasta, Islam, alamat Dsn. Juron RT. 19, Desa Pendowoharjo, Kec, Sewon, Kab, bantul.
+ KEY_VALUE|	B. KORBAN 	: 	PT. ADIRA FINANCE, Alamat Jl. Ipda tut harsono 55A Yogyakarta.
+ KEY_VALUE|	5. 	BAGAIMANA TERJADI 	: 	Pada hari Jum’at tanggal 05 Bulan Juni 2014, sekira pukul 10.00 wib saudari IBNU GROHO SUDADI mengajukan kredit 1 (satu) unit sepeda motor merk Honda Beat, warna hitam, AB-4626-QJ, Noka : MH1JFM215EK025014, Nosin : JFM2E1019425 dengan pembiayaan dari PT Adira Finance dengan jangka waktu 35x (tiga lima kali) dan dari Bulan Agustus 2015 sampai sekarang sudah tidak membayar angsuran tersebut kepada Pihak PT. Adira Finance.
+ KEY_VALUE|	6. 	DILAPORKAN PADA 	: 	Pada hari Jum’at tanggal 05 Februari 2015, pukul 09.00 wib.
+ KEY_VALUE|	TINDAK PIDANA APA 	: 	Penggelapan Jaminan Fidusa sebagaimana dimaksud dalam Pasal 36 UU RI No. 42 Tahun 1999 dan Pasal 372 KUHP
+ KEY_VALUE|	NAMA DAN ALAMAT SAKSI-SAKSI 	: 	FX ANDRI SULISTYA, Jenis kelamin laki-laki, umur 38 tahun, Katholik, Karyawan Swasta, Alamat Dsn. Gadingharjo RT 023, Kel. Donotirto, Kec. Kretek, Kab. Bantul. (081903711213).
+    NORMAL|	BARANG BUKTI 	:
+ KEY_VALUE|	URAIAN KEJADIAN 	: 	 .............Bahwa benar hari Kamis tanggal 06 Agustus 2015, sekira pukul 13.00 wib telah terjadi tindak pidana penggelapan jaminan fidusia sebagaimana dimaksud dalam Pasal 36 UU RI No. 42 Tahun 1999 dan Pasal 372 KUHP di Dsn. Juron RT. 19, Desa Pendowoharjo, Kec, Sewon, Kab, bantul. 		 .............Awal mula kejadian pelapor dan saksi datang ketempat saudari IBNU GROHO SUDADI pada Bulan Agustus 2015, hendak menagih angsuran sepeda motor tersebut namun tidak bertemu dengan saudari IBNU GROHO SUDADI, dan korban tidak melihat sepeda motor yang telah dibeli lwat pembiayaan PT Adira Finance Yogyakarta tersebut, serta sepeda motor tersebut sudah tidak ada dirumahnya. 	 ..............Atas Kejadian tersebut pihak PT Adira Finance Yka mengalami kerugian sebesar Rp.16.974.999,- (enam belas juta sembilan ratus tujuh puluh empat ribu sembilan ratus sembilan puluh sembilan).
+ KEY_VALUE|	TINDAKAN YANG DIAMBIL 	: 	Menerima laporan, membuat laporan polisi, membuat surat tanda laporan.
+    NORMAL|	Pelapor			Bantul, 09 Februari 2016 				Yang Membuat Laporan 				KA SPKT II
+    NORMAL|	WISNU HARTANA			BUDI NUGROHO 				AIPTU NRP 71110231
+PREDEFINED|	Mengetahui
+PREDEFINED|	KEPALA KEPOLISIAN SEKTOR SEWON
+    NORMAL|	IMAN SANTOSO KOMISARIS POLISI NRP 62070193
+==============================
+DSL to Extract : PoliceReport
+===========Results============
+        ReportNumber|LP/40/II/2016/DIY/RES.BTL/Sek.Sewon
+        ReporterName|WISNU HARTANA
+    ReporterBirthday|03 Februari 1976
+         ReporterAge|39 tahun
+      ReporterGender|
+            EventDay|rabu
+           EventDate|05 Agustus 2015
+           EventTime|11.00 wib
+               Place|Dsn. Juron Rt. 19, Desa Pendowoharjo, Kec. Sewon, Kab. Bantul
+     PerpetratorName|IBNU GROHO SUDADI
+          VictimName|PT. ADIRA FINANCE
+         WitnessName|FX ANDRI SULISTYA
+           CrimeType|Penggelapan
+         CrimeClause|372 KUHP
+
+
+**************************************************************************************************
+Id:            a92dfefde97f1b62b5581ef0e354f04207368ab0
+FileName:      /home/jasoet/Documents/Thesis/ExtractorApp/docs/Prod0.docx
+ContentType:   application/vnd.openxmlformats-officedocument.wordprocessingml.document
+
+
+===========Content============
+	KEPOLISIAN DAERAH D.I. YOGYAKARTA
+RESOR BANTUL
+	SEKTOR SEWON
+	Jl. Parangtritis Km, 5,6 Yogyakarta
+“PRO JUSTITIA”
+LAPORAN POLISI
+Nomor : LP/52/II/2015/DIY/RES.BTL/Sek.Sewon
+
+
+	PELAPOR
+
+
+
+	NAMA
+	:
+	MUFIDATUN HIDAYATI, Perempuan. Bantul 02 desember 1989. Pelajar / Mahasiswa. Desa Karangsari RT 16 RW 04, Banguntapan, Bantul, Daerah Istimewa Yogyakarta.
+
+	PERISTIWA YANG DILAPORKAN
+
+
+
+	1.
+	WAKTU KEJADIAN
+	:
+	Sabtu 15 Agustus 2015 pukul 18.00 WIB
+
+	2.
+	TEMPAT KEJADIAN
+	:
+	Warnet Happy, Jl. Parangtritis Km 4.5 Panggungharjo, Sewon, Bantul, Daerah Istimewa Yogyakarta.
+
+	3.
+	APA YANG TERJADI
+	:
+	Pencurian kendaraaan bermotor dan Helm.
+
+	4.
+	SIAPA         A. PELAKU
+	:
+	3 orang laki-laki, menggunakan sepeda motor jenis bebek, warna hitam  nomor polisi AB-5811-AF.
+
+
+	                    B. KORBAN
+	:
+	MUFIDATUN HIDAYATI.
+
+	5.
+	BAGAIMANA TERJADI
+	:
+	Korban pergi ke warnet untuk menyelesaikan tugas kampus pada hari sabtu 15 agustus 2015 pukul 15.00 WIB menggunakan sepeda motor dengan jenis matic, korban memutuskan untuk pulang, setelah membayar sewa warnet korban tidak menemukan helm maupun motor milik korban, lalu korban bertanya kepada saksi yaitu MUHAMMAD FATONAH sebagai operator. Saksi tidak mengetahui motor korban setelah melihat hasil CCTV camera yang terpasang didepan warnet didapati ada 3 orang laki-laki menggunakan sepeda motor jenis bebek, warna hitam dengan nomor polisi AB-5811-AF, berhenti didepan warnet salah satu dari pelaku menggunakan peralatan khusus mendekati sepeda motor korban dan langsung membawa lari motor tersebut. Dan saksi mengajak korban untuk melapor ke kantor polisi.
+
+	6.
+	DILAPORKAN PADA
+	:
+	Sabtu 15 Agustus 2015 pukul 18.30 WIB
+
+	TINDAK PIDANA APA
+	:
+	Pencurian pasal 362 KUHP
+
+	NAMA DAN ALAMAT SAKSI-SAKSI
+	:
+	MUHAMMAD FATONAH, laki-laki. Padang 19 april 1984, Wirausaha, Jl. Parangtritis Km 4.5 Panggungharjo, Sewon, Bantul, Daerah Istimewa Yogyakarta.
+
+	BARANG BUKTI
+	:
+	STNK atas nama AKBAR FADILLA alamat . Desa Karangsari RT 16 RW 04, Banguntapan, Bantul, Daerah Istimewa Yogyakarta noka PWS10930883 nosin MSU9283038, warna hitam nomor polisi AB-3418-KB beserta rekaman CCTV warnet Happy.
+
+	URAIAN KEJADIAN
+	:
+	….. setelah membayar sewa warnet korban tidak menemukan helm maupun motor milik korban, lalu korban bertanya kepada saksi yaitu MUHAMMAD FATONAH sebagai operator. Saksi tidak mengetahui motor korban setelah melihat hasil CCTV camera yang terpasang didepan warnet didapati ada 3 orang laki-laki menggunakan sepeda motor jenis bebek, warna hitam dengan nomor polisi AB-5811-AF, berhenti didepan warnet salah satu dari pelaku menggunakan peralatan khusus mendekati sepeda motor korban dan langsung membawa lari motor tersebut. Dan saksi mengajak korban untuk melapor ke kantor polisi.
+
+	TINDAKAN YANG DIAMBIL
+	:
+	Menerima laporan, membuat laporan polisi, membuat surat tanda laporan penyelidikan lanjutan.
+
+
+
+
+	Pelapor			Bantul, 15 Agustus 2015
+				Yang Membuat Laporan
+				KA SPKT II
+
+
+	MUFIDATUN HIDAYATI			BUDI NUGROHO
+									       AIPTU NRP 71110231
+
+Mengetahui
+KEPALA KEPOLISIAN SEKTOR SEWON
+
+
+
+IMAN SANTOSO
+KOMISARIS POLISI NRP 62070193
+
+
+
+========Document Parts========
+PREDEFINED|	KEPOLISIAN DAERAH D.I. YOGYAKARTA
+PREDEFINED|	RESOR BANTUL
+PREDEFINED|	SEKTOR SEWON
+PREDEFINED|	Jl. Parangtritis Km, 5,6 Yogyakarta
+PREDEFINED|	“PRO JUSTITIA”
+PREDEFINED|	LAPORAN POLISI
+ KEY_VALUE|	Nomor : LP/52/II/2015/DIY/RES.BTL/Sek.Sewon
+    NORMAL|	PELAPOR
+ KEY_VALUE|	NAMA 	: 	MUFIDATUN HIDAYATI, Perempuan. Bantul 02 desember 1989. Pelajar / Mahasiswa. Desa Karangsari RT 16 RW 04, Banguntapan, Bantul, Daerah Istimewa Yogyakarta.
+    NORMAL|	PERISTIWA YANG DILAPORKAN
+ KEY_VALUE|	1. 	WAKTU KEJADIAN 	: 	Sabtu 15 Agustus 2015 pukul 18.00 WIB
+ KEY_VALUE|	2. 	TEMPAT KEJADIAN 	: 	Warnet Happy, Jl. Parangtritis Km 4.5 Panggungharjo, Sewon, Bantul, Daerah Istimewa Yogyakarta.
+ KEY_VALUE|	3.  	APA YANG TERJADI 	: 	Pencurian kendaraaan bermotor dan Helm.
+ KEY_VALUE|	4. 	SIAPA         A. PELAKU 	: 	3 orang laki-laki, menggunakan sepeda motor jenis bebek, warna hitam  nomor polisi AB-5811-AF.
+ KEY_VALUE|	B. KORBAN 	: 	MUFIDATUN HIDAYATI.
+ KEY_VALUE|	5. 	BAGAIMANA TERJADI 	: 	Korban pergi ke warnet untuk menyelesaikan tugas kampus pada hari sabtu 15 agustus 2015 pukul 15.00 WIB menggunakan sepeda motor dengan jenis matic, korban memutuskan untuk pulang, setelah membayar sewa warnet korban tidak menemukan helm maupun motor milik korban, lalu korban bertanya kepada saksi yaitu MUHAMMAD FATONAH sebagai operator. Saksi tidak mengetahui motor korban setelah melihat hasil CCTV camera yang terpasang didepan warnet didapati ada 3 orang laki-laki menggunakan sepeda motor jenis bebek, warna hitam dengan nomor polisi AB-5811-AF, berhenti didepan warnet salah satu dari pelaku menggunakan peralatan khusus mendekati sepeda motor korban dan langsung membawa lari motor tersebut. Dan saksi mengajak korban untuk melapor ke kantor polisi.
+ KEY_VALUE|	6. 	DILAPORKAN PADA 	: 	Sabtu 15 Agustus 2015 pukul 18.30 WIB
+ KEY_VALUE|	TINDAK PIDANA APA 	: 	Pencurian pasal 362 KUHP
+ KEY_VALUE|	NAMA DAN ALAMAT SAKSI-SAKSI 	: 	MUHAMMAD FATONAH, laki-laki. Padang 19 april 1984, Wirausaha, Jl. Parangtritis Km 4.5 Panggungharjo, Sewon, Bantul, Daerah Istimewa Yogyakarta.
+ KEY_VALUE|	BARANG BUKTI 	: 	STNK atas nama AKBAR FADILLA alamat . Desa Karangsari RT 16 RW 04, Banguntapan, Bantul, Daerah Istimewa Yogyakarta noka PWS10930883 nosin MSU9283038, warna hitam nomor polisi AB-3418-KB beserta rekaman CCTV warnet Happy.
+ KEY_VALUE|	URAIAN KEJADIAN 	: 	….. setelah membayar sewa warnet korban tidak menemukan helm maupun motor milik korban, lalu korban bertanya kepada saksi yaitu MUHAMMAD FATONAH sebagai operator. Saksi tidak mengetahui motor korban setelah melihat hasil CCTV camera yang terpasang didepan warnet didapati ada 3 orang laki-laki menggunakan sepeda motor jenis bebek, warna hitam dengan nomor polisi AB-5811-AF, berhenti didepan warnet salah satu dari pelaku menggunakan peralatan khusus mendekati sepeda motor korban dan langsung membawa lari motor tersebut. Dan saksi mengajak korban untuk melapor ke kantor polisi.
+ KEY_VALUE|	TINDAKAN YANG DIAMBIL 	: 	Menerima laporan, membuat laporan polisi, membuat surat tanda laporan penyelidikan lanjutan.
+    NORMAL|	Pelapor			Bantul, 15 Agustus 2015 				Yang Membuat Laporan 				KA SPKT II
+    NORMAL|	MUFIDATUN HIDAYATI			BUDI NUGROHO 									       AIPTU NRP 71110231
+PREDEFINED|	Mengetahui
+PREDEFINED|	KEPALA KEPOLISIAN SEKTOR SEWON
+    NORMAL|	IMAN SANTOSO KOMISARIS POLISI NRP 62070193
+==============================
+DSL to Extract : PoliceReport
+===========Results============
+        ReportNumber|LP/52/II/2015/DIY/RES.BTL/Sek.Sewon
+        ReporterName|MUFIDATUN HIDAYATI
+    ReporterBirthday|02 desember 1989
+         ReporterAge|
+      ReporterGender|Perempuan
+            EventDay|Sabtu
+           EventDate|15 Agustus 2015
+           EventTime|18.00 WIB
+               Place|Warnet Happy, Jl. Parangtritis Km 4.5 Panggungharjo, Sewon, Bantul, Daerah Istimewa Yogyakarta.
+     PerpetratorName|3 orang laki-laki
+          VictimName|MUFIDATUN HIDAYATI.
+         WitnessName|MUHAMMAD FATONAH
+           CrimeType|Pencurian
+         CrimeClause|362 KUHP
+
+
+**************************************************************************************************
+Id:            9bbdaba46c8173f6e8ff201c367026dce09b25fe
+FileName:      /home/jasoet/Documents/Thesis/ExtractorApp/docs/Prod6.docx
+ContentType:   application/vnd.openxmlformats-officedocument.wordprocessingml.document
+
+
+===========Content============
+	KEPOLISIAN DAERAH D.I. YOGYAKARTA
+RESOR BANTUL
+	SEKTOR SEWON
+	Jl. Parangtritis Km, 5,6 Yogyakarta
+“PRO JUSTITIA”
+LAPORAN POLISI
+Nomor : LP/45/II/2015/DIY/RES.BTL/Sek.Sewon
+
+
+	PELAPOR
+
+
+
+	NAMA
+	:
+	JUMAKIR, Laki – laki, Bantul  13 juni 1957. Buruh. Gang Mawar No 11 Timbulharjo, Sewon, Bantul. Daerah Istimewa Yogyakarta.
+
+	PERISTIWA YANG DILAPORKAN
+
+
+
+	1.
+	WAKTU KEJADIAN
+	:
+	Selasa  11 Agustus 2015 sekitar pukul 16.00 WIB
+
+	2.
+	TEMPAT KEJADIAN
+	:
+	Gang Mawar No 11, Sewon, Bantul, Daerah Istimewa Yogyakarta.
+
+	3.
+	APA YANG TERJADI
+	:
+	Pencurian barang berharga.
+
+	4.
+	SIAPA         A. PELAKU
+	:
+	Belum diketahui.
+
+
+	                    B. KORBAN
+	:
+	NINA WILLIAM
+
+	5.
+	BAGAIMANA TERJADI
+	:
+	Hari selasa tanggal 11 Agustus 2015 pukul 15.30 WIB korban pulang dari kampus, dan mendapati kamar kos kediaman yang sejak pagi terkunci telah terbuka. Lalu korban melihat kedalam rumah dan kondisi rumah sudah berantakan, lemari tempat korban menyimpan barang – barang berharga telah rusak terbuka dan barang berharga yang berada didalam nya telah hilang, serta handphone, Paspor,kartu kredit dan laptop milik koban juga ikut hilang. Lalu korban menghubungi pemilik kos dan saksi untuk menemani dirinya ke kantor polisi guna melaporkan kejadian pencurian tersebut.
+
+	6.
+	DILAPORKAN PADA
+	:
+	Pada hari selasa 11 Agustus 2015 pukul 16.10 WIB.
+
+	TINDAK PIDANA APA
+	:
+	Pencurian pasal 362 KUHP
+
+	NAMA DAN ALAMAT SAKSI-SAKSI
+	:
+	JUMAKIR. Laki – laki, Bantul  13 juni 1957. Buruh. Gang Mawar No 11 Timbulharjo, Sewon, Bantul. Daerah Istimewa Yogyakarta.
+FRANCISCA LEICA,Perempuan, Bremen, Jerman 21 maret 1991, Warga Negara Asing, Kebangsaan Jerman. Gang Mawar No 07 Timbulharjo, Sewon, Bantul, Daerah Istimewa Yogyakarta.
+
+	BARANG BUKTI
+	:
+	Fotocopy Pasport korban berkewarga negaraan Jerman.
+
+	URAIAN KEJADIAN
+	:
+	Hari selasa tanggal 11 Agustus 2015 pukul 15.30 WIB korban pulang dari kampus, dan mendapati kamar kos kediaman yang sejak pagi terkunci telah terbuka. Lalu korban melihat kedalam rumah dan kondisi rumah sudah berantakan, lemari tempat korban menyimpan barang – barang berharga telah rusak terbuka dan barang berharga yang berada didalam nya telah hilang, serta handphone, Paspor,kartu kredit dan laptop milik koban juga ikut hilang. Lalu korban menghubungi pemilik kos dan saksi untuk menemani dirinya ke kantor polisi guna melaporkan kejadian pencurian tersebut.
+
+	TINDAKAN YANG DIAMBIL
+	:
+	Menerima laporan, membuat laporan polisi, membuat surat tanda laporan penyelidikan lanjutan.
+
+
+
+
+
+	Pelapor			Bantul, 11 Agustus 2015
+				Yang Membuat Laporan
+				KA SPKT II
+
+
+	JUMAKIR			RAHMAT HIDAYAT
+									       AIPTU NRP 61110332
+
+
+Mengetahui
+KEPALA KEPOLISIAN SEKTOR SEWON
+
+
+
+
+IMAN SANTOSO
+KOMISARIS POLISI NRP 62070193
+
+
+
+
+========Document Parts========
+PREDEFINED|	KEPOLISIAN DAERAH D.I. YOGYAKARTA
+PREDEFINED|	RESOR BANTUL
+PREDEFINED|	SEKTOR SEWON
+PREDEFINED|	Jl. Parangtritis Km, 5,6 Yogyakarta
+PREDEFINED|	“PRO JUSTITIA”
+PREDEFINED|	LAPORAN POLISI
+ KEY_VALUE|	Nomor : LP/45/II/2015/DIY/RES.BTL/Sek.Sewon
+    NORMAL|	PELAPOR
+ KEY_VALUE|	NAMA 	: 	JUMAKIR, Laki – laki, Bantul  13 juni 1957. Buruh. Gang Mawar No 11 Timbulharjo, Sewon, Bantul. Daerah Istimewa Yogyakarta.
+    NORMAL|	PERISTIWA YANG DILAPORKAN
+ KEY_VALUE|	1. 	WAKTU KEJADIAN 	: 	Selasa  11 Agustus 2015 sekitar pukul 16.00 WIB
+ KEY_VALUE|	2. 	TEMPAT KEJADIAN 	: 	Gang Mawar No 11, Sewon, Bantul, Daerah Istimewa Yogyakarta.
+ KEY_VALUE|	3.  	APA YANG TERJADI 	: 	Pencurian barang berharga.
+ KEY_VALUE|	4. 	SIAPA         A. PELAKU 	: 	Belum diketahui.
+ KEY_VALUE|	B. KORBAN 	: 	NINA WILLIAM
+ KEY_VALUE|	5. 	BAGAIMANA TERJADI 	: 	Hari selasa tanggal 11 Agustus 2015 pukul 15.30 WIB korban pulang dari kampus, dan mendapati kamar kos kediaman yang sejak pagi terkunci telah terbuka. Lalu korban melihat kedalam rumah dan kondisi rumah sudah berantakan, lemari tempat korban menyimpan barang – barang berharga telah rusak terbuka dan barang berharga yang berada didalam nya telah hilang, serta handphone, Paspor,kartu kredit dan laptop milik koban juga ikut hilang. Lalu korban menghubungi pemilik kos dan saksi untuk menemani dirinya ke kantor polisi guna melaporkan kejadian pencurian tersebut.
+ KEY_VALUE|	6. 	DILAPORKAN PADA 	: 	Pada hari selasa 11 Agustus 2015 pukul 16.10 WIB.
+ KEY_VALUE|	TINDAK PIDANA APA 	: 	Pencurian pasal 362 KUHP
+ KEY_VALUE|	NAMA DAN ALAMAT SAKSI-SAKSI 	: 	JUMAKIR. Laki – laki, Bantul  13 juni 1957. Buruh. Gang Mawar No 11 Timbulharjo, Sewon, Bantul. Daerah Istimewa Yogyakarta. FRANCISCA LEICA,Perempuan, Bremen, Jerman 21 maret 1991, Warga Negara Asing, Kebangsaan Jerman. Gang Mawar No 07 Timbulharjo, Sewon, Bantul, Daerah Istimewa Yogyakarta.
+ KEY_VALUE|	BARANG BUKTI 	: 	Fotocopy Pasport korban berkewarga negaraan Jerman.
+ KEY_VALUE|	URAIAN KEJADIAN 	: 	Hari selasa tanggal 11 Agustus 2015 pukul 15.30 WIB korban pulang dari kampus, dan mendapati kamar kos kediaman yang sejak pagi terkunci telah terbuka. Lalu korban melihat kedalam rumah dan kondisi rumah sudah berantakan, lemari tempat korban menyimpan barang – barang berharga telah rusak terbuka dan barang berharga yang berada didalam nya telah hilang, serta handphone, Paspor,kartu kredit dan laptop milik koban juga ikut hilang. Lalu korban menghubungi pemilik kos dan saksi untuk menemani dirinya ke kantor polisi guna melaporkan kejadian pencurian tersebut.
+ KEY_VALUE|	TINDAKAN YANG DIAMBIL 	: 	Menerima laporan, membuat laporan polisi, membuat surat tanda laporan penyelidikan lanjutan.
+    NORMAL|	Pelapor			Bantul, 11 Agustus 2015 				Yang Membuat Laporan 				KA SPKT II
+    NORMAL|	JUMAKIR			RAHMAT HIDAYAT 									       AIPTU NRP 61110332
+PREDEFINED|	Mengetahui
+PREDEFINED|	KEPALA KEPOLISIAN SEKTOR SEWON
+    NORMAL|	IMAN SANTOSO KOMISARIS POLISI NRP 62070193
+==============================
+DSL to Extract : PoliceReport
+===========Results============
+        ReportNumber|LP/45/II/2015/DIY/RES.BTL/Sek.Sewon
+        ReporterName|JUMAKIR
+    ReporterBirthday|13 juni 1957
+         ReporterAge|
+      ReporterGender|Laki
+            EventDay|Selasa
+           EventDate|11 Agustus 2015
+           EventTime|16.00 WIB
+               Place|Gang Mawar No 11, Sewon, Bantul, Daerah Istimewa Yogyakarta.
+     PerpetratorName|Belum diketahui.
+          VictimName|NINA WILLIAM
+         WitnessName|JUMAKIR
+           CrimeType|Pencurian
+         CrimeClause|362 KUHP
+
+
+**************************************************************************************************
+Id:            a3a663d3bec5b86341db18a25eca7141ac008d77
+FileName:      /home/jasoet/Documents/Thesis/ExtractorApp/docs/Prod13.docx
+ContentType:   application/vnd.openxmlformats-officedocument.wordprocessingml.document
+
+
+===========Content============
+	KEPOLISIAN DAERAH D.I. YOGYAKARTA
+RESOR BANTUL
+	SEKTOR SEWON
+	Jl. Parangtritis Km, 5,6 Yogyakarta
+“PRO JUSTITIA”
+LAPORAN POLISI
+Nomor : LP/53/II/2015/DIY/RES.BTL/Sek.Sewon
+
+
+	PELAPOR
+
+
+
+	NAMA
+	:
+	RIZKA FARIKA, Perempuan, Bandung 18 maret 1990. Pelajar/ Mahasiswa. Jl. Jambu Perum. Nogosari no 15 B, Banguntapan Bantul Daerah Istimewa Yogyakarta.
+
+	PERISTIWA YANG DILAPORKAN
+
+
+
+	1.
+	WAKTU KEJADIAN
+	:
+	Sabtu, 15 agustus 2015 pukul 22.00 WIB
+
+	2.
+	TEMPAT KEJADIAN
+	:
+	Jl. Semangka no 66 Bangunharjo, Sewon, Bantul
+
+	3.
+	APA YANG TERJADI
+	:
+	Percobaan pemerkosaan
+
+	4.
+	SIAPA         A. PELAKU
+	:
+	4 laki-laki teman korban
+· Ihsan surya 22 tahun mahasiswa UGM
+· Roni jaya 21 tahun mahasiswa UGM
+· Indra bayu 20 tahun mahasiswa UGM
+· Andy hasan 22 tahun mahasiswa UGM
+
+
+	                    B. KORBAN
+	:
+	HESTI KARTIKA, Perempuan, Probolinggo 19 april 1992. Pelajar/Mahasiwa. Jl. Rambutan no 25 Bangunharjo Sewon Bantul.
+
+
+
+	5.
+	BAGAIMANA TERJADI
+	:
+	Korban dan pelaku pada hari sabtu 15 agustus 2015 pukul 20.30 WIB sedang melakukan pesta ulang tahun salah satu teman korban yang juga pelaku IB, pesta disertai minuman keras. Dan korban ikut mengkonsumsi minuman tersebut. Setelah acara selesai pukul 21.30 WIB korban diantar pulang oleh pelaku AH untuk dinatar ke kos milik korban, ditengah perjalanan korban diajak pelaku ke kos di jl. Semangka no 66. Karena korban dalam kondisi tidak sadar pelaku mengundang 3 orang lainnya untuk datang ke kos dan melakukan perbuatan pelecehan sexsual. Saksi tidak sengaja berpapasan ketika korban dibonceng oleh pelaku dan mengikuti secara diam-diam  korban hingga kos pelaku. Saat masuk kamar kos pelaku korban yang tidak sadarkan diri telah ditunggu oleh 3 pelaku lainnya. Dan saksi lalu melaporkan langsung ke pemilik kos. Dan mendapati korban dan pelaku dalam posisi tidak berbusana. Dan melaporkan ke polisi.
+
+	6.
+	DILAPORKAN PADA
+	:
+	Sabtu 15 agustus 2015 pukul 22.30 WIB
+
+
+
+
+
+
+
+
+
+
+
+	TINDAK PIDANA APA
+	:
+	Kejahatan kesusilaan pasal 285 KUHP
+
+	NAMA DAN ALAMAT SAKSI-SAKSI
+	:
+	RIZKA FARIKA, Perempuan, Bandung 18 maret 1990. Pelajar/ Mahasiswa. Jl. Jambu Perum. Nogosari no 15 B, Banguntapan Bantul Daerah Istimewa Yogyakarta.
+SUKIRNO, Laki-laki , Bantul 23 Februari 1977. Pegawai Negri Sipil. Jl. Semangka no 65 Bangunharjo, Sewon, Bantul.
+
+
+
+
+
+	BARANG BUKTI
+	:
+	Pakaian korban dan 3 botol minuman keras berjenis CIU
+
+	URAIAN KEJADIAN
+	:
+	Korban dan pelaku pada hari sabtu 15 agustus 2015 pukul 20.30 WIB sedang melakukan pesta ulang tahun salah satu teman korban yang juga pelaku IB, pesta disertai minuman keras. Dan korban ikut mengkonsumsi minuman tersebut. Setelah acara selesai pukul 21.30 WIB korban diantar pulang oleh pelaku AH untuk dinatar ke kos milik korban, ditengah perjalanan korban diajak pelaku ke kos di jl. Semangka no 66. Karena korban dalam kondisi tidak sadar pelaku mengundang 3 orang lainnya untuk datang ke kos dan melakukan perbuatan pelecehan sexsual. Saksi tidak sengaja berpapasan ketika korban dibonceng oleh pelaku dan mengikuti secara diam-diam  korban hingga kos pelaku. Saat masuk kamar kos pelaku korban yang tidak sadarkan diri telah ditunggu oleh 3 pelaku lainnya. Dan saksi lalu melaporkan langsung ke pemilik kos. Dan mendapati korban dan pelaku dalam posisi tidak berbusana. Dan melaporkan ke polisi.
+
+	TINDAKAN YANG DIAMBIL
+	:
+	Menerima laporan, membuat laporan polisi, membuat surat tanda laporan penyelidikan lanjutan.
+
+
+
+
+
+
+
+
+
+
+
+
+	Pelapor			Bantul, 15 Agustus 2015
+				Yang Membuat Laporan
+				KA SPKT II
+
+
+	RIZKA FARIKA			BUDI NUGROHO
+									       AIPTU NRP 71110231
+
+
+Mengetahui
+KEPALA KEPOLISIAN SEKTOR SEWON
+
+
+
+
+IMAN SANTOSO
+KOMISARIS POLISI NRP 62070193
+
+
+
+
+
+========Document Parts========
+PREDEFINED|	KEPOLISIAN DAERAH D.I. YOGYAKARTA
+PREDEFINED|	RESOR BANTUL
+PREDEFINED|	SEKTOR SEWON
+PREDEFINED|	Jl. Parangtritis Km, 5,6 Yogyakarta
+PREDEFINED|	“PRO JUSTITIA”
+PREDEFINED|	LAPORAN POLISI
+ KEY_VALUE|	Nomor : LP/53/II/2015/DIY/RES.BTL/Sek.Sewon
+    NORMAL|	PELAPOR
+ KEY_VALUE|	NAMA 	: 	RIZKA FARIKA, Perempuan, Bandung 18 maret 1990. Pelajar/ Mahasiswa. Jl. Jambu Perum. Nogosari no 15 B, Banguntapan Bantul Daerah Istimewa Yogyakarta.
+    NORMAL|	PERISTIWA YANG DILAPORKAN
+ KEY_VALUE|	1. 	WAKTU KEJADIAN 	: 	Sabtu, 15 agustus 2015 pukul 22.00 WIB
+ KEY_VALUE|	2. 	TEMPAT KEJADIAN 	: 	Jl. Semangka no 66 Bangunharjo, Sewon, Bantul
+ KEY_VALUE|	3.  	APA YANG TERJADI 	: 	Percobaan pemerkosaan
+ KEY_VALUE|	4. 	SIAPA         A. PELAKU 	: 	4 laki-laki teman korban · Ihsan surya 22 tahun mahasiswa UGM · Roni jaya 21 tahun mahasiswa UGM · Indra bayu 20 tahun mahasiswa UGM · Andy hasan 22 tahun mahasiswa UGM
+ KEY_VALUE|	B. KORBAN 	:  	HESTI KARTIKA, Perempuan, Probolinggo 19 april 1992. Pelajar/Mahasiwa. Jl. Rambutan no 25 Bangunharjo Sewon Bantul.
+ KEY_VALUE|	5. 	BAGAIMANA TERJADI 	: 	Korban dan pelaku pada hari sabtu 15 agustus 2015 pukul 20.30 WIB sedang melakukan pesta ulang tahun salah satu teman korban yang juga pelaku IB, pesta disertai minuman keras. Dan korban ikut mengkonsumsi minuman tersebut. Setelah acara selesai pukul 21.30 WIB korban diantar pulang oleh pelaku AH untuk dinatar ke kos milik korban, ditengah perjalanan korban diajak pelaku ke kos di jl. Semangka no 66. Karena korban dalam kondisi tidak sadar pelaku mengundang 3 orang lainnya untuk datang ke kos dan melakukan perbuatan pelecehan sexsual. Saksi tidak sengaja berpapasan ketika korban dibonceng oleh pelaku dan mengikuti secara diam-diam  korban hingga kos pelaku. Saat masuk kamar kos pelaku korban yang tidak sadarkan diri telah ditunggu oleh 3 pelaku lainnya. Dan saksi lalu melaporkan langsung ke pemilik kos. Dan mendapati korban dan pelaku dalam posisi tidak berbusana. Dan melaporkan ke polisi.
+ KEY_VALUE|	6. 	DILAPORKAN PADA 	: 	Sabtu 15 agustus 2015 pukul 22.30 WIB
+ KEY_VALUE|	TINDAK PIDANA APA 	: 	Kejahatan kesusilaan pasal 285 KUHP
+ KEY_VALUE|	NAMA DAN ALAMAT SAKSI-SAKSI 	: 	RIZKA FARIKA, Perempuan, Bandung 18 maret 1990. Pelajar/ Mahasiswa. Jl. Jambu Perum. Nogosari no 15 B, Banguntapan Bantul Daerah Istimewa Yogyakarta. SUKIRNO, Laki-laki , Bantul 23 Februari 1977. Pegawai Negri Sipil. Jl. Semangka no 65 Bangunharjo, Sewon, Bantul.
+ KEY_VALUE|	BARANG BUKTI 	: 	Pakaian korban dan 3 botol minuman keras berjenis CIU
+ KEY_VALUE|	URAIAN KEJADIAN 	: 	Korban dan pelaku pada hari sabtu 15 agustus 2015 pukul 20.30 WIB sedang melakukan pesta ulang tahun salah satu teman korban yang juga pelaku IB, pesta disertai minuman keras. Dan korban ikut mengkonsumsi minuman tersebut. Setelah acara selesai pukul 21.30 WIB korban diantar pulang oleh pelaku AH untuk dinatar ke kos milik korban, ditengah perjalanan korban diajak pelaku ke kos di jl. Semangka no 66. Karena korban dalam kondisi tidak sadar pelaku mengundang 3 orang lainnya untuk datang ke kos dan melakukan perbuatan pelecehan sexsual. Saksi tidak sengaja berpapasan ketika korban dibonceng oleh pelaku dan mengikuti secara diam-diam  korban hingga kos pelaku. Saat masuk kamar kos pelaku korban yang tidak sadarkan diri telah ditunggu oleh 3 pelaku lainnya. Dan saksi lalu melaporkan langsung ke pemilik kos. Dan mendapati korban dan pelaku dalam posisi tidak berbusana. Dan melaporkan ke polisi.
+ KEY_VALUE|	TINDAKAN YANG DIAMBIL 	: 	Menerima laporan, membuat laporan polisi, membuat surat tanda laporan penyelidikan lanjutan.
+    NORMAL|	Pelapor			Bantul, 15 Agustus 2015 				Yang Membuat Laporan 				KA SPKT II
+    NORMAL|	RIZKA FARIKA			BUDI NUGROHO 									       AIPTU NRP 71110231
+PREDEFINED|	Mengetahui
+PREDEFINED|	KEPALA KEPOLISIAN SEKTOR SEWON
+    NORMAL|	IMAN SANTOSO KOMISARIS POLISI NRP 62070193
+==============================
+DSL to Extract : PoliceReport
+===========Results============
+        ReportNumber|LP/53/II/2015/DIY/RES.BTL/Sek.Sewon
+        ReporterName|RIZKA FARIKA
+    ReporterBirthday|18 maret 1990
+         ReporterAge|
+      ReporterGender|Perempuan
+            EventDay|Sabtu
+           EventDate|15 agustus 2015
+           EventTime|22.00 WIB
+               Place|Jl. Semangka no 66 Bangunharjo, Sewon, Bantul
+     PerpetratorName|4 laki-laki teman korban · Ihsan surya 22 tahun mahasiswa UGM · Roni jaya 21 tahun mahasiswa UGM · Indra bayu 20 tahun mahasiswa UGM · Andy hasan 22 tahun mahasiswa UGM
+          VictimName|HESTI KARTIKA
+         WitnessName|RIZKA FARIKA
+           CrimeType|Kejahatan kesusilaan
+         CrimeClause|285 KUHP
+
+
+**************************************************************************************************
+Id:            82e0b05a53d2529ae9d7cc5a4cc6c1c7e90dfc59
+FileName:      /home/jasoet/Documents/Thesis/ExtractorApp/docs/Prod9.docx
+ContentType:   application/vnd.openxmlformats-officedocument.wordprocessingml.document
+
+
+===========Content============
+	KEPOLISIAN DAERAH D.I. YOGYAKARTA
+RESOR BANTUL
+	SEKTOR SEWON
+	Jl. Parangtritis Km, 5,6 Yogyakarta
+“PRO JUSTITIA”
+LAPORAN POLISI
+Nomor : LP/48/II/2015/DIY/RES.BTL/Sek.Sewon
+
+
+	PELAPOR
+
+
+
+	NAMA
+	:
+	HARIAWAN, laki-laki, Probolinggo 15 maret 1993. Pelajar / Mahasiswa, Jl. Akasia No 442 Pendowoharjo, Sewon, Bantul, Daerah Istimewa Yogyakarta.
+
+	PERISTIWA YANG DILAPORKAN
+
+
+
+	1.
+	WAKTU KEJADIAN
+	:
+	Kamis 13 Agustus 2015 pukul 12.00 WIB
+
+	2.
+	TEMPAT KEJADIAN
+	:
+	Jl. Akasia No 440 Pendowoharjo, Sewon, Bantul, Daerah Istimewa Yogyakarta.
+
+	3.
+	APA YANG TERJADI
+	:
+	Pencurian Hewan Ternak
+
+	4.
+	SIAPA         A. PELAKU
+	:
+	ADI JAUHARI, laki-laki, usia 24 tahun, Jl. Imogiri Barat Km. 12.
+
+
+	                    B. KORBAN
+	:
+	SUKIYEM, Perempuan, Bantul 24 November 1966, Peternak Kambing, Jl. Akasia No 440 Pendowoharjo, Sewon, Bantul, Daerah Istimewa Yogyakarta
+
+	5.
+	BAGAIMANA TERJADI
+	:
+	Kamis siang 13 Agustus 2015 pukul 12.00 WIB selepas pulang dari kampus ISI Yogyakarta, Saksi melihat seorang pemuda yang berjalan mengendap-endap dan membawa anak kambing dari belakang rumah korban, saat ditanya oleh saksi, pelaku menjawab kalau kambing tersebut miliknya dan sudah dibayar lunas oleh pelaku kepada korban, tak selang beberapa lama korban keluar dari rumahnya dan mendapati kambingnya sedang dibawa oleh pelaku. Dan langsung meneriaki pelaku “maling” dan saksi langsung menangkap pelaku dan mengamankan pelaku dari amukan masa.
+
+	6.
+	DILAPORKAN PADA
+	:
+	Kamis 13 Agustus 2015 pukul 12.30 WIB
+
+	TINDAK PIDANA APA
+	:
+	Pencurian pasal 362 KUHP
+
+	NAMA DAN ALAMAT SAKSI-SAKSI
+	:
+	HARIAWAN, laki-laki, Probolinggo 15 maret 1993. Pelajar / Mahasiswa, Jl. Akasia No 442 Pendowoharjo, Sewon, Bantul, Daerah Istimewa Yogyakarta
+
+	BARANG BUKTI
+	:
+	1 ekor anak kambing
+
+	URAIAN KEJADIAN
+	:
+	Kamis siang 13 Agustus 2015 pukul 12.00 WIB selepas pulang dari kampus ISI Yogyakarta, Saksi melihat seorang pemuda yang berjalan mengendap-endap dan membawa anak kambing dari belakang rumah korban, saat ditanya oleh saksi, pelaku menjawab kalau kambing tersebut miliknya dan sudah dibayar lunas oleh pelaku kepada korban, tak selang beberapa lama korban keluar dari rumahnya dan mendapati kambingnya sedang dibawa oleh pelaku. Dan langsung meneriaki pelaku “maling” dan saksi langsung menangkap pelaku dan mengamankan pelaku dari amukan masa
+
+	TINDAKAN YANG DIAMBIL
+	:
+	Menerima laporan, membuat laporan polisi, membuat surat tanda laporan penyelidikan lanjutan.
+
+
+
+
+
+	Pelapor			Bantul, 13 Agustus 2015
+				Yang Membuat Laporan
+				KA SPKT II
+
+
+	HARIAWAN			BUDI NUGROHO
+									       AIPTU NRP 71110231
+
+
+Mengetahui
+KEPALA KEPOLISIAN SEKTOR SEWON
+
+
+
+
+IMAN SANTOSO
+KOMISARIS POLISI NRP 62070193
+
+
+
+
+
+========Document Parts========
+PREDEFINED|	KEPOLISIAN DAERAH D.I. YOGYAKARTA
+PREDEFINED|	RESOR BANTUL
+PREDEFINED|	SEKTOR SEWON
+PREDEFINED|	Jl. Parangtritis Km, 5,6 Yogyakarta
+PREDEFINED|	“PRO JUSTITIA”
+PREDEFINED|	LAPORAN POLISI
+ KEY_VALUE|	Nomor : LP/48/II/2015/DIY/RES.BTL/Sek.Sewon
+    NORMAL|	PELAPOR
+ KEY_VALUE|	NAMA 	: 	HARIAWAN, laki-laki, Probolinggo 15 maret 1993. Pelajar / Mahasiswa, Jl. Akasia No 442 Pendowoharjo, Sewon, Bantul, Daerah Istimewa Yogyakarta.
+    NORMAL|	PERISTIWA YANG DILAPORKAN
+ KEY_VALUE|	1. 	WAKTU KEJADIAN 	: 	Kamis 13 Agustus 2015 pukul 12.00 WIB
+ KEY_VALUE|	2. 	TEMPAT KEJADIAN 	: 	Jl. Akasia No 440 Pendowoharjo, Sewon, Bantul, Daerah Istimewa Yogyakarta.
+ KEY_VALUE|	3.  	APA YANG TERJADI 	: 	Pencurian Hewan Ternak
+ KEY_VALUE|	4. 	SIAPA         A. PELAKU 	: 	ADI JAUHARI, laki-laki, usia 24 tahun, Jl. Imogiri Barat Km. 12.
+ KEY_VALUE|	B. KORBAN 	: 	SUKIYEM, Perempuan, Bantul 24 November 1966, Peternak Kambing, Jl. Akasia No 440 Pendowoharjo, Sewon, Bantul, Daerah Istimewa Yogyakarta
+ KEY_VALUE|	5. 	BAGAIMANA TERJADI 	: 	Kamis siang 13 Agustus 2015 pukul 12.00 WIB selepas pulang dari kampus ISI Yogyakarta, Saksi melihat seorang pemuda yang berjalan mengendap-endap dan membawa anak kambing dari belakang rumah korban, saat ditanya oleh saksi, pelaku menjawab kalau kambing tersebut miliknya dan sudah dibayar lunas oleh pelaku kepada korban, tak selang beberapa lama korban keluar dari rumahnya dan mendapati kambingnya sedang dibawa oleh pelaku. Dan langsung meneriaki pelaku “maling” dan saksi langsung menangkap pelaku dan mengamankan pelaku dari amukan masa.
+ KEY_VALUE|	6. 	DILAPORKAN PADA 	: 	Kamis 13 Agustus 2015 pukul 12.30 WIB
+ KEY_VALUE|	TINDAK PIDANA APA 	: 	Pencurian pasal 362 KUHP
+ KEY_VALUE|	NAMA DAN ALAMAT SAKSI-SAKSI 	: 	HARIAWAN, laki-laki, Probolinggo 15 maret 1993. Pelajar / Mahasiswa, Jl. Akasia No 442 Pendowoharjo, Sewon, Bantul, Daerah Istimewa Yogyakarta
+ KEY_VALUE|	BARANG BUKTI 	: 	1 ekor anak kambing
+ KEY_VALUE|	URAIAN KEJADIAN 	: 	Kamis siang 13 Agustus 2015 pukul 12.00 WIB selepas pulang dari kampus ISI Yogyakarta, Saksi melihat seorang pemuda yang berjalan mengendap-endap dan membawa anak kambing dari belakang rumah korban, saat ditanya oleh saksi, pelaku menjawab kalau kambing tersebut miliknya dan sudah dibayar lunas oleh pelaku kepada korban, tak selang beberapa lama korban keluar dari rumahnya dan mendapati kambingnya sedang dibawa oleh pelaku. Dan langsung meneriaki pelaku “maling” dan saksi langsung menangkap pelaku dan mengamankan pelaku dari amukan masa
+ KEY_VALUE|	TINDAKAN YANG DIAMBIL 	: 	Menerima laporan, membuat laporan polisi, membuat surat tanda laporan penyelidikan lanjutan.
+    NORMAL|	Pelapor			Bantul, 13 Agustus 2015 				Yang Membuat Laporan 				KA SPKT II
+    NORMAL|	HARIAWAN			BUDI NUGROHO 									       AIPTU NRP 71110231
+PREDEFINED|	Mengetahui
+PREDEFINED|	KEPALA KEPOLISIAN SEKTOR SEWON
+    NORMAL|	IMAN SANTOSO KOMISARIS POLISI NRP 62070193
+==============================
+DSL to Extract : PoliceReport
+===========Results============
+        ReportNumber|LP/48/II/2015/DIY/RES.BTL/Sek.Sewon
+        ReporterName|HARIAWAN
+    ReporterBirthday|15 maret 1993
+         ReporterAge|
+      ReporterGender|laki-laki
+            EventDay|Kamis
+           EventDate|13 Agustus 2015
+           EventTime|12.00 WIB
+               Place|Jl. Akasia No 440 Pendowoharjo, Sewon, Bantul, Daerah Istimewa Yogyakarta.
+     PerpetratorName|ADI JAUHARI
+          VictimName|SUKIYEM
+         WitnessName|HARIAWAN
+           CrimeType|Pencurian
+         CrimeClause|362 KUHP
+
+
+**************************************************************************************************
+Id:            f516b22341de15f7aa9eb16a28d0a76d09a0b3e8
+FileName:      /home/jasoet/Documents/Thesis/ExtractorApp/docs/Prod7.docx
+ContentType:   application/vnd.openxmlformats-officedocument.wordprocessingml.document
+
+
+===========Content============
+	KEPOLISIAN DAERAH D.I. YOGYAKARTA
+RESOR BANTUL
+	SEKTOR SEWON
+	Jl. Parangtritis Km, 5,6 Yogyakarta
+“PRO JUSTITIA”
+LAPORAN POLISI
+Nomor : LP/46/II/2015/DIY/RES.BTL/Sek.Sewon
+
+
+	PELAPOR
+
+
+
+	NAMA
+	:
+	HATMINI RUKMI, Perempuan, Yogyakarta 10 Desember 1987. Pegawai Swasta. Jl. Gedong Kuning No 512, Banguntapan, Bantul Daerah Istimewa Yogyakarta.
+
+	PERISTIWA YANG DILAPORKAN
+
+
+
+	1.
+	WAKTU KEJADIAN
+	:
+	Selasa  11 Agustus 2015 sekitar pukul 19.00 WIB
+
+	2.
+	TEMPAT KEJADIAN
+	:
+	Jl. Parangtritis Km 6.5, Sewon, Bantul, Daerah Istimewa Yogyakarta.
+
+	3.
+	APA YANG TERJADI
+	:
+	Pemalsuan Uang.
+
+	4.
+	SIAPA         A. PELAKU
+	:
+	MUJIMAN,. Laki-laki Bantul 28 juni 1970. Pemilik Toko Besi Jl. Parangtritis Km 6,5 Sewon Bantul, Daerah Istimewa Yogyakarta.
+
+
+	                    B. KORBAN
+	:
+	HATMINI RUKMI
+
+	5.
+	BAGAIMANA TERJADI
+	:
+	Hari selasa tanggal 11 Agustus 2015 pukul 19.00 WIB korban dan saksi menemui pelaku guna menerima pelunasan pembayaran pembelian mobil dengan nomor polisi AB-1220-BA. Korban dan saksi setelah menemui pelaku di kantor sekaligus rumah pelaku menerima pelunasan pembayaran sebesar Rp 45.000.000,- yang dimasukkan dalam amplop. Ketika tiba dirumah korban lalu membuka amplop yang berisi uang tersebut didapati uang asli hanya sebesar Rp 15.000.000,- dan sisanya uang kertas pecahan Rp 100.000,- mengetahui hal tersebut saksi mengajak korban untuk ke kantor polisi guna melaporkan kejadian tersebut.
+
+	6.
+	DILAPORKAN PADA
+	:
+	Pada hari seasa 11 Agustus 2015 pukul 20.20 WIB.
+
+	TINDAK PIDANA APA
+	:
+	Pemalsuan Uang pasal 224 KUHP
+
+	NAMA DAN ALAMAT SAKSI-SAKSI
+	:
+	STELA SITOHANG, Perempuan. Medan 24 januari 1990. Pelajar / Mahasiswa. . Jl. Gedong Kuning No 512, Banguntapan, Bantul Daerah Istimewa Yogyakarta, (08574416718)
+
+	BARANG BUKTI
+	:
+	Surat bukti transaksi jual beli kendaraan, amplop dan uang palsu sebesar Rp 30.000.000,- rekaman percakapan transaksi jual beli kendaraan.
+
+	URAIAN KEJADIAN
+	:
+	Hari selasa tanggal 11 Agustus 2015 pukul 19.00 WIB korban dan saksi menemui pelaku guna menerima pelunasan pembayaran pembelian mobil dengan nomor polisi AB-1220-BA. Korban dan saksi setelah menemui pelaku di kantor sekaligus rumah pelaku menerima pelunasan pembayaran sebesar Rp 45.000.000,- yang dimasukkan dalam amplop. Ketika tiba dirumah korban lalu membuka amplop yang berisi uang tersebut didapati uang asli hanya sebesar Rp 15.000.000,- dan sisanya uang kertas pecahan Rp 100.000,- mengetahui hal tersebut saksi mengajak korban untuk ke kantor polisi guna melaporkan kejadian tersebut.
+
+	TINDAKAN YANG DIAMBIL
+	:
+	Menerima laporan, membuat laporan polisi, membuat surat tanda laporan penyelidikan lanjutan.
+
+
+
+
+
+	Pelapor			Bantul, 11 Agustus 2015
+				Yang Membuat Laporan
+				KA SPKT II
+
+
+	HATMINI RUKMI			RAHMAT HIDAYAT
+									       AIPTU NRP 61110332
+
+
+Mengetahui
+KEPALA KEPOLISIAN SEKTOR SEWON
+
+
+
+
+IMAN SANTOSO
+KOMISARIS POLISI NRP 62070193
+
+
+
+
+========Document Parts========
+PREDEFINED|	KEPOLISIAN DAERAH D.I. YOGYAKARTA
+PREDEFINED|	RESOR BANTUL
+PREDEFINED|	SEKTOR SEWON
+PREDEFINED|	Jl. Parangtritis Km, 5,6 Yogyakarta
+PREDEFINED|	“PRO JUSTITIA”
+PREDEFINED|	LAPORAN POLISI
+ KEY_VALUE|	Nomor : LP/46/II/2015/DIY/RES.BTL/Sek.Sewon
+    NORMAL|	PELAPOR
+ KEY_VALUE|	NAMA 	: 	HATMINI RUKMI, Perempuan, Yogyakarta 10 Desember 1987. Pegawai Swasta. Jl. Gedong Kuning No 512, Banguntapan, Bantul Daerah Istimewa Yogyakarta.
+    NORMAL|	PERISTIWA YANG DILAPORKAN
+ KEY_VALUE|	1. 	WAKTU KEJADIAN 	: 	Selasa  11 Agustus 2015 sekitar pukul 19.00 WIB
+ KEY_VALUE|	2. 	TEMPAT KEJADIAN 	: 	Jl. Parangtritis Km 6.5, Sewon, Bantul, Daerah Istimewa Yogyakarta.
+ KEY_VALUE|	3.  	APA YANG TERJADI 	: 	Pemalsuan Uang.
+ KEY_VALUE|	4. 	SIAPA         A. PELAKU 	: 	MUJIMAN,. Laki-laki Bantul 28 juni 1970. Pemilik Toko Besi Jl. Parangtritis Km 6,5 Sewon Bantul, Daerah Istimewa Yogyakarta.
+ KEY_VALUE|	B. KORBAN 	: 	HATMINI RUKMI
+ KEY_VALUE|	5. 	BAGAIMANA TERJADI 	: 	Hari selasa tanggal 11 Agustus 2015 pukul 19.00 WIB korban dan saksi menemui pelaku guna menerima pelunasan pembayaran pembelian mobil dengan nomor polisi AB-1220-BA. Korban dan saksi setelah menemui pelaku di kantor sekaligus rumah pelaku menerima pelunasan pembayaran sebesar Rp 45.000.000,- yang dimasukkan dalam amplop. Ketika tiba dirumah korban lalu membuka amplop yang berisi uang tersebut didapati uang asli hanya sebesar Rp 15.000.000,- dan sisanya uang kertas pecahan Rp 100.000,- mengetahui hal tersebut saksi mengajak korban untuk ke kantor polisi guna melaporkan kejadian tersebut.
+ KEY_VALUE|	6. 	DILAPORKAN PADA 	: 	Pada hari seasa 11 Agustus 2015 pukul 20.20 WIB.
+ KEY_VALUE|	TINDAK PIDANA APA 	: 	Pemalsuan Uang pasal 224 KUHP
+ KEY_VALUE|	NAMA DAN ALAMAT SAKSI-SAKSI 	: 	STELA SITOHANG, Perempuan. Medan 24 januari 1990. Pelajar / Mahasiswa. . Jl. Gedong Kuning No 512, Banguntapan, Bantul Daerah Istimewa Yogyakarta, (08574416718)
+ KEY_VALUE|	BARANG BUKTI 	: 	Surat bukti transaksi jual beli kendaraan, amplop dan uang palsu sebesar Rp 30.000.000,- rekaman percakapan transaksi jual beli kendaraan.
+ KEY_VALUE|	URAIAN KEJADIAN 	: 	Hari selasa tanggal 11 Agustus 2015 pukul 19.00 WIB korban dan saksi menemui pelaku guna menerima pelunasan pembayaran pembelian mobil dengan nomor polisi AB-1220-BA. Korban dan saksi setelah menemui pelaku di kantor sekaligus rumah pelaku menerima pelunasan pembayaran sebesar Rp 45.000.000,- yang dimasukkan dalam amplop. Ketika tiba dirumah korban lalu membuka amplop yang berisi uang tersebut didapati uang asli hanya sebesar Rp 15.000.000,- dan sisanya uang kertas pecahan Rp 100.000,- mengetahui hal tersebut saksi mengajak korban untuk ke kantor polisi guna melaporkan kejadian tersebut.
+ KEY_VALUE|	TINDAKAN YANG DIAMBIL 	: 	Menerima laporan, membuat laporan polisi, membuat surat tanda laporan penyelidikan lanjutan.
+    NORMAL|	Pelapor			Bantul, 11 Agustus 2015 				Yang Membuat Laporan 				KA SPKT II
+    NORMAL|	HATMINI RUKMI			RAHMAT HIDAYAT 									       AIPTU NRP 61110332
+PREDEFINED|	Mengetahui
+PREDEFINED|	KEPALA KEPOLISIAN SEKTOR SEWON
+    NORMAL|	IMAN SANTOSO KOMISARIS POLISI NRP 62070193
+==============================
+DSL to Extract : PoliceReport
+===========Results============
+        ReportNumber|LP/46/II/2015/DIY/RES.BTL/Sek.Sewon
+        ReporterName|HATMINI RUKMI
+    ReporterBirthday|10 Desember 1987
+         ReporterAge|
+      ReporterGender|Perempuan
+            EventDay|Selasa
+           EventDate|11 Agustus 2015
+           EventTime|19.00 WIB
+               Place|Jl. Parangtritis Km 6.5, Sewon, Bantul, Daerah Istimewa Yogyakarta.
+     PerpetratorName|MUJIMAN
+          VictimName|HATMINI RUKMI
+         WitnessName|STELA SITOHANG
+           CrimeType|Pemalsuan
+         CrimeClause|224 KUHP
+
+
+**************************************************************************************************
+Id:            1c45de7fd136b617e52785a437f977f38d03f2b1
+FileName:      /home/jasoet/Documents/Thesis/ExtractorApp/docs/Prod5.docx
+ContentType:   application/vnd.openxmlformats-officedocument.wordprocessingml.document
+
+
+===========Content============
+	KEPOLISIAN DAERAH D.I. YOGYAKARTA
+RESOR BANTUL
+	SEKTOR SEWON
+	Jl. Parangtritis Km, 5,6 Yogyakarta
+“PRO JUSTITIA”
+LAPORAN POLISI
+Nomor : LP/44/II/2015/DIY/RES.BTL/Sek.Sewon
+
+
+	PELAPOR
+
+
+
+	NAMA
+	:
+	IBROHIM NUR, Laki – laki, Aceh 20 Agustus 1977. Pegawai Negeri Sipil. Gang kenanga No 44 Timbulharjo, Sewon, Bantul. Daerah Istimewa Yogyakarta.
+
+	PERISTIWA YANG DILAPORKAN
+
+
+
+	1.
+	WAKTU KEJADIAN
+	:
+	Senin  10 Agustus 2015 sekitar pukul 15.00 WIB
+
+	2.
+	TEMPAT KEJADIAN
+	:
+	Gang Kenanga No 44, Sewon, Bantul, Daerah Istimewa Yogyakarta.
+
+	3.
+	APA YANG TERJADI
+	:
+	Pencurian barang berharga.
+
+	4.
+	SIAPA         A. PELAKU
+	:
+	Belum diketahui.
+
+
+	                    B. KORBAN
+	:
+	IBROHIM NUR.
+
+	5.
+	BAGAIMANA TERJADI
+	:
+	Hari senin tanggal 10 Agustus 2015 pukul 15.00 WIB korban pulang dari tempat kerja, dan mendapati rumah kediaman yang sejak pagi terkunci telah terbuka. Lalu korban melihat kedalam rumah dan kondisi rumah sudah berantakan, lemari tempat korban menyimpan barang – barang berharga telah rusak terbuka dan barang berharga yang berada didalam nya telah hilang, serta komputer dan laptop milik koban juga ikut hilang. Lalu korban menghubungi saksi untuk menemani dirinya ke kantor polisi guna melaporkan kejadian pencurian tersebut.
+
+	6.
+	DILAPORKAN PADA
+	:
+	Pada hari senin 10 Agustus 2015 pukul 15.20 WIB.
+
+	TINDAK PIDANA APA
+	:
+	Pencurian pasal 362 KUHP
+
+	NAMA DAN ALAMAT SAKSI-SAKSI
+	:
+	HASAN SADIKIN. Laki-laki Aceh 11 mei 1980. Dosen. Gang Kenanga No 44 Timbulharjo, Sewon, Bantul, Daerah Istimewa Yogyakarta.
+
+	BARANG BUKTI
+	:
+	Foto lokasi kejadian,dan gembok yang dirusak oleh pelaku.
+
+	URAIAN KEJADIAN
+	:
+	Hari senin tanggal 10 Agustus 2015 pukul 15.00 WIB korban pulang dari tempat kerja, dan mendapati rumah kediaman yang sejak pagi terkunci telah terbuka. Lalu korban melihat kedalam rumah dan kondisi rumah sudah berantakan, lemari tempat korban menyimpan barang – barang berharga telah rusak terbuka dan barang berharga yang berada didalam nya telah hilang, serta komputer dan laptop milik koban juga ikut hilang. Lalu korban menghubungi saksi untuk menemani dirinya ke kantor polisi guna melaporkan kejadian pencurian tersebut.
+
+	TINDAKAN YANG DIAMBIL
+	:
+	Menerima laporan, membuat laporan polisi, membuat surat tanda laporan penyelidikan lanjutan.
+
+
+
+
+
+	Pelapor			Bantul, 10 Agustus 2015
+				Yang Membuat Laporan
+				KA SPKT II
+
+
+	IBROHIM NURI			SANTOSO
+									       AIPTU NRP 71110224
+
+
+Mengetahui
+KEPALA KEPOLISIAN SEKTOR SEWON
+
+
+
+
+IMAN SANTOSO
+KOMISARIS POLISI NRP 62070193
+
+
+
+
+========Document Parts========
+PREDEFINED|	KEPOLISIAN DAERAH D.I. YOGYAKARTA
+PREDEFINED|	RESOR BANTUL
+PREDEFINED|	SEKTOR SEWON
+PREDEFINED|	Jl. Parangtritis Km, 5,6 Yogyakarta
+PREDEFINED|	“PRO JUSTITIA”
+PREDEFINED|	LAPORAN POLISI
+ KEY_VALUE|	Nomor : LP/44/II/2015/DIY/RES.BTL/Sek.Sewon
+    NORMAL|	PELAPOR
+ KEY_VALUE|	NAMA 	: 	IBROHIM NUR, Laki – laki, Aceh 20 Agustus 1977. Pegawai Negeri Sipil. Gang kenanga No 44 Timbulharjo, Sewon, Bantul. Daerah Istimewa Yogyakarta.
+    NORMAL|	PERISTIWA YANG DILAPORKAN
+ KEY_VALUE|	1. 	WAKTU KEJADIAN 	: 	Senin  10 Agustus 2015 sekitar pukul 15.00 WIB
+ KEY_VALUE|	2. 	TEMPAT KEJADIAN 	: 	Gang Kenanga No 44, Sewon, Bantul, Daerah Istimewa Yogyakarta.
+ KEY_VALUE|	3.  	APA YANG TERJADI 	: 	Pencurian barang berharga.
+ KEY_VALUE|	4. 	SIAPA         A. PELAKU 	: 	Belum diketahui.
+ KEY_VALUE|	B. KORBAN 	: 	IBROHIM NUR.
+ KEY_VALUE|	5. 	BAGAIMANA TERJADI 	: 	Hari senin tanggal 10 Agustus 2015 pukul 15.00 WIB korban pulang dari tempat kerja, dan mendapati rumah kediaman yang sejak pagi terkunci telah terbuka. Lalu korban melihat kedalam rumah dan kondisi rumah sudah berantakan, lemari tempat korban menyimpan barang – barang berharga telah rusak terbuka dan barang berharga yang berada didalam nya telah hilang, serta komputer dan laptop milik koban juga ikut hilang. Lalu korban menghubungi saksi untuk menemani dirinya ke kantor polisi guna melaporkan kejadian pencurian tersebut.
+ KEY_VALUE|	6. 	DILAPORKAN PADA 	: 	Pada hari senin 10 Agustus 2015 pukul 15.20 WIB.
+ KEY_VALUE|	TINDAK PIDANA APA 	: 	Pencurian pasal 362 KUHP
+ KEY_VALUE|	NAMA DAN ALAMAT SAKSI-SAKSI 	: 	HASAN SADIKIN. Laki-laki Aceh 11 mei 1980. Dosen. Gang Kenanga No 44 Timbulharjo, Sewon, Bantul, Daerah Istimewa Yogyakarta.
+ KEY_VALUE|	BARANG BUKTI 	: 	Foto lokasi kejadian,dan gembok yang dirusak oleh pelaku.
+ KEY_VALUE|	URAIAN KEJADIAN 	: 	Hari senin tanggal 10 Agustus 2015 pukul 15.00 WIB korban pulang dari tempat kerja, dan mendapati rumah kediaman yang sejak pagi terkunci telah terbuka. Lalu korban melihat kedalam rumah dan kondisi rumah sudah berantakan, lemari tempat korban menyimpan barang – barang berharga telah rusak terbuka dan barang berharga yang berada didalam nya telah hilang, serta komputer dan laptop milik koban juga ikut hilang. Lalu korban menghubungi saksi untuk menemani dirinya ke kantor polisi guna melaporkan kejadian pencurian tersebut.
+ KEY_VALUE|	TINDAKAN YANG DIAMBIL 	: 	Menerima laporan, membuat laporan polisi, membuat surat tanda laporan penyelidikan lanjutan.
+    NORMAL|	Pelapor			Bantul, 10 Agustus 2015 				Yang Membuat Laporan 				KA SPKT II
+    NORMAL|	IBROHIM NURI			SANTOSO 									       AIPTU NRP 71110224
+PREDEFINED|	Mengetahui
+PREDEFINED|	KEPALA KEPOLISIAN SEKTOR SEWON
+    NORMAL|	IMAN SANTOSO KOMISARIS POLISI NRP 62070193
+==============================
+DSL to Extract : PoliceReport
+===========Results============
+        ReportNumber|LP/44/II/2015/DIY/RES.BTL/Sek.Sewon
+        ReporterName|IBROHIM NUR
+    ReporterBirthday|20 Agustus 1977
+         ReporterAge|
+      ReporterGender|Laki
+            EventDay|Senin
+           EventDate|10 Agustus 2015
+           EventTime|15.00 WIB
+               Place|Gang Kenanga No 44, Sewon, Bantul, Daerah Istimewa Yogyakarta.
+     PerpetratorName|Belum diketahui.
+          VictimName|IBROHIM NUR.
+         WitnessName|HASAN SADIKIN
+           CrimeType|Pencurian
+         CrimeClause|362 KUHP
+
+
+**************************************************************************************************
+Id:            b95771c51414bc16c4180d26910a2eaf91bf6057
+FileName:      /home/jasoet/Documents/Thesis/ExtractorApp/docs/Prod8.docx
+ContentType:   application/vnd.openxmlformats-officedocument.wordprocessingml.document
+
+
+===========Content============
+	KEPOLISIAN DAERAH D.I. YOGYAKARTA
+RESOR BANTUL
+	SEKTOR SEWON
+	Jl. Parangtritis Km, 5,6 Yogyakarta
+“PRO JUSTITIA”
+LAPORAN POLISI
+Nomor : LP/47/II/2015/DIY/RES.BTL/Sek.Sewon
+
+
+	PELAPOR
+
+
+
+	NAMA
+	:
+	SUSANA, Perempuan, Yogyakarta 15 Februari 1988, Karyawan Swasta, Jl. Mangga No 128 Tamanan ,Banguntapan, Bantul, Daerah Istimewa Yogyakarta.
+
+	PERISTIWA YANG DILAPORKAN
+
+
+
+	1.
+	WAKTU KEJADIAN
+	:
+	Rabu 12 agustus 2015 pukul 09.00 WIB
+
+	2.
+	TEMPAT KEJADIAN
+	:
+	Gang melati no 59 Timbulharjo, Sewon, Bantul, Daerah Istimewa Yogyakarta.
+
+	3.
+	APA YANG TERJADI
+	:
+	Penggelapan Uang Sumbangan.
+
+	4.
+	SIAPA         A. PELAKU
+	:
+	PARJIO, Usia 43 Tahun, Gang melati no 59 Timbulharjo, Sewon, Bantul, Daerah Istimewa Yogyakarta
+
+
+	                    B. KORBAN
+	:
+	CV. Permata Hati. Jl. Tegalgendu no 10, Umbulharjo, Yogyakarta.
+
+	5.
+	BAGAIMANA TERJADI
+	:
+	Rabu pagi 12 agustus 2015 pukul 08.30 WIB saksi datang ke rumah pelaku guna menanyakan uang sumbangan masyarakat untuk dana pembangunan panti asuhan di daerah Wonosari sebesar Rp 4.500.000.000,-. Namun pelaku tidak ada dirumah. Menurut tetangga, pelaku telah meninggalkan rumah sejak senin petang sekitar pukul 18.00 WIB. Pelapor lalu berinisiatif untuk menelefon pelaku guna penjelasan, namun nomer yang dihubungi tidak aktiv. Pelapor dan saksi lalu melaporkan kejadian penggelapan yang merugikan CV.Permata Hati sebesar Rp 4.500.000.000,- tersebut ke kantor polisi.
+
+	6.
+	DILAPORKAN PADA
+	:
+	Rabu 12 agustus 2015 pukul 12.00 WIB
+
+	TINDAK PIDANA APA
+	:
+	Penggelapan pasal 372 KUHP
+
+	NAMA DAN ALAMAT SAKSI-SAKSI
+	:
+	RINI HARUN, Perempuan, Semarang 17 Januari 1987, Pegawai Swasta. Jl. Wonosari Km 2.5 Gandu, Banguntapan, Bantul, Daerah Istimewa Yogyakarta.
+
+	BARANG BUKTI
+	:
+	Bukti tanda terima sumbangan dari PT. Raksasa Migas, kepada CV. Permata Hati dengan tandatangan pelaku. Serta indentitas pelaku.
+
+	URAIAN KEJADIAN
+	:
+	Rabu pagi 12 agustus 2015 pukul 08.30 WIB saksi datang ke rumah pelaku guna menanyakan uang sumbangan masyarakat untuk dana pembangunan panti asuhan di daerah Wonosari sebesar Rp 4.500.000.000,-. Namun pelaku tidak ada dirumah. Menurut tetangga, pelaku telah meninggalkan rumah sejak senin petang sekitar pukul 18.00 WIB. Pelapor lalu berinisiatif untuk menelefon pelaku guna penjelasan, namun nomer yang dihubungi tidak aktiv. Pelapor dan saksi lalu melaporkan kejadian penggelapan yang merugikan CV.Permata Hati sebesar Rp 4.500.000.000,- tersebut ke kantor polisi.
+
+	TINDAKAN YANG DIAMBIL
+	:
+	Menerima laporan, membuat laporan polisi, membuat surat tanda laporan penyelidikan lanjutan.
+
+
+
+
+
+	Pelapor			Bantul, 12 Agustus 2015
+				Yang Membuat Laporan
+				KA SPKT II
+
+
+	SUSANA			BUDI NUGROHO
+									       AIPTU NRP 71110231
+
+
+Mengetahui
+KEPALA KEPOLISIAN SEKTOR SEWON
+
+
+
+
+IMAN SANTOSO
+KOMISARIS POLISI NRP 62070193
+
+
+
+
+========Document Parts========
+PREDEFINED|	KEPOLISIAN DAERAH D.I. YOGYAKARTA
+PREDEFINED|	RESOR BANTUL
+PREDEFINED|	SEKTOR SEWON
+PREDEFINED|	Jl. Parangtritis Km, 5,6 Yogyakarta
+PREDEFINED|	“PRO JUSTITIA”
+PREDEFINED|	LAPORAN POLISI
+ KEY_VALUE|	Nomor : LP/47/II/2015/DIY/RES.BTL/Sek.Sewon
+    NORMAL|	PELAPOR
+ KEY_VALUE|	NAMA 	: 	SUSANA, Perempuan, Yogyakarta 15 Februari 1988, Karyawan Swasta, Jl. Mangga No 128 Tamanan ,Banguntapan, Bantul, Daerah Istimewa Yogyakarta.
+    NORMAL|	PERISTIWA YANG DILAPORKAN
+ KEY_VALUE|	1. 	WAKTU KEJADIAN 	: 	Rabu 12 agustus 2015 pukul 09.00 WIB
+ KEY_VALUE|	2. 	TEMPAT KEJADIAN 	: 	Gang melati no 59 Timbulharjo, Sewon, Bantul, Daerah Istimewa Yogyakarta.
+ KEY_VALUE|	3.  	APA YANG TERJADI 	: 	Penggelapan Uang Sumbangan.
+ KEY_VALUE|	4. 	SIAPA         A. PELAKU 	: 	PARJIO, Usia 43 Tahun, Gang melati no 59 Timbulharjo, Sewon, Bantul, Daerah Istimewa Yogyakarta
+ KEY_VALUE|	B. KORBAN 	: 	CV. Permata Hati. Jl. Tegalgendu no 10, Umbulharjo, Yogyakarta.
+ KEY_VALUE|	5. 	BAGAIMANA TERJADI 	: 	Rabu pagi 12 agustus 2015 pukul 08.30 WIB saksi datang ke rumah pelaku guna menanyakan uang sumbangan masyarakat untuk dana pembangunan panti asuhan di daerah Wonosari sebesar Rp 4.500.000.000,-. Namun pelaku tidak ada dirumah. Menurut tetangga, pelaku telah meninggalkan rumah sejak senin petang sekitar pukul 18.00 WIB. Pelapor lalu berinisiatif untuk menelefon pelaku guna penjelasan, namun nomer yang dihubungi tidak aktiv. Pelapor dan saksi lalu melaporkan kejadian penggelapan yang merugikan CV.Permata Hati sebesar Rp 4.500.000.000,- tersebut ke kantor polisi.
+ KEY_VALUE|	6. 	DILAPORKAN PADA 	: 	Rabu 12 agustus 2015 pukul 12.00 WIB
+ KEY_VALUE|	TINDAK PIDANA APA 	: 	Penggelapan pasal 372 KUHP
+ KEY_VALUE|	NAMA DAN ALAMAT SAKSI-SAKSI 	: 	RINI HARUN, Perempuan, Semarang 17 Januari 1987, Pegawai Swasta. Jl. Wonosari Km 2.5 Gandu, Banguntapan, Bantul, Daerah Istimewa Yogyakarta.
+ KEY_VALUE|	BARANG BUKTI 	: 	Bukti tanda terima sumbangan dari PT. Raksasa Migas, kepada CV. Permata Hati dengan tandatangan pelaku. Serta indentitas pelaku.
+ KEY_VALUE|	URAIAN KEJADIAN 	: 	Rabu pagi 12 agustus 2015 pukul 08.30 WIB saksi datang ke rumah pelaku guna menanyakan uang sumbangan masyarakat untuk dana pembangunan panti asuhan di daerah Wonosari sebesar Rp 4.500.000.000,-. Namun pelaku tidak ada dirumah. Menurut tetangga, pelaku telah meninggalkan rumah sejak senin petang sekitar pukul 18.00 WIB. Pelapor lalu berinisiatif untuk menelefon pelaku guna penjelasan, namun nomer yang dihubungi tidak aktiv. Pelapor dan saksi lalu melaporkan kejadian penggelapan yang merugikan CV.Permata Hati sebesar Rp 4.500.000.000,- tersebut ke kantor polisi.
+ KEY_VALUE|	TINDAKAN YANG DIAMBIL 	: 	Menerima laporan, membuat laporan polisi, membuat surat tanda laporan penyelidikan lanjutan.
+    NORMAL|	Pelapor			Bantul, 12 Agustus 2015 				Yang Membuat Laporan 				KA SPKT II
+    NORMAL|	SUSANA			BUDI NUGROHO 									       AIPTU NRP 71110231
+PREDEFINED|	Mengetahui
+PREDEFINED|	KEPALA KEPOLISIAN SEKTOR SEWON
+    NORMAL|	IMAN SANTOSO KOMISARIS POLISI NRP 62070193
+==============================
+DSL to Extract : PoliceReport
+===========Results============
+        ReportNumber|LP/47/II/2015/DIY/RES.BTL/Sek.Sewon
+        ReporterName|SUSANA
+    ReporterBirthday|15 Februari 1988
+         ReporterAge|
+      ReporterGender|Perempuan
+            EventDay|Rabu
+           EventDate|12 agustus 2015
+           EventTime|09.00 WIB
+               Place|Gang melati no 59 Timbulharjo, Sewon, Bantul, Daerah Istimewa Yogyakarta.
+     PerpetratorName|PARJIO
+          VictimName|CV. Permata Hati. Jl. Tegalgendu no 10
+         WitnessName|RINI HARUN
+           CrimeType|Penggelapan
+         CrimeClause|372 KUHP
+
+
+**************************************************************************************************
+Id:            a7c5590d87b4b3dce0d90a5a6d3fa67da1130a1e
+FileName:      /home/jasoet/Documents/Thesis/ExtractorApp/docs/Prod1.docx
+ContentType:   application/vnd.openxmlformats-officedocument.wordprocessingml.document
+
+
+===========Content============
+	KEPOLISIAN DAERAH D.I. YOGYAKARTA
+RESOR BANTUL
+	SEKTOR SEWON
+	Jl. Parangtritis Km, 5,6 Yogyakarta
+“PRO JUSTITIA”
+LAPORAN POLISI
+Nomor : LP/40/II/2016/DIY/RES.BTL/Sek.Sewon
+
+
+	PELAPOR
+
+
+
+	NAMA
+	:
+	AHMAD HARIS,  Bantul, 13 Maret 1986, Umur : 29 tahun, Agama Islam, Pekerjaan Mekanik, Kewarganegaraan Indonesia, Suku Jawa, Pendidikan terakhir D3 (tamat) Tempat tinggal di Jl. Veteran no 16, Muja Muju Umbulharjo Yogyakarta.
+
+	PERISTIWA YANG DILAPORKAN
+
+
+
+	1.
+	WAKTU KEJADIAN
+	:
+	Hari kamis tanggal 06 Agustus 2015, sekira pukul 23.00 wib
+
+	2.
+	TEMPAT KEJADIAN
+	:
+	Jl. Parang Tritis km 5,6 Depan Kampus ISI Yogyakarta, Kec. Sewon, Kab. Bantul.
+
+	3.
+	APA YANG TERJADI
+	:
+	Tindak Pidana Pencurian.
+
+	4.
+	SIAPA         A. PELAKU
+	:
+	2 orang laki-laki, menggunakan sepeda motor merk Yamaha jenis RX king nomor polisi  AB-5451-JJ berwarna hitam.
+
+
+	                    B. KORBAN
+	:
+	pelapor.
+
+	5.
+	BAGAIMANA TERJADI
+	:
+	Kamis dini hari pukul 22.00 WIB korban pergi ke warung makan yang berada di depan kampus ISI Yogyakarta menggunakan sepeda motor merk Yamaha jenis Mio nomor polisi AD-4432-BA warna merah, pada saat korban hendak membayar pukul 23.00 WIB, ada 2 orang laki-laki berbadan gempal mengunakan  sepeda motor merk Yamaha Jenis RX king warna hitam mendekati warung makan tersebut dan langsung membawa lari motor milik korban.
+
+	6.
+	DILAPORKAN PADA
+	:
+	Pada hari Kamis, tanggal 06 Agustus 2015, pukul 23.10 wib.
+
+	TINDAK PIDANA APA
+	:
+	Pencurian pasal 362 KUHP
+
+	NAMA DAN ALAMAT SAKSI-SAKSI
+	:
+	AGUS MULYADI, Jenis kelamin laki-laki, umur  24 tahun, Katholik, Mahasiswa , Alamat Dsn. kaliwojo RT 023, Kel. Pronotirto, Kec. Giling, Kab. Kendal. (085767558154).
+
+	BARANG BUKTI
+	:
+	BPKB dan STNK kendaraan milik Korban Merk Yamaha jenis matic warna merah, nomor polisi AD-4432-BA noka: HMW232509KLK nosin: JKL0906625MG,Atas nama AHMAD HARIS, alamat Jl. Veteran no 16, Muja Muju Umbulharjo Yogyakarta.
+
+	URAIAN KEJADIAN
+	:
+	Korban dan saksi  pada hari kamis dini pukul 22.00 WIB hendak makan malam di sebuah warung yang berada di depan kampus ISI Yogyakarta menggunakan motor Mio nomor polisi AD. Setelah hendak membayar datang 2 orang berbadan gempal menggunakan sepeda motor RX-king warna hitam mendekati warung makan tempat korban dan saksi makan malam, tidak selang beberapa lama setelah hendak membayar salah satu dari orang tersebut menghidupkan motor milik korban dan langsung melarikan kea rah selatan.
+
+	TINDAKAN YANG DIAMBIL
+	:
+	Menerima laporan, membuat laporan polisi, membuat surat tanda laporan penyelidikan lanjutan.
+
+
+
+
+
+	Pelapor			Bantul, 06 Agustus 2015
+				Yang Membuat Laporan
+				KA SPKT II
+
+
+	AHMAD HARIS			BUDI NUGROHO
+				AIPTU NRP 71110231
+
+Mengetahui
+KEPALA KEPOLISIAN SEKTOR SEWON
+
+
+
+
+IMAN SANTOSO
+KOMISARIS POLISI NRP 62070193
+
+
+
+
+========Document Parts========
+PREDEFINED|	KEPOLISIAN DAERAH D.I. YOGYAKARTA
+PREDEFINED|	RESOR BANTUL
+PREDEFINED|	SEKTOR SEWON
+PREDEFINED|	Jl. Parangtritis Km, 5,6 Yogyakarta
+PREDEFINED|	“PRO JUSTITIA”
+PREDEFINED|	LAPORAN POLISI
+ KEY_VALUE|	Nomor : LP/40/II/2016/DIY/RES.BTL/Sek.Sewon
+    NORMAL|	PELAPOR
+ KEY_VALUE|	NAMA 	: 	AHMAD HARIS,  Bantul, 13 Maret 1986, Umur : 29 tahun, Agama Islam, Pekerjaan Mekanik, Kewarganegaraan Indonesia, Suku Jawa, Pendidikan terakhir D3 (tamat) Tempat tinggal di Jl. Veteran no 16, Muja Muju Umbulharjo Yogyakarta.
+    NORMAL|	PERISTIWA YANG DILAPORKAN
+ KEY_VALUE|	1. 	WAKTU KEJADIAN 	: 	Hari kamis tanggal 06 Agustus 2015, sekira pukul 23.00 wib
+ KEY_VALUE|	2. 	TEMPAT KEJADIAN 	: 	Jl. Parang Tritis km 5,6 Depan Kampus ISI Yogyakarta, Kec. Sewon, Kab. Bantul.
+ KEY_VALUE|	3.  	APA YANG TERJADI 	: 	Tindak Pidana Pencurian.
+ KEY_VALUE|	4. 	SIAPA         A. PELAKU 	: 	2 orang laki-laki, menggunakan sepeda motor merk Yamaha jenis RX king nomor polisi  AB-5451-JJ berwarna hitam.
+ KEY_VALUE|	B. KORBAN 	: 	pelapor.
+ KEY_VALUE|	5. 	BAGAIMANA TERJADI 	: 	Kamis dini hari pukul 22.00 WIB korban pergi ke warung makan yang berada di depan kampus ISI Yogyakarta menggunakan sepeda motor merk Yamaha jenis Mio nomor polisi AD-4432-BA warna merah, pada saat korban hendak membayar pukul 23.00 WIB, ada 2 orang laki-laki berbadan gempal mengunakan  sepeda motor merk Yamaha Jenis RX king warna hitam mendekati warung makan tersebut dan langsung membawa lari motor milik korban.
+ KEY_VALUE|	6. 	DILAPORKAN PADA 	: 	Pada hari Kamis, tanggal 06 Agustus 2015, pukul 23.10 wib.
+ KEY_VALUE|	TINDAK PIDANA APA 	: 	Pencurian pasal 362 KUHP
+ KEY_VALUE|	NAMA DAN ALAMAT SAKSI-SAKSI 	: 	AGUS MULYADI, Jenis kelamin laki-laki, umur  24 tahun, Katholik, Mahasiswa , Alamat Dsn. kaliwojo RT 023, Kel. Pronotirto, Kec. Giling, Kab. Kendal. (085767558154).
+ KEY_VALUE|	BARANG BUKTI 	: 	BPKB dan STNK kendaraan milik Korban Merk Yamaha jenis matic warna merah, nomor polisi AD-4432-BA noka: HMW232509KLK nosin: JKL0906625MG,Atas nama AHMAD HARIS, alamat Jl. Veteran no 16, Muja Muju Umbulharjo Yogyakarta.
+ KEY_VALUE|	URAIAN KEJADIAN 	: 	Korban dan saksi  pada hari kamis dini pukul 22.00 WIB hendak makan malam di sebuah warung yang berada di depan kampus ISI Yogyakarta menggunakan motor Mio nomor polisi AD. Setelah hendak membayar datang 2 orang berbadan gempal menggunakan sepeda motor RX-king warna hitam mendekati warung makan tempat korban dan saksi makan malam, tidak selang beberapa lama setelah hendak membayar salah satu dari orang tersebut menghidupkan motor milik korban dan langsung melarikan kea rah selatan.
+ KEY_VALUE|	TINDAKAN YANG DIAMBIL 	: 	Menerima laporan, membuat laporan polisi, membuat surat tanda laporan penyelidikan lanjutan.
+    NORMAL|	Pelapor			Bantul, 06 Agustus 2015 				Yang Membuat Laporan 				KA SPKT II
+    NORMAL|	AHMAD HARIS			BUDI NUGROHO 				AIPTU NRP 71110231
+PREDEFINED|	Mengetahui
+PREDEFINED|	KEPALA KEPOLISIAN SEKTOR SEWON
+    NORMAL|	IMAN SANTOSO KOMISARIS POLISI NRP 62070193
+==============================
+DSL to Extract : PoliceReport
+===========Results============
+        ReportNumber|LP/40/II/2016/DIY/RES.BTL/Sek.Sewon
+        ReporterName|AHMAD HARIS
+    ReporterBirthday|13 Maret 1986
+         ReporterAge|29 tahun
+      ReporterGender|
+            EventDay|kamis
+           EventDate|06 Agustus 2015
+           EventTime|23.00 wib
+               Place|Jl. Parang Tritis km 5,6 Depan Kampus ISI Yogyakarta, Kec. Sewon, Kab. Bantul.
+     PerpetratorName|2 orang laki-laki
+          VictimName|pelapor.
+         WitnessName|AGUS MULYADI
+           CrimeType|Pencurian
+         CrimeClause|362 KUHP
+
+
+**************************************************************************************************
+Id:            065ac6049d69ef0eff13008a32568ad68d58e30c
+FileName:      /home/jasoet/Documents/Thesis/ExtractorApp/docs/Prod12.docx
+ContentType:   application/vnd.openxmlformats-officedocument.wordprocessingml.document
+
+
+===========Content============
+	KEPOLISIAN DAERAH D.I. YOGYAKARTA
+RESOR BANTUL
+	SEKTOR SEWON
+	Jl. Parangtritis Km, 5,6 Yogyakarta
+“PRO JUSTITIA”
+LAPORAN POLISI
+Nomor : LP/51/II/2015/DIY/RES.BTL/Sek.Sewon
+
+
+	PELAPOR
+
+
+
+	NAMA
+	:
+	JAYADI EKA, Laki-laki. Padang 15 maret 1979. Pedagang. Jl. Bantul Km 12, Pandak, Bantul, Daerah Istimewa Yogyakarta
+
+	PERISTIWA YANG DILAPORKAN
+
+
+
+	1.
+	WAKTU KEJADIAN
+	:
+	Jumat, 14 agustus 2015 pukul 14.20 WIB
+
+	2.
+	TEMPAT KEJADIAN
+	:
+	Jl. Anggur No 66 Timbulharjo, Sewon, Bantul, depan SMP 1 Sewon.
+
+	3.
+	APA YANG TERJADI
+	:
+	Pemerasan disertai pengancaman
+
+	4.
+	SIAPA         A. PELAKU
+	:
+	INDRA SANJAYA, Usia 17 tahun, siswa SMA 3 Sewon
+BUDI EKO, usia 17 tahun, siswa SMA 3 Sewon
+
+
+	                    B. KORBAN
+	:
+	NIRMANA SARI, usia 14 tahun siswi SMP 1 Sewon.
+
+	5.
+	BAGAIMANA TERJADI
+	:
+	Sepulang sekolah pada hari jumat 14 agustus 2015 pukul 14.20 WIB korban hendak pulang ke rumahnya. Di depan sekolahan pelaku menunggu korban untuk diajak biacara. Tak selang berapa lama pelaku meminta uang dan telepon genggam milik korban, saat itu saksi sedang melintas dan menolong korban. Salah satu pelaku yang bernama BUDI EKO, berhasil di amankan oleh saksi dan dibawa ke kantor polisi sedangkan pelaku lain melarikan diri dengan sepeda motor jenis bebek, merk Honda type supra x dengan nomor polisi AB-6541-AA.
+
+	6.
+	DILAPORKAN PADA
+	:
+	Jumat 14 agustus 2015 pukul 14.45 WIB
+
+	TINDAK PIDANA APA
+	:
+	Pemerasan pasal 368 KUHP
+
+	NAMA DAN ALAMAT SAKSI-SAKSI
+	:
+	JAYADI EKA. Laki-laki. Padang 15 maret 1979. Pedagang. Jl. Bantul Km 12, Pandak, Bantul, Daerah Istimewa Yogyakarta
+
+	BARANG BUKTI
+	:
+	Telepon genggam milik korban dan uang sebesar Rp 250.000,- milik korban.
+
+	URAIAN KEJADIAN
+	:
+	Sepulang sekolah pada hari jumat 14 agustus 2015 pukul 14.20 WIB korban hendak pulang ke rumahnya. Di depan sekolahan pelaku menunggu korban untuk diajak biacara. Tak selang berapa lama pelaku meminta uang dan telepon genggam milik korban, saat itu saksi sedang melintas dan menolong korban. Salah satu pelaku yang bernama BUDI EKO, berhasil di amankan oleh saksi dan dibawa ke kantor polisi sedangkan pelaku lain melarikan diri dengan sepeda motor jenis bebek, merk Honda type supra x dengan nomor polisi AB-6541-AA
+
+	TINDAKAN YANG DIAMBIL
+	:
+	Menerima laporan, membuat laporan polisi, membuat surat tanda laporan penyelidikan lanjutan.
+
+
+
+
+
+	Pelapor			Bantul, 14 Agustus 2015
+				Yang Membuat Laporan
+				KA SPKT II
+
+
+	JAYADI EKA			SANTOSO
+									       AIPTU NRP 71110224
+
+
+Mengetahui
+KEPALA KEPOLISIAN SEKTOR SEWON
+
+
+
+
+IMAN SANTOSO
+KOMISARIS POLISI NRP 62070193
+
+
+
+
+
+========Document Parts========
+PREDEFINED|	KEPOLISIAN DAERAH D.I. YOGYAKARTA
+PREDEFINED|	RESOR BANTUL
+PREDEFINED|	SEKTOR SEWON
+PREDEFINED|	Jl. Parangtritis Km, 5,6 Yogyakarta
+PREDEFINED|	“PRO JUSTITIA”
+PREDEFINED|	LAPORAN POLISI
+ KEY_VALUE|	Nomor : LP/51/II/2015/DIY/RES.BTL/Sek.Sewon
+    NORMAL|	PELAPOR
+ KEY_VALUE|	NAMA 	: 	JAYADI EKA, Laki-laki. Padang 15 maret 1979. Pedagang. Jl. Bantul Km 12, Pandak, Bantul, Daerah Istimewa Yogyakarta
+    NORMAL|	PERISTIWA YANG DILAPORKAN
+ KEY_VALUE|	1. 	WAKTU KEJADIAN 	: 	Jumat, 14 agustus 2015 pukul 14.20 WIB
+ KEY_VALUE|	2. 	TEMPAT KEJADIAN 	: 	Jl. Anggur No 66 Timbulharjo, Sewon, Bantul, depan SMP 1 Sewon.
+ KEY_VALUE|	3.  	APA YANG TERJADI 	: 	Pemerasan disertai pengancaman
+ KEY_VALUE|	4. 	SIAPA         A. PELAKU 	: 	INDRA SANJAYA, Usia 17 tahun, siswa SMA 3 Sewon BUDI EKO, usia 17 tahun, siswa SMA 3 Sewon
+ KEY_VALUE|	B. KORBAN 	: 	NIRMANA SARI, usia 14 tahun siswi SMP 1 Sewon.
+ KEY_VALUE|	5. 	BAGAIMANA TERJADI 	: 	Sepulang sekolah pada hari jumat 14 agustus 2015 pukul 14.20 WIB korban hendak pulang ke rumahnya. Di depan sekolahan pelaku menunggu korban untuk diajak biacara. Tak selang berapa lama pelaku meminta uang dan telepon genggam milik korban, saat itu saksi sedang melintas dan menolong korban. Salah satu pelaku yang bernama BUDI EKO, berhasil di amankan oleh saksi dan dibawa ke kantor polisi sedangkan pelaku lain melarikan diri dengan sepeda motor jenis bebek, merk Honda type supra x dengan nomor polisi AB-6541-AA.
+ KEY_VALUE|	6. 	DILAPORKAN PADA 	: 	Jumat 14 agustus 2015 pukul 14.45 WIB
+ KEY_VALUE|	TINDAK PIDANA APA 	: 	Pemerasan pasal 368 KUHP
+ KEY_VALUE|	NAMA DAN ALAMAT SAKSI-SAKSI 	: 	JAYADI EKA. Laki-laki. Padang 15 maret 1979. Pedagang. Jl. Bantul Km 12, Pandak, Bantul, Daerah Istimewa Yogyakarta
+ KEY_VALUE|	BARANG BUKTI 	: 	Telepon genggam milik korban dan uang sebesar Rp 250.000,- milik korban.
+ KEY_VALUE|	URAIAN KEJADIAN 	: 	Sepulang sekolah pada hari jumat 14 agustus 2015 pukul 14.20 WIB korban hendak pulang ke rumahnya. Di depan sekolahan pelaku menunggu korban untuk diajak biacara. Tak selang berapa lama pelaku meminta uang dan telepon genggam milik korban, saat itu saksi sedang melintas dan menolong korban. Salah satu pelaku yang bernama BUDI EKO, berhasil di amankan oleh saksi dan dibawa ke kantor polisi sedangkan pelaku lain melarikan diri dengan sepeda motor jenis bebek, merk Honda type supra x dengan nomor polisi AB-6541-AA
+ KEY_VALUE|	TINDAKAN YANG DIAMBIL 	: 	Menerima laporan, membuat laporan polisi, membuat surat tanda laporan penyelidikan lanjutan.
+    NORMAL|	Pelapor			Bantul, 14 Agustus 2015 				Yang Membuat Laporan 				KA SPKT II
+    NORMAL|	JAYADI EKA			SANTOSO 									       AIPTU NRP 71110224
+PREDEFINED|	Mengetahui
+PREDEFINED|	KEPALA KEPOLISIAN SEKTOR SEWON
+    NORMAL|	IMAN SANTOSO KOMISARIS POLISI NRP 62070193
+==============================
+DSL to Extract : PoliceReport
+===========Results============
+        ReportNumber|LP/51/II/2015/DIY/RES.BTL/Sek.Sewon
+        ReporterName|JAYADI EKA
+    ReporterBirthday|15 maret 1979
+         ReporterAge|
+      ReporterGender|Laki-laki
+            EventDay|Jumat
+           EventDate|14 agustus 2015
+           EventTime|14.20 WIB
+               Place|Jl. Anggur No 66 Timbulharjo, Sewon, Bantul, depan SMP 1 Sewon.
+     PerpetratorName|INDRA SANJAYA
+          VictimName|NIRMANA SARI
+         WitnessName|JAYADI EKA
+           CrimeType|Pemerasan
+         CrimeClause|368 KUHP
+
+
+**************************************************************************************************
+Id:            a33da27e38750747d8c6a924490a0e9f3ec81723
+FileName:      /home/jasoet/Documents/Thesis/ExtractorApp/docs/Prod16.docx
+ContentType:   application/vnd.openxmlformats-officedocument.wordprocessingml.document
+
+
+===========Content============
+	KEPOLISIAN DAERAH D.I. YOGYAKARTA
+RESOR BANTUL
+	SEKTOR SEWON
+	Jl. Parangtritis Km, 5,6 Yogyakarta
+“PRO JUSTITIA”
+LAPORAN POLISI
+Nomor : LP/139/V/2016/DIY/RES.BTL/Sek.Sewon
+
+
+	PELAPOR
+
+
+
+	NAMA
+	:
+	RISGIYANTO, Bantul 11 Desember 1981, Islam, Satpam, Mantup Rt.14 Baturetno banguntapan Bantul
+
+	PERISTIWA YANG DILAPORKAN
+
+
+
+	1.
+	WAKTU KEJADIAN
+	:
+	Diketahui Jumat tanggal 06 Mei 2016, sekira pukul 19.15 wib
+
+	2.
+	TEMPAT KEJADIAN
+	:
+	Tempat Kerja kantor AKA-DISDIKPORA (Akademi Komunitas Seni dan Budaya). Jl, Parangtritits Km, 3,5 Bantul Yogyakarta
+
+	3.
+	APA YANG TERJADI
+	:
+	Tindak Pidana Penganiayaan sebagaimana di maksud dalam pasal 352 KUHP
+
+	4.
+	SIAPA         A. PELAKU
+	:
+	SURYO ADI ANGGORO, 32 Th, D/a. Muja Muju Yogyakarta
+
+
+
+	                    B. KORBAN
+	:
+	Pelapor
+
+	5.
+	BAGAIMANA TERJADI
+	:
+	Sekira pukul 19.15 Wib, pelapor sedang melaksanakan Tugas sebagai Satpam di Kantor AKA-DISDIKPORA (Akademi Komunitas Seni dan Budaya).Jl, Parangtritits Km, 3,5 Bantul Yogyakarta, di datangi saudara Pelaku. An SURYO ADI ANGGORO dan tiba-tiba Mengumpat kata-kata kotor dan langsung memukul Pelapor menggunakan Tongkat Satpam dan mengenai Wajah sebelah. Kiri. Dan mengakibatkan Pelapor luka lebam di Wajahnya.
+
+	6.
+	DILAPORKAN
+	:
+	Hari Selasa tanggal 10 Mei 2016, Pukul 09.00 Wib.
+
+	TINDAK PIDANA APA
+	:
+	Tindak Pidana Penganiayaan sebagaimana di maksud dalam pasal 352 KUHP.
+
+	NAMA DAN ALAMAT SAKSI-SAKSI
+	:
+	PARKISO, Wonosobo 31-12-1975, Buruh lepas Islam D/a Jl Pahlawan GG CONVOI 85 Rt 001 Rw 002 kel, Pasir Muncang Purwokerto barat Kab, Banyumas.
+
+	BARANG BUKTI
+	:
+
+
+	URAIAN KEJADIAN
+	:
+	 .............Bahwa benar pada hari Jumat tanggal 06 Mei 2016 sekira jam 19.15 Wib, telah terjadi Tindak Pidana Penganiayaan sebagaimana di Maksud dalam Pasal 352 KUHP. Tepatnya di Tempat Kerja Kantor AKA-DISDIKPORA (Akademi Komunitas Seni dan Budaya). Jl, Parangtritits Km, 3,5 Bantul Yogyakarta
+.............Awal mula kejadian, pada hari dan tanggal tersebut diatas sekira pukul 19.15 Wib, pelapor sedang melaksanakan Tugas sebagai Satpam di Kantor AKA-DISDIKPORA (Akademi Komunitas Seni dan Budaya). Jl, Parangtritits Km, 3,5 Bantul Yogyakarta. Pelapor di datangi saudara pelaku. An SURYO ADI ANGGORO dan tiba-tiba Pelaku mengumpat dengan kata-kata kotor dan Langsung memukul Pelapor amenggunakan Tongkat Satpamn dan mengenai Wajah sebelah. Kiri. Dan Mendorong korban hingga terjaduh mengenai Konblok kemudian pelapor bangun dan di dorong lain mengenai meja tempat Pelapor Bekerja. Atas kejadian tersebut pelapor mengalami. Luka-luka memar dibagian Tumit kaki Kanan dan di Wajahnya terdapat Luka lebam di sebelah Kiri....
+
+..............Atas Kejadian pelapor kemudian melapor ke Polsek Sewon untuk di tindak lanjuti guna proses penyidikan lebih lanjut.
+
+
+	TINDAKAN YANG DIAMBIL
+	:
+	Menerima laporan, Cek TKP, Membuat Laporan Polisi, Membuat Surat Tanda Laporan.
+
+
+
+	Pelapor			Bantul, 09 Februari 2016
+				Yang Membuat Laporan
+				KA SPKT II
+
+
+	RISGIYANTO			ADI SUROSO
+				AIPTU NRP 66010295
+
+Mengetahui
+KEPALA KEPOLISIAN SEKTOR SEWON
+
+
+IMAN SANTOSO
+KOMPOL NRP 62070193
+
+
+
+========Document Parts========
+PREDEFINED|	KEPOLISIAN DAERAH D.I. YOGYAKARTA
+PREDEFINED|	RESOR BANTUL
+PREDEFINED|	SEKTOR SEWON
+PREDEFINED|	Jl. Parangtritis Km, 5,6 Yogyakarta
+PREDEFINED|	“PRO JUSTITIA”
+PREDEFINED|	LAPORAN POLISI
+ KEY_VALUE|	Nomor : LP/139/V/2016/DIY/RES.BTL/Sek.Sewon
+    NORMAL|	PELAPOR
+ KEY_VALUE|	NAMA 	: 	RISGIYANTO, Bantul 11 Desember 1981, Islam, Satpam, Mantup Rt.14 Baturetno banguntapan Bantul
+    NORMAL|	PERISTIWA YANG DILAPORKAN
+ KEY_VALUE|	1. 	WAKTU KEJADIAN 	: 	Diketahui Jumat tanggal 06 Mei 2016, sekira pukul 19.15 wib
+ KEY_VALUE|	2. 	TEMPAT KEJADIAN 	: 	Tempat Kerja kantor AKA-DISDIKPORA (Akademi Komunitas Seni dan Budaya). Jl, Parangtritits Km, 3,5 Bantul Yogyakarta
+ KEY_VALUE|	3.  	APA YANG TERJADI 	: 	Tindak Pidana Penganiayaan sebagaimana di maksud dalam pasal 352 KUHP
+ KEY_VALUE|	4. 	SIAPA         A. PELAKU 	: 	SURYO ADI ANGGORO, 32 Th, D/a. Muja Muju Yogyakarta
+ KEY_VALUE|	B. KORBAN 	: 	Pelapor
+ KEY_VALUE|	5. 	BAGAIMANA TERJADI 	: 	Sekira pukul 19.15 Wib, pelapor sedang melaksanakan Tugas sebagai Satpam di Kantor AKA-DISDIKPORA (Akademi Komunitas Seni dan Budaya).Jl, Parangtritits Km, 3,5 Bantul Yogyakarta, di datangi saudara Pelaku. An SURYO ADI ANGGORO dan tiba-tiba Mengumpat kata-kata kotor dan langsung memukul Pelapor menggunakan Tongkat Satpam dan mengenai Wajah sebelah. Kiri. Dan mengakibatkan Pelapor luka lebam di Wajahnya.
+ KEY_VALUE|	6. 	DILAPORKAN  	: 	Hari Selasa tanggal 10 Mei 2016, Pukul 09.00 Wib.
+ KEY_VALUE|	TINDAK PIDANA APA 	: 	Tindak Pidana Penganiayaan sebagaimana di maksud dalam pasal 352 KUHP.
+ KEY_VALUE|	NAMA DAN ALAMAT SAKSI-SAKSI 	: 	PARKISO, Wonosobo 31-12-1975, Buruh lepas Islam D/a Jl Pahlawan GG CONVOI 85 Rt 001 Rw 002 kel, Pasir Muncang Purwokerto barat Kab, Banyumas.
+    NORMAL|	BARANG BUKTI 	:
+ KEY_VALUE|	URAIAN KEJADIAN 	: 	 .............Bahwa benar pada hari Jumat tanggal 06 Mei 2016 sekira jam 19.15 Wib, telah terjadi Tindak Pidana Penganiayaan sebagaimana di Maksud dalam Pasal 352 KUHP. Tepatnya di Tempat Kerja Kantor AKA-DISDIKPORA (Akademi Komunitas Seni dan Budaya). Jl, Parangtritits Km, 3,5 Bantul Yogyakarta .............Awal mula kejadian, pada hari dan tanggal tersebut diatas sekira pukul 19.15 Wib, pelapor sedang melaksanakan Tugas sebagai Satpam di Kantor AKA-DISDIKPORA (Akademi Komunitas Seni dan Budaya). Jl, Parangtritits Km, 3,5 Bantul Yogyakarta. Pelapor di datangi saudara pelaku. An SURYO ADI ANGGORO dan tiba-tiba Pelaku mengumpat dengan kata-kata kotor dan Langsung memukul Pelapor amenggunakan Tongkat Satpamn dan mengenai Wajah sebelah. Kiri. Dan Mendorong korban hingga terjaduh mengenai Konblok kemudian pelapor bangun dan di dorong lain mengenai meja tempat Pelapor Bekerja. Atas kejadian tersebut pelapor mengalami. Luka-luka memar dibagian Tumit kaki Kanan dan di Wajahnya terdapat Luka lebam di sebelah Kiri....
+    NORMAL|	..............Atas Kejadian pelapor kemudian melapor ke Polsek Sewon untuk di tindak lanjuti guna proses penyidikan lebih lanjut.
+ KEY_VALUE|	TINDAKAN YANG DIAMBIL 	: 	Menerima laporan, Cek TKP, Membuat Laporan Polisi, Membuat Surat Tanda Laporan.
+    NORMAL|	Pelapor			Bantul, 09 Februari 2016 				Yang Membuat Laporan 				KA SPKT II
+    NORMAL|	RISGIYANTO			ADI SUROSO 				AIPTU NRP 66010295
+PREDEFINED|	Mengetahui
+PREDEFINED|	KEPALA KEPOLISIAN SEKTOR SEWON
+    NORMAL|	IMAN SANTOSO KOMPOL NRP 62070193
+==============================
+DSL to Extract : PoliceReport
+===========Results============
+        ReportNumber|LP/139/V/2016/DIY/RES.BTL/Sek.Sewon
+        ReporterName|RISGIYANTO
+    ReporterBirthday|11 Desember 1981
+         ReporterAge|
+      ReporterGender|
+            EventDay|Jumat
+           EventDate|06 Mei 2016
+           EventTime|19.15 wib
+               Place|Tempat Kerja kantor AKA-DISDIKPORA (Akademi Komunitas Seni dan Budaya). Jl, Parangtritits Km, 3,5 Bantul Yogyakarta
+     PerpetratorName|SURYO ADI ANGGORO
+          VictimName|Pelapor
+         WitnessName|PARKISO
+           CrimeType|Penganiayaan
+         CrimeClause|352 KUHP
+==============================================SUMARRY===============================================
+/home/jasoet/Documents/Thesis/ExtractorApp/docs/Prod11.docx => 1275 ms
+/home/jasoet/Documents/Thesis/ExtractorApp/docs/Prod3.docx => 178 ms
+/home/jasoet/Documents/Thesis/ExtractorApp/docs/Prod4.docx => 91 ms
+/home/jasoet/Documents/Thesis/ExtractorApp/docs/Prod2.docx => 87 ms
+/home/jasoet/Documents/Thesis/ExtractorApp/docs/Prod17.docx => 61 ms
+/home/jasoet/Documents/Thesis/ExtractorApp/docs/Prod10.docx => 81 ms
+/home/jasoet/Documents/Thesis/ExtractorApp/docs/Prod14.docx => 55 ms
+/home/jasoet/Documents/Thesis/ExtractorApp/docs/Prod15.docx => 43 ms
+/home/jasoet/Documents/Thesis/ExtractorApp/docs/Prod0.docx => 38 ms
+/home/jasoet/Documents/Thesis/ExtractorApp/docs/Prod6.docx => 40 ms
+/home/jasoet/Documents/Thesis/ExtractorApp/docs/Prod13.docx => 97 ms
+/home/jasoet/Documents/Thesis/ExtractorApp/docs/Prod9.docx => 49 ms
+/home/jasoet/Documents/Thesis/ExtractorApp/docs/Prod7.docx => 53 ms
+/home/jasoet/Documents/Thesis/ExtractorApp/docs/Prod5.docx => 50 ms
+/home/jasoet/Documents/Thesis/ExtractorApp/docs/Prod8.docx => 49 ms
+/home/jasoet/Documents/Thesis/ExtractorApp/docs/Prod1.docx => 66 ms
+/home/jasoet/Documents/Thesis/ExtractorApp/docs/Prod12.docx => 48 ms
+/home/jasoet/Documents/Thesis/ExtractorApp/docs/Prod16.docx => 42 ms
