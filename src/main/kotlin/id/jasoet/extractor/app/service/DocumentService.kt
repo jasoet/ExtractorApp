@@ -6,6 +6,7 @@ import id.jasoet.extractor.app.loader.loadDocumentModel
 import id.jasoet.extractor.app.model.DocumentModel
 import id.jasoet.extractor.app.model.ExtractedDocument
 import id.jasoet.extractor.app.model.ProcessedDocument
+import id.jasoet.extractor.app.toExtractedDocument
 import nl.komponents.kovenant.Promise
 import nl.komponents.kovenant.all
 import nl.komponents.kovenant.task
@@ -62,22 +63,7 @@ class DocumentService {
             val dsl = dslMap[dslName] ?: throw IllegalArgumentException("DSL $dslName not Found")
             val fieldResults = dsl.extract(processedDocument.contentLinesAnalyzed)
 
-            val results = fieldResults.map { it.name to it.result }.toMap()
-
-            val errors = fieldResults
-                .filter { it.exception != null }
-                .map {
-                    val (name, result, ex) = it
-                    if (ex == null) {
-                        name to ""
-                    } else {
-                        val message = "${ex.javaClass.canonicalName}[${ex.message}]"
-                        name to message
-                    }
-                }
-                .toMap()
-
-            ExtractedDocument(processedDocument.id, dslName, results, errors)
+           fieldResults.toExtractedDocument(processedDocument.id,dslName)
         } fail {
             log.error("${it.message} when Extract Processed Document  [${processedDocument.id}]", it)
         }

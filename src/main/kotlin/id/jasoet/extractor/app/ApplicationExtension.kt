@@ -1,6 +1,8 @@
 package id.jasoet.extractor.app
 
+import id.jasoet.extractor.app.model.ExtractedDocument
 import id.jasoet.extractor.core.dsl.Dsl
+import id.jasoet.extractor.core.dsl.model.FieldResult
 import io.github.lukehutch.fastclasspathscanner.FastClasspathScanner
 import org.apache.commons.lang3.StringUtils
 import org.apache.maven.shared.utils.io.DirectoryScanner
@@ -90,5 +92,24 @@ fun String.rightPad(len: Int, ch: String = " "): String {
 
 fun String.center(len: Int, ch: String = " "): String {
     return StringUtils.center(this, len, ch)
+}
+
+fun List<FieldResult>.toExtractedDocument(id: String, dslName: String): ExtractedDocument {
+    val results = this.map { it.name to it.result }.toMap()
+
+    val errors = this
+        .filter { it.exception != null }
+        .map {
+            val (name, result, ex) = it
+            if (ex == null) {
+                name to ""
+            } else {
+                val message = "${ex.javaClass.canonicalName}[${ex.message}]"
+                name to message
+            }
+        }
+        .toMap()
+
+    return ExtractedDocument(id, dslName, results, errors)
 }
 

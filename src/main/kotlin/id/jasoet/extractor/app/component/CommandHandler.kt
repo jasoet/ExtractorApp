@@ -2,9 +2,11 @@ package id.jasoet.extractor.app.component
 
 import com.beust.jcommander.JCommander
 import id.jasoet.extractor.app.command.AddCommand
+import id.jasoet.extractor.app.command.DirectCommand
 import id.jasoet.extractor.app.command.DslCommand
 import id.jasoet.extractor.app.command.ShowCommand
 import id.jasoet.extractor.app.command.handler.AddHandler
+import id.jasoet.extractor.app.command.handler.DirectHandler
 import id.jasoet.extractor.app.command.handler.DslHandler
 import id.jasoet.extractor.app.command.handler.ShowHandler
 import org.slf4j.LoggerFactory
@@ -31,6 +33,8 @@ open class CommandHandler : CommandLineRunner {
     lateinit var dslHandler: DslHandler
     @Autowired
     lateinit var showHandler: ShowHandler
+    @Autowired
+    lateinit var directHandler: DirectHandler
 
     @Autowired
     lateinit var addCommand: AddCommand
@@ -38,6 +42,8 @@ open class CommandHandler : CommandLineRunner {
     lateinit var dslCommand: DslCommand
     @Autowired
     lateinit var showCommand: ShowCommand
+    @Autowired
+    lateinit var directCommand: DirectCommand
 
     override fun run(vararg args: String?) {
         commander.parse(*args)
@@ -47,6 +53,7 @@ open class CommandHandler : CommandLineRunner {
             "add" -> addHandler.handle(addCommand)
             "dsl" -> dslHandler.handle(dslCommand)
             "show" -> showHandler.handle(showCommand)
+            "direct" -> directHandler.handle(directCommand)
             else -> {
                 commander.usage()
             }
