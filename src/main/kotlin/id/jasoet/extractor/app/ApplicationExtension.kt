@@ -100,7 +100,8 @@ fun List<FieldResult>.toExtractedDocument(id: String, dslName: String): Extracte
     val errors = this
         .filter { it.exception != null }
         .map {
-            val (name, result, ex) = it
+            val name = it.name
+            val ex = it.exception
             if (ex == null) {
                 name to ""
             } else {
