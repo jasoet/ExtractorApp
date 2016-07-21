@@ -60,7 +60,7 @@ class DirectHandler {
                 printc(Ansi.Color.YELLOW) {
                     "\n\n".rightPad(100, "*")
                 }
-                printc(Ansi.Color.BLUE) {
+                printc(Ansi.Color.WHITE) {
                     """
                 |Id:            ${doc.id}
                 |FileName:      ${doc.fileName}
@@ -74,7 +74,7 @@ class DirectHandler {
                     |""".trimMargin()
                 }
 
-                printc(Ansi.Color.BLUE) {
+                printc(Ansi.Color.WHITE) {
                     """
                     |
                     |${doc.content}
