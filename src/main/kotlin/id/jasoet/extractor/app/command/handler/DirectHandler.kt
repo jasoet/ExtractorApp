@@ -68,7 +68,7 @@ class DirectHandler {
                 |""".trimMargin()
                 }
 
-                printc(Ansi.Color.BLUE) {
+                printc(Ansi.Color.YELLOW) {
                     """
                     |
                     |${"Content".center(30, "=")}
