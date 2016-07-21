@@ -68,10 +68,15 @@ class DirectHandler {
                 |""".trimMargin()
                 }
 
-                printc(Ansi.Color.YELLOW) {
+                printc(Ansi.Color.YELLOW){
+                    """
+                    |${"Content".center(30, "=")}
+                    |""".trimMargin()
+                }
+
+                printc(Ansi.Color.BLUE) {
                     """
                     |
-                    |${"Content".center(30, "=")}
                     |${doc.content}
                     |
                     |""".trimMargin()
