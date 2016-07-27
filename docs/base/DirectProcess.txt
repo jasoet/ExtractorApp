@@ -2825,21 +2825,21 @@ DSL to Extract : PoliceReport
            CrimeType|Penganiayaan
          CrimeClause|352 KUHP
 ==============================================SUMARRY===============================================
-/home/jasoet/Documents/Thesis/ExtractorApp/docs/Prod11.docx => 1275 ms
-/home/jasoet/Documents/Thesis/ExtractorApp/docs/Prod3.docx => 178 ms
-/home/jasoet/Documents/Thesis/ExtractorApp/docs/Prod4.docx => 91 ms
-/home/jasoet/Documents/Thesis/ExtractorApp/docs/Prod2.docx => 87 ms
-/home/jasoet/Documents/Thesis/ExtractorApp/docs/Prod17.docx => 61 ms
-/home/jasoet/Documents/Thesis/ExtractorApp/docs/Prod10.docx => 81 ms
-/home/jasoet/Documents/Thesis/ExtractorApp/docs/Prod14.docx => 55 ms
-/home/jasoet/Documents/Thesis/ExtractorApp/docs/Prod15.docx => 43 ms
-/home/jasoet/Documents/Thesis/ExtractorApp/docs/Prod0.docx => 38 ms
-/home/jasoet/Documents/Thesis/ExtractorApp/docs/Prod6.docx => 40 ms
-/home/jasoet/Documents/Thesis/ExtractorApp/docs/Prod13.docx => 97 ms
-/home/jasoet/Documents/Thesis/ExtractorApp/docs/Prod9.docx => 49 ms
-/home/jasoet/Documents/Thesis/ExtractorApp/docs/Prod7.docx => 53 ms
-/home/jasoet/Documents/Thesis/ExtractorApp/docs/Prod5.docx => 50 ms
-/home/jasoet/Documents/Thesis/ExtractorApp/docs/Prod8.docx => 49 ms
-/home/jasoet/Documents/Thesis/ExtractorApp/docs/Prod1.docx => 66 ms
-/home/jasoet/Documents/Thesis/ExtractorApp/docs/Prod12.docx => 48 ms
-/home/jasoet/Documents/Thesis/ExtractorApp/docs/Prod16.docx => 42 ms
+Prod11.docx, 1275 ms
+Prod3.docx, 178 ms
+Prod4.docx, 91 ms
+Prod2.docx, 87 ms
+Prod17.docx, 61 ms
+Prod10.docx, 81 ms
+Prod14.docx, 55 ms
+Prod15.docx, 43 ms
+Prod0.docx, 38 ms
+Prod6.docx, 40 ms
+Prod13.docx, 97 ms
+Prod9.docx, 49 ms
+Prod7.docx, 53 ms
+Prod5.docx, 50 ms
+Prod8.docx, 49 ms
+Prod1.docx, 66 ms
+Prod12.docx, 48 ms
+Prod16.docx, 42 ms
