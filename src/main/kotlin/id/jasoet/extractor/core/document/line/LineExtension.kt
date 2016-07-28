@@ -21,8 +21,13 @@ fun String.matchEmpty(): Boolean {
 }
 
 fun String.matchKeyValue(): Boolean {
-    val keyValueRegex = Regex("[\\/\\s\\.a-zA-Z0-9\\-]+\\s*:{1}\\s+.+", RegexOption.IGNORE_CASE)
+    val keyValueRegex = Regex("[\\/\\s\\.a-zA-Z0-9\\-]+\\s*:{1}\\s+.*", RegexOption.IGNORE_CASE)
     return keyValueRegex.matches(this)
+}
+
+fun Line.matchKeyValue(): Boolean {
+    val keyValueRegex = Regex("[\\/\\s\\.a-zA-Z0-9\\-]+\\s*:{1}\\s*.*", RegexOption.IGNORE_CASE)
+    return keyValueRegex.matches(this.content)
 }
 
 fun String.identifyLine(): LineType {
@@ -32,6 +37,23 @@ fun String.identifyLine(): LineType {
         if (this.matchTitle(titleKeyword)) {
             LineType.PREDEFINED
         } else if (this.matchEmpty()) {
+            LineType.EMPTY
+        } else if (this.matchKeyValue()) {
+            LineType.KEY_VALUE
+        } else {
+            LineType.NORMAL
+        }
+
+    return type
+}
+
+fun Line.reIdentify(): LineType {
+    val titleKeyword = DictionaryContext.titles
+
+    val type: LineType =
+        if (this.content.matchTitle(titleKeyword)) {
+            LineType.PREDEFINED
+        } else if (this.content.matchEmpty()) {
             LineType.EMPTY
         } else if (this.matchKeyValue()) {
             LineType.KEY_VALUE

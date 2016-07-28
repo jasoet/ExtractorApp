@@ -5,6 +5,7 @@ import id.jasoet.extractor.core.dictionary.keyDictionary
 import id.jasoet.extractor.core.document.line.Line
 import id.jasoet.extractor.core.document.line.LineType
 import id.jasoet.extractor.core.document.line.identifyLine
+import id.jasoet.extractor.core.document.line.reIdentify
 import kotlinslang.control.none
 import kotlinslang.control.some
 
@@ -97,7 +98,7 @@ interface Document {
             .filter { it.isDefined() }
             .map {
                 val combinedLine = it.get()
-                combinedLine.copy(type = combinedLine.content.identifyLine())
+                combinedLine.copy(type = combinedLine.reIdentify())
             }
     }
 

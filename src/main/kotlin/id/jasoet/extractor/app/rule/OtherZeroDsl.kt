@@ -15,44 +15,55 @@ import id.jasoet.extractor.core.dsl.Dsl
  */
 
 
-class FormatOneDsl() : Dsl("FormatOne", {
+class OtherZeroDsl() : Dsl("OtherZero", {
 
     field("ReportNumber") {
         rule {
             startAnchor = Predefined("LAPORAN POLISI")
-            endAnchor = Normal("PELAPOR")
+            endAnchor = Normal("YANG MELAPORKAN")
 
             search { line ->
                 val containsKey = line.details[DictionaryType.KEY]?.contains("Nomor", ignoreCase = true)
                 line.type == LineType.KEY_VALUE && (containsKey ?: false)
             }
 
-            extract(pattern = "\\w+\\/\\d+\\/\\w+\\/\\d+\\/\\w+\\/[\\w\\d\\.]+\\/[\\w\\d\\.]+")
-        }
-    }
-
-    field("PoliceNum") {
-        rule {
-            startAnchor = Default
-            endAnchor = Key("Korban")
-
-            search(LineType.KEY_VALUE, DictionaryType.VEHICLE_NUMBER)
-            extract(DictionaryType.VEHICLE_NUMBER)
-        }
-    }
-
-    field("WitnessAge") {
-        rule {
-            extract(Key("Nama dan Alamat Saksi-Saksi"), pattern = "\\d\\d?\\s+(Thn|Tahun)")
+            extract(pattern = ".+")
         }
     }
 
     field("ReporterName") {
         rule {
-            extract(Key("Nama")) { line ->
-                val value = line.details.getOrElse(DictionaryType.VALUE) { "" }
-                value.substring(0, value.indexOf(","))
-            }
+            startAnchor = Normal("YANG MELAPORKAN")
+            endAnchor = Key("JENIS KELAMIN")
+
+            extract(Key("Nama"), pattern = ".+")
+        }
+    }
+
+    field("EventDay") {
+        rule {
+            extract(Key("WAKTU KEJADIAN"), DictionaryType.DAY)
+        }
+    }
+
+    field("EventDate") {
+        rule {
+            extract(Key("WAKTU KEJADIAN"), DictionaryType.DATE)
+        }
+    }
+
+    field("EventTime") {
+        rule {
+            extract(Key("WAKTU KEJADIAN"), DictionaryType.TIME)
+        }
+    }
+
+    field("SuspectName") {
+        rule {
+            startAnchor = Normal("SIAPA TERLAPOR")
+            endAnchor = Default
+
+            extract(Key("Nama"), pattern = ".+")
         }
     }
 

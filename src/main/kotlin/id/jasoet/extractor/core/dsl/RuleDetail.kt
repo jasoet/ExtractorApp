@@ -106,8 +106,15 @@ class RuleDetail {
     fun buildRule(): (List<Line>) -> String? {
         return if (extractAnchor != null) {
             fun(lines: List<Line>): String? {
+
+                val subList = try {
+                    lines.subList(startAnchor, endAnchor)
+                } catch (e: Exception) {
+                    throw SearchException("${e.message} when calculate SubList", e)
+                }
+
                 val line = extractAnchor?.let {
-                    lines.findAnchor(it)
+                    subList.findAnchor(it)
                 }
 
                 line ?: throw SearchException("Search By Anchor [$extractAnchor] returns empty")
@@ -126,6 +133,7 @@ class RuleDetail {
             }
         } else {
             fun(lines: List<Line>): String? {
+
                 val subList = try {
                     lines.subList(startAnchor, endAnchor)
                 } catch (e: Exception) {
