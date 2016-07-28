@@ -14,7 +14,7 @@ import id.jasoet.extractor.core.dsl.Dsl
  */
 
 
-class OtherZeroDsl() : Dsl("OtherZero", {
+class OtherZeroReportDsl() : Dsl("OtherZeroReport", {
 
     field("ReportNumber") {
         rule {
