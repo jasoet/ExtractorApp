@@ -2,7 +2,6 @@ package id.jasoet.extractor.app.rule
 
 import id.jasoet.extractor.core.dictionary.DictionaryType
 import id.jasoet.extractor.core.document.line.LineType
-import id.jasoet.extractor.core.dsl.Anchor.Default
 import id.jasoet.extractor.core.dsl.Anchor.Key
 import id.jasoet.extractor.core.dsl.Anchor.Normal
 import id.jasoet.extractor.core.dsl.Anchor.Predefined
@@ -40,6 +39,42 @@ class OtherZeroDsl() : Dsl("OtherZero", {
         }
     }
 
+    field("ReporterGender") {
+        rule {
+            startAnchor = Normal("YANG MELAPORKAN")
+            endAnchor = Key("WAKTU KEJADIAN")
+
+            extract(Key("JENIS KELAMIN"), dictionary = DictionaryType.GENDER)
+        }
+    }
+
+    field("ReporterReligion") {
+        rule {
+            startAnchor = Normal("YANG MELAPORKAN")
+            endAnchor = Key("WAKTU KEJADIAN")
+
+            extract(Key("AGAMA"), dictionary = DictionaryType.RELIGION)
+        }
+    }
+
+    field("ReporterAddress") {
+        rule {
+            startAnchor = Normal("YANG MELAPORKAN")
+            endAnchor = Key("WAKTU KEJADIAN")
+
+            extract(Key("ALAMAT"), pattern = ".+")
+        }
+    }
+
+    field("ReporterTelp") {
+        rule {
+            startAnchor = Normal("YANG MELAPORKAN")
+            endAnchor = Key("WAKTU KEJADIAN")
+
+            extract(Key("TELP/FAX/EMAIL"), pattern = ".+")
+        }
+    }
+
     field("EventDay") {
         rule {
             extract(Key("WAKTU KEJADIAN"), DictionaryType.DAY)
@@ -58,13 +93,24 @@ class OtherZeroDsl() : Dsl("OtherZero", {
         }
     }
 
-    field("SuspectName") {
+    field("PerpetratorName") {
         rule {
-            startAnchor = Normal("SIAPA TERLAPOR")
-            endAnchor = Default
+            startAnchor = Key("SIAPA TERLAPOR")
+            endAnchor = Key("SAKSI-SAKSI")
 
             extract(Key("Nama"), pattern = ".+")
         }
     }
 
+    field("CrimeType") {
+        rule {
+            extract(Key("TINDAKAN PIDANA APA"), dictionary = DictionaryType.CRIME)
+        }
+    }
+
+    field("CrimeClause") {
+        rule {
+            extract(Key("TINDAKAN PIDANA APA"), dictionary = DictionaryType.CLAUSE)
+        }
+    }
 })

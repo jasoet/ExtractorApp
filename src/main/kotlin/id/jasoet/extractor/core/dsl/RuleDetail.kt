@@ -108,7 +108,11 @@ class RuleDetail {
             fun(lines: List<Line>): String? {
 
                 val subList = try {
-                    lines.subList(startAnchor, endAnchor)
+                    if (startAnchor == null && endAnchor == null) {
+                        lines
+                    } else {
+                        lines.subList(startAnchor, endAnchor)
+                    }
                 } catch (e: Exception) {
                     throw SearchException("${e.message} when calculate SubList", e)
                 }
