@@ -1,0 +1,27 @@
+Grammar  ::= '{' Field+ '}'
+Field ::= FieldTitle '{' Rule+ '}'
+StringLiteral ::= '"' [^"]* '"'
+FieldTitle ::= 'field(' StringLiteral ')' 
+Rule ::= 'rule' '{' (StarAnchor NEWLINE EndAnchor NEWLINE)? (SearchOps | SearchParams)? NEWLINE (ExtractOps | ExtractAnchorOps | ExtractParams) '}'
+
+Anchor ::= ( 'Predefined' | 'Normal' | 'Key') '('  StringLiteral ')' 
+LineType ::= 'LineType' '.' ('EMPTY' | 'KEY_VALUE' | 'PREDEFINED' | 'NORMAL' )
+Dictionary ::= 'DictionaryType' '.' ('KEY' | 'VALUE' | 'MONEY' | 'AGE' | 'DAY' | 'RELIGION' | 'GENDER' | 'CRIME' | 'CLAUSE' | 'DATE' | 'TIME' | 'VEHICLE_NUMBER')
+
+LineTypeParam ::= 'lineType' '=' LineType
+DictionaryParam ::= 'dictionary' '=' Dictionary
+PatternParam ::= 'pattern' '=' StringLiteral
+AnchorParam ::= 'anchor' '=' Anchor
+IndexParam ::= 'index' '=' [0-9]
+
+StartAnchor ::= 'startAnchor' '=' Anchor  
+EndAnchor ::= 'endAnchor' '=' Anchor
+
+SearchOps ::= 'search' '{' 'line' '->' Statement* '}'
+SearchParams ::=  'search' '(' LineTypeParam? ','? DictionaryParam? ','? PatternParam? ')'
+
+ExtractOps ::= 'extract' '{' 'line' '->' Statement* '}'
+ExtractAnchorOps ::= 'extract' '(' Anchor ')' '{' 'line' '->' Statement* '}'
+ExtractParams ::= 'extract' '(' AnchorParam? ','? DictionaryParam? ','? PatternParam? ','? IndexParam ')'
+
+Statement ::= [a-zA-Z0-9]* NEWLINE
