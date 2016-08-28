@@ -20,30 +20,19 @@ import org.springframework.stereotype.Component
  * @author Deny Prasetyo
  */
 @Component
-open class CommandHandler : CommandLineRunner {
+open class CommandHandler
+@Autowired
+constructor(val commander: JCommander,
+            val addHandler: AddHandler,
+            val dslHandler: DslHandler,
+            val showHandler: ShowHandler,
+            val directHandler: DirectHandler,
+            val addCommand: AddCommand,
+            val dslCommand: DslCommand,
+            val showCommand: ShowCommand,
+            val directCommand: DirectCommand) : CommandLineRunner {
 
     private val log = LoggerFactory.getLogger(javaClass)
-
-    @Autowired
-    lateinit var commander: JCommander
-
-    @Autowired
-    lateinit var addHandler: AddHandler
-    @Autowired
-    lateinit var dslHandler: DslHandler
-    @Autowired
-    lateinit var showHandler: ShowHandler
-    @Autowired
-    lateinit var directHandler: DirectHandler
-
-    @Autowired
-    lateinit var addCommand: AddCommand
-    @Autowired
-    lateinit var dslCommand: DslCommand
-    @Autowired
-    lateinit var showCommand: ShowCommand
-    @Autowired
-    lateinit var directCommand: DirectCommand
 
     override fun run(vararg args: String?) {
         commander.parse(*args)
